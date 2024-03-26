@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "britesnow.vscode-toggle-quotes",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-json5",
+    "pflannery.vscode-versionlens",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "wayou.vscode-todo-highlight",
+    "wix.vscode-import-cost",
+    "yoavbls.pretty-ts-errors"
+  ]
+}

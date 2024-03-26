@@ -1,0 +1,37 @@
+{
+  "files.associations": {
+    "*.css": "postcss",
+    "*.js": "javascriptreact",
+    "*.js.template": "javascriptreact",
+    "*.md.template": "mdx",
+    "*.ts": "typescript",
+    "*.ts.template": "typescript",
+    "*.tsx": "typescriptreact",
+    "*.tsx.template": "typescriptreact"
+  },
+  // eslint, prettier and stylelint settings
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "eslint.alwaysShowStatus": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // disable default style validation
+  "javascript.validate.enable": false,
+  "yaml.customTags": [
+    // see: https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#configure-your-ide-to-support-reference-tags
+    "!reference sequence"
+  ]
+}

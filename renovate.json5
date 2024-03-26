@@ -1,0 +1,49 @@
+{
+  dependencyDashboardLabels: ['effort | ongoing', 'scope | dependencies'],
+  dependencyDashboardOSVVulnerabilitySummary: 'all',
+  extends: [
+    'config:base',
+    'default:automergeDigest',
+    'default:automergeMinor',
+    'default:dependencyDashboard',
+    'default:docker',
+    'default:enableVulnerabilityAlerts',
+    'default:maintainLockFilesWeekly',
+    'default:prHourlyLimit2',
+  ],
+  ignorePaths: ['/node_modules/'],
+  // only rebase merge requests when they become conflicted
+  // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
+  rebaseWhen: 'conflicted',
+  schedule: [
+    'after 10pm every weekday',
+    'before 8am every weekday',
+    // 'every weekend',
+  ],
+  // stop updating pull requests with this label
+  // https://docs.renovatebot.com/configuration-options/#stopupdatinglabel
+  stopUpdatingLabel: 'renovate | stop update',
+  packageRules: [
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+     * renovate config packages
+     ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+    // @fuf-stack/eslint-config-fuf-base
+    {
+      groupName: '@fuf-stack/eslint-config-fuf-base dependencies',
+      matchFileNames: ['packages/eslint-config-fuf-base/**'],
+      extends: ['default:automergePatch'],
+      // only on weekends
+      schedule: ['every weekend'],
+    },
+
+    // @fuf-stack/project-cli-tools
+    {
+      groupName: '@fuf-stack/project-cli-tools dependencies',
+      matchFileNames: ['packages/project-cli-tools/**'],
+      extends: ['default:automergePatch'],
+      // only on weekends
+      schedule: ['every weekend'],
+    },
+  ],
+}

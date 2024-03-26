@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["@types/node"],
+    "noEmit": true,
+    "allowJs": true
+  },
+  "include": [
+    ".eslintrc.js",
+    "packages/**/*",
+    "packages/eslint-config-fuf-base/index.js",
+    "prettier.config.js"
+  ],
+  "references": []
+}

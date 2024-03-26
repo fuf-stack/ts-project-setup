@@ -1,0 +1,32 @@
+// see: https://github.com/redwoodjs/redwood/blob/main/tsconfig.compilerOption.json
+
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "noErrorTruncation": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+
+    // INFO: these will be excluded in packages tsconfig.build.ts (only on tsc build)
+    // "**/__tests__",
+    // "**/__mocks__",
+    // "**/*.cy.*",
+    // "**/*.spec.*",
+    // "**/*.test.*"
+  ]
+}

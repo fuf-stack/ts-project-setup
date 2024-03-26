@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "commit": "lint-staged && git-cz",
+    "dev": "lerna run --parallel dev",
+    "fix": "eslint --debug --fix --ext .js --ignore-path .gitignore packages || true && prettier --write \"packages/**/*\"",
+    "lint": "eslint --debug --ignore-path .gitignore ./packages",
+    "release": "lerna version --conventional-commits",
+    "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" jest --no-watchman $JEST_EXTRA_OPTS"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@fuf-stack/eslint-config-fuf-base": "workspace:*",
+    "@fuf-stack/project-cli-tools": "workspace:*",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-pnpm-scopes"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

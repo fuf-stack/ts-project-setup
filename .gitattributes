@@ -1,0 +1,33 @@
+* text eol=lf
+
+# images
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.webp binary
+
+# media
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.ogv binary
+
+# archives
+*.gz binary
+*.zip binary
+*.7z binary
+
+# fonts
+*.eot binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# windows
+*.exe binary
