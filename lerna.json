@@ -3,7 +3,7 @@
   "command": {
     "version": {
       "allowBranch": ["main"],
-      "message": "chore: publish %s"
+      "message": "chore: release packages"
     }
   },
   "npmClient": "pnpm",
