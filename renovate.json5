@@ -31,19 +31,19 @@
     // @fuf-stack/eslint-config-fuf-base
     {
       groupName: '@fuf-stack/eslint-config-fuf-base dependencies',
-      matchFileNames: ['packages/eslint-config-fuf-base/**'],
       extends: ['default:automergePatch'],
-      // only on weekends
-      schedule: ['every weekend'],
+      matchFileNames: ['packages/eslint-config-fuf-base/package.json'],
+      // prevent multiple 'Lock file maintenance' being created
+      matchUpdateTypes: ['major', 'minor', 'patch'],
     },
 
     // @fuf-stack/project-cli-tools
     {
       groupName: '@fuf-stack/project-cli-tools dependencies',
-      matchFileNames: ['packages/project-cli-tools/**'],
       extends: ['default:automergePatch'],
-      // only on weekends
-      schedule: ['every weekend'],
+      matchFileNames: ['packages/project-cli-tools/package.json'],
+      // prevent multiple 'Lock file maintenance' being created
+      matchUpdateTypes: ['major', 'minor', 'patch'],
     },
   ],
 }
