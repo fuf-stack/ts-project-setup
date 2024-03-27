@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/fuf-stack/ts-project-setup/compare/@fuf-stack/eslint-config-fuf-base@0.2.2...@fuf-stack/eslint-config-fuf-base@0.2.3) (2024-03-27)
+
+### Bug Fixes
+
+- **eslint-config-fuf-base:** cleanup version bump code ([953cf27](https://github.com/fuf-stack/ts-project-setup/commit/953cf27e03257fcd14533b64405ed1e82c7c544e))
+
 ## [0.2.2](https://github.com/fuf-stack/ts-project-setup/compare/@fuf-stack/eslint-config-fuf-base@0.2.1...@fuf-stack/eslint-config-fuf-base@0.2.2) (2024-03-27)
 
 **Note:** Version bump only for package @fuf-stack/eslint-config-fuf-base
