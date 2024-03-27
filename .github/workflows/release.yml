@@ -37,7 +37,9 @@ jobs:
       #   run: pnpm build
 
       - name: Publish to npm
-        run: pnpm publish --no-git-checks --filter ${{ github.ref_name }}
+        run: |
+          TAG=${{ github.ref_name }}
+          pnpm publish --no-git-checks --filter ${TAG%@*}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
