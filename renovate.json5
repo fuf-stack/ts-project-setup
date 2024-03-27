@@ -4,7 +4,8 @@
   extends: [
     'config:base',
     'default:automergeDigest',
-    'default:automergeMinor',
+    'default:automergePatch',
+    'default:combinePatchMinorReleases'
     'default:dependencyDashboard',
     'default:docker',
     'default:enableVulnerabilityAlerts',
@@ -31,7 +32,6 @@
     // @fuf-stack/eslint-config-fuf-base
     {
       groupName: '@fuf-stack/eslint-config-fuf-base dependencies',
-      extends: ['default:automergePatch'],
       matchFileNames: ['packages/eslint-config-fuf-base/package.json'],
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
@@ -40,7 +40,6 @@
     // @fuf-stack/project-cli-tools
     {
       groupName: '@fuf-stack/project-cli-tools dependencies',
-      extends: ['default:automergePatch'],
       matchFileNames: ['packages/project-cli-tools/package.json'],
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
