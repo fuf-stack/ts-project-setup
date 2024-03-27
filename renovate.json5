@@ -5,7 +5,7 @@
     'config:base',
     'default:automergeDigest',
     'default:automergePatch',
-    'default:combinePatchMinorReleases'
+    'default:combinePatchMinorReleases',
     'default:dependencyDashboard',
     'default:docker',
     'default:enableVulnerabilityAlerts',
