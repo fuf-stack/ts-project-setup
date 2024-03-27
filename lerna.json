@@ -2,11 +2,15 @@
   "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
   "command": {
     "version": {
-      "allowBranch": ["main"]
+      "allowBranch": [
+        "main"
+      ]
     }
   },
   "npmClient": "pnpm",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "useWorkspaces": true,
-  "version": "0.0.0"
+  "version": "0.1.0"
 }
