@@ -9,7 +9,7 @@
     "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" jest --no-watchman $JEST_EXTRA_OPTS"
   },
   "devDependencies": {
-    "@types/node": "20.12.2",
+    "@types/node": "20.12.3",
     "@fuf-stack/eslint-config-fuf-base": "workspace:*",
     "@fuf-stack/project-cli-tools": "workspace:*",
     "ts-node": "10.9.2",
