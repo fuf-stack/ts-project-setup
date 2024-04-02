@@ -3,12 +3,8 @@
   "release-type": "node",
   "include-component-in-tag": true,
   "packages": {
-    "packages/eslint-config-fuf-base": {
-      "monorepo-tags": true
-    },
-    "packages/project-cli-tools": {
-      "monorepo-tags": true
-    }
+    "packages/eslint-config-fuf-base": {},
+    "packages/project-cli-tools": {}
   },
   "separate-pull-requests": true
 }
