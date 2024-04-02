@@ -17,8 +17,6 @@ jobs:
         id: release
         with:
           token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
-          command: manifest
-          monorepo-tags: true
 
       - uses: actions/checkout@v4
         with:
