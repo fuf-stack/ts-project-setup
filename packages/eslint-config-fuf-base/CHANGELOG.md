@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.3.0...eslint-config-fuf-base-v0.3.1) (2024-04-02)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf-base:** update typescript-eslint monorepo to v7.5.0 ([c20f30c](https://github.com/fuf-stack/ts-project-setup/commit/c20f30cd83eb0c511d925faee96f38fdb668485e))
+
 ## [0.3.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.2.7...eslint-config-fuf-base-v0.3.0) (2024-04-02)
 
 
