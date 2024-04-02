@@ -5,10 +5,14 @@ permissions:
   id-token: write
 
 # when vX.X.X tag is created
+# on:
+#   push:
+#     tags:
+#       - '@fuf-stack/*'
+
+# manually run workflow
 on:
-  push:
-    tags:
-      - '@fuf-stack/*'
+  workflow_dispatch:
 
 jobs:
   release:
