@@ -31,7 +31,7 @@
 
     // @fuf-stack/eslint-config-fuf-base
     {
-      groupName: '@fuf-stack/eslint-config-fuf-base dependencies',
+      extends: [':semanticCommitScope(eslint-config-fuf-base)'],
       matchFileNames: ['packages/eslint-config-fuf-base/package.json'],
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
@@ -39,7 +39,7 @@
 
     // @fuf-stack/project-cli-tools
     {
-      groupName: '@fuf-stack/project-cli-tools dependencies',
+      extends: [':semanticCommitScope(@fuf-stack/project-cli-tools)'],
       matchFileNames: ['packages/project-cli-tools/package.json'],
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
