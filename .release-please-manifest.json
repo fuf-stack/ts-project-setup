@@ -1,1 +1,4 @@
-{}
+{
+  "packages/eslint-config-fuf-base": "0.2.7",
+  "packages/project-cli-tools": "0.2.1"
+}
