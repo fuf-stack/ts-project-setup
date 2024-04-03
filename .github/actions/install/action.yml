@@ -1,5 +1,5 @@
 name: 'pnpm install'
-description: 'Sets up node and installs with pnpm'
+description: 'Sets up node and installs node_modules with pnpm'
 
 runs:
   using: composite
@@ -17,4 +17,5 @@ runs:
         cache: pnpm
 
     - name: Install node_modules
+      shell: bash
       run: pnpm install --frozen-lockfile --prefer-offline
