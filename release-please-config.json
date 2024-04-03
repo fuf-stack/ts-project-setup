@@ -5,9 +5,7 @@
   "packages": {
     "packages/eslint-config-fuf-base": {},
     "packages/project-cli-tools": {},
-    "packages/vitest-config": {
-      "release-as": "0.0.1"
-    }
+    "packages/vitest-config": {}
   },
   "separate-pull-requests": true
 }
