@@ -1,4 +1,4 @@
-name: 'pnpm install'
+name: 'Setup project'
 description: 'Sets up node and installs node_modules with pnpm'
 
 runs:
