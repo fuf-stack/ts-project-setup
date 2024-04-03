@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
 
       - name: Debug output
-        run: echo "${{ steps.release.outputs}}"
+        run: echo "${{ steps.release.outputs.releases_created}}"
 
       - uses: actions/checkout@v4
         with:
