@@ -18,6 +18,9 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
 
+      - name: Debug output
+        run: echo ${{ steps.release.outputs}}
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
