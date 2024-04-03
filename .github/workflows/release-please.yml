@@ -41,6 +41,10 @@ jobs:
         run: pnpm install --frozen-lockfile --prefer-offline
         if: ${{ steps.release.outputs.releases_created }}
 
+      - name: Run testsuite
+        run: pnpm test
+        if: ${{ steps.release.outputs.releases_created }}
+
       - name: Publish to npm
         run: pnpm publish --no-git-checks --filter "@fuf-stack/*"
         env:

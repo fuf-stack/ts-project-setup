@@ -6,10 +6,12 @@
     "allowJs": true
   },
   "include": [
+    "./**/*.ts",
     ".eslintrc.js",
-    "packages/**/*",
     "packages/eslint-config-fuf-base/index.js",
-    "prettier.config.js"
+    "prettier.config.js",
+    "vitest.config.ts",
+    "vitest.workspace.ts"
   ],
   "references": []
 }

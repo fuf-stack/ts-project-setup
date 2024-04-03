@@ -1,22 +1,13 @@
-// bump
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.eslint.json',
-  },
-  extends: [
-    'airbnb-base',
-    'airbnb-typescript/base',
-    'eslint:recommended',
-    'plugin:prettier/recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['airbnb-base', 'eslint:recommended', 'plugin:prettier/recommended'],
   env: {
     commonjs: true,
     es6: true,
     node: true,
   },
-  plugins: ['prettier', 'import'],
+  plugins: ['import', 'prettier'],
+
+  // default rules (js)
   rules: {
     // redwood rules
     // see: https://github.com/redwoodjs/redwood/blob/main/packages/eslint-config/shared.js
@@ -37,19 +28,6 @@ module.exports = {
       { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
     ],
 
-    // redwood ts rules
-    '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/ban-types': 'warn',
-    'no-empty-function': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
-    // camelcase: 'off',
-    '@typescript-eslint/camelcase': 'off',
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'off',
-
     // fuf rules
     'comma-dangle': ['error', 'only-multiline'],
     'import/extensions': [
@@ -67,4 +45,39 @@ module.exports = {
     'import/order': 'off',
     'no-underscore-dangle': 'off',
   },
+
+  overrides: [
+    // ts rules
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: './tsconfig.eslint.json',
+      },
+      extends: [
+        'airbnb-typescript/base',
+        'plugin:@typescript-eslint/recommended',
+      ],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-empty-interface': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/ban-types': 'warn',
+        'no-empty-function': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+        camelcase: 'off',
+        '@typescript-eslint/camelcase': 'off',
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': 'off',
+
+        // use separate type imports
+        '@typescript-eslint/consistent-type-imports': 'error',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
+        ],
+      },
+    },
+  ],
 };
