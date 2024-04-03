@@ -4,7 +4,8 @@
   "include-component-in-tag": true,
   "packages": {
     "packages/eslint-config-fuf-base": {},
-    "packages/project-cli-tools": {}
+    "packages/project-cli-tools": {},
+    "packages/vitest-config": {}
   },
   "separate-pull-requests": true
 }
