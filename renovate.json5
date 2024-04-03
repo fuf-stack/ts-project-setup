@@ -39,7 +39,7 @@
 
     // @fuf-stack/project-cli-tools
     {
-      extends: [':semanticCommitScope(@fuf-stack/project-cli-tools)'],
+      extends: [':semanticCommitScope(project-cli-tools)'],
       matchFileNames: ['packages/project-cli-tools/package.json'],
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
