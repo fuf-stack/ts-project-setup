@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "build": "pnpm --filter=\"@fuf-stack/*\" build",
     "commit": "lint-staged && git-cz",
     "dev": "lerna run --parallel dev",
     "fix": "eslint --debug --fix --ext .js --ignore-path .gitignore packages || true && prettier --write \"packages/**/*\"",

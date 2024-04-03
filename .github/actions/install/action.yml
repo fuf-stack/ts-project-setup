@@ -19,3 +19,7 @@ runs:
     - name: Install node_modules
       shell: bash
       run: pnpm install --frozen-lockfile --prefer-offline
+
+    - name: Build packages
+      shell: bash
+      run: pnpm build
