@@ -12,6 +12,6 @@
     "wayou.vscode-todo-highlight",
     "wix.vscode-import-cost",
     "yoavbls.pretty-ts-errors",
-    "zixuanchen.vitest-explorer"
+    "vitest.explorer"
   ]
 }
