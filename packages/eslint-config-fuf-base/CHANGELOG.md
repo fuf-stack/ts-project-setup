@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.4.0...eslint-config-fuf-base-v0.4.1) (2024-04-03)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf-base:** disable rule import/no-extraneous-dependencies for test files ([33923fb](https://github.com/fuf-stack/ts-project-setup/commit/33923fb49c7b99fc71f51bcba36f5c665d882e08))
+
 ## [0.4.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.3.1...eslint-config-fuf-base-v0.4.0) (2024-04-03)
 
 
