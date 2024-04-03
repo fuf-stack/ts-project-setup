@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.3.1...eslint-config-fuf-base-v0.4.0) (2024-04-03)
+
+
+### Features
+
+* **vitest-config:** add inital vitest config package ([d609279](https://github.com/fuf-stack/ts-project-setup/commit/d609279f7d654255ce936cb80de636b6833122ac))
+
 ## [0.3.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.3.0...eslint-config-fuf-base-v0.3.1) (2024-04-02)
 
 
