@@ -13,7 +13,4 @@ install:
 	pnpm env use --global `cat .nvmrc`;
 	pnpm install --ignore-scripts;
 	pnpm husky install;
-
-release:
-	@$(MAKE) install;
-	pnpm release;
+	pnpm --filter="@fuf-stack/*" build;

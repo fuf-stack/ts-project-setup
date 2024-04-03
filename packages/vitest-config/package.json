@@ -5,7 +5,13 @@
   "author": "Hannes Tiede",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
   "license": "MIT",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -16,6 +22,10 @@
   },
   "bugs": {
     "url": "https://github.com/fuf-stack/ts-project-setup/issues"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --build --pretty",
+    "prepack": "pnpm build"
   },
   "dependencies": {
     "@vitest/coverage-istanbul": "1.4.0",

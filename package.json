@@ -5,7 +5,6 @@
     "dev": "lerna run --parallel dev",
     "fix": "eslint --debug --fix --ext .js --ignore-path .gitignore packages || true && prettier --write \"packages/**/*\"",
     "lint": "eslint --debug --ignore-path .gitignore ./packages",
-    "release": "lerna version --conventional-commits",
     "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" FORCE_COLOR=1 vitest --coverage $VITEST_EXTRA_OPTS"
   },
   "devDependencies": {
