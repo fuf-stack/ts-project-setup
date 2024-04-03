@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.3.0...project-cli-tools-v0.3.1) (2024-04-03)
+
+
+### Bug Fixes
+
+* **@fuf-stack/project-cli-tools:** update dependency @lerna-lite/cli to v3.3.2 ([500b233](https://github.com/fuf-stack/ts-project-setup/commit/500b233f57edb4cc6dbcbac5c540163421f1a0d0))
+* **@fuf-stack/project-cli-tools:** update dependency @lerna-lite/version to v3.3.2 ([d713ac7](https://github.com/fuf-stack/ts-project-setup/commit/d713ac7049570a8ae5e77bc7c522c9b391aa9792))
+
 ## [0.3.0](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.2.1...project-cli-tools-v0.3.0) (2024-04-02)
 
 
