@@ -3,6 +3,7 @@ name: release-please
 permissions:
   contents: write
   pull-requests: write
+  repository-projects: read # needed for 'gh pr edit' https://github.com/cli/cli/issues/6274
 
 on:
   push:
@@ -32,3 +33,57 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
         if: steps.release.outputs.releases_created  == 'true'
+
+  # update other conflicting prs after package merge
+  # see: https://github.com/googleapis/release-please/issues/1870#issuecomment-1748390833
+  check-conflicting-prs:
+    runs-on: ubuntu-22.04
+    needs: release-please
+    if: needs.release-please.outputs.releases_created == 'true'
+    outputs:
+      need_rebase: ${{ steps.check-pending-prs.outputs.need_rebase }}
+    steps:
+      - name: Get pending PRs
+        id: check-pending-prs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          pending_prs=$(gh pr list --repo "$REPO" --label "autorelease: pending" --state open --json number --jq '.[].number')
+          need_rebase=""
+
+          if [[ -n "$pending_prs" ]]; then
+            for pr_num in $pending_prs; do
+              echo "Checking pr: $pr_num"
+              mergeable=$(gh pr view --repo "$REPO" "$pr_num" --json mergeable --jq '.mergeable')
+              echo "mergeable status: $mergeable"
+              if [[ "$mergeable" != "MERGEABLE" ]]; then
+                echo "pr: $pr_num is not MERGEABLE."
+                echo "removing 'autorelease: pending' label from pr: $pr_num"
+                gh pr edit --repo "$REPO" "$pr_num" --remove-label "autorelease: pending"
+                need_rebase=true
+              fi
+            done
+          else
+              echo "No pending PRs found."
+              exit 0
+          fi
+
+          if [[ -n "$need_rebase" ]]; then
+            echo "not MERGEABLE status PRs found."
+            echo "need_rebase=$need_rebase"
+            echo "need_rebase=$need_rebase" >> "$GITHUB_OUTPUT"
+          else
+            echo "All pending PRs are MERGEABLE."
+          fi
+
+  release-please-rebase:
+    needs: check-conflicting-prs
+    runs-on: ubuntu-22.04
+    if: needs.check-conflicting-prs.outputs.need_rebase == 'true'
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          command: manifest
