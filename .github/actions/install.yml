@@ -1,0 +1,20 @@
+name: 'pnpm install'
+description: 'Sets up node and installs with pnpm'
+
+runs:
+  using: composite
+  steps:
+    - name: Install pnpm
+      uses: pnpm/action-setup@v3
+      with:
+        version: 8
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: .nvmrc
+        registry-url: https://registry.npmjs.org/
+        cache: pnpm
+
+    - name: Install node_modules
+      run: pnpm install --frozen-lockfile --prefer-offline
