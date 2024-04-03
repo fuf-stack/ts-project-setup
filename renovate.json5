@@ -44,5 +44,13 @@
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
     },
+
+    // @fuf-stack/vitest-config
+    {
+      extends: [':semanticCommitScope(vitest-config)'],
+      matchFileNames: ['packages/vitest-config/package.json'],
+      // prevent multiple 'Lock file maintenance' being created
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+    },
   ],
 }
