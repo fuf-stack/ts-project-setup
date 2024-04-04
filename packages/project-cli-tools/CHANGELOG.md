@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.3.1...project-cli-tools-v0.4.0) (2024-04-04)
+
+
+### Features
+
+* **project-cli-tools:** add nodemon, turbo and wait-on ([45122b5](https://github.com/fuf-stack/ts-project-setup/commit/45122b5c3eb2dc8683916e2a52968b282a24c6fe))
+
 ## [0.3.1](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.3.0...project-cli-tools-v0.3.1) (2024-04-03)
 
 
