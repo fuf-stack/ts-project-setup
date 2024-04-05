@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.4.1...eslint-config-fuf-base-v0.5.0) (2024-04-05)
+
+
+### Features
+
+* **eslint-config-fuf-base:** add tailwind class sort + include prettier config + add tests ([6777d92](https://github.com/fuf-stack/ts-project-setup/commit/6777d92473689ca0dea6b9c6bdb6e44d72ea6a3b))
+
 ## [0.4.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.4.0...eslint-config-fuf-base-v0.4.1) (2024-04-03)
 
 
