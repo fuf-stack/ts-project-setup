@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.5.0...eslint-config-fuf-v0.5.1) (2024-04-05)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** rename package to eslint-config-fuf ([ce85fbd](https://github.com/fuf-stack/ts-project-setup/commit/ce85fbdb432668f925e01d39b38f7fbc2443a902))
+* **eslint-config-fuf:** rename package to eslint-config-fuf ([3576746](https://github.com/fuf-stack/ts-project-setup/commit/35767462f27c99f135c31b99f8c8b1909a0d60e2))
+
 ## [0.5.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-base-v0.4.1...eslint-config-fuf-base-v0.5.0) (2024-04-05)
 
 ### Features
