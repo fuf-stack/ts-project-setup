@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fixes invalid test title 1`] = `
+"import { expect, it } from 'vitest';
+
+it('is a test', () => {
+  expect(true).toBe(true);
+});
+"
+`;

@@ -5,10 +5,19 @@ import { join as pathJoin } from 'path';
 
 import { ESLint } from 'eslint';
 
-const eslint = new ESLint({ fix: true, ignore: false });
+type EslintConfig = 'base.config.js' | 'react.config.js';
 
 /** lints a fixture by file name and return eslint results and fixed content */
-export const lintFixture = async (fixtureName: string) => {
+export const lintFixture = async (
+  fixtureName: string,
+  config: EslintConfig = 'base.config.js',
+) => {
+  const eslint = new ESLint({
+    fix: true,
+    ignore: false,
+    // override config file
+    overrideConfigFile: pathJoin(__dirname, 'configs', config),
+  });
   const filePath = pathJoin(__dirname, 'fixtures', fixtureName);
   const fileContent = readFileSync(filePath, 'utf-8')
     // remove eslint disable comment

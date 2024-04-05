@@ -5,10 +5,11 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb-base',
+    'airbnb',
     'eslint:recommended',
     'plugin:prettier/recommended',
     require.resolve('./fuf/fuf-base.js'),
+    require.resolve('./fuf/fuf-react.js'),
   ],
   plugins: ['import', 'prettier'],
   rules: {},
@@ -22,7 +23,7 @@ module.exports = {
         project: './tsconfig.eslint.json',
       },
       extends: [
-        'airbnb-typescript/base',
+        'airbnb-typescript',
         'plugin:@typescript-eslint/recommended',
         require.resolve('./fuf/fuf-typescript.js'),
       ],
