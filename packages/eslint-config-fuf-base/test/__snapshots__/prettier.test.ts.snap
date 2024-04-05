@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`sorts imports in blocks 1`] = `
+"import type { ReactElement } from 'react';
+
+import fs from 'fs';
+import path from 'path';
+
+import react from 'react';
+
+import thirdParty from 'third-party-module';
+
+import someOtherThing from '@fuf-stack/some-other-thing';
+import something from '@fuf-stack/something';
+
+import absolute from 'src/absolute';
+import alsoAbsolute from 'src/also/absolute';
+
+import relative from '../relative/path';
+
+import jsonFile from './data.json';
+
+import jpeg from './image.jpeg';
+import jpg from './image.jpg';
+import png from './image.png';
+import svg from './image.svg';
+
+import moduleStyles from './Some.module.css';
+
+// INFO: css imports will not be touched
+import 'some-module/style.css';
+"
+`;
+
+exports[`sorts tailwind classes 1`] = `
+"import React from 'react';
+
+const MyButton = ({ children }) => {
+  return (
+    <button className="rounded bg-blue-500 px-4 py-2 text-base text-white">
+      {children}
+    </button>
+  );
+};
+
+export default MyButton;
+"
+`;
