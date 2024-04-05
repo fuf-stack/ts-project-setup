@@ -1,6 +1,6 @@
 module.exports = {
-  // eslint-config-fuf-base
-  'packages/eslint-config-fuf-base/**/*.{ts}': [
+  // eslint-config-fuf
+  'packages/eslint-config-fuf/**/*.{ts}': [
     'eslint',
     'vitest related --run',
   ],

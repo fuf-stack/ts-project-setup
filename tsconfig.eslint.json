@@ -9,7 +9,7 @@
     "./**/*.ts",
     "./**/*.tsx",
     ".eslintrc.js",
-    "packages/eslint-config-fuf-base/index.js",
+    "packages/eslint-config-fuf/index.js",
     "prettier.config.js",
     "vitest.config.ts",
     "vitest.workspace.ts"

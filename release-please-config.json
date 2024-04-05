@@ -3,7 +3,7 @@
   "release-type": "node",
   "include-component-in-tag": true,
   "packages": {
-    "packages/eslint-config-fuf-base": {},
+    "packages/eslint-config-fuf": {},
     "packages/project-cli-tools": {},
     "packages/vitest-config": {}
   },

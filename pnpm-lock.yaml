@@ -8,9 +8,9 @@ importers:
 
   .:
     devDependencies:
-      '@fuf-stack/eslint-config-fuf-base':
+      '@fuf-stack/eslint-config-fuf':
         specifier: workspace:*
-        version: link:packages/eslint-config-fuf-base
+        version: link:packages/eslint-config-fuf
       '@fuf-stack/project-cli-tools':
         specifier: workspace:*
         version: link:packages/project-cli-tools
@@ -27,7 +27,7 @@ importers:
         specifier: 5.4.4
         version: 5.4.4
 
-  packages/eslint-config-fuf-base:
+  packages/eslint-config-fuf:
     dependencies:
       '@babel/eslint-parser':
         specifier: 7.24.1

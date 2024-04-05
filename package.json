@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@types/node": "20.12.4",
-    "@fuf-stack/eslint-config-fuf-base": "workspace:*",
+    "@fuf-stack/eslint-config-fuf": "workspace:*",
     "@fuf-stack/project-cli-tools": "workspace:*",
     "@fuf-stack/vitest-config": "workspace:*",
     "ts-node": "10.9.2",

@@ -29,10 +29,10 @@
      * renovate config packages
      ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-    // @fuf-stack/eslint-config-fuf-base
+    // @fuf-stack/eslint-config-fuf
     {
-      extends: [':semanticCommitScope(eslint-config-fuf-base)'],
-      matchFileNames: ['packages/eslint-config-fuf-base/package.json'],
+      extends: [':semanticCommitScope(eslint-config-fuf)'],
+      matchFileNames: ['packages/eslint-config-fuf/package.json'],
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
     },
