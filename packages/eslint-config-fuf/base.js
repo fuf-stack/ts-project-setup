@@ -59,17 +59,22 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
       ],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/no-empty-interface': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/ban-types': 'warn',
-        'no-empty-function': 'off',
-        '@typescript-eslint/no-empty-function': 'off',
-        camelcase: 'off',
+
         '@typescript-eslint/camelcase': 'off',
-        'no-use-before-define': 'off',
+        camelcase: 'off',
+
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/indent': 'warn',
+        '@typescript-eslint/no-empty-interface': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+
+        '@typescript-eslint/no-empty-function': 'off',
+        'no-empty-function': 'off',
+
         '@typescript-eslint/no-use-before-define': 'off',
+        'no-use-before-define': 'off',
 
         // use separate type imports
         '@typescript-eslint/consistent-type-imports': 'error',
