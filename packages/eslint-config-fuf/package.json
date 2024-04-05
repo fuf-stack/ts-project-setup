@@ -1,6 +1,6 @@
 {
   "name": "@fuf-stack/eslint-config-fuf",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "fuf base eslint config for typescript",
   "author": "Hannes Tiede",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
