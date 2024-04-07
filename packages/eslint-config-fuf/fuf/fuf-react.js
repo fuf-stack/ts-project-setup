@@ -9,5 +9,9 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+
+    // define defaultProps as ts defaults in function components
+    // see: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md#rule-options
+    'react/require-default-props': ['warn', { functions: 'defaultArguments' }],
   },
 };
