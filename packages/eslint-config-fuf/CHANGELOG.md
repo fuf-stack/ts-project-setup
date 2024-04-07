@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.7.1...eslint-config-fuf-v0.7.2) (2024-04-07)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** add airbnb/hooks ([41678f1](https://github.com/fuf-stack/ts-project-setup/commit/41678f195bf9998dfaf574247936b798d9795e6f))
+* **eslint-config-fuf:** add react default arg rule ([93149f6](https://github.com/fuf-stack/ts-project-setup/commit/93149f602995df0f83674fbb7e5e78121fee1fdd))
+
 ## [0.7.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.7.0...eslint-config-fuf-v0.7.1) (2024-04-07)
 
 
