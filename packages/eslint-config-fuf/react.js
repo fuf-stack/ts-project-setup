@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     'airbnb',
+    'airbnb/hooks',
     'eslint:recommended',
     'plugin:prettier/recommended',
     require.resolve('./fuf/fuf-base.js'),
