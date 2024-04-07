@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.0...project-cli-tools-v0.4.1) (2024-04-05)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency turbo to v1.13.2 ([26e56f2](https://github.com/fuf-stack/ts-project-setup/commit/26e56f2bd08215437e140084ecba196f097b5fd4))
+
 ## [0.4.0](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.3.1...project-cli-tools-v0.4.0) (2024-04-04)
 
 
