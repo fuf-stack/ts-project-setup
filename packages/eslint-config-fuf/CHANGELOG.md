@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.6.0...eslint-config-fuf-v0.7.0) (2024-04-05)
+
+
+### Features
+
+* **eslint-config-fuf:** add react config ([4348daa](https://github.com/fuf-stack/ts-project-setup/commit/4348daa696062f98973425fe875d813cd38b21a6))
+
 ## [0.6.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.5.2...eslint-config-fuf-v0.6.0) (2024-04-05)
 
 
