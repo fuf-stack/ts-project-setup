@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.7.0...eslint-config-fuf-v0.7.1) (2024-04-07)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint-plugin-jsx-a11y to v6.8.0 ([7df1923](https://github.com/fuf-stack/ts-project-setup/commit/7df192380831e8b3f9402a967dbe3c6f7218f1ea))
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.34.1 ([8725698](https://github.com/fuf-stack/ts-project-setup/commit/8725698c49f622e4f5aab7dd8bc88e67ba243fae))
+* **eslint-config-fuf:** update dependency eslint-plugin-react-hooks to v4.6.0 ([d5decf8](https://github.com/fuf-stack/ts-project-setup/commit/d5decf89c4721fb2c0e5f785e1c82a3f5960638e))
+
 ## [0.7.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.6.0...eslint-config-fuf-v0.7.0) (2024-04-05)
 
 
