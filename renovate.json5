@@ -4,13 +4,13 @@
   extends: [
     'config:base',
     'default:automergeDigest',
-    'default:automergePatch',
+    'default:automergeMinor',
     'default:combinePatchMinorReleases',
     'default:dependencyDashboard',
     'default:docker',
     'default:enableVulnerabilityAlerts',
     'default:maintainLockFilesWeekly',
-    'default:prHourlyLimit2',
+    'default:prHourlyLimit4',
   ],
   ignorePaths: ['/node_modules/'],
   // only rebase merge requests when they become conflicted
