@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.7.2...eslint-config-fuf-v0.8.0) (2024-04-08)
+
+
+### Features
+
+* **eslint-config-fuf:** add support for astro and php + add tests for prettier format ([7d0315c](https://github.com/fuf-stack/ts-project-setup/commit/7d0315cefc7e2d6ef37adf73d1a2823a2bd05907))
+
 ## [0.7.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.7.1...eslint-config-fuf-v0.7.2) (2024-04-07)
 
 
