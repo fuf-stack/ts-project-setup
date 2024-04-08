@@ -1,5 +1,191 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`formats astro components 1`] = `
+"---
+import Button from './Button.astro';
+---
+
+<div>
+  <Button title="Button 1" />
+  <Button title="Button 2" />
+  <Button title="Button 3" />
+</div>
+"
+`;
+
+exports[`formats css 1`] = `
+"@media (max-width: 480px) {
+  .bd-examples {
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+
+  .bd-examples > [class^='col-'] {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+"
+`;
+
+exports[`formats graphql 1`] = `
+"query Browse(
+  $offset: Int
+  $limit: Int
+  $categories: [String!]
+  $search: String
+) {
+  browse(
+    limit: $limit
+    offset: $offset
+    categories: $categories
+    search: $search
+  ) {
+    total
+    results {
+      title
+      price
+    }
+  }
+}
+"
+`;
+
+exports[`formats html 1`] = `
+"<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html class="no-js mY-ClAsS">
+  <head>
+    <meta charset="utf-8" />
+    <title>My tITlE</title>
+    <meta name="description" content="My CoNtEnT" />
+  </head>
+  <body>
+    <p>
+      Hello world!<br />
+      This is HTML5 Boilerplate.
+    </p>
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>
+"
+`;
+
+exports[`formats json 1`] = `
+"// prettier-ignore
+{"allOn": "Single", "Line": "example",
+"noSpace":true,
+  "quote": {
+    'singleQuote': 'example',
+                  "indented": true,
+  },
+  "phoneNumbers": [
+    {"type": "home",
+      "number": "212 555-1234"},
+    {"type": "office",
+      "trailing": "commas by accident"},
+  ],
+}
+"
+`;
+
+exports[`formats markdown 1`] = `
+"# Header
+
+_Look,_ code blocks are formatted _too!_
+
+\`\`\`js
+function identity(x) {
+  return x;
+}
+\`\`\`
+
+| Pilot    | Airport | Hours |
+| -------- | :-----: | ----: |
+| John Doe |   SKG   |  1338 |
+| Jane Roe |   JFK   |   314 |
+
+---
+
+- List
+- with a [link] (/to/somewhere)
+- and [another one]
+
+  [another one]: http://example.com 'Example title'
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Curabitur consectetur maximus risus, sed maximus tellus tincidunt et.
+"
+`;
+
+exports[`formats php code 1`] = `
+"<?php
+
+array_map(
+    function ($arg1, $arg2) use ($var1, $var2) {
+        return $arg1 + $arg2 / ($var + $var2);
+    },
+    [
+        'complex' => 'code',
+        'with' => function () {
+            return 'inconsistent';
+        },
+        'formatting' => 'is',
+        'hard' => 'to',
+        'maintain' => true,
+    ]
+);
+"
+`;
+
+exports[`formats yaml 1`] = `
+"---
+invoice: 34843
+date: 2001-01-23
+bill-to: &id001
+  given: Chris
+  family: Dumars
+  address:
+    lines: |
+      458 Walkman Dr.
+      Suite #292
+    city: Royal Oak
+    state: MI
+    postal: 48046
+ship-to: *id001
+product:
+  - sku: BL394D
+    quantity: 4
+    description: Basketball
+    price: 450.00
+
+  - sku: BL4438H
+    quantity: 1
+    description: Super Hoop
+    price: 2392.00
+
+tax: 251.42
+total: 4443.52
+comments: >
+  Late afternoon is best.
+  Backup contact is Nancy
+  Billsmer @ 338-4338.
+"
+`;
+
 exports[`sorts imports in blocks 1`] = `
 "import type { ReactElement } from 'react';
 

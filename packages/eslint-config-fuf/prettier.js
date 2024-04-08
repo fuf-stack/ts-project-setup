@@ -2,8 +2,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 module.exports = (options) => {
-  const tailwindConfig = options && options.tailwindConfig;
-  const workspacePackagePrefix = options && options.workspacePackagePrefix;
+  const { enableAstro, enablePhp, tailwindConfig, workspacePackagePrefix } =
+    options || {};
 
   /** @type {import('prettier').Config} */
   return {
@@ -15,6 +15,8 @@ module.exports = (options) => {
     // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues/31#issuecomment-1448996271
     plugins: [
       require.resolve('@ianvs/prettier-plugin-sort-imports'),
+      ...(enableAstro ? ['prettier-plugin-astro'] : []),
+      ...(enablePhp ? ['@prettier/plugin-php'] : []),
       // tailwind MUST come last
       ...(tailwindConfig ? ['prettier-plugin-tailwindcss'] : []),
     ],
@@ -60,6 +62,40 @@ module.exports = (options) => {
       '',
     ],
     importOrderSortSpecifiers: true,
+
+    overrides: [
+      // prettier-plugin-astro
+      // see: https://github.com/withastro/prettier-plugin-astro#recommended-configuration
+      ...(enableAstro
+        ? [
+            {
+              files: '*.php',
+              options: {
+                parser: 'php',
+              },
+            },
+          ]
+        : []),
+      // @prettier/plugin-php
+      // see: https://github.com/prettier/plugin-php#install
+      ...(enablePhp
+        ? [
+            {
+              files: '*.php',
+              options: {
+                parser: 'php',
+              },
+            },
+          ]
+        : []),
+
+      {
+        files: '*.typoscript',
+        options: {
+          parser: 'babel',
+        },
+      },
+    ],
 
     // tailwind configuration
     ...(tailwindConfig
