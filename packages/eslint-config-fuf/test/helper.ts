@@ -37,7 +37,11 @@ export const prettierFixFixture = async (fixtureName: string) => {
   const fileContent = readFileSync(filePath, 'utf-8')
     // remove prettier disable comment
     .replace('/* prettier-ignore */', '')
-    .replace('# prettier-ignore', '');
+    .replace('# prettier-ignore', '')
+    .replace('<!-- prettier-ignore -->', '')
+    .replace('<!-- prettier-ignore-start -->', '')
+    .replace('<!-- prettier-ignore-end -->', '');
+
   const config = await prettier.resolveConfig(filePath);
   const fixedContent = await prettier.format(fileContent, {
     filepath: filePath,

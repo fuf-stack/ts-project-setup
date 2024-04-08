@@ -52,8 +52,7 @@ exports[`formats graphql 1`] = `
 `;
 
 exports[`formats html 1`] = `
-"<!-- prettier-ignore -->
-<!DOCTYPE html>
+"<!doctype html>
 <html class="no-js mY-ClAsS">
   <head>
     <meta charset="utf-8" />
