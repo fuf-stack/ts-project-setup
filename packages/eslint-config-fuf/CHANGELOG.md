@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.0...eslint-config-fuf-v0.8.1) (2024-04-09)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** use jsx runtime for react components ([a18ec34](https://github.com/fuf-stack/ts-project-setup/commit/a18ec3449f8c5a8e044005d8220e594fc7085e67))
+
 ## [0.8.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.7.2...eslint-config-fuf-v0.8.0) (2024-04-08)
 
 
