@@ -3,7 +3,7 @@ module.exports = {
   overrides: [
     // test file rules
     {
-      files: ['*.spec.ts', '*.test.ts'],
+      files: ['*.spec.ts', '*.spec.tsx', '*.test.ts', '*.test.tsx'],
       extends: ['plugin:vitest/recommended'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
