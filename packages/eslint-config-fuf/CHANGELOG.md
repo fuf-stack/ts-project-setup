@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.1...eslint-config-fuf-v0.8.2) (2024-04-09)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** add tsx extensions to vitest config ([dc659cc](https://github.com/fuf-stack/ts-project-setup/commit/dc659cc27236ba1944f8a101d50fa339da00752d))
+
 ## [0.8.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.0...eslint-config-fuf-v0.8.1) (2024-04-09)
 
 
