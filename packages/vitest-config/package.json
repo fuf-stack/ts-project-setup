@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fuf-stack/ts-project-setup.git",
-    "directory": "packages/project-cli-tools"
+    "directory": "packages/vitest-config"
   },
   "bugs": {
     "url": "https://github.com/fuf-stack/ts-project-setup/issues"

@@ -9,6 +9,12 @@ module.exports = {
     'airbnb/hooks',
     'eslint:recommended',
     'plugin:prettier/recommended',
+
+    // do not require React to be in scope
+    // see: https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#removing-unused-react-imports
+    'plugin:react/jsx-runtime',
+
+    // add fuf rules
     require.resolve('./fuf/fuf-base.js'),
     require.resolve('./fuf/fuf-react.js'),
   ],

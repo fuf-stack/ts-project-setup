@@ -1,4 +1,7 @@
 {
-  "references": [{ "path": "packages/vitest-config" }],
+  "references": [
+    { "path": "packages/eslint-config-fuf/test/fixtures" },
+    { "path": "packages/vitest-config" }
+  ],
   "files": []
 }

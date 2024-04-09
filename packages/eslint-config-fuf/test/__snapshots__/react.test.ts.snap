@@ -1,9 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`enforces component arrow-function definition 1`] = `
-"import React from 'react';
-
-const Component = () => {
+"const Component = () => {
   return <div />;
 };
 

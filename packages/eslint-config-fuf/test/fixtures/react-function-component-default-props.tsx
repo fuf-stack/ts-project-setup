@@ -1,7 +1,5 @@
 /* eslint-disable */
 
-import React from 'react';
-
 type HelloProps = {
   foo?: string;
 };
