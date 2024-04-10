@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.1.0...vitest-config-v0.1.1) (2024-04-10)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** use jsx runtime for react components ([a18ec34](https://github.com/fuf-stack/ts-project-setup/commit/a18ec3449f8c5a8e044005d8220e594fc7085e67))
+
 ## [0.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.0.1...vitest-config-v0.1.0) (2024-04-03)
 
 
