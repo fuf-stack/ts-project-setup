@@ -28,6 +28,9 @@ module.exports = (options) => {
       '<TYPES>',
       '<TYPES>^[./]',
       '',
+      // vitest imports (in test files)
+      '^vitest',
+      '',
       // node builtin modules
       '<BUILTIN_MODULES>',
       '',

@@ -9,6 +9,7 @@ import relative from '../relative/path';
 import png from './image.png';
 import alsoAbsolute from 'src/also/absolute';
 import someOtherThing from '@fuf-stack/some-other-thing';
+import { describe, expect, it } from 'vitest';
 import jpg from './image.jpg';
 import path from 'path';
 
