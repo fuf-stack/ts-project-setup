@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.2...eslint-config-fuf-v0.8.3) (2024-04-10)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** add vitest to imports sorting ([ba8e6bd](https://github.com/fuf-stack/ts-project-setup/commit/ba8e6bdcf5bc78c70383b23c284b4c36d414238a))
+
 ## [0.8.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.1...eslint-config-fuf-v0.8.2) (2024-04-09)
 
 
