@@ -15,6 +15,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "config",
+    "vitest"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fuf-stack/ts-project-setup.git",
