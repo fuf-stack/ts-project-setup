@@ -8,3 +8,9 @@ exports[`enforces component arrow-function definition 1`] = `
 export default Component;
 "
 `;
+
+exports[`fixes storybook stories 1`] = `
+"export default {};
+export const Primary = {};
+"
+`;

@@ -36,5 +36,15 @@ module.exports = {
       ],
       rules: {},
     },
+
+    // storybook rules
+    {
+      files: ['*.stories.ts', '*.stories.tsx'],
+      extends: [
+        'plugin:storybook/recommended',
+        require.resolve('./fuf/fuf-react-storybook.js'),
+      ],
+      rules: {},
+    },
   ],
 };
