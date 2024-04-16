@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.3...eslint-config-fuf-v0.9.0) (2024-04-15)
+
+
+### Features
+
+* **eslint-config-fuf:** add storybook ruleset ([ba7492c](https://github.com/fuf-stack/ts-project-setup/commit/ba7492ce9dc86a445ae6a16bcca891f6c9663949))
+
 ## [0.8.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.2...eslint-config-fuf-v0.8.3) (2024-04-10)
 
 
