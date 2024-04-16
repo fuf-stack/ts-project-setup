@@ -33,5 +33,10 @@
   "yaml.customTags": [
     // see: https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#configure-your-ide-to-support-reference-tags
     "!reference sequence"
+  ],
+
+  "tailwindCSS.experimental.classRegex": [
+    ["cn\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["tv\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ]
 }

@@ -222,14 +222,30 @@ import 'some-module/style.css';
 exports[`sorts tailwind classes 1`] = `
 "import React from 'react';
 
-const MyButton = ({ children }) => {
+import classNames from 'classnames';
+import tv from 'tailwind-variants';
+
+const cn = classNames;
+
+// tailwind variants
+const _variants = tv({
+  base: 'rounded bg-blue-500 px-4 py-2 text-base text-white',
+});
+
+const MyComponent = () => {
+  const _outsideClassNames = classNames(
+    'rounded bg-blue-500 px-4 py-2 text-base text-white',
+  );
+  const _outsideCn = cn('rounded bg-blue-500 px-4 py-2 text-base text-white');
+
   return (
-    <button className="rounded bg-blue-500 px-4 py-2 text-base text-white">
-      {children}
-    </button>
+    <div className="rounded text-white">
+      <div className={classNames('rounded text-white')}>with classNames</div>
+      <div className={cn('rounded text-white')}>with cn</div>
+    </div>
   );
 };
 
-export default MyButton;
+export default MyComponent;
 "
 `;

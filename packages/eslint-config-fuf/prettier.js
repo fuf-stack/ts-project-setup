@@ -106,7 +106,7 @@ module.exports = (options) => {
           // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
           tailwindConfig,
           // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss#sorting-classes-in-function-calls
-          tailwindFunctions: ['classNames', 'tv'],
+          tailwindFunctions: ['classNames', 'cn', 'tv'],
         }
       : {}),
   };
