@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.0...eslint-config-fuf-v0.9.1) (2024-04-16)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** add support for cn in tailwind ([3ae3047](https://github.com/fuf-stack/ts-project-setup/commit/3ae30478bb15b0e6b1e32966037599413fcc3c94))
+
 ## [0.9.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.8.3...eslint-config-fuf-v0.9.0) (2024-04-15)
 
 
