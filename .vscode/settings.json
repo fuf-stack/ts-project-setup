@@ -35,6 +35,8 @@
     "!reference sequence"
   ],
 
+  // configure tailwind extension to work with tailwind-variants (tv) and cn (short for classNames)
+  // SEE: https://www.tailwind-variants.org/docs/getting-started#intellisense-setup-optional
   "tailwindCSS.experimental.classRegex": [
     ["cn\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["tv\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]

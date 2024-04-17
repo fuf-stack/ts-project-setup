@@ -2,7 +2,7 @@
   dependencyDashboardLabels: ['effort | ongoing', 'scope | dependencies'],
   dependencyDashboardOSVVulnerabilitySummary: 'all',
   extends: [
-    'config:base',
+    'config:recommended',
     'default:automergeDigest',
     'default:automergeMinor',
     'default:combinePatchMinorReleases',
