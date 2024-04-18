@@ -1,6 +1,10 @@
 name: ci
 
-on: [push]
+# only on push in branches
+on:
+  push:
+    branches:
+      - '**'
 
 jobs:
   test:
