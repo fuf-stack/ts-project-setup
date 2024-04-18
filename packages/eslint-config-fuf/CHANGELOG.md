@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.1...eslint-config-fuf-v0.9.2) (2024-04-18)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** revert eslint-plugin-vitest to 0.4.1 ([65c2b49](https://github.com/fuf-stack/ts-project-setup/commit/65c2b49800ce97af912c6998a6919144a2d52d42))
+* **eslint-config-fuf:** update dependency eslint-plugin-vitest to v0.5.3 ([edc98ff](https://github.com/fuf-stack/ts-project-setup/commit/edc98ff0c8958c17deab080aba97aa8e1c91f6c5))
+* **eslint-config-fuf:** update dependency prettier-plugin-tailwindcss to v0.5.14 ([3530a06](https://github.com/fuf-stack/ts-project-setup/commit/3530a06c649c3bf2bfbc74a1444cc68a5343ae59))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.7.0 ([4371ea3](https://github.com/fuf-stack/ts-project-setup/commit/4371ea3b701c7ca62f1cc2913f3be0e7a5a10d1f))
+
 ## [0.9.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.0...eslint-config-fuf-v0.9.1) (2024-04-16)
 
 
