@@ -1,3 +1,6 @@
+// TODO: migrate to v0.5.0 + (eslint 9)
+// see: https://github.com/veritem/eslint-plugin-vitest
+
 module.exports = {
   plugins: ['vitest'],
   overrides: [

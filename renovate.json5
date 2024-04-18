@@ -52,5 +52,16 @@
       // prevent multiple 'Lock file maintenance' being created
       matchUpdateTypes: ['major', 'minor', 'patch'],
     },
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+     * package specific rules
+     ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    // eslint v9 migration needed:
+    //
+    // Make sure you're running eslint v9.0.0 or higher for the latest version of this plugin to work.
+    // The following example is how your eslint.config.js should be setup for this plugin to work for you.
+    //
+    // see: https://github.com/veritem/eslint-plugin-vitest?tab=readme-ov-file#usage
+    { packageNames: ['eslint-plugin-vitest'], allowedVersions: '<0.5.0' },
   ],
 }
