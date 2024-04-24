@@ -15,7 +15,6 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
-  "eslint.alwaysShowStatus": true,
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -35,8 +34,12 @@
     "!reference sequence"
   ],
 
+  // tailwind extension settings
+  // disable tailwind extension validate (because it sometimes hangs and we use prettier-plugin-tailwindcss)
+  // see: https://github.com/tailwindlabs/tailwindcss-intellisense/issues/755#issuecomment-1736458946
+  "tailwindCSS.validate": false,
   // configure tailwind extension to work with tailwind-variants (tv) and cn (short for classNames)
-  // SEE: https://www.tailwind-variants.org/docs/getting-started#intellisense-setup-optional
+  // see: https://www.tailwind-variants.org/docs/getting-started#intellisense-setup-optional
   "tailwindCSS.experimental.classRegex": [
     ["cn\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["tv\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
