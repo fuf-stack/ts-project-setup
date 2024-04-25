@@ -49,7 +49,7 @@ importers:
         version: 8.57.0
       eslint-config-airbnb:
         specifier: 19.0.4
-        version: 19.0.4(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint-plugin-jsx-a11y@6.8.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.57.0))(eslint-plugin-react@7.34.1(eslint@8.57.0))(eslint@8.57.0)
+        version: 19.0.4(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint-plugin-jsx-a11y@6.8.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.1(eslint@8.57.0))(eslint-plugin-react@7.34.1(eslint@8.57.0))(eslint@8.57.0)
       eslint-config-airbnb-base:
         specifier: 15.0.0
         version: 15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint@8.57.0)
@@ -72,8 +72,8 @@ importers:
         specifier: 7.34.1
         version: 7.34.1(eslint@8.57.0)
       eslint-plugin-react-hooks:
-        specifier: 4.6.0
-        version: 4.6.0(eslint@8.57.0)
+        specifier: 4.6.1
+        version: 4.6.1(eslint@8.57.0)
       eslint-plugin-storybook:
         specifier: 0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.4.5)
@@ -100,11 +100,11 @@ importers:
         specifier: 18.2.25
         version: 18.2.25
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.0
+        version: 18.3.0
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.0
+        version: 18.3.0(react@18.3.0)
 
   packages/project-cli-tools:
     dependencies:
@@ -1740,8 +1740,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-hooks@4.6.0:
-    resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
+  eslint-plugin-react-hooks@4.6.1:
+    resolution: {integrity: sha512-Ck77j8hF7l9N4S/rzSLOWEKpn994YH6iwUK8fr9mXIaQvGpQYmOnQLbiue1u5kI5T1y+gdgqosnEAO9NCz0DBg==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
@@ -3153,10 +3153,10 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-dom@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  react-dom@18.3.0:
+    resolution: {integrity: sha512-zaKdLBftQJnvb7FtDIpZtsAIb2MZU087RM8bRDZU8LVCCFYjPTsDZJNFUWPcVz3HFSN1n/caxi0ca4B/aaVQGQ==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.3.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3164,8 +3164,8 @@ packages:
   react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  react@18.3.0:
+    resolution: {integrity: sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==}
     engines: {node: '>=0.10.0'}
 
   read-pkg-up@10.1.0:
@@ -3301,8 +3301,8 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
-  scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+  scheduler@0.23.1:
+    resolution: {integrity: sha512-5GKS5JGfiah1O38Vfa9srZE4s3wdHbwjlCrvIookrg2FO9aIwKLOJXuJQFlEfNcVSOXuaL2hzDeY20uVXcUtrw==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -5758,14 +5758,14 @@ snapshots:
     transitivePeerDependencies:
       - eslint-plugin-import
 
-  eslint-config-airbnb@19.0.4(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint-plugin-jsx-a11y@6.8.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.57.0))(eslint-plugin-react@7.34.1(eslint@8.57.0))(eslint@8.57.0):
+  eslint-config-airbnb@19.0.4(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint-plugin-jsx-a11y@6.8.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.1(eslint@8.57.0))(eslint-plugin-react@7.34.1(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
       eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint@8.57.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
       eslint-plugin-react: 7.34.1(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
+      eslint-plugin-react-hooks: 4.6.1(eslint@8.57.0)
       object.assign: 4.1.5
       object.entries: 1.1.8
 
@@ -5848,7 +5848,7 @@ snapshots:
       '@types/eslint': 8.56.10
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
 
-  eslint-plugin-react-hooks@4.6.0(eslint@8.57.0):
+  eslint-plugin-react-hooks@4.6.1(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
 
@@ -7302,17 +7302,17 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@18.2.0(react@18.2.0):
+  react-dom@18.3.0(react@18.3.0):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
+      react: 18.3.0
+      scheduler: 0.23.1
 
   react-is@16.13.1: {}
 
   react-is@18.2.0: {}
 
-  react@18.2.0:
+  react@18.3.0:
     dependencies:
       loose-envify: 1.4.0
 
@@ -7479,7 +7479,7 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
-  scheduler@0.23.0:
+  scheduler@0.23.1:
     dependencies:
       loose-envify: 1.4.0
 
