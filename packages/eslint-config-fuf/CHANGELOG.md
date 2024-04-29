@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.2...eslint-config-fuf-v0.9.3) (2024-04-29)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** allow props spreading in stories ([e7db6e3](https://github.com/fuf-stack/ts-project-setup/commit/e7db6e378b403d1a68ac003bdae410cf9b11c3f0))
+* **eslint-config-fuf:** update react monorepo ([b2297eb](https://github.com/fuf-stack/ts-project-setup/commit/b2297eb9c1a724e42b40a259c0a0d4fb9c05c437))
+* **eslint-config-fuf:** update react monorepo ([afa5600](https://github.com/fuf-stack/ts-project-setup/commit/afa5600193f90eddd72ad6d898d6782750188cbd))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.7.1 ([b1cfb8b](https://github.com/fuf-stack/ts-project-setup/commit/b1cfb8b14f947cab09872b9cf0890a9a0417d4ea))
+* **eslint-config-fuf:** use prettier for indentation fix ([2899b0e](https://github.com/fuf-stack/ts-project-setup/commit/2899b0e272ec550d545196cfef4826bde970869a))
+
 ## [0.9.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.1...eslint-config-fuf-v0.9.2) (2024-04-18)
 
 
