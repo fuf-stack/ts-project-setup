@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.2...project-cli-tools-v0.4.3) (2024-04-29)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency @commitlint/cli to v19.3.0 ([0a901c7](https://github.com/fuf-stack/ts-project-setup/commit/0a901c73941528382c7071462a99a12329033135))
+* **project-cli-tools:** update dependency turbo to v1.13.3 ([9258321](https://github.com/fuf-stack/ts-project-setup/commit/92583216950c492cef93c46a648f0ecd9060f4be))
+
 ## [0.4.2](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.1...project-cli-tools-v0.4.2) (2024-04-18)
 
 
