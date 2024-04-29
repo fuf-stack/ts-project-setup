@@ -2,6 +2,11 @@ import { expect, it } from 'vitest';
 
 import { lintFixture, prettierFixFixture } from './helper';
 
+it('enforces indentation', async () => {
+  const { fixedContent } = await lintFixture('prettier-indentation.ts');
+  expect(fixedContent).toMatchSnapshot();
+});
+
 it('formats astro components', async () => {
   const { fixedContent } = await prettierFixFixture(
     'prettier-astro-format.astro',

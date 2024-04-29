@@ -1,5 +1,20 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`enforces indentation 1`] = `
+"// indent types
+type SomeTypeMagic = DoSomeTypeMagicThatIsVeryComplicatedSoItHasToBreak<
+  [TypeMagicInputType]
+>;
+
+// indent ternary
+const createdAt = active
+  ? // set active data to actual date
+    parseDate(data.createdAt).toISOString()
+  : // set inactive data to end of month
+    parseDate(data.createdAt).endOf('month').toISOString();
+"
+`;
+
 exports[`formats astro components 1`] = `
 "---
 import Button from './Button.astro';
