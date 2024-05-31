@@ -24,6 +24,16 @@ module.exports = {
 
     // use separate type imports
     '@typescript-eslint/consistent-type-imports': 'error',
+
+    // allow unused variables with _ prefix
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: ['function', 'variable'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+      },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },

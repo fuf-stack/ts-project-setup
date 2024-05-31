@@ -6,3 +6,11 @@ const test = 1;
 console.log(test);
 "
 `;
+
+exports[`unused variables with leading underscore should be allowed 1`] = `
+"// unused variables with underscores are allowed
+const _unused = 'I am unused';
+
+const _alsoUnused = 'Me too';
+"
+`;
