@@ -30,8 +30,8 @@ importers:
   packages/eslint-config-fuf:
     dependencies:
       '@babel/eslint-parser':
-        specifier: 7.24.6
-        version: 7.24.6(@babel/core@7.24.6)(eslint@8.57.0)
+        specifier: 7.24.7
+        version: 7.24.7(@babel/core@7.24.6)(eslint@8.57.0)
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.2.1
         version: 4.2.1(prettier@3.3.0)
@@ -172,8 +172,8 @@ packages:
     resolution: {integrity: sha512-qAHSfAdVyFmIvl0VHELib8xar7ONuSHrE2hLnsaWkYNTI68dmi1x8GYDhJjMI/e7XWal9QBlZkwbOnkcw7Z8gQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/eslint-parser@7.24.6':
-    resolution: {integrity: sha512-Q1BfQX42zXHx732PLW0w4+Y3wJjoZKEMaatFUEAmQ7Z+jCXxinzeqX9bvv2Q8xNPes/H6F0I23oGkcgjaItmLw==}
+  '@babel/eslint-parser@7.24.7':
+    resolution: {integrity: sha512-SO5E3bVxDuxyNxM5agFv480YA2HO6ohZbGxbazZdIk3KQOPOGVNw6q78I9/lbviIf95eq6tPozeYnJLbjnC8IA==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
@@ -3960,7 +3960,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/eslint-parser@7.24.6(@babel/core@7.24.6)(eslint@8.57.0)':
+  '@babel/eslint-parser@7.24.7(@babel/core@7.24.6)(eslint@8.57.0)':
     dependencies:
       '@babel/core': 7.24.6
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
