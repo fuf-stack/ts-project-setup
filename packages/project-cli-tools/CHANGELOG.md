@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.5](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.4...project-cli-tools-v0.4.5) (2024-06-10)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.5.0 ([ac4ff3a](https://github.com/fuf-stack/ts-project-setup/commit/ac4ff3a2502ec8d47aacb6299f6295dcdf107757))
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.5.1 ([eff11a3](https://github.com/fuf-stack/ts-project-setup/commit/eff11a360cf4046b88381dc2bf5365d5c8ccf90d))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.5.0 ([f165167](https://github.com/fuf-stack/ts-project-setup/commit/f16516737819b85ea0ad8758e5c76afe51eb4de8))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.5.1 ([648b7be](https://github.com/fuf-stack/ts-project-setup/commit/648b7bea1136cbf53491cf4f29b94faade8bcf53))
+* **project-cli-tools:** update dependency lint-staged to v15.2.4 ([cb4c207](https://github.com/fuf-stack/ts-project-setup/commit/cb4c207dc3fea86dda9bedc606a38ecfabf23b16))
+* **project-cli-tools:** update dependency lint-staged to v15.2.5 ([5c04d02](https://github.com/fuf-stack/ts-project-setup/commit/5c04d02bf9520963657c47942042c602511f39b9))
+* **project-cli-tools:** update dependency nodemon to v3.1.1 ([c07c3b3](https://github.com/fuf-stack/ts-project-setup/commit/c07c3b380a8c32e87389eb21efc9d852ed8cd26c))
+* **project-cli-tools:** update dependency nodemon to v3.1.2 ([f792c03](https://github.com/fuf-stack/ts-project-setup/commit/f792c03354fd4704e9ad313cf0a43aa9aa2c5057))
+* **project-cli-tools:** update dependency nodemon to v3.1.3 ([f1223a0](https://github.com/fuf-stack/ts-project-setup/commit/f1223a0a276f0f90e0a0fa482c1b8c9f32daaeed))
+* **project-cli-tools:** update dependency turbo to v1.13.4 ([39411e0](https://github.com/fuf-stack/ts-project-setup/commit/39411e0aead19b996c397194c4ef0395af33974d))
+
 ## [0.4.4](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.3...project-cli-tools-v0.4.4) (2024-05-20)
 
 
