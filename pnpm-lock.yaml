@@ -119,10 +119,10 @@ importers:
         version: 19.1.0
       '@lerna-lite/cli':
         specifier: 3.5.1
-        version: 3.5.1(@lerna-lite/version@3.5.1(typescript@5.4.5))(typescript@5.4.5)
+        version: 3.5.1(@lerna-lite/version@3.5.2(typescript@5.4.5))(typescript@5.4.5)
       '@lerna-lite/version':
-        specifier: 3.5.1
-        version: 3.5.1(typescript@5.4.5)
+        specifier: 3.5.2
+        version: 3.5.2(typescript@5.4.5)
       commitizen:
         specifier: 4.3.0
         version: 4.3.0(@types/node@20.14.2)(typescript@5.4.5)
@@ -597,8 +597,8 @@ packages:
     resolution: {integrity: sha512-N7p9ByH4OE/UaWUzz7BL51pnkNxU4tQetEMbn/4QFTh0EfFYP4OXF3zq2Y5Egs8l1Mx/iso9Ly68VHaE8aKPeQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
-  '@lerna-lite/version@3.5.1':
-    resolution: {integrity: sha512-IRRgPkWvitN+6bH/SUUCCnW8k9+O+8eZH6WmE6g+wXL7XCnG7EyeNs6RMGbTIQkYJ+CZNbSn7OTzVxr2udFigw==}
+  '@lerna-lite/version@3.5.2':
+    resolution: {integrity: sha512-SEAwfox4jgYeEJI+DLjwSRP7qI2j5SUz902v+jjhBJkIxJwE+GDNNmH+Iih3W7HOK8La05CbtFvEpxUODGFtlA==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
   '@ljharb/through@2.3.13':
@@ -4367,7 +4367,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@lerna-lite/cli@3.5.1(@lerna-lite/version@3.5.1(typescript@5.4.5))(typescript@5.4.5)':
+  '@lerna-lite/cli@3.5.1(@lerna-lite/version@3.5.2(typescript@5.4.5))(typescript@5.4.5)':
     dependencies:
       '@lerna-lite/core': 3.5.1(typescript@5.4.5)
       '@lerna-lite/init': 3.5.1(typescript@5.4.5)
@@ -4378,7 +4378,7 @@ snapshots:
       npmlog: 7.0.1
       yargs: 17.7.2
     optionalDependencies:
-      '@lerna-lite/version': 3.5.1(typescript@5.4.5)
+      '@lerna-lite/version': 3.5.2(typescript@5.4.5)
     transitivePeerDependencies:
       - babel-plugin-macros
       - bluebird
@@ -4431,9 +4431,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/version@3.5.1(typescript@5.4.5)':
+  '@lerna-lite/version@3.5.2(typescript@5.4.5)':
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/version@3.5.1(typescript@5.4.5))(typescript@5.4.5)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/version@3.5.2(typescript@5.4.5))(typescript@5.4.5)
       '@lerna-lite/core': 3.5.1(typescript@5.4.5)
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 20.1.1
