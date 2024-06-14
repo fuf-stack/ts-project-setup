@@ -237,10 +237,7 @@ import 'some-module/style.css';
 exports[`sorts tailwind classes 1`] = `
 "import React from 'react';
 
-import classNames from 'classnames';
-import tv from 'tailwind-variants';
-
-const cn = classNames;
+import { cn, tv } from '@fuf-stack/pixel-utils';
 
 // tailwind variants
 const _variants = tv({
@@ -248,19 +245,34 @@ const _variants = tv({
 });
 
 const MyComponent = () => {
-  const _outsideClassNames = classNames(
-    'rounded bg-blue-500 px-4 py-2 text-base text-white',
-  );
   const _outsideCn = cn('rounded bg-blue-500 px-4 py-2 text-base text-white');
 
   return (
     <div className="rounded text-white">
-      <div className={classNames('rounded text-white')}>with classNames</div>
       <div className={cn('rounded text-white')}>with cn</div>
     </div>
   );
 };
 
 export default MyComponent;
+"
+`;
+
+exports[`sorts tailwind classes in astro components 1`] = `
+"---
+import { cn, tv } from '@fuf-stack/pixel-utils';
+
+// tailwind variants
+const _variants = tv({
+  base: 'rounded bg-blue-500 px-4 py-2 text-base text-white',
+});
+
+const _outsideCn = cn('rounded bg-blue-500 px-4 py-2 text-base text-white');
+---
+
+<div class="rounded text-white">
+  <div class:list={['rounded text-white']}>with class:list</div>
+  <div class={cn('rounded text-white')}>with cn</div>
+</div>
 "
 `;

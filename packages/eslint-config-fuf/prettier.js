@@ -72,9 +72,9 @@ module.exports = (options) => {
       ...(enableAstro
         ? [
             {
-              files: '*.php',
+              files: '*.astro',
               options: {
-                parser: 'php',
+                parser: 'astro',
               },
             },
           ]

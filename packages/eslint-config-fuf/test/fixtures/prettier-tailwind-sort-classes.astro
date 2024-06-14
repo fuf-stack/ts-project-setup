@@ -1,0 +1,14 @@
+---
+import { cn, tv } from '@fuf-stack/pixel-utils';
+
+// tailwind variants
+const _variants = tv({
+  base: 'px-4 bg-blue-500 text-base rounded text-white py-2'
+});
+
+const _outsideCn = cn('px-4 bg-blue-500 text-base rounded text-white py-2');
+---
+<div class="text-white rounded">
+  <div class:list={['text-white rounded']}>with class:list</div>
+  <div class={cn('text-white rounded')}>with cn</div>
+</div>

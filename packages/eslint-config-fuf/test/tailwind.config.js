@@ -1,3 +1,3 @@
 module.exports = {
-  content: ['./fixtures/**/*.{html,js,tsx}'],
+  content: ['./fixtures/**/*.{astro,html,js,tsx}'],
 };

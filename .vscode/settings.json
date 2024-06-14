@@ -15,6 +15,14 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
+
+  // astro (we disable this in this project, projects using astro should have these lines)
+  // see: https://github.com/withastro/prettier-plugin-astro?tab=readme-ov-file#formatting-with-the-vs-code-prettier-extension-directly
+  // "prettier.documentSelectors": ["**/*.astro"],
+  // "[astro]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -33,6 +41,9 @@
     // see: https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#configure-your-ide-to-support-reference-tags
     "!reference sequence"
   ],
+
+  // cSpell extension settings
+  "cSpell.words": ["astro"],
 
   // tailwind extension settings
   // disable tailwind extension validate (because it sometimes hangs and we use prettier-plugin-tailwindcss)
