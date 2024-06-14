@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.8...eslint-config-fuf-v0.10.0) (2024-06-14)
+
+
+### Features
+
+* **eslint-config-fuf:** add support for astro tailwind class sorting ([1339e70](https://github.com/fuf-stack/ts-project-setup/commit/1339e70ca8195cb5aaeb2d5c5b10944c372bc53a))
+
 ## [0.9.8](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.9.7...eslint-config-fuf-v0.9.8) (2024-06-14)
 
 
