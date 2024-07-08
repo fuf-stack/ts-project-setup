@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.1...eslint-config-fuf-v0.10.2) (2024-07-08)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @ianvs/prettier-plugin-sort-imports to v4.3.0 ([b5ae249](https://github.com/fuf-stack/ts-project-setup/commit/b5ae2499361987d02adda4aebe4e70df96945ba5))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.14.1 ([d080dd4](https://github.com/fuf-stack/ts-project-setup/commit/d080dd4df6e61f2da910fc6395426abf176a7f67))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.15.0 ([8b09373](https://github.com/fuf-stack/ts-project-setup/commit/8b09373d67b7a04a64408b8066ba2f8074c8734c))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.16.0 ([020d3fc](https://github.com/fuf-stack/ts-project-setup/commit/020d3fc2079e4659e41297456d4389b534b2d7b2))
+
 ## [0.10.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.0...eslint-config-fuf-v0.10.1) (2024-06-24)
 
 
