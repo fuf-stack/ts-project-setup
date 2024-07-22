@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.2...eslint-config-fuf-v0.10.3) (2024-07-22)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.24.8 ([03636b7](https://github.com/fuf-stack/ts-project-setup/commit/03636b7b8a0094fec0cb0765cd0c22955bbc13c2))
+* **eslint-config-fuf:** update dependency @ianvs/prettier-plugin-sort-imports to v4.3.1 ([e2e6ace](https://github.com/fuf-stack/ts-project-setup/commit/e2e6ace44dd2ac812f0b8dfe4ca633a13e72f025))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.2.1 ([63acf55](https://github.com/fuf-stack/ts-project-setup/commit/63acf553b8574f54326db1f8855126f04f3a61d9))
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.34.4 ([e8211fb](https://github.com/fuf-stack/ts-project-setup/commit/e8211fb00c88af1f7fb44b1ce13f1944643e0faf))
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.35.0 ([4a7d987](https://github.com/fuf-stack/ts-project-setup/commit/4a7d9870857a4ba7d8e258b4c541553202026af0))
+* **eslint-config-fuf:** update dependency prettier to v3.3.3 ([a7f32d9](https://github.com/fuf-stack/ts-project-setup/commit/a7f32d9ce4995b17350736b3af920f5a07f3d771))
+* **eslint-config-fuf:** update dependency prettier-plugin-astro to v0.14.1 ([5b66451](https://github.com/fuf-stack/ts-project-setup/commit/5b664519e8cfb2430c1daf414da58c37737b45ea))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.16.1 ([80f4045](https://github.com/fuf-stack/ts-project-setup/commit/80f40452fb2c038a9e7de6e66edac1c50407441b))
+
 ## [0.10.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.1...eslint-config-fuf-v0.10.2) (2024-07-08)
 
 
