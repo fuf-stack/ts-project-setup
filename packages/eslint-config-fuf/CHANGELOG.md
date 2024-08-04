@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.3...eslint-config-fuf-v0.10.4) (2024-08-04)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.25.0 ([a912944](https://github.com/fuf-stack/ts-project-setup/commit/a912944ad774bc3159c49aecffa94345c7210e76))
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.25.1 ([9e49d51](https://github.com/fuf-stack/ts-project-setup/commit/9e49d51578808cf25f86a8c049106a6fc5db518d))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.17.0 ([6779eb2](https://github.com/fuf-stack/ts-project-setup/commit/6779eb2dfb153f54bd8e970c7072182dafce09f8))
+* **eslint-config-fuf:** update typescript-eslint monorepo to v7.18.0 ([77f4373](https://github.com/fuf-stack/ts-project-setup/commit/77f43731983247b1d8a7c274f8e6e81d9257e3a0))
+
 ## [0.10.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.2...eslint-config-fuf-v0.10.3) (2024-07-22)
 
 
