@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.8](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.7...project-cli-tools-v0.4.8) (2024-08-04)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.6.0 ([d601b6d](https://github.com/fuf-stack/ts-project-setup/commit/d601b6d959a26cf44e5fec5cdb88417128c34ae1))
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.7.0 ([3a333d4](https://github.com/fuf-stack/ts-project-setup/commit/3a333d4c4091363280ab2422a2ff75b610e9d543))
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.7.1 ([e275230](https://github.com/fuf-stack/ts-project-setup/commit/e2752307ea32d47bdfa5d448edcf052356a16486))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.6.0 ([181cab2](https://github.com/fuf-stack/ts-project-setup/commit/181cab215c03bc07346dde1c8ee6a939dcc07b47))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.7.0 ([7269da1](https://github.com/fuf-stack/ts-project-setup/commit/7269da148736bd0b836a1bac2ea04fe975458966))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.7.1 ([a019379](https://github.com/fuf-stack/ts-project-setup/commit/a019379a81833ca5f581ddc165d915a84e1e650b))
+* **project-cli-tools:** update dependency husky to v9.1.0 ([bd351c0](https://github.com/fuf-stack/ts-project-setup/commit/bd351c00e85467fff4db4cdeb8b109e473470099))
+* **project-cli-tools:** update dependency husky to v9.1.1 ([421ab16](https://github.com/fuf-stack/ts-project-setup/commit/421ab1663a25502cfcc7e305578df67b9c7cffbd))
+* **project-cli-tools:** update dependency husky to v9.1.2 ([bcacb7b](https://github.com/fuf-stack/ts-project-setup/commit/bcacb7bcf28146dc79420a28f9162cb0f64df53e))
+* **project-cli-tools:** update dependency husky to v9.1.3 ([e7c7cd7](https://github.com/fuf-stack/ts-project-setup/commit/e7c7cd70e7c1daed8160f6b391d7a5988a3bf75f))
+* **project-cli-tools:** update dependency husky to v9.1.4 ([8cf02be](https://github.com/fuf-stack/ts-project-setup/commit/8cf02be7d19b60fc1458d06e68201d2a382cd44b))
+* **project-cli-tools:** update dependency lint-staged to v15.2.8 ([7edf53d](https://github.com/fuf-stack/ts-project-setup/commit/7edf53d34b423db7d8dab076adbae9fe53d46c3c))
+
 ## [0.4.7](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.6...project-cli-tools-v0.4.7) (2024-06-24)
 
 
