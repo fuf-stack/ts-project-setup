@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.4...eslint-config-fuf-v0.10.5) (2024-08-19)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency prettier-plugin-tailwindcss to v0.6.6 ([966625b](https://github.com/fuf-stack/ts-project-setup/commit/966625b2e30bfce61f95d57baeb6efb112e1f5bc))
+
 ## [0.10.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.3...eslint-config-fuf-v0.10.4) (2024-08-04)
 
 
