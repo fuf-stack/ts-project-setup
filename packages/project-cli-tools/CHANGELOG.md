@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.10](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.9...project-cli-tools-v0.4.10) (2024-09-09)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency @commitlint/cli to v19.4.1 ([df7e419](https://github.com/fuf-stack/ts-project-setup/commit/df7e4193941315fc0cd4257c2291bce3e446dbaf))
+* **project-cli-tools:** update dependency @commitlint/config-conventional to v19.4.1 ([212cc3a](https://github.com/fuf-stack/ts-project-setup/commit/212cc3a06f10d58ff9a24e20a4d0fdea28a3a9b6))
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.9.0 ([275d0cc](https://github.com/fuf-stack/ts-project-setup/commit/275d0cca96f483ef0d0e8354e443384313e53f84))
+* **project-cli-tools:** update dependency @lerna-lite/cli to v3.9.1 ([424e95e](https://github.com/fuf-stack/ts-project-setup/commit/424e95ee328483b35c00496b871c04a92e04685f))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.9.0 ([31ed13a](https://github.com/fuf-stack/ts-project-setup/commit/31ed13aa5afaa2ad4b6f97eae82e874ae1049138))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.9.1 ([74acd0a](https://github.com/fuf-stack/ts-project-setup/commit/74acd0aab417e222e9e4684f0137550b5f5abaf1))
+* **project-cli-tools:** update dependency husky to v9.1.5 ([d1cd212](https://github.com/fuf-stack/ts-project-setup/commit/d1cd212f9267e0d78a1f8ec581dc5f5a4cbf4694))
+* **project-cli-tools:** update dependency lint-staged to v15.2.10 ([c19402f](https://github.com/fuf-stack/ts-project-setup/commit/c19402f07e6e0d6a1da5b9cefed07465368c583b))
+* **project-cli-tools:** update dependency lint-staged to v15.2.9 ([16d8aa7](https://github.com/fuf-stack/ts-project-setup/commit/16d8aa7975fa29b9861a1f47aef7d34a281e04bd))
+
 ## [0.4.9](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.8...project-cli-tools-v0.4.9) (2024-08-07)
 
 
