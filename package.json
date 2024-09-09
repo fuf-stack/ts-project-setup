@@ -14,7 +14,7 @@
     "@fuf-stack/project-cli-tools": "workspace:*",
     "@fuf-stack/vitest-config": "workspace:*",
     "ts-node": "10.9.2",
-    "typescript": "5.5.4"
+    "typescript": "5.6.2"
   },
   "workspaces": [
     "packages/*"
