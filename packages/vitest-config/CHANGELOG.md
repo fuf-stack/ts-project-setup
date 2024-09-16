@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.10](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.1.9...vitest-config-v0.1.10) (2024-09-16)
+
+
+### Bug Fixes
+
+* **vitest-config:** update vitest monorepo to v2.1.0 ([a027fed](https://github.com/fuf-stack/ts-project-setup/commit/a027feda833557794514c47ee675456ff9888023))
+* **vitest-config:** update vitest monorepo to v2.1.1 ([9caaba2](https://github.com/fuf-stack/ts-project-setup/commit/9caaba20ca7c701544277c36ec822ee92e73e6fa))
+
 ## [0.1.9](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.1.8...vitest-config-v0.1.9) (2024-08-03)
 
 
