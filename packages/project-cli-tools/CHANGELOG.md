@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.11](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.10...project-cli-tools-v0.4.11) (2024-09-16)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v19.5.0 ([a179814](https://github.com/fuf-stack/ts-project-setup/commit/a1798141b46c2b2549e0a700daddb25e0e262de8))
+* **project-cli-tools:** update dependency husky to v9.1.6 ([efed7ea](https://github.com/fuf-stack/ts-project-setup/commit/efed7ea3c3f31dedcf5200ba14e7d74c24ff8e85))
+
 ## [0.4.10](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.9...project-cli-tools-v0.4.10) (2024-09-09)
 
 
