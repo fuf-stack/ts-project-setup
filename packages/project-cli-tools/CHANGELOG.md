@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.12](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.11...project-cli-tools-v0.4.12) (2024-09-23)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency nodemon to v3.1.5 ([18d0227](https://github.com/fuf-stack/ts-project-setup/commit/18d02279b6f1d4570f96c8864a210e14be8aabd3))
+* **project-cli-tools:** update dependency nodemon to v3.1.6 ([83282d7](https://github.com/fuf-stack/ts-project-setup/commit/83282d72843618b6a58784403465de2c2ca51d74))
+* **project-cli-tools:** update dependency nodemon to v3.1.7 ([054ef73](https://github.com/fuf-stack/ts-project-setup/commit/054ef737ac055bc9c36e90c7801aaf0a0db2c5ce))
+
 ## [0.4.11](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.10...project-cli-tools-v0.4.11) (2024-09-16)
 
 
