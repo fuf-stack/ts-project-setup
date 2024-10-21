@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.12](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.11...eslint-config-fuf-v0.10.12) (2024-10-21)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint-plugin-jsx-a11y to v6.10.1 ([7162322](https://github.com/fuf-stack/ts-project-setup/commit/716232238630b28c41ccffa2517df8c1a06aab8b))
+
 ## [0.10.11](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.10...eslint-config-fuf-v0.10.11) (2024-10-16)
 
 
