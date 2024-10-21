@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.13](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.12...project-cli-tools-v0.4.13) (2024-10-21)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency commitizen to v4.3.1 ([305a681](https://github.com/fuf-stack/ts-project-setup/commit/305a6811d18eea1ad085830645e16ba248f5d4f1))
+* **project-cli-tools:** update lerna-lite monorepo to v3.10.0 ([2dba132](https://github.com/fuf-stack/ts-project-setup/commit/2dba132d4de52246976d032cbbe9b6fba7ea3ff4))
+* **project-cli-tools:** update lerna-lite monorepo to v3.9.2 ([a34e637](https://github.com/fuf-stack/ts-project-setup/commit/a34e63718b58bba6d6f0d2e0a1767746f1c4514a))
+* **project-cli-tools:** update lerna-lite monorepo to v3.9.3 ([6799130](https://github.com/fuf-stack/ts-project-setup/commit/67991304122e08dd6fd5289643170ad3b15fe1cf))
+
 ## [0.4.12](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.11...project-cli-tools-v0.4.12) (2024-09-23)
 
 
