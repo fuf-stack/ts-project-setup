@@ -24,7 +24,7 @@
     "@lerna-lite/cli": "3.10.0",
     "@lerna-lite/version": "3.10.0",
     "commitizen": "4.3.1",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "nodemon": "3.1.7",
     "turbo": "1.13.4",
