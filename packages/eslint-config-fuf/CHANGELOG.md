@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.13...eslint-config-fuf-v0.11.0) (2024-11-19)
+
+
+### Features
+
+* **eslint-config-fuf:** add tailwindAdditionalFunctions prettier setting ([65fde1c](https://github.com/fuf-stack/ts-project-setup/commit/65fde1c247e54266f9228bd46b6cef8fe2417bdd))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @ianvs/prettier-plugin-sort-imports to v4.4.0 ([0fb796b](https://github.com/fuf-stack/ts-project-setup/commit/0fb796b5ca3b75859239eede6226a4dca6986fe0))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v0.10.2 ([84060ec](https://github.com/fuf-stack/ts-project-setup/commit/84060ece113597f309e38eb5b01bf0bb412ad611))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v0.11.0 ([d7961e9](https://github.com/fuf-stack/ts-project-setup/commit/d7961e9a25c21386816f4f3d13c9097dfce188ce))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v0.11.1 ([#362](https://github.com/fuf-stack/ts-project-setup/issues/362)) ([396eb48](https://github.com/fuf-stack/ts-project-setup/commit/396eb4878f974eef02691da6b4b3ed5fc0665e03))
+
 ## [0.10.13](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.12...eslint-config-fuf-v0.10.13) (2024-10-29)
 
 
