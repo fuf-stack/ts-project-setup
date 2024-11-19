@@ -8,5 +8,7 @@ module.exports = prettierConfig({
   enableAstro: true,
   enablePhp: true,
   tailwindConfig: 'packages/eslint-config-fuf/test/tailwind.config.js',
+  // INFO: just for testing
+  tailwindAdditionalFunctions: ['additionalTailwindFunction'],
   workspacePackagePrefix: '@fuf-stack',
 });

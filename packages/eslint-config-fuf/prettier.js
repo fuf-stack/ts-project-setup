@@ -2,8 +2,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 module.exports = (options) => {
-  const { enableAstro, enablePhp, tailwindConfig, workspacePackagePrefix } =
-    options || {};
+  const {
+    enableAstro,
+    enablePhp,
+    tailwindConfig,
+    tailwindAdditionalFunctions,
+    workspacePackagePrefix,
+  } = options || {};
 
   /** @type {import('prettier').Config} */
   return {
@@ -106,7 +111,13 @@ module.exports = (options) => {
           // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
           tailwindConfig,
           // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss#sorting-classes-in-function-calls
-          tailwindFunctions: ['classNames', 'cn', 'tv'],
+          tailwindFunctions: [
+            'classNames',
+            'cn',
+            'tv',
+            // additional tailwindAdditionalFunctions from options
+            ...(tailwindAdditionalFunctions || []),
+          ],
         }
       : {}),
   };

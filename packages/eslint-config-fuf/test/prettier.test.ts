@@ -77,3 +77,10 @@ it('sorts tailwind classes in astro components', async () => {
   );
   expect(fixedContent).toMatchSnapshot();
 });
+
+it('sorts tailwind classes in tailwindAdditionalFunctions from prettier.config.js', async () => {
+  const { fixedContent } = await prettierFixFixture(
+    'prettier-tailwind-sort-classes-additional-function.ts',
+  );
+  expect(fixedContent).toMatchSnapshot();
+});

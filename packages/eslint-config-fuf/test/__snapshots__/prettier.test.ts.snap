@@ -276,3 +276,18 @@ const _outsideCn = cn('rounded bg-blue-500 px-4 py-2 text-base text-white');
 </div>
 "
 `;
+
+exports[`sorts tailwind classes in tailwindAdditionalFunctions from prettier.config.js 1`] = `
+"/* eslint-disable */
+
+// see: prettier.config.js
+const additionalTailwindFunction = () => true;
+
+// tailwindFunctions defined in project prettier.config.js
+const config = additionalTailwindFunction({
+  some: { object: 'rounded bg-blue-500 px-4 py-2 text-base text-white' },
+});
+
+export default config;
+"
+`;
