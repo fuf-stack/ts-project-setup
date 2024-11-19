@@ -1,6 +1,6 @@
 {
   "name": "@fuf-stack/project-cli-tools",
-  "version": "0.4.12",
+  "version": "0.4.13",
   "description": "shared cli tools commonly used in a fuf repo",
   "author": "Hannes Tiede",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
@@ -18,13 +18,13 @@
     "url": "https://github.com/fuf-stack/ts-project-setup/issues"
   },
   "dependencies": {
-    "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.5.0",
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
     "@commitlint/config-pnpm-scopes": "19.5.0",
-    "@lerna-lite/cli": "3.9.3",
-    "@lerna-lite/version": "3.9.3",
+    "@lerna-lite/cli": "3.10.0",
+    "@lerna-lite/version": "3.10.0",
     "commitizen": "4.3.1",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "nodemon": "3.1.7",
     "turbo": "1.13.4",

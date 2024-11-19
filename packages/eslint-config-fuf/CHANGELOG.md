@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.13](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.12...eslint-config-fuf-v0.10.13) (2024-10-29)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.25.9 ([726e0e2](https://github.com/fuf-stack/ts-project-setup/commit/726e0e26ff51732277266ef6ce0808e1a53de178))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsx-a11y to v6.10.2 ([f000164](https://github.com/fuf-stack/ts-project-setup/commit/f0001644e305cb936109a9df84c707b02a0c109a))
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.37.2 ([296be70](https://github.com/fuf-stack/ts-project-setup/commit/296be703a4225261121acbeadbfc21d938a9e167))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v0.10.1 ([63acf3a](https://github.com/fuf-stack/ts-project-setup/commit/63acf3ae588847e56d5ea16280a00c5fdd3c05d2))
+
+## [0.10.12](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.11...eslint-config-fuf-v0.10.12) (2024-10-21)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint-plugin-jsx-a11y to v6.10.1 ([7162322](https://github.com/fuf-stack/ts-project-setup/commit/716232238630b28c41ccffa2517df8c1a06aab8b))
+
+## [0.10.11](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.10...eslint-config-fuf-v0.10.11) (2024-10-16)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.25.8 ([a1e4cec](https://github.com/fuf-stack/ts-project-setup/commit/a1e4cecb3f1e849fc2b160f6062ecfc891e12a26))
+* **eslint-config-fuf:** update dependency eslint-plugin-react-hooks to v5 ([089ffe5](https://github.com/fuf-stack/ts-project-setup/commit/089ffe5c2d6d4cd422666ca1afa414e0a0faf5b0))
+
 ## [0.10.10](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.9...eslint-config-fuf-v0.10.10) (2024-10-08)
 
 
