@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.13...project-cli-tools-v1.0.0) (2024-11-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **project-cli-tools:** upgrade turbo to v2
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v19.6.0 ([#363](https://github.com/fuf-stack/ts-project-setup/issues/363)) ([67562c2](https://github.com/fuf-stack/ts-project-setup/commit/67562c25b433eab39360f16e24267e13f2be2557))
+* **project-cli-tools:** update dependency husky to v9.1.7 ([#360](https://github.com/fuf-stack/ts-project-setup/issues/360)) ([55e451f](https://github.com/fuf-stack/ts-project-setup/commit/55e451f528caa82abfb72206b4fc628cc5be015a))
+* **project-cli-tools:** update dependency turbo to v2 ([aeffc9d](https://github.com/fuf-stack/ts-project-setup/commit/aeffc9d2d920275780c3844c76ecbdc9fd31d0e5))
+* **project-cli-tools:** upgrade turbo to v2 ([1039b00](https://github.com/fuf-stack/ts-project-setup/commit/1039b00d815705e623a9bb52219f46fdd55e4dad))
+
 ## [0.4.13](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v0.4.12...project-cli-tools-v0.4.13) (2024-10-21)
 
 
