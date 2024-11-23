@@ -9,7 +9,7 @@
     "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" FORCE_COLOR=1 vitest --coverage $VITEST_EXTRA_OPTS"
   },
   "devDependencies": {
-    "@types/node": "22.9.2",
+    "@types/node": "22.9.3",
     "@fuf-stack/eslint-config-fuf": "workspace:*",
     "@fuf-stack/project-cli-tools": "workspace:*",
     "@fuf-stack/vitest-config": "workspace:*",
