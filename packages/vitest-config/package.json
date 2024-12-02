@@ -1,6 +1,6 @@
 {
   "name": "@fuf-stack/vitest-config",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "default vitest config for a fuf repo",
   "author": "Hannes Tiede",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
