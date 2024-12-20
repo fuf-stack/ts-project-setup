@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.1.13...vitest-config-v1.0.0) (2024-12-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vitest-config:** use v8 for coverage + add coverage path patterns
+
+### Features
+
+* **vitest-config:** use v8 for coverage + add coverage path patterns ([e467dd9](https://github.com/fuf-stack/ts-project-setup/commit/e467dd952120f781899072c2c279c1730c926012))
+
 ## [0.1.13](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.1.12...vitest-config-v0.1.13) (2024-12-02)
 
 
