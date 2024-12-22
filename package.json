@@ -12,6 +12,7 @@
     "@types/node": "22.10.2",
     "@fuf-stack/eslint-config-fuf": "workspace:*",
     "@fuf-stack/project-cli-tools": "workspace:*",
+    "@fuf-stack/typescript-config": "workspace:*",
     "@fuf-stack/vitest-config": "workspace:*",
     "ts-node": "10.9.2",
     "typescript": "5.7.2"

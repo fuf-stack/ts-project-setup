@@ -49,6 +49,7 @@
     "prettier-plugin-tailwindcss": "0.6.9"
   },
   "devDependencies": {
+    "@fuf-stack/typescript-config": "workspace:*",
     "@types/eslint": "8.56.12",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",

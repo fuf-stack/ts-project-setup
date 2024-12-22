@@ -14,6 +14,9 @@ importers:
       '@fuf-stack/project-cli-tools':
         specifier: workspace:*
         version: link:packages/project-cli-tools
+      '@fuf-stack/typescript-config':
+        specifier: workspace:*
+        version: link:packages/typescript-config
       '@fuf-stack/vitest-config':
         specifier: workspace:*
         version: link:packages/vitest-config
@@ -90,6 +93,9 @@ importers:
         specifier: 0.6.9
         version: 0.6.9(@ianvs/prettier-plugin-sort-imports@4.4.0(prettier@3.4.2))(prettier-plugin-astro@0.14.1)(prettier@3.4.2)
     devDependencies:
+      '@fuf-stack/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       '@types/eslint':
         specifier: 8.56.12
         version: 8.56.12
@@ -145,6 +151,8 @@ importers:
         specifier: 8.0.1
         version: 8.0.1
 
+  packages/typescript-config: {}
+
   packages/vitest-config:
     dependencies:
       '@vitest/coverage-v8':
@@ -153,6 +161,10 @@ importers:
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.2)
+    devDependencies:
+      '@fuf-stack/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
 
 packages:
 

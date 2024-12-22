@@ -1,0 +1,23 @@
+// see: https://github.com/vercel/turborepo/blob/main/examples/design-system/packages/typescript-config/base.json
+
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "fuf-base",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "exclude": ["dist", "node_modules"]
+}

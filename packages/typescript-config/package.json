@@ -1,0 +1,28 @@
+{
+  "name": "@fuf-stack/typescript-config",
+  "version": "0.0.0",
+  "description": "typescript configs for a fuf repo",
+  "author": "Hannes Tiede",
+  "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "base.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "config",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuf-stack/ts-project-setup.git",
+    "directory": "packages/typescript-config"
+  },
+  "bugs": {
+    "url": "https://github.com/fuf-stack/ts-project-setup/issues"
+  }
+}
