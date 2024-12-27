@@ -8,7 +8,9 @@
   "type": "module",
   "main": "index.js",
   "files": [
-    "base.json"
+    "base.json",
+    "react-library.json",
+    "react-vite-app.json"
   ],
   "publishConfig": {
     "access": "public"
