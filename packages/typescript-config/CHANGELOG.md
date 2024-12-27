@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.1.2...typescript-config-v0.2.0) (2024-12-27)
+
+
+### Features
+
+* **typescript-config:** add eslint config ([9d8b464](https://github.com/fuf-stack/ts-project-setup/commit/9d8b464dbe48c5f5e6786036e3259df56b4ea686))
+
+
+### Bug Fixes
+
+* **typescript-config:** use ESNext in lib ([cc9676d](https://github.com/fuf-stack/ts-project-setup/commit/cc9676d6d13bfbbd15e75b292a3b2de7df56d915))
+
 ## [0.1.2](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.1.1...typescript-config-v0.1.2) (2024-12-27)
 
 
