@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v1.0.0...vitest-config-v1.1.0) (2024-12-27)
+
+
+### Features
+
+* **typescript-config:** add initial typescript-config package ([946c78c](https://github.com/fuf-stack/ts-project-setup/commit/946c78c78325ef332b9bce1eeae62785958668b5))
+
 ## [1.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v0.1.13...vitest-config-v1.0.0) (2024-12-20)
 
 
