@@ -13,8 +13,8 @@
 
     /* Runtime Environment */
 
-    // Include standard libraries for ES2015, DOM, and DOM Iterables
-    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    // Include latest ECMAScript features, DOM, and DOM Iterables
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     // Use latest ECMAScript module syntax
     "module": "ESNext",
     // Use modern bundler-style module resolution
