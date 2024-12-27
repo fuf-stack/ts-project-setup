@@ -12,6 +12,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **project-cli-tools:** update dependency lint-staged to v15.2.11 ([#392](https://github.com/fuf-stack/ts-project-setup/issues/392)) ([becad32](https://github.com/fuf-stack/ts-project-setup/commit/becad32493def37ae8b8bd7207ad90b29d274935))
 * **project-cli-tools:** update dependency nodemon to v3.1.9 ([#395](https://github.com/fuf-stack/ts-project-setup/issues/395)) ([05c9bc7](https://github.com/fuf-stack/ts-project-setup/commit/05c9bc7f2a1ffe9a8a14fd4af2c1b6ef45bce155))
 
+## [1.0.2](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.1...project-cli-tools-v1.0.2) (2024-12-27)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency @commitlint/cli to v19.6.1 ([#396](https://github.com/fuf-stack/ts-project-setup/issues/396)) ([68ede8f](https://github.com/fuf-stack/ts-project-setup/commit/68ede8f11717a60da7b615431a2e4e71e3b95dd1))
+* **project-cli-tools:** update dependency lint-staged to v15.2.11 ([#392](https://github.com/fuf-stack/ts-project-setup/issues/392)) ([becad32](https://github.com/fuf-stack/ts-project-setup/commit/becad32493def37ae8b8bd7207ad90b29d274935))
+* **project-cli-tools:** update dependency nodemon to v3.1.9 ([#395](https://github.com/fuf-stack/ts-project-setup/issues/395)) ([05c9bc7](https://github.com/fuf-stack/ts-project-setup/commit/05c9bc7f2a1ffe9a8a14fd4af2c1b6ef45bce155))
+
 ## [1.0.1](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.0...project-cli-tools-v1.0.1) (2024-12-02)
 
 
