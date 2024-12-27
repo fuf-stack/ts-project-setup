@@ -1,6 +1,6 @@
 {
   "name": "@fuf-stack/typescript-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "typescript configs for a fuf repo",
   "author": "Hannes Tiede",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
