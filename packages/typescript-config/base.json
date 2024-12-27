@@ -1,23 +1,60 @@
+// see: https://www.shew.dev/monorepos/guardrails/typescript
 // see: https://github.com/vercel/turborepo/blob/main/examples/design-system/packages/typescript-config/base.json
+// see: https://github.com/anthonyshew/maestros/blob/main/tooling/typescript-config/base.json
 
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "fuf-base",
+
   "compilerOptions": {
+    /* Build Configuration */
+
+    // Disable composite project features
     "composite": false,
+    // Enable incremental compilation for faster builds
+    "incremental": true,
+
+    /* Output Configuration */
+
+    // Generate .d.ts files for declarations
     "declaration": true,
+    // Generate sourcemaps for .d.ts files
     "declarationMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    // Don't include source code in sourcemaps
     "inlineSources": false,
-    "isolatedModules": true,
+
+    /* Module Configuration */
+
+    // Use latest ECMAScript module syntax
     "module": "ESNext",
+    // Use modern bundler-style module resolution
     "moduleResolution": "Bundler",
+    // Enable better CommonJS/ES Module interop
+    "esModuleInterop": true,
+    // Ensure files can be transpiled in isolation
+    "isolatedModules": true,
+
+    /* Type Checking */
+
+    // Enable all strict type checking options
+    "strict": true,
+    // Error on expressions with implied 'any' type
+    "noImplicitAny": true,
+    // Ensure consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+
+    /* Development Options */
+
+    // Don't error on unused local variables
     "noUnusedLocals": false,
+    // Don't error on unused parameters
     "noUnusedParameters": false,
+    // Keep console clear in watch mode
     "preserveWatchOutput": true,
-    "skipLibCheck": true,
-    "strict": true
+    // Skip type checking of declaration files
+    "skipLibCheck": true
   },
+
+  // Files to exclude from compilation
   "exclude": ["dist", "node_modules"]
 }

@@ -1,0 +1,47 @@
+// see: https://www.shew.dev/monorepos/guardrails/typescript
+// see: https://github.com/vercel/turborepo/blob/main/examples/design-system/packages/typescript-config/react-app.json
+// see: https://github.com/anthonyshew/maestros/blob/main/tooling/typescript-config/vite.json
+
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "fuf-react-vite-app",
+  "extends": "./base.json",
+  "compilerOptions": {
+    /* Build Configuration */
+
+    // Target ES2020 for modern browser compatibility
+    "target": "ES2020",
+    // Use 'define' property for class fields
+    "useDefineForClassFields": true,
+
+    /* Runtime Environment */
+
+    // Include standard libraries for ES2020, DOM, and DOM Iterables
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // Use latest ECMAScript module syntax
+    "module": "ESNext",
+    // Use modern bundler-style module resolution
+    "moduleResolution": "Bundler",
+
+    // Allow imports of TypeScript files without extension
+    "allowImportingTsExtensions": true,
+    // Enable importing JSON files as modules
+    "resolveJsonModule": true,
+
+    /* React Configuration */
+
+    // Transform JSX syntax directly to React.createElement calls
+    "jsx": "react-jsx",
+
+    /* Type Checking */
+
+    // Enable all strict type checking options
+    "strict": true,
+    // Error on unused local variables
+    "noUnusedLocals": true,
+    // Error on unused parameters
+    "noUnusedParameters": true,
+    // Error on fallthrough cases in switch statements
+    "noFallthroughCasesInSwitch": true
+  }
+}

@@ -1,10 +1,27 @@
+// see: https://www.shew.dev/monorepos/guardrails/typescript
+// see: https://github.com/anthonyshew/maestros/blob/main/tooling/typescript-config/react-library.json
+
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "fuf-react-library",
   "extends": "./base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "lib": ["dom", "ES2015"],
+    /* Build Configuration */
+
+    // Enable incremental compilation for faster builds
+    "incremental": true,
+
+    /* Runtime Environment */
+
+    // Include standard libraries for ES2015, DOM, and DOM Iterables
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    // Use latest ECMAScript module syntax
     "module": "ESNext",
-    "target": "es6"
+    // Use modern bundler-style module resolution
+    "moduleResolution": "Bundler",
+    // Target ES6 for library compatibility
+    "target": "ES6",
+    // Transform JSX syntax directly to React.createElement calls
+    "jsx": "react-jsx"
   }
 }
