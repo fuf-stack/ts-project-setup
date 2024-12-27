@@ -5,7 +5,9 @@
   "packages": {
     "packages/eslint-config-fuf": {},
     "packages/project-cli-tools": {},
-    "packages/typescript-config": {},
+    "packages/typescript-config": {
+      "release-as": "0.1.0"
+    },
     "packages/vitest-config": {}
   },
   "separate-pull-requests": true
