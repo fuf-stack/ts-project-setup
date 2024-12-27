@@ -1,11 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@fuf-stack/typescript-config/base.json",
-  "compilerOptions": {
-    "types": ["@types/node"],
-    "noEmit": true,
-    "allowJs": true
-  },
+  "extends": "@fuf-stack/typescript-config/eslint.json",
   "include": [
     "./**/*.ts",
     "./**/*.tsx",
@@ -14,6 +9,5 @@
     "prettier.config.js",
     "vitest.config.ts",
     "vitest.workspace.ts"
-  ],
-  "references": []
+  ]
 }

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "fuf-eslint",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true
+  }
+
+  // INFO: these (and others) have to be set in project tsconfig.eslint.json
+  // "include": [
+  //   "./**/*.ts",
+  //   "./**/*.tsx",
+  //   ".eslintrc.js",
+  //   "prettier.config.js",
+  //   "vitest.config.ts",
+  //   "vitest.workspace.ts"
+  // ]
+}

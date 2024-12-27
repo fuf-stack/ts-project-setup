@@ -9,6 +9,7 @@
   "main": "index.js",
   "files": [
     "base.json",
+    "eslint.json",
     "react-library.json",
     "react-vite-app.json"
   ],
