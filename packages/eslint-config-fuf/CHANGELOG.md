@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.11.0...eslint-config-fuf-v0.12.0) (2024-12-27)
+
+
+### Features
+
+* **eslint-config-fuf:** add support for ts tailwind config file ([d8cad18](https://github.com/fuf-stack/ts-project-setup/commit/d8cad18f8f913518b6507b1ba9dc7abfdb55ef34))
+* **typescript-config:** add initial typescript-config package ([946c78c](https://github.com/fuf-stack/ts-project-setup/commit/946c78c78325ef332b9bce1eeae62785958668b5))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.37.3 ([#405](https://github.com/fuf-stack/ts-project-setup/issues/405)) ([8de0cae](https://github.com/fuf-stack/ts-project-setup/commit/8de0cae29c9480e8d8e60960eca84a3cd2b944fe))
+* **eslint-config-fuf:** update dependency prettier to v3.4.0 ([#375](https://github.com/fuf-stack/ts-project-setup/issues/375)) ([acaea9b](https://github.com/fuf-stack/ts-project-setup/commit/acaea9bea82ac9ee6c81acef56e9e6968e1b037f))
+* **eslint-config-fuf:** update dependency prettier to v3.4.1 ([#376](https://github.com/fuf-stack/ts-project-setup/issues/376)) ([d517377](https://github.com/fuf-stack/ts-project-setup/commit/d517377e673032f430e2c30a27f3b29140a56f2a))
+* **eslint-config-fuf:** update dependency prettier to v3.4.2 ([#386](https://github.com/fuf-stack/ts-project-setup/issues/386)) ([e937623](https://github.com/fuf-stack/ts-project-setup/commit/e93762369119dcb18c847a9c2f67710f2f4ecc3d))
+* **eslint-config-fuf:** update dependency prettier-plugin-tailwindcss to v0.6.9 ([#365](https://github.com/fuf-stack/ts-project-setup/issues/365)) ([2920ee8](https://github.com/fuf-stack/ts-project-setup/commit/2920ee8eeed3618925529e65b5f30058537efaac))
+
 ## [0.11.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.10.13...eslint-config-fuf-v0.11.0) (2024-11-19)
 
 
