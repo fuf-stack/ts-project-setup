@@ -28,7 +28,7 @@
     "url": "https://github.com/fuf-stack/ts-project-setup/issues"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc --build --pretty",
+    "build": "tsc --build --pretty",
     "prepack": "pnpm build"
   },
   "dependencies": {
