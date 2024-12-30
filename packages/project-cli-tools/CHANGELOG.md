@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.2...project-cli-tools-v1.0.3) (2024-12-30)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency lint-staged to v15.3.0 ([#410](https://github.com/fuf-stack/ts-project-setup/issues/410)) ([9fc4d01](https://github.com/fuf-stack/ts-project-setup/commit/9fc4d01f558383d3a106965a8c77744a4dc8bbdc))
+
 ## [1.0.2](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.1...project-cli-tools-v1.0.2) (2024-12-27)
 
 
