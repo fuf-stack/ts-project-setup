@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v1.1.0...vitest-config-v1.1.1) (2024-12-28)
+
+
+### Bug Fixes
+
+* **vitest-config:** fix build script ([1e651cf](https://github.com/fuf-stack/ts-project-setup/commit/1e651cf1a3e447f72cebe11b8fbbeb633a99a3e3))
+
 ## [1.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v1.0.0...vitest-config-v1.1.0) (2024-12-27)
 
 
