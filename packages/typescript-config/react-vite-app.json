@@ -18,10 +18,6 @@
 
     // Include standard libraries for ES2020, DOM, and DOM Iterables
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    // Use latest ECMAScript module syntax
-    "module": "ESNext",
-    // Use modern bundler-style module resolution
-    "moduleResolution": "Bundler",
 
     // Allow imports of TypeScript files without extension
     "allowImportingTsExtensions": true,

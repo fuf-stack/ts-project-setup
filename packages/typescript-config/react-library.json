@@ -6,19 +6,10 @@
   "display": "fuf-react-library",
   "extends": "./base.json",
   "compilerOptions": {
-    /* Build Configuration */
-
-    // Enable incremental compilation for faster builds
-    "incremental": true,
-
     /* Runtime Environment */
 
     // Include latest ECMAScript features, DOM, and DOM Iterables
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    // Use latest ECMAScript module syntax
-    "module": "ESNext",
-    // Use modern bundler-style module resolution
-    "moduleResolution": "Bundler",
     // Target ES6 for library compatibility
     "target": "ES6",
     // Transform JSX syntax directly to React.createElement calls
