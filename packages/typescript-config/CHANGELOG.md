@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.2.0...typescript-config-v0.3.0) (2025-01-06)
+
+
+### Features
+
+* **typescript-config:** consolidate some settings ([590f12f](https://github.com/fuf-stack/ts-project-setup/commit/590f12f491945593aa99809a393a6249d6065f43))
+
 ## [0.2.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.1.2...typescript-config-v0.2.0) (2024-12-27)
 
 
