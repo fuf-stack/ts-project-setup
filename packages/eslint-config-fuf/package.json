@@ -27,7 +27,7 @@
     "url": "https://github.com/fuf-stack/ts-project-setup/issues"
   },
   "dependencies": {
-    "@babel/eslint-parser": "7.25.9",
+    "@babel/eslint-parser": "7.26.5",
     "@ianvs/prettier-plugin-sort-imports": "4.4.0",
     "@prettier/plugin-php": "0.22.2",
     "@typescript-eslint/eslint-plugin": "7.18.0",
