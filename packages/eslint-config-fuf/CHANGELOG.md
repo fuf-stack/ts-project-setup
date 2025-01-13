@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.0...eslint-config-fuf-v0.12.1) (2025-01-13)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.26.5 ([#424](https://github.com/fuf-stack/ts-project-setup/issues/424)) ([d5c8886](https://github.com/fuf-stack/ts-project-setup/commit/d5c8886b3957964ac1db5c790b66a5b400ee4d7a))
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.37.4 ([#428](https://github.com/fuf-stack/ts-project-setup/issues/428)) ([528a63f](https://github.com/fuf-stack/ts-project-setup/commit/528a63f8b9ee3f7509c0ea6a7946f26a7b58f736))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v0.11.2 ([#417](https://github.com/fuf-stack/ts-project-setup/issues/417)) ([79429fc](https://github.com/fuf-stack/ts-project-setup/commit/79429fc1fdacc563ff8dc9d77627bcbeb167dea0))
+
 ## [0.12.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.11.0...eslint-config-fuf-v0.12.0) (2024-12-27)
 
 
