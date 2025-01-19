@@ -39,8 +39,8 @@ importers:
         specifier: 4.4.1
         version: 4.4.1(prettier@3.4.2)
       '@prettier/plugin-php':
-        specifier: 0.22.2
-        version: 0.22.2(prettier@3.4.2)
+        specifier: 0.22.3
+        version: 0.22.3(prettier@3.4.2)
       '@typescript-eslint/eslint-plugin':
         specifier: 7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
@@ -757,8 +757,8 @@ packages:
     resolution: {integrity: sha512-3qkKCftRE/HXzoWedyDuaMMUQzheDwx8AQXR0DnA9ylsBnZQYNut19Ado/gzi5+IvznaMcqrBszw57j3y1/ILw==}
     engines: {node: '>=16.14'}
 
-  '@prettier/plugin-php@0.22.2':
-    resolution: {integrity: sha512-md0+7tNbsP0oy+wIP3KZZc6fzx1k1jtWaMjOy/gM8yU9f2BDYEi+iHOc/UNPihYvPI28zFTbjvlhH4QXQjQwNg==}
+  '@prettier/plugin-php@0.22.3':
+    resolution: {integrity: sha512-EoThySFj8uMe98TpEqSicFhZFm7hxLJqExKMrFsgoJNtQMDYq72gLi+bhzjwqAthTS2II8gKVALUFM6LInKH0Q==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -4826,7 +4826,7 @@ snapshots:
       write-file-atomic: 5.0.1
       write-yaml-file: 5.0.0
 
-  '@prettier/plugin-php@0.22.2(prettier@3.4.2)':
+  '@prettier/plugin-php@0.22.3(prettier@3.4.2)':
     dependencies:
       linguist-languages: 7.27.0
       php-parser: 3.2.2
