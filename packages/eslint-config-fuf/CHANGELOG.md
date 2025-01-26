@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.0...eslint-config-fuf-v0.12.1) (2025-01-26)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.26.5 ([#424](https://github.com/fuf-stack/ts-project-setup/issues/424)) ([d5c8886](https://github.com/fuf-stack/ts-project-setup/commit/d5c8886b3957964ac1db5c790b66a5b400ee4d7a))
+* **eslint-config-fuf:** update dependency @ianvs/prettier-plugin-sort-imports to v4.4.1 ([#431](https://github.com/fuf-stack/ts-project-setup/issues/431)) ([73e07f0](https://github.com/fuf-stack/ts-project-setup/commit/73e07f01659d73f68df1cf13cc0f5fb06c3fa773))
+* **eslint-config-fuf:** update dependency @prettier/plugin-php to v0.22.3 ([#440](https://github.com/fuf-stack/ts-project-setup/issues/440)) ([ff662c9](https://github.com/fuf-stack/ts-project-setup/commit/ff662c9a1c803d7696f2a50d8a82fa4682bbd3bf))
+* **eslint-config-fuf:** update dependency @prettier/plugin-php to v0.22.4 ([#442](https://github.com/fuf-stack/ts-project-setup/issues/442)) ([201109e](https://github.com/fuf-stack/ts-project-setup/commit/201109ee490f4b6f182a1a936fc0f2331088f306))
+* **eslint-config-fuf:** update dependency eslint-config-prettier to v10 ([b61c7ba](https://github.com/fuf-stack/ts-project-setup/commit/b61c7ba9c250080b1993a0ee2d523d0c478fb282))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.2.2 ([#433](https://github.com/fuf-stack/ts-project-setup/issues/433)) ([3f4a289](https://github.com/fuf-stack/ts-project-setup/commit/3f4a289126d8850bd6196403e9d458521a37b411))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.2.3 ([#439](https://github.com/fuf-stack/ts-project-setup/issues/439)) ([c9d3cdc](https://github.com/fuf-stack/ts-project-setup/commit/c9d3cdce9d094c43c2af004ad3f86c50ea30566b))
+* **eslint-config-fuf:** update dependency eslint-plugin-react to v7.37.4 ([#428](https://github.com/fuf-stack/ts-project-setup/issues/428)) ([528a63f](https://github.com/fuf-stack/ts-project-setup/commit/528a63f8b9ee3f7509c0ea6a7946f26a7b58f736))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v0.11.2 ([#417](https://github.com/fuf-stack/ts-project-setup/issues/417)) ([79429fc](https://github.com/fuf-stack/ts-project-setup/commit/79429fc1fdacc563ff8dc9d77627bcbeb167dea0))
+* **eslint-config-fuf:** update dependency prettier-plugin-tailwindcss to v0.6.10 ([#434](https://github.com/fuf-stack/ts-project-setup/issues/434)) ([294ad27](https://github.com/fuf-stack/ts-project-setup/commit/294ad273289a33e108c4abe248352739b28f8e22))
+* **eslint-config-fuf:** update dependency prettier-plugin-tailwindcss to v0.6.11 ([#448](https://github.com/fuf-stack/ts-project-setup/issues/448)) ([7abe535](https://github.com/fuf-stack/ts-project-setup/commit/7abe535c4f1777bb0d40cd904ab4a6ad70013f7a))
+
 ## [0.12.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.11.0...eslint-config-fuf-v0.12.0) (2024-12-27)
 
 
