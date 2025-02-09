@@ -8,8 +8,11 @@ clean:
 	sh ./scripts/cleanupRepository.sh;
 
 install:
+	# setup pnpm
 	# see: https://pnpm.io/installation#on-posix-systems
 	pnpm --help > /dev/null 2>&1 || curl -fsSL https://get.pnpm.io/install.sh | sh -;
+	pnpm self-update $(shell grep '"packageManager": "pnpm@' package.json | sed 's/.*pnpm@\([^"]*\).*/\1/');
+	# install node modules
 	pnpm env use --global `cat .nvmrc`;
 	pnpm install --ignore-scripts;
 	pnpm husky install;
