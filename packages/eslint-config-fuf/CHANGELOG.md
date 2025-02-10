@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.1...eslint-config-fuf-v0.12.2) (2025-02-10)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @babel/eslint-parser to v7.26.8 ([#463](https://github.com/fuf-stack/ts-project-setup/issues/463)) ([df39ea1](https://github.com/fuf-stack/ts-project-setup/commit/df39ea1cf9dc705d35b894ed0a32a83ee73e53e4))
+* **eslint-config-fuf:** update dependency prettier to v3.5.0 ([#465](https://github.com/fuf-stack/ts-project-setup/issues/465)) ([83aef5c](https://github.com/fuf-stack/ts-project-setup/commit/83aef5cbe5052619d037f485ba9f91e704b3cd70))
+
 ## [0.12.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.0...eslint-config-fuf-v0.12.1) (2025-01-26)
 
 
