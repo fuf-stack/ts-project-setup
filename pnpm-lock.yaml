@@ -127,11 +127,11 @@ importers:
         specifier: 19.5.0
         version: 19.5.0
       '@lerna-lite/cli':
-        specifier: 3.12.0
-        version: 3.12.0(@lerna-lite/version@3.12.0(@types/node@22.13.4)(typescript@5.7.3))(@types/node@22.13.4)(typescript@5.7.3)
+        specifier: 3.12.1
+        version: 3.12.1(@lerna-lite/version@3.12.1(@types/node@22.13.4)(typescript@5.7.3))(@types/node@22.13.4)(typescript@5.7.3)
       '@lerna-lite/version':
-        specifier: 3.12.0
-        version: 3.12.0(@types/node@22.13.4)(typescript@5.7.3)
+        specifier: 3.12.1
+        version: 3.12.1(@types/node@22.13.4)(typescript@5.7.3)
       commitizen:
         specifier: 4.3.1
         version: 4.3.1(@types/node@22.13.4)(typescript@5.7.3)
@@ -599,8 +599,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@lerna-lite/cli@3.12.0':
-    resolution: {integrity: sha512-XvS3+beXmQqjv2XUy7tMFlZVLqdO/7RgQlbhUCqvHN0fFPYTdu3IyCXye0/TpKQVn+1/HvLM4wQcbfxcceBGUA==}
+  '@lerna-lite/cli@3.12.1':
+    resolution: {integrity: sha512-bP082C2Tno3FSLy1zGyi8h98mlDvmek5CadubIXw+BTkS6O5ptYUXCGU0WtuG/ub6aaJI1ZsACEIVi2rFqHL5A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -624,20 +624,20 @@ packages:
       '@lerna-lite/watch':
         optional: true
 
-  '@lerna-lite/core@3.12.0':
-    resolution: {integrity: sha512-YW48z2Tys/pC88TVtUtjneLB1iiu/Clas1ucTki5qnRecvjK8h3tjZRfEL8dw/7bZ/mJZbdPtpqTMbecz09Bvg==}
+  '@lerna-lite/core@3.12.1':
+    resolution: {integrity: sha512-CfkonYVzrIKl4/uXvSlb/cYNUZPPyL2fqZq9kYcJcCDMdfgkzoUAn7yTHpPnwodt8uOaM1iy9tCKoQ8J97UsHg==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
-  '@lerna-lite/init@3.12.0':
-    resolution: {integrity: sha512-TcKNeJsAKII/U7qP1UJ0J3yx0PEA3a7kUmZexNkbTSVMZVQx5eKoxfeF+8e8vghEKTd2TPwkmPeXzgHaGxF7zQ==}
+  '@lerna-lite/init@3.12.1':
+    resolution: {integrity: sha512-pIMhyNnZGTsSdLA+MQesOkX7J4iRh7EAKStCP48s5jStv8c70TloIC8psDEix/77qQf4GT4DIU3lvaT+4IC8PA==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
-  '@lerna-lite/npmlog@3.12.0':
-    resolution: {integrity: sha512-JeoCw4uZVKR6vWA5EAGwlebsv7HPNw8l7gEPjnRnvZwGkx0IyOrG0c2gruX700Ir/7ApeNc9MtHjdAF8JboJVQ==}
+  '@lerna-lite/npmlog@3.12.1':
+    resolution: {integrity: sha512-+2bEqCrTw7DkARfuWjVCgVZEdlwTE7l/ha05K+o/WIouLDkf3YpZKPv/cx9hOo61y5ALGXHIyY6gvAAKGHQQhA==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
-  '@lerna-lite/version@3.12.0':
-    resolution: {integrity: sha512-kxak0jhYwHONx+mcsEVLRz29MAqv8wPXMDrCWtZJc1mim43dwNKzuuOtIfY45cb8ivo4o40IwWqjjEX72m6tMg==}
+  '@lerna-lite/version@3.12.1':
+    resolution: {integrity: sha512-ovzyU+zAYbtTW2iXdfFuAFfJWA1kcTsMXl7zK3duYtSukOZqrVK7skCOdNxe1opajqlXkP6EXGPb/4O5TE1tAw==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
@@ -3695,8 +3695,8 @@ packages:
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
-  tinyglobby@0.2.10:
-    resolution: {integrity: sha512-Zc+8eJlFMvgatPZTl6A9L/yht8QqdmUNtURHaKZLmKBE12hNPSrqNkUp2cs3M/UKmNVVAMFQYSjYIVHDjW5zew==}
+  tinyglobby@0.2.11:
+    resolution: {integrity: sha512-32TmKeeKUahv0Go8WmQgiEp9Y21NuxjwjqiRC1nrUB51YacfSwuB44xgXD+HdIppmMRgjQNPdrHyA6vIybYZ+g==}
     engines: {node: '>=12.0.0'}
 
   tinypool@1.0.2:
@@ -4538,18 +4538,18 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lerna-lite/cli@3.12.0(@lerna-lite/version@3.12.0(@types/node@22.13.4)(typescript@5.7.3))(@types/node@22.13.4)(typescript@5.7.3)':
+  '@lerna-lite/cli@3.12.1(@lerna-lite/version@3.12.1(@types/node@22.13.4)(typescript@5.7.3))(@types/node@22.13.4)(typescript@5.7.3)':
     dependencies:
-      '@lerna-lite/core': 3.12.0(@types/node@22.13.4)(typescript@5.7.3)
-      '@lerna-lite/init': 3.12.0(@types/node@22.13.4)(typescript@5.7.3)
-      '@lerna-lite/npmlog': 3.12.0
+      '@lerna-lite/core': 3.12.1(@types/node@22.13.4)(typescript@5.7.3)
+      '@lerna-lite/init': 3.12.1(@types/node@22.13.4)(typescript@5.7.3)
+      '@lerna-lite/npmlog': 3.12.1
       dedent: 1.5.3
       dotenv: 16.4.7
       import-local: 3.2.0
       load-json-file: 7.0.1
       yargs: 17.7.2
     optionalDependencies:
-      '@lerna-lite/version': 3.12.0(@types/node@22.13.4)(typescript@5.7.3)
+      '@lerna-lite/version': 3.12.1(@types/node@22.13.4)(typescript@5.7.3)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -4557,12 +4557,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/core@3.12.0(@types/node@22.13.4)(typescript@5.7.3)':
+  '@lerna-lite/core@3.12.1(@types/node@22.13.4)(typescript@5.7.3)':
     dependencies:
       '@inquirer/expand': 4.0.9(@types/node@22.13.4)
       '@inquirer/input': 4.1.6(@types/node@22.13.4)
       '@inquirer/select': 4.0.9(@types/node@22.13.4)
-      '@lerna-lite/npmlog': 3.12.0
+      '@lerna-lite/npmlog': 3.12.1
       '@npmcli/run-script': 8.1.0
       clone-deep: 4.0.1
       config-chain: 1.1.13
@@ -4583,7 +4583,7 @@ snapshots:
       semver: 7.7.1
       slash: 5.1.0
       strong-log-transformer: 2.1.0
-      tinyglobby: 0.2.10
+      tinyglobby: 0.2.11
       tinyrainbow: 2.0.0
       write-file-atomic: 5.0.1
       write-json-file: 6.0.0
@@ -4596,9 +4596,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/init@3.12.0(@types/node@22.13.4)(typescript@5.7.3)':
+  '@lerna-lite/init@3.12.1(@types/node@22.13.4)(typescript@5.7.3)':
     dependencies:
-      '@lerna-lite/core': 3.12.0(@types/node@22.13.4)(typescript@5.7.3)
+      '@lerna-lite/core': 3.12.1(@types/node@22.13.4)(typescript@5.7.3)
       fs-extra: 11.3.0
       p-map: 7.0.3
       write-json-file: 6.0.0
@@ -4609,7 +4609,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/npmlog@3.12.0':
+  '@lerna-lite/npmlog@3.12.1':
     dependencies:
       aproba: 2.0.0
       color-support: 1.1.3
@@ -4620,11 +4620,11 @@ snapshots:
       string-width: 7.2.0
       wide-align: 1.1.5
 
-  '@lerna-lite/version@3.12.0(@types/node@22.13.4)(typescript@5.7.3)':
+  '@lerna-lite/version@3.12.1(@types/node@22.13.4)(typescript@5.7.3)':
     dependencies:
-      '@lerna-lite/cli': 3.12.0(@lerna-lite/version@3.12.0(@types/node@22.13.4)(typescript@5.7.3))(@types/node@22.13.4)(typescript@5.7.3)
-      '@lerna-lite/core': 3.12.0(@types/node@22.13.4)(typescript@5.7.3)
-      '@lerna-lite/npmlog': 3.12.0
+      '@lerna-lite/cli': 3.12.1(@lerna-lite/version@3.12.1(@types/node@22.13.4)(typescript@5.7.3))(@types/node@22.13.4)(typescript@5.7.3)
+      '@lerna-lite/core': 3.12.1(@types/node@22.13.4)(typescript@5.7.3)
+      '@lerna-lite/npmlog': 3.12.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 21.1.1
       conventional-changelog-angular: 7.0.0
@@ -7986,7 +7986,7 @@ snapshots:
 
   tinyexec@0.3.2: {}
 
-  tinyglobby@0.2.10:
+  tinyglobby@0.2.11:
     dependencies:
       fdir: 6.4.3(picomatch@4.0.2)
       picomatch: 4.0.2
