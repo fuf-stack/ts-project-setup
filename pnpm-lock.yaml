@@ -128,10 +128,10 @@ importers:
         version: 19.5.0
       '@lerna-lite/cli':
         specifier: 3.12.1
-        version: 3.12.1(@lerna-lite/version@3.12.1(@types/node@22.13.7)(typescript@5.8.2))(@types/node@22.13.7)(typescript@5.8.2)
+        version: 3.12.1(@lerna-lite/version@3.12.2(@types/node@22.13.7)(typescript@5.8.2))(@types/node@22.13.7)(typescript@5.8.2)
       '@lerna-lite/version':
-        specifier: 3.12.1
-        version: 3.12.1(@types/node@22.13.7)(typescript@5.8.2)
+        specifier: 3.12.2
+        version: 3.12.2(@types/node@22.13.7)(typescript@5.8.2)
       commitizen:
         specifier: 4.3.1
         version: 4.3.1(@types/node@22.13.7)(typescript@5.8.2)
@@ -636,8 +636,8 @@ packages:
     resolution: {integrity: sha512-+2bEqCrTw7DkARfuWjVCgVZEdlwTE7l/ha05K+o/WIouLDkf3YpZKPv/cx9hOo61y5ALGXHIyY6gvAAKGHQQhA==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
-  '@lerna-lite/version@3.12.1':
-    resolution: {integrity: sha512-ovzyU+zAYbtTW2iXdfFuAFfJWA1kcTsMXl7zK3duYtSukOZqrVK7skCOdNxe1opajqlXkP6EXGPb/4O5TE1tAw==}
+  '@lerna-lite/version@3.12.2':
+    resolution: {integrity: sha512-UcX6fj6/bsCIba3rd0jfxLNGVoM6UZp6ANE4Fx6vGDZW0KapgqhRcroyV3rTePlY+/udI2QliDJFE0yL5mH1fQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
@@ -4538,7 +4538,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lerna-lite/cli@3.12.1(@lerna-lite/version@3.12.1(@types/node@22.13.7)(typescript@5.8.2))(@types/node@22.13.7)(typescript@5.8.2)':
+  '@lerna-lite/cli@3.12.1(@lerna-lite/version@3.12.2(@types/node@22.13.7)(typescript@5.8.2))(@types/node@22.13.7)(typescript@5.8.2)':
     dependencies:
       '@lerna-lite/core': 3.12.1(@types/node@22.13.7)(typescript@5.8.2)
       '@lerna-lite/init': 3.12.1(@types/node@22.13.7)(typescript@5.8.2)
@@ -4549,7 +4549,7 @@ snapshots:
       load-json-file: 7.0.1
       yargs: 17.7.2
     optionalDependencies:
-      '@lerna-lite/version': 3.12.1(@types/node@22.13.7)(typescript@5.8.2)
+      '@lerna-lite/version': 3.12.2(@types/node@22.13.7)(typescript@5.8.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -4620,9 +4620,9 @@ snapshots:
       string-width: 7.2.0
       wide-align: 1.1.5
 
-  '@lerna-lite/version@3.12.1(@types/node@22.13.7)(typescript@5.8.2)':
+  '@lerna-lite/version@3.12.2(@types/node@22.13.7)(typescript@5.8.2)':
     dependencies:
-      '@lerna-lite/cli': 3.12.1(@lerna-lite/version@3.12.1(@types/node@22.13.7)(typescript@5.8.2))(@types/node@22.13.7)(typescript@5.8.2)
+      '@lerna-lite/cli': 3.12.1(@lerna-lite/version@3.12.2(@types/node@22.13.7)(typescript@5.8.2))(@types/node@22.13.7)(typescript@5.8.2)
       '@lerna-lite/core': 3.12.1(@types/node@22.13.7)(typescript@5.8.2)
       '@lerna-lite/npmlog': 3.12.1
       '@octokit/plugin-enterprise-rest': 6.0.1
