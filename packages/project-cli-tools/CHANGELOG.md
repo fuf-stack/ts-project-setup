@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.4...project-cli-tools-v1.0.5) (2025-03-31)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v19.8.0 ([#504](https://github.com/fuf-stack/ts-project-setup/issues/504)) ([8f4bee3](https://github.com/fuf-stack/ts-project-setup/commit/8f4bee300853cc0cdfccca17ea4c67b3ba5fcdb9))
+* **project-cli-tools:** update dependency @lerna-lite/version to v3.12.2 ([#495](https://github.com/fuf-stack/ts-project-setup/issues/495)) ([210f029](https://github.com/fuf-stack/ts-project-setup/commit/210f0299281672d4d88e6d413dfc77cbacccc561))
+* **project-cli-tools:** update dependency lint-staged to v15.5.0 ([#511](https://github.com/fuf-stack/ts-project-setup/issues/511)) ([ac2d869](https://github.com/fuf-stack/ts-project-setup/commit/ac2d869e112271d906849e840035d06a434ddc2c))
+* **project-cli-tools:** update dependency turbo to v2.4.1 ([#467](https://github.com/fuf-stack/ts-project-setup/issues/467)) ([b9c405a](https://github.com/fuf-stack/ts-project-setup/commit/b9c405adda3b312dd5713ec256d2fb9a2792075f))
+* **project-cli-tools:** update dependency turbo to v2.4.2 ([#471](https://github.com/fuf-stack/ts-project-setup/issues/471)) ([0d6ab0a](https://github.com/fuf-stack/ts-project-setup/commit/0d6ab0a7486c2b7372fe57e917162a760ea45613))
+* **project-cli-tools:** update dependency turbo to v2.4.3 ([#486](https://github.com/fuf-stack/ts-project-setup/issues/486)) ([eb365f6](https://github.com/fuf-stack/ts-project-setup/commit/eb365f61f0899f52c9b7b6c8485e2d78687047c5))
+* **project-cli-tools:** update dependency turbo to v2.4.4 ([#488](https://github.com/fuf-stack/ts-project-setup/issues/488)) ([73053ae](https://github.com/fuf-stack/ts-project-setup/commit/73053ae007d38bad4f4a55a9b18eb6ebe5b5a24a))
+* **project-cli-tools:** update dependency wait-on to v8.0.3 ([#509](https://github.com/fuf-stack/ts-project-setup/issues/509)) ([d2d92b1](https://github.com/fuf-stack/ts-project-setup/commit/d2d92b1adb7d3d7288ce7f76a61833b7d45c5dcd))
+* **project-cli-tools:** update lerna-lite monorepo to v3.12.1 ([#482](https://github.com/fuf-stack/ts-project-setup/issues/482)) ([74d923d](https://github.com/fuf-stack/ts-project-setup/commit/74d923d730362a3ab5a710771fbd7862f73c29f7))
+* **project-cli-tools:** update lerna-lite monorepo to v3.12.3 ([#510](https://github.com/fuf-stack/ts-project-setup/issues/510)) ([69efafb](https://github.com/fuf-stack/ts-project-setup/commit/69efafbd193bfd7046d7160c26ba7968e30ce397))
+
 ## [1.0.4](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.3...project-cli-tools-v1.0.4) (2025-02-10)
 
 
