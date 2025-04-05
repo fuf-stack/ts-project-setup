@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.5...project-cli-tools-v1.0.6) (2025-04-05)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency turbo to v2.5.0 ([#540](https://github.com/fuf-stack/ts-project-setup/issues/540)) ([6865be0](https://github.com/fuf-stack/ts-project-setup/commit/6865be0b4d4c3f0722491086123116b9f49ca91b))
+* **project-cli-tools:** update lerna-lite monorepo to v4 (major) ([8aaa085](https://github.com/fuf-stack/ts-project-setup/commit/8aaa08545f41b86289f63f15d73297c25c9abe52))
+
 ## [1.0.5](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.4...project-cli-tools-v1.0.5) (2025-03-31)
 
 
