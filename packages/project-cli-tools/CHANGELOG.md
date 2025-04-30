@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.5...project-cli-tools-v1.0.6) (2025-04-30)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency lint-staged to v15.5.1 ([#548](https://github.com/fuf-stack/ts-project-setup/issues/548)) ([5affcec](https://github.com/fuf-stack/ts-project-setup/commit/5affcec5dffd8b8031e846feb23fdf3a87cf8e55))
+* **project-cli-tools:** update dependency nodemon to v3.1.10 ([#556](https://github.com/fuf-stack/ts-project-setup/issues/556)) ([9c573ff](https://github.com/fuf-stack/ts-project-setup/commit/9c573ff84e194d618a679d2ed0c1919f793748e7))
+* **project-cli-tools:** update dependency turbo to v2.5.0 ([#540](https://github.com/fuf-stack/ts-project-setup/issues/540)) ([6865be0](https://github.com/fuf-stack/ts-project-setup/commit/6865be0b4d4c3f0722491086123116b9f49ca91b))
+* **project-cli-tools:** update dependency turbo to v2.5.1 ([#558](https://github.com/fuf-stack/ts-project-setup/issues/558)) ([fd380dd](https://github.com/fuf-stack/ts-project-setup/commit/fd380dd1e5b35c49116bb9252dd6fe8d9f055c87))
+* **project-cli-tools:** update dependency turbo to v2.5.2 ([#562](https://github.com/fuf-stack/ts-project-setup/issues/562)) ([e905215](https://github.com/fuf-stack/ts-project-setup/commit/e905215069bf8e80b1c45c879f022bdd254dda9d))
+* **project-cli-tools:** update lerna-lite monorepo to v4 (major) ([8aaa085](https://github.com/fuf-stack/ts-project-setup/commit/8aaa08545f41b86289f63f15d73297c25c9abe52))
+* **project-cli-tools:** update lerna-lite monorepo to v4.1.0 ([#566](https://github.com/fuf-stack/ts-project-setup/issues/566)) ([75223c4](https://github.com/fuf-stack/ts-project-setup/commit/75223c4ab686fc8d5fa3fb3725e99b467716ee83))
+* **project-cli-tools:** update lerna-lite monorepo to v4.1.1 ([#567](https://github.com/fuf-stack/ts-project-setup/issues/567)) ([26cad1a](https://github.com/fuf-stack/ts-project-setup/commit/26cad1afda1711502dbb42c55b7fe7a602848f95))
+
 ## [1.0.5](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.4...project-cli-tools-v1.0.5) (2025-03-31)
 
 
