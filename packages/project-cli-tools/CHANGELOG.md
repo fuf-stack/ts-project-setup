@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.6...project-cli-tools-v1.0.7) (2025-05-09)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v19.8.1 ([#584](https://github.com/fuf-stack/ts-project-setup/issues/584)) ([572ddb7](https://github.com/fuf-stack/ts-project-setup/commit/572ddb7a503e0f377fe93f3256e7013afe2a1905))
+* **project-cli-tools:** update dependency lint-staged to v15.5.2 ([#577](https://github.com/fuf-stack/ts-project-setup/issues/577)) ([a5adec9](https://github.com/fuf-stack/ts-project-setup/commit/a5adec9e80c58ba113ca88b7d2e7414c28909f89))
+* **project-cli-tools:** update dependency turbo to v2.5.3 ([#580](https://github.com/fuf-stack/ts-project-setup/issues/580)) ([59d6794](https://github.com/fuf-stack/ts-project-setup/commit/59d67946e3090ebedaeadff67d7aa7af5bb31a00))
+
 ## [1.0.6](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.5...project-cli-tools-v1.0.6) (2025-04-30)
 
 
