@@ -127,11 +127,11 @@ importers:
         specifier: 19.8.1
         version: 19.8.1
       '@lerna-lite/cli':
-        specifier: 4.1.1
-        version: 4.1.1(@lerna-lite/version@4.1.1(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.17)(typescript@5.8.3)
+        specifier: 4.1.2
+        version: 4.1.2(@lerna-lite/version@4.1.2(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.17)(typescript@5.8.3)
       '@lerna-lite/version':
-        specifier: 4.1.1
-        version: 4.1.1(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
+        specifier: 4.1.2
+        version: 4.1.2(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
       commitizen:
         specifier: 4.3.1
         version: 4.3.1(@types/node@22.15.17)(typescript@5.8.3)
@@ -623,8 +623,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@lerna-lite/cli@4.1.1':
-    resolution: {integrity: sha512-QRNcxR2vzv3RY1hjpUjrwAy+03Ng9A9G4OySRSiTpVr+sYuV5noWd7BSNzf/Fy6NSw+XfXjJp/RqRflDvy8AAQ==}
+  '@lerna-lite/cli@4.1.2':
+    resolution: {integrity: sha512-Pf3tlXxVCro5x+6eEFtnlYTnIB3Bl/EAjNmcaTQOKURWTycc+/qhZb66Cj6qtwObfy4faYAlpYMbl5IEhW+BPQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     peerDependencies:
@@ -648,20 +648,20 @@ packages:
       '@lerna-lite/watch':
         optional: true
 
-  '@lerna-lite/core@4.1.1':
-    resolution: {integrity: sha512-fXDxMT+9KZWlyyjuS0p4I2H6So05NTRBvWssczp3gUYTul1hJjTP7ZYWxTAEeDT9WamAkWRqn1rzgGdmkJvRZA==}
+  '@lerna-lite/core@4.1.2':
+    resolution: {integrity: sha512-8nK3jpgL4WmHPadOMwscuNOyOjEPSxc7/yr50ktu1BZ5Dx+Zs37kyKSU9T/ISU/Z7pGTyf3+L9ko17DPe51IJw==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/init@4.1.1':
-    resolution: {integrity: sha512-rgskERNPFZKQJA9DPlLTvhpeDmbAyLdzmbHu9qm6/juzl6MBvjHW3Dk9IV/LwMYbJyJT1b53ZKkJtr77UN8kkQ==}
+  '@lerna-lite/init@4.1.2':
+    resolution: {integrity: sha512-D7xVayDGcU7Q89urbFs1s2Jj0jx2lELEyz8IB6NiwVf2b/gCMiS/UmCRc24jgh4HxYwhdt6ns+75KQieJoHCFg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/npmlog@4.0.0':
-    resolution: {integrity: sha512-7CoQsmg/zV93D9a0zSRnKOXsOd/G0jn+xQz1cbYvY1nfsK5Xtsm6w3guGHpfMaLn+bpipcj/16FXs6zMHRvRBw==}
+  '@lerna-lite/npmlog@4.1.2':
+    resolution: {integrity: sha512-XAouatIhNq+Lh0g3VnX/w/ksc+69mUc2fNDONmayMjFij78iIx07EvIwTwlYTnpdRuI3MfAGboCIAT6TByTgdg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/version@4.1.1':
-    resolution: {integrity: sha512-UQUFCFr+T8mp+ghpqdJXuAWz5+zScB/4zpoQAigLBbazzqSa+Xy+yIL5f1p8h8ql4b58HahUzQW0moSPp24ApA==}
+  '@lerna-lite/version@4.1.2':
+    resolution: {integrity: sha512-KURfcTdWEWv0k+3xxnByXP7GM7udQyJZcPOnLUzw1Hs8YkpxFalXUcQsPNmj45q2jq/IfBWno0I6944nGuvc+A==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
@@ -3405,6 +3405,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
@@ -4309,14 +4314,14 @@ snapshots:
   '@conventional-changelog/git-client@1.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.1.0)':
     dependencies:
       '@types/semver': 7.7.0
-      semver: 7.7.1
+      semver: 7.7.2
     optionalDependencies:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.1.0
 
   '@conventional-changelog/git-client@2.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.1.0)':
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.2
     optionalDependencies:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.1.0
@@ -4531,30 +4536,30 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lerna-lite/cli@4.1.1(@lerna-lite/version@4.1.1(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.17)(typescript@5.8.3)':
+  '@lerna-lite/cli@4.1.2(@lerna-lite/version@4.1.2(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.17)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/core': 4.1.1(@types/node@22.15.17)(typescript@5.8.3)
-      '@lerna-lite/init': 4.1.1(@types/node@22.15.17)(typescript@5.8.3)
-      '@lerna-lite/npmlog': 4.0.0
+      '@lerna-lite/core': 4.1.2(@types/node@22.15.17)(typescript@5.8.3)
+      '@lerna-lite/init': 4.1.2(@types/node@22.15.17)(typescript@5.8.3)
+      '@lerna-lite/npmlog': 4.1.2
       dedent: 1.6.0
       dotenv: 16.5.0
       import-local: 3.2.0
       load-json-file: 7.0.1
       yargs: 17.7.2
     optionalDependencies:
-      '@lerna-lite/version': 4.1.1(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
+      '@lerna-lite/version': 4.1.2(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
       - supports-color
       - typescript
 
-  '@lerna-lite/core@4.1.1(@types/node@22.15.17)(typescript@5.8.3)':
+  '@lerna-lite/core@4.1.2(@types/node@22.15.17)(typescript@5.8.3)':
     dependencies:
       '@inquirer/expand': 4.0.13(@types/node@22.15.17)
       '@inquirer/input': 4.1.10(@types/node@22.15.17)
       '@inquirer/select': 4.2.1(@types/node@22.15.17)
-      '@lerna-lite/npmlog': 4.0.0
+      '@lerna-lite/npmlog': 4.1.2
       '@npmcli/run-script': 9.1.0
       clone-deep: 4.0.1
       config-chain: 1.1.13
@@ -4572,7 +4577,7 @@ snapshots:
       p-map: 7.0.3
       p-queue: 8.1.0
       resolve-from: 5.0.0
-      semver: 7.7.1
+      semver: 7.7.2
       slash: 5.1.0
       strong-log-transformer: 2.1.0
       tinyglobby: 0.2.13
@@ -4587,9 +4592,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/init@4.1.1(@types/node@22.15.17)(typescript@5.8.3)':
+  '@lerna-lite/init@4.1.2(@types/node@22.15.17)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/core': 4.1.1(@types/node@22.15.17)(typescript@5.8.3)
+      '@lerna-lite/core': 4.1.2(@types/node@22.15.17)(typescript@5.8.3)
       fs-extra: 11.3.0
       p-map: 7.0.3
       write-json-file: 6.0.0
@@ -4599,7 +4604,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/npmlog@4.0.0':
+  '@lerna-lite/npmlog@4.1.2':
     dependencies:
       aproba: 2.0.0
       color-support: 1.1.3
@@ -4610,11 +4615,11 @@ snapshots:
       string-width: 7.2.0
       wide-align: 1.1.5
 
-  '@lerna-lite/version@4.1.1(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3)':
+  '@lerna-lite/version@4.1.2(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/cli': 4.1.1(@lerna-lite/version@4.1.1(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.17)(typescript@5.8.3)
-      '@lerna-lite/core': 4.1.1(@types/node@22.15.17)(typescript@5.8.3)
-      '@lerna-lite/npmlog': 4.0.0
+      '@lerna-lite/cli': 4.1.2(@lerna-lite/version@4.1.2(@types/node@22.15.17)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.17)(typescript@5.8.3)
+      '@lerna-lite/core': 4.1.2(@types/node@22.15.17)(typescript@5.8.3)
+      '@lerna-lite/npmlog': 4.1.2
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 21.1.1
       conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
@@ -4638,7 +4643,7 @@ snapshots:
       p-pipe: 4.0.0
       p-reduce: 3.0.0
       pify: 6.1.0
-      semver: 7.7.1
+      semver: 7.7.2
       slash: 5.1.0
       temp-dir: 3.0.0
       tinyrainbow: 2.0.0
@@ -4684,7 +4689,7 @@ snapshots:
 
   '@npmcli/fs@4.0.0':
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.2
 
   '@npmcli/git@6.0.3':
     dependencies:
@@ -4694,7 +4699,7 @@ snapshots:
       npm-pick-manifest: 10.0.0
       proc-log: 5.0.0
       promise-retry: 2.0.1
-      semver: 7.7.1
+      semver: 7.7.2
       which: 5.0.0
 
   '@npmcli/node-gyp@4.0.0': {}
@@ -4706,7 +4711,7 @@ snapshots:
       hosted-git-info: 8.1.0
       json-parse-even-better-errors: 4.0.0
       proc-log: 5.0.0
-      semver: 7.7.1
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
 
   '@npmcli/promise-spawn@8.0.2':
@@ -5579,7 +5584,7 @@ snapshots:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.8
       meow: 13.2.0
-      semver: 7.7.1
+      semver: 7.7.2
 
   conventional-changelog@6.0.0(conventional-commits-filter@5.0.0):
     dependencies:
@@ -7127,7 +7132,7 @@ snapshots:
       make-fetch-happen: 14.0.3
       nopt: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.1
+      semver: 7.7.2
       tar: 7.4.3
       tinyglobby: 0.2.13
       which: 5.0.0
@@ -7156,14 +7161,14 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.7.1
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
 
   npm-install-checks@7.1.1:
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.2
 
   npm-normalize-package-bin@4.0.0: {}
 
@@ -7171,7 +7176,7 @@ snapshots:
     dependencies:
       hosted-git-info: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.1
+      semver: 7.7.2
       validate-npm-package-name: 6.0.0
 
   npm-pick-manifest@10.0.0:
@@ -7179,7 +7184,7 @@ snapshots:
       npm-install-checks: 7.1.1
       npm-normalize-package-bin: 4.0.0
       npm-package-arg: 12.0.2
-      semver: 7.7.1
+      semver: 7.7.2
 
   npm-run-path@5.3.0:
     dependencies:
@@ -7626,6 +7631,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.7.1: {}
+
+  semver@7.7.2: {}
 
   set-blocking@2.0.0: {}
 
