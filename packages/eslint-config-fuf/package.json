@@ -46,7 +46,7 @@
     "eslint-plugin-vitest": "0.4.1",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.6.11"
+    "prettier-plugin-tailwindcss": "0.6.12"
   },
   "devDependencies": {
     "@fuf-stack/typescript-config": "workspace:*",
