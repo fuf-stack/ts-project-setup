@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.6...project-cli-tools-v1.0.7) (2025-06-30)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v19.8.1 ([#584](https://github.com/fuf-stack/ts-project-setup/issues/584)) ([572ddb7](https://github.com/fuf-stack/ts-project-setup/commit/572ddb7a503e0f377fe93f3256e7013afe2a1905))
+* **project-cli-tools:** update dependency lint-staged to v15.5.2 ([#577](https://github.com/fuf-stack/ts-project-setup/issues/577)) ([a5adec9](https://github.com/fuf-stack/ts-project-setup/commit/a5adec9e80c58ba113ca88b7d2e7414c28909f89))
+* **project-cli-tools:** update dependency lint-staged to v16 ([134795f](https://github.com/fuf-stack/ts-project-setup/commit/134795f7f5455f476e389728895f0534c50f90b9))
+* **project-cli-tools:** update dependency lint-staged to v16 ([4e20850](https://github.com/fuf-stack/ts-project-setup/commit/4e20850103d268e2f858aa7be56b4445bb0abe16))
+* **project-cli-tools:** update dependency lint-staged to v16.1.0 ([#607](https://github.com/fuf-stack/ts-project-setup/issues/607)) ([52f5467](https://github.com/fuf-stack/ts-project-setup/commit/52f546761b0aab1f32fa26e455591ace22225d91))
+* **project-cli-tools:** update dependency lint-staged to v16.1.1 ([#635](https://github.com/fuf-stack/ts-project-setup/issues/635)) ([83c32b2](https://github.com/fuf-stack/ts-project-setup/commit/83c32b2f8e4f55a6c23c057631458a6883bdc039))
+* **project-cli-tools:** update dependency lint-staged to v16.1.2 ([#636](https://github.com/fuf-stack/ts-project-setup/issues/636)) ([2e0be8d](https://github.com/fuf-stack/ts-project-setup/commit/2e0be8d76385cd8f2933fb911963d72b973808ef))
+* **project-cli-tools:** update dependency turbo to v2.5.3 ([#580](https://github.com/fuf-stack/ts-project-setup/issues/580)) ([59d6794](https://github.com/fuf-stack/ts-project-setup/commit/59d67946e3090ebedaeadff67d7aa7af5bb31a00))
+* **project-cli-tools:** update dependency turbo to v2.5.4 ([#618](https://github.com/fuf-stack/ts-project-setup/issues/618)) ([206371b](https://github.com/fuf-stack/ts-project-setup/commit/206371bf97cbefa368093e76afe2c7aa393215c9))
+* **project-cli-tools:** update lerna-lite monorepo to v4.1.2 ([#592](https://github.com/fuf-stack/ts-project-setup/issues/592)) ([c39d426](https://github.com/fuf-stack/ts-project-setup/commit/c39d426425c540f58069f9f1544ae162030141d5))
+* **project-cli-tools:** update lerna-lite monorepo to v4.2.0 ([#603](https://github.com/fuf-stack/ts-project-setup/issues/603)) ([f1e61d4](https://github.com/fuf-stack/ts-project-setup/commit/f1e61d4b614ae26c7c4f7d73ce57e8506ff00b73))
+* **project-cli-tools:** update lerna-lite monorepo to v4.3.0 ([#612](https://github.com/fuf-stack/ts-project-setup/issues/612)) ([e89e72a](https://github.com/fuf-stack/ts-project-setup/commit/e89e72afa56b8c5c9ff5f917ffe7f5bd7864c945))
+* **project-cli-tools:** update lerna-lite monorepo to v4.4.0 ([#633](https://github.com/fuf-stack/ts-project-setup/issues/633)) ([78a9622](https://github.com/fuf-stack/ts-project-setup/commit/78a9622b6c944ab278d455b546112d933b4d9053))
+* **project-cli-tools:** update lerna-lite monorepo to v4.4.1 ([#634](https://github.com/fuf-stack/ts-project-setup/issues/634)) ([b80596a](https://github.com/fuf-stack/ts-project-setup/commit/b80596a2a59a75a1af98254d04e92b212c7fc597))
+* **project-cli-tools:** update lerna-lite monorepo to v4.5.0 ([#653](https://github.com/fuf-stack/ts-project-setup/issues/653)) ([1d156fa](https://github.com/fuf-stack/ts-project-setup/commit/1d156fadf86d242b3259943a18d0e12d3f6e6894))
+* **project-cli-tools:** update lerna-lite monorepo to v4.5.1 ([#655](https://github.com/fuf-stack/ts-project-setup/issues/655)) ([577d325](https://github.com/fuf-stack/ts-project-setup/commit/577d32546c18fc21e7b7fc621f8236d314ac2deb))
+
 ## [1.0.6](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.5...project-cli-tools-v1.0.6) (2025-04-30)
 
 
