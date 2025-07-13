@@ -39,8 +39,8 @@ importers:
         specifier: 4.5.1
         version: 4.5.1(prettier@3.6.2)
       '@prettier/plugin-php':
-        specifier: 0.22.4
-        version: 0.22.4(prettier@3.6.2)
+        specifier: 0.23.0
+        version: 0.23.0(prettier@3.6.2)
       '@typescript-eslint/eslint-plugin':
         specifier: 7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
@@ -784,8 +784,8 @@ packages:
     resolution: {integrity: sha512-3qkKCftRE/HXzoWedyDuaMMUQzheDwx8AQXR0DnA9ylsBnZQYNut19Ado/gzi5+IvznaMcqrBszw57j3y1/ILw==}
     engines: {node: '>=16.14'}
 
-  '@prettier/plugin-php@0.22.4':
-    resolution: {integrity: sha512-uZWqfyrwsxScIYkmVcfnoQGFmKVMXTHD5pqYT4l8fxzm5P3XY94hTPbf8X6TFCi2QTZBIot7GS8lfIjQjldc2g==}
+  '@prettier/plugin-php@0.23.0':
+    resolution: {integrity: sha512-8VeSOewhR9eBaQbxDS+NCkbjk57VKlCroz4zTNDKnLl6h4JXG2MLITZR89WDFdHS/E35s/uwtSDgnigWlbGvkQ==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -2564,8 +2564,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  linguist-languages@7.31.2:
-    resolution: {integrity: sha512-UQv5iuzEcGoYWdc/Ea2yqLiFbe8rQmIa5uD1FLwF5vBYmwbTvJlPJfHaIVtfYZTQf2wg7pzhxkwkGPP3q+v+EA==}
+  linguist-languages@8.0.0:
+    resolution: {integrity: sha512-qfzYmWmM/HOsrO/6YwN2f1DD39p3ObSuq8YgF9JLY9toQO39ZsPBPJoWwTtrqRvhkG+cQUgCOS9h/xRgwfqLxQ==}
 
   lint-staged@16.1.2:
     resolution: {integrity: sha512-sQKw2Si2g9KUZNY3XNvRuDq4UJqpHwF0/FQzZR2M7I5MvtpWvibikCjUVJzZdGE0ByurEl3KQNvsGetd1ty1/Q==}
@@ -3021,8 +3021,8 @@ packages:
     resolution: {integrity: sha512-//nshmD55c46FuFw26xV/xFAaB5HF9Xdap7HJBBnrKdAd6/GxDBaNA1870O79+9ueg61cZLSVc+OaFlfmObYVQ==}
     engines: {node: '>= 14.16'}
 
-  php-parser@3.2.4:
-    resolution: {integrity: sha512-X1HIaSHCb9aAReEqb+U/AAB3evE1iKD6tAY/lw9+wT4koCkWhg22m4LNtFGwd3Qv4PYIL2+zl+oXh00ALKya0Q==}
+  php-parser@3.2.5:
+    resolution: {integrity: sha512-M1ZYlALFFnESbSdmRtTQrBFUHSriHgPhgqtTF/LCbZM4h7swR5PHtUceB2Kzby5CfqcsYwBn7OXTJ0+8Sajwkw==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -4731,10 +4731,10 @@ snapshots:
       write-file-atomic: 5.0.1
       write-yaml-file: 5.0.0
 
-  '@prettier/plugin-php@0.22.4(prettier@3.6.2)':
+  '@prettier/plugin-php@0.23.0(prettier@3.6.2)':
     dependencies:
-      linguist-languages: 7.31.2
-      php-parser: 3.2.4
+      linguist-languages: 8.0.0
+      php-parser: 3.2.5
       prettier: 3.6.2
 
   '@rollup/rollup-android-arm-eabi@4.44.2':
@@ -6734,7 +6734,7 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  linguist-languages@7.31.2: {}
+  linguist-languages@8.0.0: {}
 
   lint-staged@16.1.2:
     dependencies:
@@ -7204,7 +7204,7 @@ snapshots:
 
   pathval@2.0.1: {}
 
-  php-parser@3.2.4: {}
+  php-parser@3.2.5: {}
 
   picocolors@1.1.1: {}
 
