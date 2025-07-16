@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.3...eslint-config-fuf-v0.12.4) (2025-07-16)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @prettier/plugin-php to v0.24.0 ([#673](https://github.com/fuf-stack/ts-project-setup/issues/673)) ([95b9723](https://github.com/fuf-stack/ts-project-setup/commit/95b97238041fed59382f9c3379968f25fc14c728))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9 ([898a550](https://github.com/fuf-stack/ts-project-setup/commit/898a550f76146dee8fdf8aa6c622029a1016e184))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9 ([0febc2e](https://github.com/fuf-stack/ts-project-setup/commit/0febc2e800cb88f65abd5c5409929287bcb6a046))
+
 ## [0.12.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.2...eslint-config-fuf-v0.12.3) (2025-07-14)
 
 
