@@ -148,8 +148,8 @@ importers:
         specifier: 2.5.5
         version: 2.5.5
       wait-on:
-        specifier: 8.0.3
-        version: 8.0.3
+        specifier: 8.0.4
+        version: 8.0.4
 
   packages/typescript-config: {}
 
@@ -1451,8 +1451,8 @@ packages:
     resolution: {integrity: sha512-Xm7bpRXnDSX2YE2YFfBk2FnF0ep6tmG7xPh8iHee8MIcrgq762Nkce856dYtJYLkuIoYZvGfTs/PbZhideTcEg==}
     engines: {node: '>=4'}
 
-  axios@1.10.0:
-    resolution: {integrity: sha512-/1xYAC4MP/HEG+3duIhFr4ZQXR4sQXOIe+o6sdqzeykGLx6Upp/1p8MHqhINOvGeP7xyNHe7tsiJByc4SSVUxw==}
+  axios@1.11.0:
+    resolution: {integrity: sha512-1Lx3WLFQWm3ooKDYZD1eXmoGO9fxYQjrycfHFC8P0sCfQVXyROp0p9PFWBehewBOdCwHc+f/b8I0fMto5eSfwA==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -4138,8 +4138,8 @@ packages:
       jsdom:
         optional: true
 
-  wait-on@8.0.3:
-    resolution: {integrity: sha512-nQFqAFzZDeRxsu7S3C7LbuxslHhk+gnJZHyethuGKAn2IVleIbTB9I3vJSQiSR+DifUqmdzfPMoMPJfLqMF2vw==}
+  wait-on@8.0.4:
+    resolution: {integrity: sha512-8f9LugAGo4PSc0aLbpKVCVtzayd36sSCp4WLpVngkYq6PK87H79zt77/tlCU6eKCLqR46iFvcl0PU5f+DmtkwA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -5676,7 +5676,7 @@ snapshots:
 
   axe-core@4.10.3: {}
 
-  axios@1.10.0:
+  axios@1.11.0:
     dependencies:
       follow-redirects: 1.15.9
       form-data: 4.0.4
@@ -8567,9 +8567,9 @@ snapshots:
       - supports-color
       - terser
 
-  wait-on@8.0.3:
+  wait-on@8.0.4:
     dependencies:
-      axios: 1.10.0
+      axios: 1.11.0
       joi: 17.13.3
       lodash: 4.17.21
       minimist: 1.2.8
