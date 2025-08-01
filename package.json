@@ -16,7 +16,7 @@
     "@fuf-stack/typescript-config": "workspace:*",
     "@fuf-stack/vitest-config": "workspace:*",
     "ts-node": "10.9.2",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "workspaces": [
     "packages/*"
