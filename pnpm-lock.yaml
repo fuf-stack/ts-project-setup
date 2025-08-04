@@ -78,8 +78,8 @@ importers:
         specifier: 5.2.0
         version: 5.2.0(eslint@8.57.1)
       eslint-plugin-storybook:
-        specifier: 9.1.0
-        version: 9.1.0(eslint@8.57.1)(storybook@9.1.0(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@5.4.19(@types/node@22.17.0)))(typescript@5.9.2)
+        specifier: 9.1.1
+        version: 9.1.1(eslint@8.57.1)(storybook@9.1.0(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@5.4.19(@types/node@22.17.0)))(typescript@5.9.2)
       eslint-plugin-vitest:
         specifier: 0.4.1
         version: 0.4.1(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1)(typescript@5.9.2)(vitest@2.1.9(@types/node@22.17.0))
@@ -2063,12 +2063,12 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-storybook@9.1.0:
-    resolution: {integrity: sha512-65JgC6HLhHfvq5ip3CcZ8rP9xytxphIsTaeuGwHZVDDJdJ+k3XJ87Cj1yjUirnhG5am+ma4eZBPVwFWdaYC1PA==}
+  eslint-plugin-storybook@9.1.1:
+    resolution: {integrity: sha512-g4/i9yW6cl4TCEMzYyALNvO3d/jB6TDvSs/Pmye7dHDrra2B7dgZJGzmEWILD62brVrLVHNoXgy2dNPtx80kmw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       eslint: '>=8'
-      storybook: ^9.1.0
+      storybook: ^9.1.1
 
   eslint-plugin-vitest@0.4.1:
     resolution: {integrity: sha512-+PnZ2u/BS+f5FiuHXz4zKsHPcMKHie+K+1Uvu/x91ovkCMEOJqEI8E9Tw1Wzx2QRz4MHOBHYf1ypO8N1K0aNAA==}
@@ -6466,7 +6466,7 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-storybook@9.1.0(eslint@8.57.1)(storybook@9.1.0(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@5.4.19(@types/node@22.17.0)))(typescript@5.9.2):
+  eslint-plugin-storybook@9.1.1(eslint@8.57.1)(storybook@9.1.0(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@5.4.19(@types/node@22.17.0)))(typescript@5.9.2):
     dependencies:
       '@typescript-eslint/utils': 8.38.0(eslint@8.57.1)(typescript@5.9.2)
       eslint: 8.57.1
