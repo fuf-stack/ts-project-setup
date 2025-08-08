@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.4...eslint-config-fuf-v0.12.5) (2025-08-08)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @ianvs/prettier-plugin-sort-imports to v4.6.0 ([#698](https://github.com/fuf-stack/ts-project-setup/issues/698)) ([c4ccd7d](https://github.com/fuf-stack/ts-project-setup/commit/c4ccd7dda794304c8bcefef8c2b6ef1dcb365e07))
+* **eslint-config-fuf:** update dependency @ianvs/prettier-plugin-sort-imports to v4.6.1 ([#700](https://github.com/fuf-stack/ts-project-setup/issues/700)) ([68c1b71](https://github.com/fuf-stack/ts-project-setup/commit/68c1b7192e046694482e5d27063c4a38d6dcf539))
+* **eslint-config-fuf:** update dependency eslint-config-prettier to v10.1.8 ([#677](https://github.com/fuf-stack/ts-project-setup/issues/677)) ([ca2e4ca](https://github.com/fuf-stack/ts-project-setup/commit/ca2e4ca0de57c2382e38852d5f6f7ef6014cdf06))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.5.2 ([#678](https://github.com/fuf-stack/ts-project-setup/issues/678)) ([d8a1d7f](https://github.com/fuf-stack/ts-project-setup/commit/d8a1d7f97c3a479eaa8769c47dc9ec3cc871f349))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.5.3 ([#680](https://github.com/fuf-stack/ts-project-setup/issues/680)) ([f51dfa0](https://github.com/fuf-stack/ts-project-setup/commit/f51dfa0ebbb4801be0a4eb4b7e93d80f0d4a1461))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.5.4 ([#697](https://github.com/fuf-stack/ts-project-setup/issues/697)) ([976f55c](https://github.com/fuf-stack/ts-project-setup/commit/976f55c6626ff1896d1c2ad52872910f85beedc5))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9.0.18 ([#683](https://github.com/fuf-stack/ts-project-setup/issues/683)) ([0a42f21](https://github.com/fuf-stack/ts-project-setup/commit/0a42f21e4453cdb121a5d5af718394e04d3bf75c))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9.1.0 ([#691](https://github.com/fuf-stack/ts-project-setup/issues/691)) ([9205f9a](https://github.com/fuf-stack/ts-project-setup/commit/9205f9a379bffb1e63310ece7276316fc733a60f))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9.1.1 ([#696](https://github.com/fuf-stack/ts-project-setup/issues/696)) ([2788b2b](https://github.com/fuf-stack/ts-project-setup/commit/2788b2bdbeba2ea0ab7f7716e81c02a828a32ae4))
+
 ## [0.12.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.3...eslint-config-fuf-v0.12.4) (2025-07-16)
 
 
