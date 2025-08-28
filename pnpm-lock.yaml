@@ -36,8 +36,8 @@ importers:
         specifier: 7.28.0
         version: 7.28.0(@babel/core@7.28.3)(eslint@8.57.1)
       '@ianvs/prettier-plugin-sort-imports':
-        specifier: 4.6.3
-        version: 4.6.3(prettier@3.6.2)
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@prettier/plugin-php':
         specifier: 0.24.0
         version: 0.24.0(prettier@3.6.2)
@@ -91,7 +91,7 @@ importers:
         version: 0.14.1
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.6.3(prettier@3.6.2))(prettier-plugin-astro@0.14.1)(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-astro@0.14.1)(prettier@3.6.2)
     devDependencies:
       '@fuf-stack/typescript-config':
         specifier: workspace:*
@@ -683,8 +683,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@ianvs/prettier-plugin-sort-imports@4.6.3':
-    resolution: {integrity: sha512-lgETjWKuWgdu7CIKMrnaP9STvYDga42+A2ff8hMIployvkLYqT3xUt6Dqw0NpKp3qcqxBOCpwqbaYJEXXrhPQA==}
+  '@ianvs/prettier-plugin-sort-imports@4.7.0':
+    resolution: {integrity: sha512-soa2bPUJAFruLL4z/CnMfSEKGznm5ebz29fIa9PxYtu8HHyLKNE1NXAs6dylfw1jn/ilEIfO2oLLN6uAafb7DA==}
     peerDependencies:
       '@prettier/plugin-oxc': ^0.0.4
       '@vue/compiler-sfc': 2.7.x || 3.x
@@ -4752,7 +4752,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.6.3(prettier@3.6.2)':
+  '@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2)':
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/parser': 7.28.3
@@ -7784,11 +7784,11 @@ snapshots:
       prettier: 3.6.2
       sass-formatter: 0.7.9
 
-  prettier-plugin-tailwindcss@0.6.14(@ianvs/prettier-plugin-sort-imports@4.6.3(prettier@3.6.2))(prettier-plugin-astro@0.14.1)(prettier@3.6.2):
+  prettier-plugin-tailwindcss@0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-astro@0.14.1)(prettier@3.6.2):
     dependencies:
       prettier: 3.6.2
     optionalDependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.6.3(prettier@3.6.2)
+      '@ianvs/prettier-plugin-sort-imports': 4.7.0(prettier@3.6.2)
       prettier-plugin-astro: 0.14.1
 
   prettier@3.6.2: {}
