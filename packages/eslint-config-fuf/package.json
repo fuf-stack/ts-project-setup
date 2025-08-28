@@ -52,7 +52,7 @@
     "@fuf-stack/typescript-config": "workspace:*",
     "@types/eslint": "8.56.12",
     "@types/react": "19.1.12",
-    "@types/react-dom": "19.1.8",
+    "@types/react-dom": "19.1.9",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "tailwindcss": "4.1.12"
