@@ -20,7 +20,7 @@
   "dependencies": {
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
-    "@commitlint/config-pnpm-scopes": "19.9.0",
+    "@commitlint/config-pnpm-scopes": "19.9.1",
     "@lerna-lite/cli": "4.7.2",
     "@lerna-lite/version": "4.7.2",
     "commitizen": "4.3.1",

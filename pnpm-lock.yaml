@@ -124,8 +124,8 @@ importers:
         specifier: 19.8.1
         version: 19.8.1
       '@commitlint/config-pnpm-scopes':
-        specifier: 19.9.0
-        version: 19.9.0
+        specifier: 19.9.1
+        version: 19.9.1
       '@lerna-lite/cli':
         specifier: 4.7.2
         version: 4.7.2(@lerna-lite/version@4.7.2(@types/node@22.18.0)(conventional-commits-filter@5.0.0))(@types/node@22.18.0)
@@ -268,8 +268,8 @@ packages:
     resolution: {integrity: sha512-/AZHJL6F6B/G959CsMAzrPKKZjeEiAVifRyEwXxcT6qtqbPwGw+iQxmNS+Bu+i09OCtdNRW6pNpBvgPrtMr9EQ==}
     engines: {node: '>=v18'}
 
-  '@commitlint/config-pnpm-scopes@19.9.0':
-    resolution: {integrity: sha512-RhEbbBUFeViAf5Vw5742kC9pMm5mBjr7ljhi8/NArpApwyD/oGMXvQgMb88O3MFL5/pM6NF6c8/7coUTzUK8DQ==}
+  '@commitlint/config-pnpm-scopes@19.9.1':
+    resolution: {integrity: sha512-jIwF+ANmX69Frzg+Okrj3dT/kcwl0+k3tTS8Emb3X9bisAXGk5JATrADOc3L/Icpih+WJpjmFYfhicOr3FP1Lg==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@19.8.1':
@@ -4451,7 +4451,7 @@ snapshots:
       '@commitlint/types': 19.8.1
       conventional-changelog-conventionalcommits: 7.0.2
 
-  '@commitlint/config-pnpm-scopes@19.9.0':
+  '@commitlint/config-pnpm-scopes@19.9.1':
     dependencies:
       '@pnpm/read-project-manifest': 5.0.11
       fast-glob: 3.3.3
