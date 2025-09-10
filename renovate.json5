@@ -1,70 +1,40 @@
 {
-  dependencyDashboardLabels: ['effort | ongoing', 'scope | dependencies'],
-  dependencyDashboardOSVVulnerabilitySummary: 'all',
+  dependencyDashboardLabels: ["effort | ongoing", "scope | dependencies"],
+  dependencyDashboardOSVVulnerabilitySummary: "all",
   extends: [
-    'config:recommended',
-    'default:automergeDigest',
-    'default:automergeMinor',
-    'default:combinePatchMinorReleases',
-    'default:dependencyDashboard',
-    'default:docker',
-    'default:enableVulnerabilityAlerts',
-    'default:maintainLockFilesWeekly',
-    'default:prHourlyLimit4',
+    "config:recommended",
+    "default:automergeDigest",
+    "default:automergeMinor",
+    "default:combinePatchMinorReleases",
+    "default:dependencyDashboard",
+    "default:docker",
+    "default:enableVulnerabilityAlerts",
+    "default:maintainLockFilesWeekly",
+    "default:prHourlyLimit4",
   ],
-  ignorePaths: ['/node_modules/'],
-  // wait 3 days before creating mrs (supply chain attacks)
-  // see: https://docs.renovatebot.com/configuration-options/#minimumreleaseage
-  minimumReleaseAge: '3 days',
-  // only rebase merge requests when they become conflicted
-  // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
-  rebaseWhen: 'conflicted',
-  // schedule: [
-  //   'after 10pm every weekday',
-  //   'before 8am every weekday',
-  //   // 'every weekend',
-  // ],
-  // stop updating pull requests with this label
-  // https://docs.renovatebot.com/configuration-options/#stopupdatinglabel
-  stopUpdatingLabel: 'renovate | stop update',
+  ignorePaths: ["/node_modules/"],
+  minimumReleaseAge: "3 days",
+  rebaseWhen: "conflicted",
+  stopUpdatingLabel: "renovate | stop update",
   packageRules: [
-    /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-     * renovate config packages
-     ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-    // @fuf-stack/eslint-config-fuf
     {
-      extends: [':semanticCommitScope(eslint-config-fuf)'],
-      matchFileNames: ['packages/eslint-config-fuf/package.json'],
-      // prevent multiple 'Lock file maintenance' being created
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      extends: [":semanticCommitScope(eslint-config-fuf)"],
+      matchFileNames: ["packages/eslint-config-fuf/package.json"],
+      matchUpdateTypes: ["major", "minor", "patch"],
     },
-
-    // @fuf-stack/project-cli-tools
     {
-      extends: [':semanticCommitScope(project-cli-tools)'],
-      matchFileNames: ['packages/project-cli-tools/package.json'],
-      // prevent multiple 'Lock file maintenance' being created
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      extends: [":semanticCommitScope(project-cli-tools)"],
+      matchFileNames: ["packages/project-cli-tools/package.json"],
+      matchUpdateTypes: ["major", "minor", "patch"],
     },
-
-    // @fuf-stack/vitest-config
     {
-      extends: [':semanticCommitScope(vitest-config)'],
-      matchFileNames: ['packages/vitest-config/package.json'],
-      // prevent multiple 'Lock file maintenance' being created
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      extends: [":semanticCommitScope(vitest-config)"],
+      matchFileNames: ["packages/vitest-config/package.json"],
+      matchUpdateTypes: ["major", "minor", "patch"],
     },
-
-    /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-     * package specific rules
-     ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-    // eslint v9 migration needed:
-    //
-    // Make sure you're running eslint v9.0.0 or higher for the latest version of this plugin to work.
-    // The following example is how your eslint.config.js should be setup for this plugin to work for you.
-    //
-    // see: https://github.com/veritem/eslint-plugin-vitest?tab=readme-ov-file#usage
-    { packageNames: ['eslint-plugin-vitest'], allowedVersions: '<0.5.0' },
+    {
+      matchPackageNames: ["eslint-plugin-vitest"],
+      allowedVersions: "<0.5.0",
+    },
   ],
 }
