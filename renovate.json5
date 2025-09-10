@@ -13,6 +13,9 @@
     'default:prHourlyLimit4',
   ],
   ignorePaths: ['/node_modules/'],
+  // wait 3 days before creating mrs (supply chain attacks)
+  // see: https://docs.renovatebot.com/configuration-options/#minimumreleaseage
+  minimumReleaseAge: 3,
   // only rebase merge requests when they become conflicted
   // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
   rebaseWhen: 'conflicted',
