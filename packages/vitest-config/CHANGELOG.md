@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v1.1.2...vitest-config-v2.0.0) (2025-09-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config-fuf:** upgrade to eslint v9 + eslint-config-airbnb-extended
+
+### Features
+
+* **eslint-config-fuf:** upgrade to eslint v9 + eslint-config-airbnb-extended ([5aff612](https://github.com/fuf-stack/ts-project-setup/commit/5aff612b7caa11921e508b0bc45d30220e7997c2))
+
+
+### Bug Fixes
+
+* **vitest-config:** update vitest monorepo to v3 ([1f57a43](https://github.com/fuf-stack/ts-project-setup/commit/1f57a43e49fa485cf6e3d11b804c08bb294db160))
+* **vitest-config:** update vitest monorepo to v3 (major) ([de6e225](https://github.com/fuf-stack/ts-project-setup/commit/de6e225834a5314b1583edc684853f5cbb0e922c))
+
 ## [1.1.2](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v1.1.1...vitest-config-v1.1.2) (2025-02-10)
 
 
