@@ -1,6 +1,6 @@
 // see: https://github.com/veritem/eslint-plugin-vitest
 
-import vitest from 'eslint-plugin-vitest';
+import vitest from '@vitest/eslint-plugin';
 
 export default [
   {
