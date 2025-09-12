@@ -43,7 +43,7 @@
   ],
 
   // cSpell extension settings
-  "cSpell.words": ["astro"],
+  "cSpell.words": ["astro", "Fröhlich"],
 
   // tailwind extension settings
   // disable tailwind extension validate (because it sometimes hangs and we use prettier-plugin-tailwindcss)
