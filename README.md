@@ -1,4 +1,4 @@
-## fuf TypeScript Project Setup
+## Fröhlich ∧ Frei TypeScript Project Setup
 
 Opinionated Fröhlich ∧ Frei monorepo templates and shared configs for building TypeScript projects with consistent tooling.
 
