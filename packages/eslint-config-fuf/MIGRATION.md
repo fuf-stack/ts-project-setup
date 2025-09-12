@@ -51,36 +51,21 @@ If you customized rules previously using `eslint-plugin-import`, rename them to 
 
 ## 3) Type-aware linting
 
-You have two options:
+Use only the root `tsconfig.json` for ESLint type-aware parsing. Move any extra includes there and delete `tsconfig.eslint.json`.
 
-- Keep a dedicated `tsconfig.eslint.json` that includes extra files for linting, or
-- Remove `tsconfig.eslint.json` and move the include entries into your root `tsconfig.json`.
+Recommended include entries to add to your root `tsconfig.json`:
 
-Example `tsconfig.eslint.json` (optional):
-
-```json
-{
-  "extends": "@fuf-stack/typescript-config/base.json",
-  "include": ["src", "test", "*.config.*"]
-}
-```
-
-Recommended include entries when migrating (if using a dedicated tsconfig or moving them to `tsconfig.json`):
-
-- Add `eslint.config.mjs`
 - Add package flat-config files: `packages/eslint-config-fuf/**/*.mjs`
-- Switch Prettier config to CommonJS name: `prettier.config.cjs`
 - If you use Vitest with ESM config: `vitest.config.mts`
+- If you use a workspace Vitest file: `vitest.workspace.ts`
 
-Example include list (in `tsconfig.eslint.json` or root `tsconfig.json`):
+Example include list (root `tsconfig.json`):
 
 ```json
 {
   "include": [
     "./**/*.ts",
     "./**/*.tsx",
-    "packages/eslint-config-fuf/**/*.mjs",
-    "prettier.config.cjs",
     "vitest.config.mts",
     "vitest.workspace.ts"
   ]
