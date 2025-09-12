@@ -1,13 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
-import { defineConfig, mergeConfig } from 'vitest/config';
+import config from '@fuf-stack/vitest-config';
 
-import base from '@fuf-stack/vitest-config';
-
-export default mergeConfig(
-  base,
-  defineConfig({
-    // Set global timeout to 30 seconds
-    test: { testTimeout: 30000 },
-  }),
-);
+export default config;
