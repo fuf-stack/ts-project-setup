@@ -1,11 +1,9 @@
 import { expect, it } from 'vitest';
 
-import { lintFixture } from './helper';
+import { lintFixture, snapshotPath } from './helper';
 
 it('fixes invalid test title', async () => {
-  const { fixedContent } = await lintFixture(
-    'vitest-valid-title.test.ts',
-    'vitest.config.mjs',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'vitest-valid-title.test.ts';
+  const { fixedContent } = await lintFixture(fixture, 'vitest.config.mjs');
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });

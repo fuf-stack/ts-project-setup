@@ -1,93 +1,81 @@
 import { expect, it } from 'vitest';
 
-import { lintFixture, prettierFixFixture } from './helper';
+import { lintFixture, prettierFixFixture, snapshotPath } from './helper';
 
 it('enforces indentation', async () => {
-  const { fixedContent } = await lintFixture(
-    'prettier-indentation.ts',
-    'base.config.mjs',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-indentation.ts';
+  const { fixedContent } = await lintFixture(fixture, 'base.config.mjs');
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats astro components', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-astro-format.astro',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-astro-format.astro';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats css', async () => {
-  const { fixedContent } = await prettierFixFixture('prettier-css-format.css');
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-css-format.css';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats graphql', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-graphql-format.graphql',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-graphql-format.graphql';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats html', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-html-format.html',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-html-format.html';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats json', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-json-format.json',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-json-format.json';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats markdown', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-markdown-format.md',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-markdown-format.md';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats php code', async () => {
-  const { fixedContent } = await prettierFixFixture('prettier-php-format.php');
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-php-format.php';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('formats yaml', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-yaml-format.yaml',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-yaml-format.yaml';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('sorts imports in blocks', async () => {
-  const { fixedContent } = await lintFixture(
-    'prettier-sort-imports.ts',
-    'base.config.mjs',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-sort-imports.ts';
+  const { fixedContent } = await lintFixture(fixture, 'base.config.mjs');
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('sorts tailwind classes', async () => {
-  const { fixedContent } = await lintFixture(
-    'prettier-tailwind-sort-classes.tsx',
-    'base.config.mjs',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-tailwind-sort-classes.tsx';
+  const { fixedContent } = await lintFixture(fixture, 'base.config.mjs');
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('sorts tailwind classes in astro components', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-tailwind-sort-classes.astro',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-tailwind-sort-classes.astro';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('sorts tailwind classes in tailwindAdditionalFunctions from prettier.config.js', async () => {
-  const { fixedContent } = await prettierFixFixture(
-    'prettier-tailwind-sort-classes-additional-function.ts',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'prettier-tailwind-sort-classes-additional-function.ts';
+  const { fixedContent } = await prettierFixFixture(fixture);
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });

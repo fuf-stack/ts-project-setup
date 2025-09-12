@@ -1,0 +1,5 @@
+import { expect, it } from 'vitest';
+
+it('is a test', () => {
+  expect(true).toBe(true);
+});

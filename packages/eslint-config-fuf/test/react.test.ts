@@ -1,20 +1,16 @@
 import { expect, it } from 'vitest';
 
-import { lintFixture } from './helper';
+import { lintFixture, snapshotPath } from './helper';
 
 it('enforces component arrow-function definition', async () => {
-  const { fixedContent } = await lintFixture(
-    'react-function-component-definition.tsx',
-    'react.config.mjs',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'react-function-component-definition.tsx';
+  const { fixedContent } = await lintFixture(fixture, 'react.config.mjs');
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('shows warning when optional props do not have a function default arg', async () => {
-  const { results } = await lintFixture(
-    'react-function-component-default-props.tsx',
-    'react.config.mjs',
-  );
+  const fixture = 'react-function-component-default-props.tsx';
+  const { results } = await lintFixture(fixture, 'react.config.mjs');
   expect(results).toMatchObject([
     {
       messages: [
@@ -30,9 +26,7 @@ it('shows warning when optional props do not have a function default arg', async
 });
 
 it('fixes storybook stories', async () => {
-  const { fixedContent } = await lintFixture(
-    'react-Button.stories.tsx',
-    'react.config.mjs',
-  );
-  expect(fixedContent).toMatchSnapshot();
+  const fixture = 'react-Button.stories.tsx';
+  const { fixedContent } = await lintFixture(fixture, 'react.config.mjs');
+  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });

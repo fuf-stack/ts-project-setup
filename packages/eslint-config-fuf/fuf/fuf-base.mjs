@@ -39,8 +39,7 @@ export default {
 
     // fuf rules
     'comma-dangle': ['error', 'only-multiline'],
-    // we use prettier/prettier for indentation
-    indent: 'off',
+
     'import-x/extensions': [
       'error',
       'ignorePackages',
@@ -52,8 +51,16 @@ export default {
       },
     ],
     'import-x/named': 'off',
+
+    // we use prettier/prettier for formatting
+    'prettier/prettier': 'warn',
+
+    // these rules are conflicting with prettier/prettier
+    // in some cases, so we turn them off
+    'implicit-arrow-linebreak': 'off',
     // we use prettier-plugin-sort-imports
     'import-x/order': 'off',
+    indent: 'off',
 
     // TODO: remove this once we migrate to v1.0.0
     // also turn off legacy import plugin rules if present upstream
@@ -63,8 +70,5 @@ export default {
     'import/order': 'off',
     'import/no-cycle': 'off',
     'no-underscore-dangle': 'off',
-
-    // we use prettier/prettier for formatting
-    'prettier/prettier': 'warn',
   },
 };

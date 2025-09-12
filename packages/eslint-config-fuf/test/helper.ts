@@ -49,3 +49,7 @@ export const prettierFixFixture = async (fixtureName: string) => {
 
   return { fixedContent };
 };
+
+/** build a stable per-fixture snapshot path */
+export const snapshotPath = (fixtureName: string) =>
+  `__snapshots__/fixture-${fixtureName}.snap`;

@@ -1,0 +1,34 @@
+import type { ReactElement } from 'react';
+
+import { describe, expect, it } from 'vitest';
+
+import fs from 'fs';
+import path from 'path';
+
+import react from 'react';
+
+import thirdParty from 'third-party-module';
+
+import someOtherThing from '@fuf-stack/some-other-thing';
+import something from '@fuf-stack/something';
+
+import absolute from 'src/absolute';
+import alsoAbsolute from 'src/also/absolute';
+
+import relative from '../relative/path';
+
+import jsonFile from './data.json';
+
+import jpeg from './image.jpeg';
+import jpg from './image.jpg';
+import png from './image.png';
+import svg from './image.svg';
+
+import moduleStyles from './Some.module.css';
+
+// INFO: css imports will not be touched
+import 'some-module/style.css';
+
+const MyComponent = (): ReactElement => null;
+
+export default MyComponent;

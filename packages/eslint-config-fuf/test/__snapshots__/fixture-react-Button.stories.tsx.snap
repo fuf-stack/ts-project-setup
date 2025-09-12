@@ -1,14 +1,4 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`enforces component arrow-function definition 1`] = `
-"const Component = () => <div />;
-
-export default Component;
-"
-`;
-
-exports[`fixes storybook stories 1`] = `
-"// TODO: currently we only check that formatting is working at all
+// TODO: currently we only check that formatting is working at all
 
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
@@ -27,5 +17,3 @@ export const Primary: Story = {
     label: 'Button',
   },
 };
-"
-`;
