@@ -16,7 +16,10 @@ Pick the preset you need:
 ```js
 import base from '@fuf-stack/eslint-config-fuf/base';
 
-export default [{ ignores: ['dist/**', 'node_modules/**'] }, ...base];
+export default [
+  { ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'] },
+  ...base,
+];
 ```
 
 - React
@@ -24,7 +27,10 @@ export default [{ ignores: ['dist/**', 'node_modules/**'] }, ...base];
 ```js
 import react from '@fuf-stack/eslint-config-fuf/react';
 
-export default [{ ignores: ['dist/**', 'node_modules/**'] }, ...react];
+export default [
+  { ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'] },
+  ...react,
+];
 ```
 
 - React + Vitest
@@ -34,7 +40,7 @@ import react from '@fuf-stack/eslint-config-fuf/react';
 import vitest from '@fuf-stack/eslint-config-fuf/vitest';
 
 export default [
-  { ignores: ['dist/**', 'node_modules/**'] },
+  { ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'] },
   ...react,
   ...vitest,
 ];
