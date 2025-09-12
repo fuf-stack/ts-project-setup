@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.0.0...eslint-config-fuf-v1.0.1) (2025-09-12)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** use eslint-config-prettier/flat to reset conflicting prettier rules ([2521364](https://github.com/fuf-stack/ts-project-setup/commit/25213642499f62c876b77cd69d2ef2933058c67d))
+
 ## [1.0.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.5...eslint-config-fuf-v1.0.0) (2025-09-12)
 
 
