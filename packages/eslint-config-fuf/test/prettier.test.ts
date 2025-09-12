@@ -3,7 +3,10 @@ import { expect, it } from 'vitest';
 import { lintFixture, prettierFixFixture } from './helper';
 
 it('enforces indentation', async () => {
-  const { fixedContent } = await lintFixture('prettier-indentation.ts');
+  const { fixedContent } = await lintFixture(
+    'prettier-indentation.ts',
+    'base.config.mjs',
+  );
   expect(fixedContent).toMatchSnapshot();
 });
 
@@ -60,13 +63,17 @@ it('formats yaml', async () => {
 });
 
 it('sorts imports in blocks', async () => {
-  const { fixedContent } = await lintFixture('prettier-sort-imports.ts');
+  const { fixedContent } = await lintFixture(
+    'prettier-sort-imports.ts',
+    'base.config.mjs',
+  );
   expect(fixedContent).toMatchSnapshot();
 });
 
 it('sorts tailwind classes', async () => {
   const { fixedContent } = await lintFixture(
     'prettier-tailwind-sort-classes.tsx',
+    'base.config.mjs',
   );
   expect(fixedContent).toMatchSnapshot();
 });

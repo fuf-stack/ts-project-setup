@@ -1,17 +1,15 @@
-/* eslint-disable import/prefer-default-export */
-
 import { readFileSync } from 'fs';
 import { join as pathJoin } from 'path';
 
 import { ESLint } from 'eslint';
 import prettier from 'prettier';
 
-type EslintConfig = 'base.config.js' | 'react.config.js';
+type EslintConfig = 'base.config.mjs' | 'react.config.mjs';
 
 /** lints a fixture by file name and return eslint results and fixed content */
 export const lintFixture = async (
   fixtureName: string,
-  config: EslintConfig = 'base.config.js',
+  config: EslintConfig = 'base.config.mjs',
 ) => {
   const eslint = new ESLint({
     fix: true,
@@ -26,7 +24,8 @@ export const lintFixture = async (
   const results = await eslint.lintText(fileContent, { filePath });
 
   // Assuming the first result corresponds to our linted text
-  const fixedContent = results[0].output || fileContent; // Use the fixed output, or original code if no fixes were made
+  // Use the fixed output, or original code if no fixes were made
+  const fixedContent = results[0].output || fileContent;
 
   return { fixedContent, results };
 };

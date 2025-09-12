@@ -5,7 +5,7 @@ import { lintFixture } from './helper';
 it('enforces component arrow-function definition', async () => {
   const { fixedContent } = await lintFixture(
     'react-function-component-definition.tsx',
-    'react.config.js',
+    'react.config.mjs',
   );
   expect(fixedContent).toMatchSnapshot();
 });
@@ -13,7 +13,7 @@ it('enforces component arrow-function definition', async () => {
 it('shows warning when optional props do not have a function default arg', async () => {
   const { results } = await lintFixture(
     'react-function-component-default-props.tsx',
-    'react.config.js',
+    'react.config.mjs',
   );
   expect(results).toMatchObject([
     {
@@ -32,7 +32,7 @@ it('shows warning when optional props do not have a function default arg', async
 it('fixes storybook stories', async () => {
   const { fixedContent } = await lintFixture(
     'react-Button.stories.tsx',
-    'react.config.js',
+    'react.config.mjs',
   );
   expect(fixedContent).toMatchSnapshot();
 });

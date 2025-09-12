@@ -1,17 +1,27 @@
-module.exports = {
+import tseslint from '@typescript-eslint/eslint-plugin';
+
+export default {
+  name: 'fuf/typescript',
+  files: ['**/*.ts', '**/*.tsx'],
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
+      // Allow linting files not included in a discovered tsconfig
+      // see: https://typescript-eslint.io/packages/parser#allowdefaultproject
+      allowDefaultProject: true,
+    },
+  },
+  plugins: {
+    '@typescript-eslint': tseslint,
+  },
   rules: {
     // ts rules
 
-    '@typescript-eslint/ban-types': 'warn',
-
-    '@typescript-eslint/camelcase': 'off',
+    // removed deprecated rules
     camelcase: 'off',
 
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-
-    // we use prettier/prettier for indentation fix
-    '@typescript-eslint/indent': 'off',
 
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-var-requires': 'off',

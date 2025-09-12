@@ -1,4 +1,13 @@
 {
+  // include additional files for linting here
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "packages/eslint-config-fuf/**/*.js",
+    "packages/eslint-config-fuf/**/*.mjs",
+    "vitest.config.mts",
+    "vitest.workspace.ts"
+  ],
   "references": [
     { "path": "packages/eslint-config-fuf/test/fixtures" },
     { "path": "packages/vitest-config" }

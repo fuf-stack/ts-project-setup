@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@fuf-stack/typescript-config/base.json",
+  "composite": true,
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",

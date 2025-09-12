@@ -5,8 +5,8 @@
     "build": "pnpm --filter=\"@fuf-stack/*\" build",
     "commit": "lint-staged && git-cz",
     "dev": "lerna run --parallel dev",
-    "fix": "eslint --debug --fix --ext .js --ignore-path .gitignore packages || true && prettier --write \"packages/**/*\"",
-    "lint": "eslint --debug --ignore-path .gitignore ./packages",
+    "fix": "eslint --debug --fix --ext .js packages || true && prettier --write \"packages/**/*\"",
+    "lint": "eslint --debug ./packages",
     "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" FORCE_COLOR=1 vitest --coverage $VITEST_EXTRA_OPTS"
   },
   "devDependencies": {

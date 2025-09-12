@@ -201,9 +201,7 @@ comments: >
 `;
 
 exports[`sorts imports in blocks 1`] = `
-"import type { ReactElement } from 'react';
-
-import { describe, expect, it } from 'vitest';
+"import { describe, expect, it } from 'vitest';
 
 import fs from 'fs';
 import path from 'path';
@@ -231,6 +229,10 @@ import moduleStyles from './Some.module.css';
 
 // INFO: css imports will not be touched
 import 'some-module/style.css';
+
+const MyComponent = (): ReactElement => null;
+
+export default MyComponent;
 "
 `;
 

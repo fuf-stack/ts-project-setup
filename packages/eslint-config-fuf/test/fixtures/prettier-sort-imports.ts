@@ -22,3 +22,7 @@ import jpeg from './image.jpeg';
 
 // INFO: css imports will not be touched
 import 'some-module/style.css';
+
+const MyComponent = (): ReactElement => null;
+
+export default MyComponent;

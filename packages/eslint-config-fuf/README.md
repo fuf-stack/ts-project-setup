@@ -25,27 +25,28 @@ yarn add -D @fuf-stack/eslint-config-fuf
 
 This package bundles the required peer tooling (eslint, prettier, plugins) so you do not need to install them separately.
 
+Migrating to v1.0.0 (ESLint 9 flat config)? See MIGRATION.md in this package.
+
 ## Usage
 
 Create an ESLint config that extends one of the provided entry points.
 
-### Base (Node/JS/TS)
+### Base (Node/JS/TS) — Flat config (ESLint 9)
 
 ```js
-// .eslintrc.cjs or eslint.config.cjs
-module.exports = {
-  root: true,
-  extends: ['@fuf-stack/eslint-config-fuf/base'],
-};
+// eslint.config.mjs
+import base from '@fuf-stack/eslint-config-fuf/base';
+
+export default [...base];
 ```
 
-### React (JS/TS + React + Storybook overrides)
+### React (JS/TS + React + Storybook overrides) — Flat config (ESLint 9)
 
 ```js
-module.exports = {
-  root: true,
-  extends: ['@fuf-stack/eslint-config-fuf/react'],
-};
+// eslint.config.mjs
+import react from '@fuf-stack/eslint-config-fuf/react';
+
+export default [...react];
 ```
 
 ### Vitest (test files only)
@@ -53,13 +54,11 @@ module.exports = {
 If you want Vitest rules for test files, add the vitest config after your base/react config:
 
 ```js
-module.exports = {
-  root: true,
-  extends: [
-    '@fuf-stack/eslint-config-fuf/react',
-    '@fuf-stack/eslint-config-fuf/vitest',
-  ],
-};
+// eslint.config.mjs
+import react from '@fuf-stack/eslint-config-fuf/react';
+import vitest from '@fuf-stack/eslint-config-fuf/vitest';
+
+export default [...react, ...vitest];
 ```
 
 Notes:
@@ -77,13 +76,13 @@ Example `tsconfig.eslint.json`:
 
 ## What’s inside
 
-- `base` extends: `airbnb-base`, `eslint:recommended`, `plugin:prettier/recommended` and Fröhlich ∧ Frei base/ts rules
-- `react` extends: `airbnb`, `airbnb/hooks`, `eslint:recommended`, `plugin:prettier/recommended`, `plugin:react/jsx-runtime` and Fröhlich ∧ Frei base/react/ts rules; Storybook overrides for `*.stories.ts(x)`
+- `base` composes: Airbnb base via `eslint-config-airbnb-extended` + Fröhlich ∧ Frei base/ts rules ([docs](https://github.com/NishargShah/eslint-config-airbnb-extended))
+- `react` composes: Airbnb react + hooks via `eslint-config-airbnb-extended` + jsx-runtime + Fröhlich ∧ Frei base/react/ts rules; Storybook overrides for `*.stories.ts(x)`
 - `vitest` extends: `plugin:vitest/recommended` for `*.spec|test.ts(x)` and relaxes `import/no-extraneous-dependencies` in tests
 - Fröhlich ∧ Frei rules include:
   - Allow leading underscore for intentionally unused vars
   - Enforce arrow-function components; default props via function default args
-  - Consistent type-only imports; import extensions off for ts/tsx/js/jsx
+  - Consistent type-only imports; import extensions off for ts/tsx/js/jsx (`import-x`)
   - Prettier formatting as the single source of truth
 
 ## Prettier configuration helper
