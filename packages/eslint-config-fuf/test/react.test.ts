@@ -5,7 +5,7 @@ import { lintFixture, snapshotPath } from './helper';
 it('enforces component arrow-function definition', async () => {
   const fixture = 'react-function-component-definition.tsx';
   const { fixedContent } = await lintFixture(fixture, 'react.config.mjs');
-  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
+  await expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
 
 it('shows warning when optional props do not have a function default arg', async () => {
@@ -28,5 +28,5 @@ it('shows warning when optional props do not have a function default arg', async
 it('fixes storybook stories', async () => {
   const fixture = 'react-Button.stories.tsx';
   const { fixedContent } = await lintFixture(fixture, 'react.config.mjs');
-  expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
+  await expect(fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
 });
