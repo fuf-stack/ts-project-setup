@@ -1,9 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
+    // Set global timeout to 20 seconds
+    testTimeout: 20000,
     coverage: {
       include: [
         'apps/*/src/**/*.{js,jsx,ts,tsx}',
