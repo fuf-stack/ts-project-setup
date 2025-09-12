@@ -19,7 +19,6 @@ export default {
     // redwood rules
     // see: https://github.com/redwoodjs/redwood/blob/main/packages/eslint-config/shared.js
     // redwood-inspired defaults
-    'prettier/prettier': 'warn',
     'no-console': 'off',
     'prefer-object-spread': 'warn',
     'prefer-spread': 'warn',
@@ -64,5 +63,8 @@ export default {
     'import/order': 'off',
     'import/no-cycle': 'off',
     'no-underscore-dangle': 'off',
+
+    // we use prettier/prettier for formatting
+    'prettier/prettier': 'warn',
   },
 };

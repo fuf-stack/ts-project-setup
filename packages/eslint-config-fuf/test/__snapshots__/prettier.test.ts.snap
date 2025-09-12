@@ -201,7 +201,9 @@ comments: >
 `;
 
 exports[`sorts imports in blocks 1`] = `
-"import { describe, expect, it } from 'vitest';
+"import type { ReactElement } from 'react';
+
+import { describe, expect, it } from 'vitest';
 
 import fs from 'fs';
 import path from 'path';
