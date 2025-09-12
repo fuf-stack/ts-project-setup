@@ -2,7 +2,7 @@
 
 Opinionated Fröhlich ∧ Frei ESLint + Prettier configuration for JavaScript/TypeScript projects, with optional React, Storybook, Vitest and Tailwind CSS integrations.
 
-- **Base**: Airbnb base, ESLint recommended, Prettier, and fuf defaults
+- **Base**: Airbnb base, ESLint recommended, Prettier and Fröhlich ∧ Frei defaults
 - **TypeScript**: `@typescript-eslint` with sensible rules and type-aware parsing
 - **React**: Airbnb React + Hooks, JSX runtime, Storybook overrides
 - **Vitest**: Linting for test files
@@ -77,10 +77,10 @@ Example `tsconfig.eslint.json`:
 
 ## What’s inside
 
-- `base` extends: `airbnb-base`, `eslint:recommended`, `plugin:prettier/recommended`, and fuf base/ts rules
-- `react` extends: `airbnb`, `airbnb/hooks`, `eslint:recommended`, `plugin:prettier/recommended`, `plugin:react/jsx-runtime`, and fuf base/react/ts rules; Storybook overrides for `*.stories.ts(x)`
+- `base` extends: `airbnb-base`, `eslint:recommended`, `plugin:prettier/recommended` and Fröhlich ∧ Frei base/ts rules
+- `react` extends: `airbnb`, `airbnb/hooks`, `eslint:recommended`, `plugin:prettier/recommended`, `plugin:react/jsx-runtime` and Fröhlich ∧ Frei base/react/ts rules; Storybook overrides for `*.stories.ts(x)`
 - `vitest` extends: `plugin:vitest/recommended` for `*.spec|test.ts(x)` and relaxes `import/no-extraneous-dependencies` in tests
-- fuf rules include:
+- Fröhlich ∧ Frei rules include:
   - Allow leading underscore for intentionally unused vars
   - Enforce arrow-function components; default props via function default args
   - Consistent type-only imports; import extensions off for ts/tsx/js/jsx
