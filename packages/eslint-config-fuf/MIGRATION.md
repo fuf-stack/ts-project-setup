@@ -69,6 +69,7 @@ Example include list (root `tsconfig.json`):
 
 ```json
 {
+  // include additional files for linting here
   "include": [
     "./**/*.ts",
     "./**/*.tsx",
