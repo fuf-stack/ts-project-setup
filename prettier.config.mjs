@@ -1,9 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
-const prettierConfig = require('@fuf-stack/eslint-config-fuf/prettier');
+import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
 
-/** @type {import('prettier').Config} */
-module.exports = prettierConfig({
+export default createConfig({
   // INFO: just for testing
   enableAstro: true,
   enablePhp: true,

@@ -29,7 +29,7 @@
   "type": "module",
   "exports": {
     "./base": "./base.mjs",
-    "./prettier": "./prettier.cjs",
+    "./prettier": "./prettier.mjs",
     "./react": "./react.mjs",
     "./vitest": "./vitest.mjs"
   },

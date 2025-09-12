@@ -1,4 +1,34 @@
-module.exports = (options) => {
+/**
+ * createConfig(options)
+ *
+ * Factory that returns a Prettier configuration aligned with Fröhlich ∧ Frei conventions.
+ * It enables opinionated defaults, import sorting, and optional Astro/PHP/Tailwind support.
+ *
+ * Usage (ESM):
+ *   // prettier.config.mjs
+ *   import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
+ *   export default createConfig({
+ *     enableAstro: false,
+ *     enablePhp: false,
+ *     tailwindConfig: './tailwind.config.ts',
+ *     tailwindAdditionalFunctions: ['cn', 'classNames'],
+ *     workspacePackagePrefix: '@your-org',
+ *   });
+ *
+ * Parameters:
+ * - options.enableAstro: boolean — include prettier-plugin-astro and configure parser for *.astro
+ * - options.enablePhp: boolean — include @prettier/plugin-php and configure parser for *.php
+ * - options.tailwindConfig: string | undefined — absolute/relative path to Tailwind config
+ *   to enable class sorting
+ * - options.tailwindAdditionalFunctions: string[] — additional function names that contain
+ *   Tailwind class strings
+ * - options.workspacePackagePrefix: string | undefined — monorepo scope to group internal
+ *   packages in import order
+ *
+ * Returns:
+ * - Prettier Config object (consumable by CLI and editor integrations)
+ */
+export default (options) => {
   const {
     enableAstro,
     enablePhp,
@@ -16,7 +46,7 @@ module.exports = (options) => {
     // load plugins
     // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues/31#issuecomment-1448996271
     plugins: [
-      require.resolve('@ianvs/prettier-plugin-sort-imports'),
+      '@ianvs/prettier-plugin-sort-imports',
       ...(enableAstro ? ['prettier-plugin-astro'] : []),
       ...(enablePhp ? ['@prettier/plugin-php'] : []),
       // tailwind MUST come last

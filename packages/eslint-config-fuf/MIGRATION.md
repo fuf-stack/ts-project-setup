@@ -116,19 +116,20 @@ Example script change:
 Prettier usage is unchanged. Generate a config with the helper:
 
 ```js
-// prettier.config.cjs
-const prettier = require('@fuf-stack/eslint-config-fuf/prettier');
-module.exports = prettier({
+// prettier.config.mjs
+import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
+
+export default createConfig({
   tailwindConfig: './tailwind.config.js',
   workspacePackagePrefix: '@your-org',
 });
 ```
 
-Rename Prettier config to CommonJS if you previously used `.js`:
+Rename your Prettier config if it was CommonJS or plain `.js`:
 
 ```diff
 - prettier.config.js
-+ prettier.config.cjs
++ prettier.config.mjs
 ```
 
 ## 6) React specifics

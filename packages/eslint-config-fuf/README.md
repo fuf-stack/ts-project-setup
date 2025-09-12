@@ -89,19 +89,19 @@ Example `tsconfig.eslint.json`:
 
 This package also exports a small helper to generate a Prettier config with import sorting and optional plugins (Astro, PHP, Tailwind).
 
-Create `prettier.config.cjs` (or `prettier.config.js`) and call the factory:
+Create `prettier.config.mjs` and call the factory (ESM):
 
 ```js
-// prettier.config.cjs
-const prettier = require('@fuf-stack/eslint-config-fuf/prettier');
+// prettier.config.mjs
+import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
 
-module.exports = prettier({
+export default createConfig({
   // Enable Astro support
   enableAstro: false,
   // Enable PHP support
   enablePhp: false,
   // Absolute path to your Tailwind config to enable Tailwind class sorting
-  // e.g. require.resolve('./tailwind.config.ts') or './tailwind.config.js'
+  // e.g. './tailwind.config.ts' or './tailwind.config.js'
   tailwindConfig: undefined,
   // Additional function names that contain Tailwind classes (besides classNames, cn, tv)
   tailwindAdditionalFunctions: [],
