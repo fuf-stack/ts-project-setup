@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.5...eslint-config-fuf-v1.0.0) (2025-09-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config-fuf:** upgrade to eslint v9 + eslint-config-airbnb-extended
+
+### Features
+
+* **eslint-config-fuf:** upgrade to eslint v9 + eslint-config-airbnb-extended ([5aff612](https://github.com/fuf-stack/ts-project-setup/commit/5aff612b7caa11921e508b0bc45d30220e7997c2))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** use @vitest/eslint-plugin ([fefbefc](https://github.com/fuf-stack/ts-project-setup/commit/fefbefcac1a725b9bc99e4c9640ff9f2c09ecfc3))
+* **eslint-config-fuf:** use esm for prettier config ([5554447](https://github.com/fuf-stack/ts-project-setup/commit/555444704dc92d54203433d071186d724ad9e3a6))
+
 ## [0.12.5](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v0.12.4...eslint-config-fuf-v0.12.5) (2025-09-12)
 
 
