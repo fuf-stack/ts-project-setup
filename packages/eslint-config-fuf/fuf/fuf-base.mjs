@@ -1,18 +1,5 @@
-import importX from 'eslint-plugin-import-x';
-import prettier from 'eslint-plugin-prettier';
-
 export default {
   name: 'fuf/base',
-  plugins: {
-    prettier,
-    'import-x': importX,
-  },
-  languageOptions: {
-    parserOptions: {
-      // ensure ESM project handling doesn't trigger legacy parser issues
-      sourceType: 'module',
-    },
-  },
   rules: {
     // default rules (js)
 
@@ -64,11 +51,6 @@ export default {
 
     // TODO: remove this once we migrate to v1.0.0
     // also turn off legacy import plugin rules if present upstream
-    'import/extensions': 'off',
-    'import/named': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    'import/order': 'off',
-    'import/no-cycle': 'off',
     'no-underscore-dangle': 'off',
   },
 };

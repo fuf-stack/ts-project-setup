@@ -9,41 +9,49 @@ References:
 
 ## 1) Create `eslint.config.mjs`
 
-Pick the preset you need:
+Pick the preset you need. We recommend reusing your `.gitignore` via `@eslint/compat`:
 
 - Base (Node/JS/TS)
 
 ```js
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
 import base from '@fuf-stack/eslint-config-fuf/base';
 
-export default [
-  { ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'] },
-  ...base,
-];
+const gitignorePath = path.resolve('.', '.gitignore');
+
+export default [includeIgnoreFile(gitignorePath), ...base];
 ```
 
 - React
 
 ```js
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
 import react from '@fuf-stack/eslint-config-fuf/react';
 
-export default [
-  { ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'] },
-  ...react,
-];
+const gitignorePath = path.resolve('.', '.gitignore');
+
+export default [includeIgnoreFile(gitignorePath), ...react];
 ```
 
 - React + Vitest
 
 ```js
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
 import react from '@fuf-stack/eslint-config-fuf/react';
 import vitest from '@fuf-stack/eslint-config-fuf/vitest';
 
-export default [
-  { ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'] },
-  ...react,
-  ...vitest,
-];
+const gitignorePath = path.resolve('.', '.gitignore');
+
+export default [includeIgnoreFile(gitignorePath), ...react, ...vitest];
 ```
 
 ## 2) Update custom rule names (import → import-x)
@@ -81,18 +89,31 @@ Example include list (root `tsconfig.json`):
 
 ## 4) Ignoring files
 
-`.eslintignore` is not used by flat config. Add ignores in `eslint.config.mjs` and make sure the config file itself is ignored:
+`.eslintignore` is not used by flat config. Prefer reusing your `.gitignore` via `@eslint/compat`:
 
 ```js
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
+const gitignorePath = path.resolve('.', '.gitignore');
+
 export default [
-  {
-    ignores: ['dist/**', 'eslint.config.mjs', 'node_modules/**'],
-  },
+  includeIgnoreFile(gitignorePath),
   // ... your configs
 ];
 ```
 
-Also remove legacy ignore flags from your package scripts. In flat config, `--ignore-path .gitignore` (and similar) should be dropped so ESLint uses `eslint.config.mjs` only.
+Alternatively, you can inline ignores:
+
+```js
+export default [
+  { ignores: ['dist/**', 'node_modules/**'] },
+  // ... your configs
+];
+```
+
+Remove legacy ignore flags from your package scripts. In flat config, `--ignore-path .gitignore` (and similar) should be dropped so ESLint uses `eslint.config.mjs` only.
 
 Example script change:
 

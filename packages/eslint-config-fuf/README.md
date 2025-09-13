@@ -2,11 +2,11 @@
 
 Opinionated Fröhlich ∧ Frei ESLint + Prettier configuration for JavaScript/TypeScript projects, with optional React, Storybook, Vitest and Tailwind CSS integrations.
 
-- **Base**: Airbnb base, ESLint recommended, Prettier and Fröhlich ∧ Frei defaults
-- **TypeScript**: `@typescript-eslint` with sensible rules and type-aware parsing
+- **Base**: Airbnb Extended (recommended, flat) + ESLint recommended + Prettier + Fröhlich ∧ Frei defaults
+- **TypeScript**: `@typescript-eslint` with sensible rules and type-aware parsing via root `tsconfig.json`
 - **React**: Airbnb React + Hooks, JSX runtime, Storybook overrides
-- **Vitest**: Linting for test files
-- **Prettier**: Import sorting, optional Astro/PHP support, and Tailwind class sorting
+- **Vitest**: `plugin:vitest/recommended` for test files
+- **Prettier**: Import sorting, optional Tailwind class sorting, and optional Astro/PHP support
 
 ## Install
 
@@ -35,18 +35,30 @@ Create an ESLint config that extends one of the provided entry points.
 
 ```js
 // eslint.config.mjs
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
 import base from '@fuf-stack/eslint-config-fuf/base';
 
-export default [...base];
+const gitignorePath = path.resolve('.', '.gitignore');
+
+export default [includeIgnoreFile(gitignorePath), ...base];
 ```
 
 ### React (JS/TS + React + Storybook overrides) — Flat config (ESLint 9)
 
 ```js
 // eslint.config.mjs
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
 import react from '@fuf-stack/eslint-config-fuf/react';
 
-export default [...react];
+const gitignorePath = path.resolve('.', '.gitignore');
+
+export default [includeIgnoreFile(gitignorePath), ...react];
 ```
 
 ### Vitest (test files only)
@@ -55,22 +67,28 @@ If you want Vitest rules for test files, add the vitest config after your base/r
 
 ```js
 // eslint.config.mjs
+import path from 'node:path';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
 import react from '@fuf-stack/eslint-config-fuf/react';
 import vitest from '@fuf-stack/eslint-config-fuf/vitest';
 
-export default [...react, ...vitest];
+const gitignorePath = path.resolve('.', '.gitignore');
+
+export default [includeIgnoreFile(gitignorePath), ...react, ...vitest];
 ```
 
 Notes:
 
-- TypeScript files use `@typescript-eslint/parser` with `parserOptions.project: './tsconfig.eslint.json'`. Create a `tsconfig.eslint.json` that references your main tsconfig.
+- Type-aware linting uses your root `tsconfig.json`. Add any extra files (e.g. Vitest configs) to `include` there and do not use a separate `tsconfig.eslint.json`.
 
-Example `tsconfig.eslint.json`:
+Example root `tsconfig.json` additions:
 
 ```json
 {
   "extends": "@fuf-stack/typescript-config/base.json",
-  "include": ["src", "test", "*.config.*"]
+  "include": ["src", "test", "vitest.config.mts", "vitest.workspace.ts"]
 }
 ```
 

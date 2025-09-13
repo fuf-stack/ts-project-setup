@@ -2,6 +2,7 @@
 
 export default {
   name: 'fuf/react-storybook',
+  files: ['**/*.stories.ts', '**/*.stories.tsx'],
   rules: {
     // do not enforce production dependencies in stories
     'import-x/no-extraneous-dependencies': 'off',

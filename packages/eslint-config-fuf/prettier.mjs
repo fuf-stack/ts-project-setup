@@ -28,7 +28,7 @@
  * Returns:
  * - Prettier Config object (consumable by CLI and editor integrations)
  */
-export default (options) => {
+const createPrettierConfig = (options) => {
   const {
     enableAstro,
     enablePhp,
@@ -149,3 +149,5 @@ export default (options) => {
       : {}),
   };
 };
+
+export default createPrettierConfig;

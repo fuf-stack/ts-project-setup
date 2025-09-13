@@ -1,19 +1,6 @@
-import tseslint from '@typescript-eslint/eslint-plugin';
-
 export default {
   name: 'fuf/typescript',
   files: ['**/*.ts', '**/*.tsx'],
-  languageOptions: {
-    parserOptions: {
-      projectService: true,
-      // Allow linting files not included in a discovered tsconfig
-      // see: https://typescript-eslint.io/packages/parser#allowdefaultproject
-      allowDefaultProject: true,
-    },
-  },
-  plugins: {
-    '@typescript-eslint': tseslint,
-  },
   rules: {
     // ts rules
 
