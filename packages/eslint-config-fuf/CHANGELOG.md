@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.0.1...eslint-config-fuf-v1.1.0) (2025-09-13)
+
+
+### Features
+
+* **eslint-config-fuf:** use recommended instead of legacy + refactor setup ([5ebc926](https://github.com/fuf-stack/ts-project-setup/commit/5ebc926c6c1e94fb3fd7d7183a75715b24d4f948))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** fix sort imports test ([b83beb3](https://github.com/fuf-stack/ts-project-setup/commit/b83beb337cc3205391fed73f786e895b471dc0ac))
+
 ## [1.0.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.0.0...eslint-config-fuf-v1.0.1) (2025-09-12)
 
 
