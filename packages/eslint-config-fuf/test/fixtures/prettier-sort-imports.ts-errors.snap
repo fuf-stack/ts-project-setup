@@ -1,0 +1,210 @@
+[
+  {
+    "message": "'vitest' should be listed in the project's dependencies. Run 'pnpm add vitest' to add it",
+    "ruleId": "import-x/no-extraneous-dependencies",
+  },
+  {
+    "message": "'describe' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'describe' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'expect' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'expect' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'it' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'it' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'fs' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'fs' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'path' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'path' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'react' should be listed in the project's dependencies, not devDependencies.",
+    "ruleId": "import-x/no-extraneous-dependencies",
+  },
+  {
+    "message": "'react' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'react' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'thirdParty' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'thirdParty' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module 'third-party-module'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'someOtherThing' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'someOtherThing' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module '@fuf-stack/some-other-thing'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'something' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'something' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module '@fuf-stack/something'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'absolute' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'absolute' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module 'src/absolute'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'alsoAbsolute' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'alsoAbsolute' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module 'src/also/absolute'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'relative' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'relative' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Missing file extension for "../relative/path"",
+    "ruleId": "import-x/extensions",
+  },
+  {
+    "message": "Unable to resolve path to module '../relative/path'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'jsonFile' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'jsonFile' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module './data.json'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'jpeg' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'jpeg' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module './image.jpeg'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'jpg' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'jpg' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module './image.jpg'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'png' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'png' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module './image.png'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'svg' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'svg' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module './image.svg'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "'moduleStyles' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'moduleStyles' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "Unable to resolve path to module './Some.module.css'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+  {
+    "message": "Unable to resolve path to module 'some-module/style.css'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+]

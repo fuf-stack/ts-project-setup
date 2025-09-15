@@ -1,0 +1,18 @@
+[
+  {
+    "message": "'SomeTypeMagic' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'SomeTypeMagic' is defined but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+  {
+    "message": "'createdAt' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "no-unused-vars",
+  },
+  {
+    "message": "'createdAt' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+    "ruleId": "@typescript-eslint/no-unused-vars",
+  },
+]

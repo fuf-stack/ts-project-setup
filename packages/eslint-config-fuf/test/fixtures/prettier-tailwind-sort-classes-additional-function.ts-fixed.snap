@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 // see: prettier.config.js
 const additionalTailwindFunction = () => true;
 

@@ -1,0 +1,10 @@
+[
+  {
+    "message": "'react' should be listed in the project's dependencies, not devDependencies.",
+    "ruleId": "import-x/no-extraneous-dependencies",
+  },
+  {
+    "message": "Unable to resolve path to module '@fuf-stack/pixel-utils'.",
+    "ruleId": "import-x/no-unresolved",
+  },
+]

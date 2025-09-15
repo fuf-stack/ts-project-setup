@@ -1,28 +1,34 @@
-import { configs, plugins, rules } from 'eslint-config-airbnb-extended';
+import { configs, rules } from 'eslint-config-airbnb-extended';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 
 import baseConfig from './base.mjs';
 import fufStorybook from './fuf/fuf-react-storybook.mjs';
 import fufReact from './fuf/fuf-react.mjs';
 
 export default [
-  // Base Config
-  ...baseConfig,
+	// Base Config
+	...baseConfig,
 
-  // Airbnb Extended React Config
-  // React Plugin
-  plugins.react,
-  // React Hooks Plugin
-  plugins.reactHooks,
-  // React JSX A11y Plugin
-  plugins.reactA11y,
-  // Airbnb React Recommended Config
-  ...configs.react.recommended,
-  // Airbnb React TypeScript Config
-  ...configs.react.typescript,
-  // Strict React Config
-  rules.react.strict,
+	// Register React-related plugins explicitly for flat config resolution
+	{
+		name: 'fuf/react/plugins',
+		plugins: {
+			react: reactPlugin,
+			'react-hooks': reactHooksPlugin,
+			'jsx-a11y': jsxA11yPlugin,
+		},
+	},
 
-  // FUF React Configs
-  fufReact,
-  fufStorybook,
+	// Airbnb React Recommended Config
+	...configs.react.recommended,
+	// Airbnb React TypeScript Config
+	...configs.react.typescript,
+	// Strict React Config
+	rules.react.strict,
+
+	// FUF React Configs
+	fufReact,
+	fufStorybook,
 ];
