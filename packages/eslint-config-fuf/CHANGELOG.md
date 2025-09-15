@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.0...eslint-config-fuf-v1.1.1) (2025-09-15)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** add react eslint plugins as deps ([8f415d5](https://github.com/fuf-stack/ts-project-setup/commit/8f415d5959e7e84129eb2bfcae794c5e64660b73))
+
 ## [1.1.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.0.1...eslint-config-fuf-v1.1.0) (2025-09-13)
 
 
