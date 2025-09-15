@@ -3,6 +3,7 @@
   "extends": "@fuf-stack/typescript-config/base.json",
   "composite": true,
   "compilerOptions": {
+    "composite": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"

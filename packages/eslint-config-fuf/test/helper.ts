@@ -1,10 +1,16 @@
-import { readFileSync } from 'fs';
-import { join as pathJoin } from 'path';
+import { readFile } from 'node:fs/promises';
+import { join as pathJoin } from 'node:path';
 
 import { ESLint } from 'eslint';
-import prettier from 'prettier';
+import {
+  format as prettierFormat,
+  resolveConfig as resolvePrettierConfig,
+} from 'prettier';
 
-type EslintConfig = 'base.config.mjs' | 'react.config.mjs';
+type EslintConfig =
+  | 'base.config.mjs'
+  | 'react.config.mjs'
+  | 'vitest.config.mjs';
 
 /** lints a fixture by file name and return eslint results and fixed content */
 export const lintFixture = async (
@@ -18,7 +24,7 @@ export const lintFixture = async (
     overrideConfigFile: pathJoin(__dirname, 'configs', config),
   });
   const filePath = pathJoin(__dirname, 'fixtures', fixtureName);
-  const fileContent = readFileSync(filePath, 'utf-8')
+  const fileContent = (await readFile(filePath, 'utf-8'))
     // remove eslint disable comment
     .replace('/* eslint-disable */', '');
   const results = await eslint.lintText(fileContent, { filePath });
@@ -33,7 +39,7 @@ export const lintFixture = async (
 /** lints a fixture by file name and return eslint results and fixed content */
 export const prettierFixFixture = async (fixtureName: string) => {
   const filePath = pathJoin(__dirname, 'fixtures', fixtureName);
-  const fileContent = readFileSync(filePath, 'utf-8')
+  const fileContent = (await readFile(filePath, 'utf-8'))
     // remove prettier disable comment
     .replace('/* prettier-ignore */', '')
     .replace('# prettier-ignore', '')
@@ -41,8 +47,8 @@ export const prettierFixFixture = async (fixtureName: string) => {
     .replace('<!-- prettier-ignore-start -->', '')
     .replace('<!-- prettier-ignore-end -->', '');
 
-  const config = await prettier.resolveConfig(filePath);
-  const fixedContent = await prettier.format(fileContent, {
+  const config = await resolvePrettierConfig(filePath);
+  const fixedContent = await prettierFormat(fileContent, {
     filepath: filePath,
     ...config,
   });
@@ -52,4 +58,4 @@ export const prettierFixFixture = async (fixtureName: string) => {
 
 /** build a stable per-fixture snapshot path */
 export const snapshotPath = (fixtureName: string) =>
-  `__snapshots__/fixture-${fixtureName}.snap`;
+  `fixtures/${fixtureName}-fixed.snap`;
