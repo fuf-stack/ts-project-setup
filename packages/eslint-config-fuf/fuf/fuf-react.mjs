@@ -16,6 +16,10 @@ export default {
       },
     ],
 
+    // prefer shorthand fragments
+    // see: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
+    'react/jsx-fragments': ['warn', 'syntax'],
+
     // modern JSX transform doesn't require React to be in scope
     'react/react-in-jsx-scope': 'off',
 
