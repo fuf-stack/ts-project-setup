@@ -1,0 +1,10 @@
+/* eslint-disable */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-vars */
+
+// react/jsx-closing-tag-location and react/jsx-wrap-multilines is disabled,
+// because it conflicts with prettier/prettier
+const hello = <div>
+  <p>Hello</p>
+</div>;
