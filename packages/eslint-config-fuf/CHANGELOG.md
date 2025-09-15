@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.2...eslint-config-fuf-v1.1.3) (2025-09-15)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** prefer return in arrow functions ([0ed4c55](https://github.com/fuf-stack/ts-project-setup/commit/0ed4c55ff5c181f6a7c78733110fbb1d38d5fbbf))
+* **eslint-config-fuf:** updagte @stylistic/eslint-plugin to latest ([d631bcc](https://github.com/fuf-stack/ts-project-setup/commit/d631bcc0944cd8d6169e7776fbc030e058e46300))
+
 ## [1.1.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.1...eslint-config-fuf-v1.1.2) (2025-09-15)
 
 
