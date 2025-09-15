@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import-x/extensions */
+/* eslint-disable import-x/no-unresolved */
+/* eslint-disable no-unused-vars */
+
 import type { ReactElement } from 'react';
 
 import { describe, expect, it } from 'vitest';

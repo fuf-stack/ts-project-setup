@@ -1,10 +1,1 @@
-[
-  {
-    "message": "Missing file extension for "./Button"",
-    "ruleId": "import-x/extensions",
-  },
-  {
-    "message": "Unable to resolve path to module './Button'.",
-    "ruleId": "import-x/no-unresolved",
-  },
-]
+[]

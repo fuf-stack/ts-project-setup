@@ -1,5 +1,10 @@
 /* eslint-disable */
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import-x/extensions */
+/* eslint-disable import-x/no-unresolved */
+/* eslint-disable no-unused-vars */
+
 import moduleStyles from './Some.module.css';
 import jsonFile from './data.json';
 import fs from 'node:fs';
