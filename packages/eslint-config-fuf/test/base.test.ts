@@ -8,7 +8,9 @@ import {
   snapshotPath,
 } from './helper';
 
-it.for(getFixtureList('base-'))('%s', async (fixture) => {
+const fixtures = getFixtureList('base-');
+
+it.for(fixtures)('%s', async (fixture) => {
   const { fixedContent, results } = await lintFixture(
     fixture,
     'base.config.mjs',

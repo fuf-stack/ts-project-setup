@@ -9,7 +9,9 @@ import {
   snapshotPath,
 } from './helper';
 
-it.for(getFixtureList('prettier-'))('%s', async (fixture) => {
+const fixtures = getFixtureList('prettier-');
+
+it.for(fixtures)('%s', async (fixture) => {
   const useEslint = fixture.endsWith('.ts') || fixture.endsWith('.tsx');
   const result = useEslint
     ? await lintFixture(fixture, 'base.config.mjs')

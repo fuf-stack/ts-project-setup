@@ -1,0 +1,6 @@
+[
+  {
+    "message": "propType "foo" is not required, but has no corresponding default argument value.",
+    "ruleId": "react/require-default-props",
+  },
+]

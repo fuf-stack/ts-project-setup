@@ -1,4 +1,4 @@
-import { expect, it } from 'vitest';
+import { expect, test } from 'vitest';
 
 import {
   errorMessages,
@@ -8,7 +8,9 @@ import {
   snapshotPath,
 } from './helper';
 
-it.for(getFixtureList('vitest-'))('%s', async (fixture) => {
+const fixtures = getFixtureList('vitest-');
+
+test.for(fixtures)('%s', async (fixture) => {
   const { fixedContent, results } = await lintFixture(
     fixture,
     'vitest.config.mjs',

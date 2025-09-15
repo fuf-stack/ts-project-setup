@@ -8,12 +8,9 @@ import {
   snapshotPath,
 } from './helper';
 
-// Snapshot-based React fixtures (exclude the one that asserts warnings only)
-it.for(
-  getFixtureList('react-').filter(
-    (f) => f !== 'react-function-component-default-props.tsx',
-  ),
-)('%s', async (fixture) => {
+const fixtures = getFixtureList('react-');
+
+it.for(fixtures)('%s', async (fixture) => {
   const { fixedContent, results } = await lintFixture(
     fixture,
     'react.config.mjs',

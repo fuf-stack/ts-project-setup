@@ -1,0 +1,7 @@
+interface HelloProps {
+  foo?: string;
+}
+
+const Hello = ({ foo }: HelloProps) => <div>{foo}</div>;
+
+export default Hello;
