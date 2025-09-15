@@ -1,6 +1,6 @@
 module.exports = {
   // eslint-config-fuf
-  'packages/eslint-config-fuf/**/*.ts': ['eslint', 'vitest related --run'],
+  'packages/eslint-config-fuf/**/*.ts': ['eslint', 'pnpm vitest related --run'],
   // config packages
   'packages/**/*.{js,ts}': ['eslint'],
   // other filetypes
