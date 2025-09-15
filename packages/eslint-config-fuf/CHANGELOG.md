@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.1...eslint-config-fuf-v1.1.2) (2025-09-15)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** react prefer shorthand fragments ([d4728a8](https://github.com/fuf-stack/ts-project-setup/commit/d4728a841fa8cdf8672187e7056a891e97e2109a))
+
 ## [1.1.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.0...eslint-config-fuf-v1.1.1) (2025-09-15)
 
 
