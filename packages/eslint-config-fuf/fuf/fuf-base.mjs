@@ -25,6 +25,12 @@ export default {
     ],
 
     // fuf rules
+
+    // always use braces and return in arrow functions
+    // see: test/fixtures/base-arrow-fn-use-return.ts
+    // see: https://eslint.org/docs/latest/rules/arrow-body-style
+    'arrow-body-style': ['warn', 'always'],
+
     'comma-dangle': ['error', 'only-multiline'],
 
     'import-x/extensions': [

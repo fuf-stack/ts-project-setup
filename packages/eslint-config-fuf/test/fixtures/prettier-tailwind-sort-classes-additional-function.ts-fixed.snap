@@ -1,5 +1,7 @@
 // see: prettier.config.js
-const additionalTailwindFunction = () => true;
+const additionalTailwindFunction = () => {
+  return true;
+};
 
 // tailwindFunctions defined in project prettier.config.js
 const config = additionalTailwindFunction({

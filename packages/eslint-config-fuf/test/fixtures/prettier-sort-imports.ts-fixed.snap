@@ -34,6 +34,8 @@ import moduleStyles from './Some.module.css';
 // INFO: css imports will not be touched
 import 'some-module/style.css';
 
-const MyComponent = (): ReactElement => null;
+const MyComponent = (): ReactElement => {
+  return null;
+};
 
 export default MyComponent;

@@ -3,6 +3,8 @@
 import { Fragment } from 'react';
 
 // prefer shorthand fragments
-const Hello = () => <>test</>;
+const Hello = () => {
+  return <>test</>;
+};
 
 export default Hello;

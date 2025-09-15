@@ -1,0 +1,6 @@
+// use braces and return in arrow fn
+const testFn = () => {
+  return 'test';
+};
+
+testFn();

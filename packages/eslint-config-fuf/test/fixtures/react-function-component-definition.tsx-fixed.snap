@@ -1,3 +1,5 @@
-const Component = () => <div />;
+const Component = () => {
+  return <div />;
+};
 
 export default Component;

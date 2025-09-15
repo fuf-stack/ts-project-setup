@@ -5,6 +5,8 @@
 import { Fragment } from 'react';
 
 // prefer shorthand fragments
-const Hello = () => <Fragment>test</Fragment>;
+const Hello = () => {
+  return <Fragment>test</Fragment>;
+};
 
 export default Hello;
