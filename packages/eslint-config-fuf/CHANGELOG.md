@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.3...eslint-config-fuf-v1.1.4) (2025-09-15)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** disable react/jsx-wrap-multilines and react/jsx-closing-tag-location ([06dc143](https://github.com/fuf-stack/ts-project-setup/commit/06dc143edd7234d089ffc5b7a3bf001886e97d99))
+
 ## [1.1.3](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.2...eslint-config-fuf-v1.1.3) (2025-09-15)
 
 
