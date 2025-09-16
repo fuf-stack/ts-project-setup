@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.5...eslint-config-fuf-v1.1.6) (2025-09-16)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** test curly to all ([ec15f34](https://github.com/fuf-stack/ts-project-setup/commit/ec15f34d3268c62830cef77eef9578d381bd0dc8))
+* **eslint-config-fuf:** update dependency eslint-plugin-n to v17.22.0 ([#758](https://github.com/fuf-stack/ts-project-setup/issues/758)) ([52f918c](https://github.com/fuf-stack/ts-project-setup/commit/52f918c78febda7e49850ac41285d6b41eabd82a))
+
 ## [1.1.5](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.4...eslint-config-fuf-v1.1.5) (2025-09-16)
 
 
