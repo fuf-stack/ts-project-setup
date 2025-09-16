@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.4...eslint-config-fuf-v1.1.5) (2025-09-16)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** set arrow-body-style to as-needed in tests ([fb58dd5](https://github.com/fuf-stack/ts-project-setup/commit/fb58dd51965923e523a211ce75c34976bd88646e))
+
 ## [1.1.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.3...eslint-config-fuf-v1.1.4) (2025-09-15)
 
 
