@@ -33,6 +33,11 @@ export default {
 
     'comma-dangle': ['error', 'only-multiline'],
 
+    // always use braces with return
+    // see: test/fixtures/base-curly-always.ts
+    // see: https://eslint.org/docs/latest/rules/curly
+    curly: ['warn', 'all'],
+
     'import-x/extensions': [
       'error',
       'ignorePackages',
@@ -48,8 +53,8 @@ export default {
     // we use prettier/prettier for formatting
     'prettier/prettier': 'warn',
 
-    // these rules are conflicting with prettier/prettier
-    // in some cases, so we turn them off
+    // these rules are conflicting with prettier/prettier in some cases,
+    // so we turn them off
     'implicit-arrow-linebreak': 'off',
     // we use prettier-plugin-sort-imports
     'import-x/order': 'off',
