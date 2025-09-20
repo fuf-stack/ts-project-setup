@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.10](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.9...project-cli-tools-v1.0.10) (2025-09-20)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency wait-on to v8.0.5 ([#749](https://github.com/fuf-stack/ts-project-setup/issues/749)) ([8d2bcf4](https://github.com/fuf-stack/ts-project-setup/commit/8d2bcf494b113b172496bb52a642fc9f4c0c4f93))
+
 ## [1.0.9](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.8...project-cli-tools-v1.0.9) (2025-09-01)
 
 
