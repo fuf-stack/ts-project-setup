@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.6...eslint-config-fuf-v1.1.7) (2025-09-20)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.3.10 ([#762](https://github.com/fuf-stack/ts-project-setup/issues/762)) ([39e221d](https://github.com/fuf-stack/ts-project-setup/commit/39e221d7867290519d0c7c5d13575d0f4b738f5c))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.3.12 ([#766](https://github.com/fuf-stack/ts-project-setup/issues/766)) ([cc180a7](https://github.com/fuf-stack/ts-project-setup/commit/cc180a7019ac45455ee699e12d1499898c299b54))
+* **eslint-config-fuf:** update dependency eslint-plugin-n to v17.23.0 ([#764](https://github.com/fuf-stack/ts-project-setup/issues/764)) ([8041a6d](https://github.com/fuf-stack/ts-project-setup/commit/8041a6d1cef918b8666eff2c2bb978e57bd64f86))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9.1.6 ([#760](https://github.com/fuf-stack/ts-project-setup/issues/760)) ([f93b600](https://github.com/fuf-stack/ts-project-setup/commit/f93b6009947c8454a8f36af4522e8d9bba03fbf2))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.44.0 ([#765](https://github.com/fuf-stack/ts-project-setup/issues/765)) ([e61f3f2](https://github.com/fuf-stack/ts-project-setup/commit/e61f3f2af9b55ce98d512321f80e8b181f1f2f5b))
+
 ## [1.1.6](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.5...eslint-config-fuf-v1.1.6) (2025-09-16)
 
 
