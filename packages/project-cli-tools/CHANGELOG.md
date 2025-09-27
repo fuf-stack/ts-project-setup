@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.10](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.9...project-cli-tools-v1.0.10) (2025-09-27)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency lint-staged to v16.2.0 ([#778](https://github.com/fuf-stack/ts-project-setup/issues/778)) ([39b1a10](https://github.com/fuf-stack/ts-project-setup/commit/39b1a109e086b7c6d486f824dc0504904990e60d))
+* **project-cli-tools:** update dependency turbo to v2.5.7 ([#783](https://github.com/fuf-stack/ts-project-setup/issues/783)) ([aab6658](https://github.com/fuf-stack/ts-project-setup/commit/aab6658fdbd6403b9b6e155e54e0dd47dfac1121))
+* **project-cli-tools:** update dependency turbo to v2.5.8 ([#785](https://github.com/fuf-stack/ts-project-setup/issues/785)) ([1fd032c](https://github.com/fuf-stack/ts-project-setup/commit/1fd032c6ae622d8ff1ad5a93f4d9a22da19d9523))
+* **project-cli-tools:** update dependency wait-on to v8.0.5 ([#749](https://github.com/fuf-stack/ts-project-setup/issues/749)) ([8d2bcf4](https://github.com/fuf-stack/ts-project-setup/commit/8d2bcf494b113b172496bb52a642fc9f4c0c4f93))
+* **project-cli-tools:** update dependency wait-on to v9 ([40e1a40](https://github.com/fuf-stack/ts-project-setup/commit/40e1a406df086f59daedfa7894c8e5a6a05d1eef))
+* **project-cli-tools:** update dependency wait-on to v9 ([40e8749](https://github.com/fuf-stack/ts-project-setup/commit/40e874985184aa880038adb3946a92bd1ead0efb))
+* **project-cli-tools:** update dependency wait-on to v9.0.1 ([#777](https://github.com/fuf-stack/ts-project-setup/issues/777)) ([49e0532](https://github.com/fuf-stack/ts-project-setup/commit/49e05327f307e1f42b35b9fe81f211d582cf7294))
+* **project-cli-tools:** update lerna-lite monorepo to v4.8.0 ([#776](https://github.com/fuf-stack/ts-project-setup/issues/776)) ([3005fe8](https://github.com/fuf-stack/ts-project-setup/commit/3005fe806743252fe16690e6ff17d3dc95dd28f8))
+
 ## [1.0.9](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.8...project-cli-tools-v1.0.9) (2025-09-01)
 
 
