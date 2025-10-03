@@ -18,9 +18,9 @@
     "url": "https://github.com/fuf-stack/ts-project-setup/issues"
   },
   "dependencies": {
-    "@commitlint/cli": "20.0.0",
+    "@commitlint/cli": "20.1.0",
     "@commitlint/config-conventional": "20.0.0",
-    "@commitlint/config-pnpm-scopes": "20.0.0",
+    "@commitlint/config-pnpm-scopes": "20.1.0",
     "@lerna-lite/cli": "4.9.0",
     "@lerna-lite/version": "4.9.0",
     "commitizen": "4.3.1",
