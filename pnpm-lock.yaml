@@ -103,11 +103,11 @@ importers:
         specifier: 9.6.1
         version: 9.6.1
       '@types/react':
-        specifier: 19.2.0
-        version: 19.2.0
+        specifier: 19.2.1
+        version: 19.2.1
       '@types/react-dom':
         specifier: 19.2.0
-        version: 19.2.0(@types/react@19.2.0)
+        version: 19.2.0(@types/react@19.2.1)
       react:
         specifier: 19.2.0
         version: 19.2.0
@@ -1089,8 +1089,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.0':
-    resolution: {integrity: sha512-1LOH8xovvsKsCBq1wnT4ntDUdCJKmnEakhsuoUSy6ExlHCkGP2hqnatagYTgFk6oeL0VU31u7SNjunPN+GchtA==}
+  '@types/react@19.2.1':
+    resolution: {integrity: sha512-1U5NQWh/GylZQ50ZMnnPjkYHEaGhg6t5i/KI0LDDh3t4E3h3T3vzm+GLY2BRzMfIjSBwzm6tginoZl5z0O/qsA==}
 
   '@typescript-eslint/eslint-plugin@8.46.0':
     resolution: {integrity: sha512-hA8gxBq4ukonVXPy0OKhiaUh/68D0E88GSmtC1iAEnGaieuDi38LhS7jdCHRLi6ErJBNDGCzvh5EnzdPwUc0DA==}
@@ -5351,11 +5351,11 @@ snapshots:
     dependencies:
       parse-path: 7.1.0
 
-  '@types/react-dom@19.2.0(@types/react@19.2.0)':
+  '@types/react-dom@19.2.0(@types/react@19.2.1)':
     dependencies:
-      '@types/react': 19.2.0
+      '@types/react': 19.2.1
 
-  '@types/react@19.2.0':
+  '@types/react@19.2.1':
     dependencies:
       csstype: 3.1.3
 
