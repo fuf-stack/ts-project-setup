@@ -83,11 +83,11 @@ export const lintFixture = async (
 
 /** build snapshot paths */
 export const snapshotPath = (fixtureName: string) => {
-  return `fixtures/${fixtureName}-fixed.snap`;
+  return `__snapshots__/${fixtureName}-fixed.snap`;
 };
 
 export const errorSnapshotPath = (fixtureName: string) => {
-  return `fixtures/${fixtureName}-errors.snap`;
+  return `__snapshots__/${fixtureName}-errors.snap`;
 };
 
 /** reduce ESLint results to just ruleId + message for stable error snapshots */
@@ -111,10 +111,11 @@ export const prettierFixFixture = async (fixtureName: string) => {
   const fileContent = (await readFile(filePath, 'utf-8'))
     // remove prettier disable comment
     .replace('/* prettier-ignore */', '')
+    .replace('// prettier-ignore', '')
     .replace('# prettier-ignore', '')
     .replace('<!-- prettier-ignore -->', '')
-    .replace('<!-- prettier-ignore-start -->', '')
-    .replace('<!-- prettier-ignore-end -->', '');
+    .replace('<!-- prettier-ignore-end -->', '')
+    .replace('<!-- prettier-ignore-start -->', '');
 
   const config = await resolvePrettierConfig(filePath);
   const fixedContent = await prettierFormat(fileContent, {
