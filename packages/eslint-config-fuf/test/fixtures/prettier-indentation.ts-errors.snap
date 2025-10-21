@@ -1,29 +1,36 @@
 [
   {
+    "line": 2,
     "message": "'SomeTypeMagic' is defined but never used. Allowed unused vars must match /^_/u.",
     "ruleId": "no-unused-vars",
   },
   {
+    "line": 2,
     "message": "'SomeTypeMagic' is defined but never used. Allowed unused vars must match /^_/u.",
     "ruleId": "@typescript-eslint/no-unused-vars",
   },
   {
+    "line": 2,
     "message": "Replace `[TypeMagicInputType]` with `⏎··[TypeMagicInputType]⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 5,
     "message": "'createdAt' is assigned a value but never used. Allowed unused vars must match /^_/u.",
     "ruleId": "no-unused-vars",
   },
   {
+    "line": 5,
     "message": "'createdAt' is assigned a value but never used. Allowed unused vars must match /^_/u.",
     "ruleId": "@typescript-eslint/no-unused-vars",
   },
   {
+    "line": 7,
     "message": "Insert `··`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 9,
     "message": "Insert `··`",
     "ruleId": "prettier/prettier",
   },

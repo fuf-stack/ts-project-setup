@@ -1,13 +1,16 @@
 [
   {
+    "line": 6,
     "message": "Insert `(⏎··`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 7,
     "message": "Replace `··` with `····`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 8,
     "message": "Replace `</div>` with `··</div>⏎)`",
     "ruleId": "prettier/prettier",
   },

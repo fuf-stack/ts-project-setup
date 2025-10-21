@@ -1,5 +1,6 @@
 [
   {
+    "line": 2,
     "message": "Expected block statement surrounding arrow body.",
     "ruleId": "arrow-body-style",
   },

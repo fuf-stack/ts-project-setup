@@ -1,9 +1,11 @@
 [
   {
+    "line": 2,
     "message": "Expected block statement surrounding arrow body.",
     "ruleId": "arrow-body-style",
   },
   {
+    "line": 6,
     "message": "Replace `px-4·bg-blue-500·text-base·rounded·text-white·py-2` with `rounded·bg-blue-500·px-4·py-2·text-base·text-white`",
     "ruleId": "prettier/prettier",
   },

@@ -1,17 +1,21 @@
 [
   {
+    "line": 10,
     "message": "Replace `px-4·bg-blue-500·text-base·rounded·text-white·py-2'` with `rounded·bg-blue-500·px-4·py-2·text-base·text-white',`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 14,
     "message": "Replace `px-4·bg-blue-500·text-base·rounded·text-white·py-2` with `rounded·bg-blue-500·px-4·py-2·text-base·text-white`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 17,
     "message": "Replace `text-white·rounded` with `rounded·text-white`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 18,
     "message": "Replace `text-white·rounded` with `rounded·text-white`",
     "ruleId": "prettier/prettier",
   },

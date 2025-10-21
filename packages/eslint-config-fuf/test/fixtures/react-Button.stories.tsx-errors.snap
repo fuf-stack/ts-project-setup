@@ -1,5 +1,6 @@
 [
   {
+    "line": 8,
     "message": "Delete `····`",
     "ruleId": "prettier/prettier",
   },

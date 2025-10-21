@@ -93,13 +93,13 @@ export const errorSnapshotPath = (fixtureName: string) => {
 /** reduce ESLint results to just ruleId + message for stable error snapshots */
 export const errorMessages = (
   results: {
-    messages: { message: string; ruleId: string | null }[];
+    messages: { message: string; ruleId: string | null; line?: number }[];
   }[],
 ) => {
   return results
     .map((r) => {
-      return r.messages.map(({ message, ruleId }) => {
-        return { message, ruleId };
+      return r.messages.map(({ message, ruleId, line }) => {
+        return { message, ruleId, line };
       });
     })
     .flat();

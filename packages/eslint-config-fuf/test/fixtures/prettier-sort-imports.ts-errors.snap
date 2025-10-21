@@ -1,61 +1,76 @@
 [
   {
+    "line": 7,
     "message": "Replace `moduleStyles·from·'./Some.module.css';` with `type·{·ReactElement·}·from·'react';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 8,
     "message": "Replace `jsonFile·from·'./data.json';` with `{·describe,·expect,·it·}·from·'vitest';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 10,
     "message": "Replace `react·from·'react` with `path·from·'node:path`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 12,
     "message": "Replace `lative·from·'../relative/path';` with `act·from·'react';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 13,
     "message": "Replace `png·from·'./image.png';⏎import·alsoAbsolute·from·'src/also/absolute';` with `thirdParty·from·'third-party-module';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 16,
     "message": "Replace `{·describe,·expect,·it·}·from·'vitest';` with `something·from·'@fuf-stack/something';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 17,
     "message": "Replace `jpg·from·'./image.jpg` with `absolute·from·'src/absolute`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 18,
     "message": "Replace `path·from·'node:path` with `alsoAbsolute·from·'src/also/absolute`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 20,
     "message": "Replace `svg·from·'./image.svg';` with `relative·from·'../relative/path';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 21,
     "message": "Replace `thirdParty·from·'third-party-module';` with `jsonFile·from·'./data.json';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 22,
     "message": "Replace `something·from·'@fuf-stack/somethin` with `jpeg·from·'./image.jpe`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 23,
     "message": "Replace `absolute·from·'src/absolute` with `jpg·from·'./image.jpg`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 24,
     "message": "Replace `type·{·ReactElement·}·from·'react';` with `png·from·'./image.png';⏎import·svg·from·'./image.svg';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 25,
     "message": "Replace `jpeg·from·'./image.jpeg` with `moduleStyles·from·'./Some.module.css`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 30,
     "message": "Expected block statement surrounding arrow body.",
     "ruleId": "arrow-body-style",
   },

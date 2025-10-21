@@ -1,9 +1,11 @@
 [
   {
+    "line": 1,
     "message": "Use an `interface` instead of a `type`.",
     "ruleId": "@typescript-eslint/consistent-type-definitions",
   },
   {
+    "line": 5,
     "message": "propType "foo" is not required, but has no corresponding default argument value.",
     "ruleId": "react/require-default-props",
   },

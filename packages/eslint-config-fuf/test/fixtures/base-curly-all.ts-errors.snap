@@ -1,21 +1,26 @@
 [
   {
+    "line": 1,
     "message": "Expected { after 'if' condition.",
     "ruleId": "curly",
   },
   {
+    "line": 3,
     "message": "Delete `⏎···`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 4,
     "message": "Expected { after 'while' condition.",
     "ruleId": "curly",
   },
   {
+    "line": 7,
     "message": "Delete `··`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 8,
     "message": "Expected { after 'else'.",
     "ruleId": "curly",
   },

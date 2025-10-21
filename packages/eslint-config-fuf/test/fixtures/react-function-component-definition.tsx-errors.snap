@@ -1,13 +1,16 @@
 [
   {
+    "line": 1,
     "message": "Function component is not an arrow function",
     "ruleId": "react/function-component-definition",
   },
   {
+    "line": 1,
     "message": "Delete `·`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 3,
     "message": "Delete `;`",
     "ruleId": "prettier/prettier",
   },

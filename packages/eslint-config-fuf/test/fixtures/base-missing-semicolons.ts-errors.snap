@@ -1,9 +1,11 @@
 [
   {
+    "line": 2,
     "message": "Insert `;`",
     "ruleId": "prettier/prettier",
   },
   {
+    "line": 3,
     "message": "Insert `;`",
     "ruleId": "prettier/prettier",
   },

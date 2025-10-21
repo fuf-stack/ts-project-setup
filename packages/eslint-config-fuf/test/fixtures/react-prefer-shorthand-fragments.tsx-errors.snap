@@ -1,5 +1,6 @@
 [
   {
+    "line": 7,
     "message": "Prefer fragment shorthand over React.Fragment",
     "ruleId": "react/jsx-fragments",
   },
