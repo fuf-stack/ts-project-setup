@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "message": "Insert `(⏎··`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `··` with `····`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `</div>` with `··</div>⏎)`",
+    "ruleId": "prettier/prettier",
+  },
+]

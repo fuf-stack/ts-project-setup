@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "message": "Delete `····`",
+    "ruleId": "prettier/prettier",
+  },
+]

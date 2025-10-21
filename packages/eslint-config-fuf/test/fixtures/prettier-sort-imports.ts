@@ -2,6 +2,7 @@
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable import-x/extensions */
+/* eslint-disable import-x/no-extraneous-dependencies */
 /* eslint-disable import-x/no-unresolved */
 /* eslint-disable no-unused-vars */
 

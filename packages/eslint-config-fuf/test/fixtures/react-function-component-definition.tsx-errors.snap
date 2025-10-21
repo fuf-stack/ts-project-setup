@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "message": "Function component is not an arrow function",
+    "ruleId": "react/function-component-definition",
+  },
+  {
+    "message": "Delete `·`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Delete `;`",
+    "ruleId": "prettier/prettier",
+  },
+]

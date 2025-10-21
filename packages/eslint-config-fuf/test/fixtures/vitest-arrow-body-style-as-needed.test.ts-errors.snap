@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
+    "ruleId": "arrow-body-style",
+  },
+]

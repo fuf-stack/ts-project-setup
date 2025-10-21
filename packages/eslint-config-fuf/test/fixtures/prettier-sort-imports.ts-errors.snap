@@ -1,10 +1,62 @@
 [
   {
-    "message": "'vitest' should be listed in the project's dependencies. Run 'pnpm add vitest' to add it",
-    "ruleId": "import-x/no-extraneous-dependencies",
+    "message": "Replace `moduleStyles·from·'./Some.module.css';` with `type·{·ReactElement·}·from·'react';⏎`",
+    "ruleId": "prettier/prettier",
   },
   {
-    "message": "'react' should be listed in the project's dependencies, not devDependencies.",
-    "ruleId": "import-x/no-extraneous-dependencies",
+    "message": "Replace `jsonFile·from·'./data.json';` with `{·describe,·expect,·it·}·from·'vitest';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `react·from·'react` with `path·from·'node:path`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `lative·from·'../relative/path';` with `act·from·'react';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `png·from·'./image.png';⏎import·alsoAbsolute·from·'src/also/absolute';` with `thirdParty·from·'third-party-module';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `{·describe,·expect,·it·}·from·'vitest';` with `something·from·'@fuf-stack/something';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `jpg·from·'./image.jpg` with `absolute·from·'src/absolute`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `path·from·'node:path` with `alsoAbsolute·from·'src/also/absolute`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `svg·from·'./image.svg';` with `relative·from·'../relative/path';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `thirdParty·from·'third-party-module';` with `jsonFile·from·'./data.json';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `something·from·'@fuf-stack/somethin` with `jpeg·from·'./image.jpe`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `absolute·from·'src/absolute` with `jpg·from·'./image.jpg`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `type·{·ReactElement·}·from·'react';` with `png·from·'./image.png';⏎import·svg·from·'./image.svg';⏎`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `jpeg·from·'./image.jpeg` with `moduleStyles·from·'./Some.module.css`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Expected block statement surrounding arrow body.",
+    "ruleId": "arrow-body-style",
   },
 ]

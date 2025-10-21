@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "message": "Insert `;`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Insert `;`",
+    "ruleId": "prettier/prettier",
+  },
+]

@@ -1,10 +1,18 @@
 [
   {
-    "message": "'react' should be listed in the project's dependencies, not devDependencies.",
-    "ruleId": "import-x/no-extraneous-dependencies",
+    "message": "Replace `px-4·bg-blue-500·text-base·rounded·text-white·py-2'` with `rounded·bg-blue-500·px-4·py-2·text-base·text-white',`",
+    "ruleId": "prettier/prettier",
   },
   {
-    "message": "Unable to resolve path to module '@fuf-stack/pixel-utils'.",
-    "ruleId": "import-x/no-unresolved",
+    "message": "Replace `px-4·bg-blue-500·text-base·rounded·text-white·py-2` with `rounded·bg-blue-500·px-4·py-2·text-base·text-white`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `text-white·rounded` with `rounded·text-white`",
+    "ruleId": "prettier/prettier",
+  },
+  {
+    "message": "Replace `text-white·rounded` with `rounded·text-white`",
+    "ruleId": "prettier/prettier",
   },
 ]

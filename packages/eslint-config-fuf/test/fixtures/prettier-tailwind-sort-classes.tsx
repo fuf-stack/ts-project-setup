@@ -1,4 +1,8 @@
 /* eslint-disable */
+
+/* eslint-disable import-x/no-extraneous-dependencies */
+/* eslint-disable import-x/no-unresolved */
+
 import React from 'react';
 
 import { cn, tv } from '@fuf-stack/pixel-utils';
