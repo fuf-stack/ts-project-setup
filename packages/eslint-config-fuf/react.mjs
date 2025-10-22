@@ -8,9 +8,6 @@ import fufStorybook from './fuf/fuf-react-storybook.mjs';
 import fufReact from './fuf/fuf-react.mjs';
 
 export default [
-  // Base Config
-  ...baseConfig,
-
   // Register React-related plugins explicitly for flat config resolution
   {
     name: 'fuf/react/plugins',
@@ -31,4 +28,7 @@ export default [
   // FUF React Configs
   fufReact,
   fufStorybook,
+
+  // Ensure FUF base rules have final precedence over upstream configs
+  ...baseConfig,
 ];
