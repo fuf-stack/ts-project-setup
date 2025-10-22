@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.10](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.9...eslint-config-fuf-v1.1.10) (2025-10-22)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** ensure fuf rule precedence in react config ([5246439](https://github.com/fuf-stack/ts-project-setup/commit/5246439c0be6b84846f5586b09f405bf2bdbf19f))
+
 ## [1.1.9](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.8...eslint-config-fuf-v1.1.9) (2025-10-21)
 
 
