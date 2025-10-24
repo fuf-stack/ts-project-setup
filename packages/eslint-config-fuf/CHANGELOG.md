@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.11](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.10...eslint-config-fuf-v1.1.11) (2025-10-24)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.46.2 ([#851](https://github.com/fuf-stack/ts-project-setup/issues/851)) ([de18bb5](https://github.com/fuf-stack/ts-project-setup/commit/de18bb54d79c2ec819bba407243432fab30f5787))
+
 ## [1.1.10](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.9...eslint-config-fuf-v1.1.10) (2025-10-22)
 
 
