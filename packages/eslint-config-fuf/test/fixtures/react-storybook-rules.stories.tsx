@@ -1,0 +1,66 @@
+/* eslint-disable */
+
+// This fixture tests that storybook-specific rules are properly disabled
+
+/* eslint-disable import-x/no-unresolved */
+// Disable import-x/no-unresolved since Storybook packages aren't installed
+// But we want to test with real Storybook imports that users would use
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { action } from '@storybook/addon-actions';
+import { expect, userEvent, waitFor, within } from '@storybook/test';
+/* eslint-enable import-x/no-unresolved */
+
+// Test that import-x/no-extraneous-dependencies is disabled for devDependencies
+// tailwindcss is a devDependency and would normally trigger an error in production code
+import tailwindPlugin from 'tailwindcss/plugin';
+
+import Button from './support/Button';
+
+// just to avoid unused variable error
+const _customPlugin = tailwindPlugin(() => {
+  return null;
+}, {});
+
+const meta: Meta<typeof Button> = {
+  title: 'Button',
+  component: Button,
+};
+
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const WithPropSpreading: Story = {
+  render: (args) => {
+    return <Button {...args} />;
+  },
+  args: {
+    label: 'Button',
+  },
+};
+
+export const Primary: Story = {
+  args: {
+    primary: true,
+    label: 'Button',
+    onClick: action('button-clicked'),
+  },
+};
+
+// Test that Storybook testing utilities work in play functions
+export const WithInteraction: Story = {
+  args: {
+    primary: true,
+    label: 'Click me',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole('button');
+
+    await waitFor(() => {
+      expect(button).toBeInTheDocument();
+    });
+    await userEvent.click(button);
+    await expect(button).toHaveTextContent('Click me');
+  },
+};

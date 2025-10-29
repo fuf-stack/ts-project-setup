@@ -25,10 +25,11 @@ export default [
   // Strict React Config
   rules.react.strict,
 
-  // FUF React Configs
-  fufReact,
-  fufStorybook,
-
   // Ensure FUF base rules have final precedence over upstream configs
   ...baseConfig,
+
+  // FUF React Config must come after base to override rules for React files
+  fufReact,
+  // FUF Storybook Config must come after base to override rules for story files
+  fufStorybook,
 ];
