@@ -32,8 +32,8 @@
     "prepack": "pnpm build"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "4.0.3",
-    "vitest": "4.0.3"
+    "@vitest/coverage-v8": "4.0.4",
+    "vitest": "4.0.4"
   },
   "devDependencies": {
     "@fuf-stack/typescript-config": "workspace:*"
