@@ -1,6 +1,6 @@
 {
   "name": "@fuf-stack/project-cli-tools",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "shared cli tools commonly used in a Fröhlich ∧ Frei repo",
   "author": "Fröhlich ∧ Frei",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
