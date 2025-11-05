@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.12](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.11...project-cli-tools-v1.0.12) (2025-11-05)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** add @lerna-lite/publish dep for github releases ([802d552](https://github.com/fuf-stack/ts-project-setup/commit/802d552756d849cee0c836193aed67646a1f37e3))
+
 ## [1.0.11](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.10...project-cli-tools-v1.0.11) (2025-11-05)
 
 
