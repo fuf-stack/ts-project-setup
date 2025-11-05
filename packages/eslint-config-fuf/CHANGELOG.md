@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.12](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.11...eslint-config-fuf-v1.1.12) (2025-11-05)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** disable unified-signatures rule due to crash bug ([783bd45](https://github.com/fuf-stack/ts-project-setup/commit/783bd45b535bb87b1762a8340739990dcc2a7ae2))
+* **eslint-config-fuf:** update dependency @eslint/compat to v1.4.1 ([#878](https://github.com/fuf-stack/ts-project-setup/issues/878)) ([84494db](https://github.com/fuf-stack/ts-project-setup/commit/84494db852786bf2b46e25d636e003d37887cc5f))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.3.25 ([#867](https://github.com/fuf-stack/ts-project-setup/issues/867)) ([b22729a](https://github.com/fuf-stack/ts-project-setup/commit/b22729aec9eec9c57e82fbac0c39c032715cc5c8))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.3.26 ([#871](https://github.com/fuf-stack/ts-project-setup/issues/871)) ([bc32f51](https://github.com/fuf-stack/ts-project-setup/commit/bc32f519a4013f56c3785988d8419539b9cf250c))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.4.0 ([#880](https://github.com/fuf-stack/ts-project-setup/issues/880)) ([d5837b6](https://github.com/fuf-stack/ts-project-setup/commit/d5837b6c50fb13fc6c5add3a7e33eb90d627c346))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10 ([8a34e49](https://github.com/fuf-stack/ts-project-setup/commit/8a34e49b10ff2a34e26f85dd9aa1dd0792848ad7))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10 ([1b07fd0](https://github.com/fuf-stack/ts-project-setup/commit/1b07fd0bf1206d2aa0540bbc42fec87ae0e4531f))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v9.1.16 ([#874](https://github.com/fuf-stack/ts-project-setup/issues/874)) ([ae957b2](https://github.com/fuf-stack/ts-project-setup/commit/ae957b21eed05a87438079a90144407faad60bff))
+* **eslint-config-fuf:** update eslint monorepo to v9.39.0 ([#884](https://github.com/fuf-stack/ts-project-setup/issues/884)) ([f0d4b89](https://github.com/fuf-stack/ts-project-setup/commit/f0d4b8971d333150de44aa0162b58f478267a3b4))
+
 ## [1.1.11](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.10...eslint-config-fuf-v1.1.11) (2025-10-29)
 
 
