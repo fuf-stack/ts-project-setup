@@ -4,6 +4,7 @@ permissions:
   contents: write
   pull-requests: write
   repository-projects: read # needed for 'gh pr edit' https://github.com/cli/cli/issues/6274
+  id-token: write # Required for OIDC trusted publishing with npm
 
 on:
   push:
@@ -31,10 +32,18 @@ jobs:
         if: steps.release.outputs.releases_created  == 'true'
 
       - name: Publish to npm
-        run: pnpm publish --no-git-checks --filter "@fuf-stack/*"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+        run: |
+          # Ensure npm 11.5.1 or later for trusted publishing (OIDC)
+          npm install -g npm@latest
+          # Use npm publish via Lerna for trusted publishing support
+          # pnpm doesn't support npm's trusted publishing (OIDC) yet, so we use npm directly
+          # Lerna detects changed packages and publishes them using npm
+          npx lerna publish from-package --yes --no-verify-access
         if: steps.release.outputs.releases_created  == 'true'
+        # Note: If you have private npm dependencies, you may need NODE_AUTH_TOKEN
+        # for installing dependencies only (not for publishing)
+        # env:
+        #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   # update other conflicting prs after package merge
   # see: https://github.com/googleapis/release-please/issues/1870#issuecomment-1748390833
