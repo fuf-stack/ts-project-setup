@@ -34,5 +34,14 @@ export default {
     // see: test/fixtures/react-function-component-default-props.tsx
     // see: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md#rule-options
     'react/require-default-props': ['warn', { functions: 'defaultArguments' }],
+
+    // Disable unified-signatures rule due to bug in @typescript-eslint/eslint-plugin@8.46.3
+    // The rule crashes with "TypeError: typeParameters.params is not iterable" when processing
+    // React functional components with destructured props (e.g., `const Component = ({ prop }: Props) => ...`).
+    // This occurs because the rule attempts to iterate over typeParameters.params without checking
+    // if it exists or is iterable first. The rule can still work fine for non-React TypeScript code.
+    // Bug confirmed to still exist in 8.46.3. No open issues found as of 2025-11-05.
+    // Report at: https://github.com/typescript-eslint/typescript-eslint/issues
+    '@typescript-eslint/unified-signatures': 'off',
   },
 };
