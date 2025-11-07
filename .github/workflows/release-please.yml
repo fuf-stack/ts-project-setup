@@ -11,6 +11,12 @@ on:
     branches:
       - main
 
+# Ensure only one release workflow runs at a time
+# Queue new runs and wait for in-progress release-please workflow to complete
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
