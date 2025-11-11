@@ -29,6 +29,6 @@
     "lint-staged": "16.2.6",
     "nodemon": "3.1.10",
     "turbo": "2.6.0",
-    "wait-on": "9.0.1"
+    "wait-on": "9.0.2"
   }
 }
