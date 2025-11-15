@@ -59,7 +59,7 @@
   "devDependencies": {
     "@fuf-stack/typescript-config": "workspace:*",
     "@types/eslint": "9.6.1",
-    "@types/react": "19.2.3",
+    "@types/react": "19.2.4",
     "@types/react-dom": "19.2.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
