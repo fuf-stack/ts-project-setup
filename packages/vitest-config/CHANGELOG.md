@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v3.0.0...vitest-config-v4.0.0) (2025-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vitest-config:** add TypeScript path mapping support
+
+### Features
+
+* **vitest-config:** add TypeScript path mapping support ([4c04a39](https://github.com/fuf-stack/ts-project-setup/commit/4c04a3960656e188b50fac7ba1deb0765991a331))
+
 ## [3.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v2.0.3...vitest-config-v3.0.0) (2025-11-17)
 
 
