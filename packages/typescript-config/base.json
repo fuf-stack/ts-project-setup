@@ -38,6 +38,8 @@
 
     // Enable all strict type checking options
     "strict": true,
+    // Enable strict null checks
+    "strictNullChecks": true,
     // Error on expressions with implied 'any' type
     "noImplicitAny": true,
     // Ensure consistent casing in file names
