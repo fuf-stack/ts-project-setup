@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v4.0.0...vitest-config-v4.1.0) (2025-11-17)
+
+
+### Features
+
+* **vitest-config:** split into workspace and project configs ([868d540](https://github.com/fuf-stack/ts-project-setup/commit/868d54037ce77b262ca64b069c335887881e8769))
+
 ## [4.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v3.0.0...vitest-config-v4.0.0) (2025-11-17)
 
 
