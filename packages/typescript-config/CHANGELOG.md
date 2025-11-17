@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.3.0...typescript-config-v0.4.0) (2025-11-17)
+
+
+### Features
+
+* **typescript-config:** add explicit strictNullChecks ([966e4c5](https://github.com/fuf-stack/ts-project-setup/commit/966e4c55fa20602104c48e5d3d0ebe4cdcb55fac))
+
 ## [0.3.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.2.0...typescript-config-v0.3.0) (2025-01-06)
 
 
