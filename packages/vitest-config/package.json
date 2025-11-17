@@ -1,6 +1,6 @@
 {
   "name": "@fuf-stack/vitest-config",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "default vitest config for a Fröhlich ∧ Frei repo",
   "author": "Fröhlich ∧ Frei",
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
