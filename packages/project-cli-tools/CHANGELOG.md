@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.13](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.12...project-cli-tools-v1.0.13) (2025-11-17)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency nodemon to v3.1.11 ([#911](https://github.com/fuf-stack/ts-project-setup/issues/911)) ([97a37f7](https://github.com/fuf-stack/ts-project-setup/commit/97a37f7b5749997a873cae9eeb341ba028f922eb))
+* **project-cli-tools:** update dependency turbo to v2.6.1 ([#908](https://github.com/fuf-stack/ts-project-setup/issues/908)) ([9b03c5d](https://github.com/fuf-stack/ts-project-setup/commit/9b03c5d288d5f64d9413ffef089faa4c4425dc07))
+* **project-cli-tools:** update dependency wait-on to v9.0.2 ([#901](https://github.com/fuf-stack/ts-project-setup/issues/901)) ([6eec8b9](https://github.com/fuf-stack/ts-project-setup/commit/6eec8b96ba9719d0cba715d8500979c2e3a44c9b))
+* **project-cli-tools:** update dependency wait-on to v9.0.3 ([#903](https://github.com/fuf-stack/ts-project-setup/issues/903)) ([8e4605c](https://github.com/fuf-stack/ts-project-setup/commit/8e4605ca8f9559c899d79e808d996a30a53bb1f5))
+
 ## [1.0.12](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.11...project-cli-tools-v1.0.12) (2025-11-05)
 
 
