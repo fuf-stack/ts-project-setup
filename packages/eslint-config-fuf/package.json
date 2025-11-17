@@ -49,18 +49,18 @@
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.0.1",
-    "eslint-plugin-storybook": "10.0.6",
+    "eslint-plugin-storybook": "10.0.7",
     "eslint": "9.39.1",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.7.1",
     "prettier": "3.6.2",
-    "typescript-eslint": "8.46.3"
+    "typescript-eslint": "8.46.4"
   },
   "devDependencies": {
     "@fuf-stack/typescript-config": "workspace:*",
     "@types/eslint": "9.6.1",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
+    "@types/react": "19.2.4",
+    "@types/react-dom": "19.2.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "tailwindcss": "4.1.17"
