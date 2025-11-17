@@ -6,9 +6,16 @@
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    "./workspace": {
+      "types": "./dist/workspace.d.ts",
+      "import": "./dist/workspace.js"
+    },
+    "./project": {
+      "types": "./dist/project.d.ts",
+      "import": "./dist/project.js"
+    }
+  },
   "files": [
     "dist"
   ],

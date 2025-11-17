@@ -1,24 +1,22 @@
 import { defineConfig } from 'vitest/config';
 
-import tsconfigPaths from 'vite-tsconfig-paths';
-
 /**
- * Default Vitest configuration for Fröhlich ∧ Frei monorepos
+ * Workspace-level Vitest configuration for monorepo root
  *
  * Compatible with Vitest 4.0+
  *
- * Features:
- * - Projects array for monorepo structure (replaces vitest.workspace.ts)
- * - Automatic TypeScript path mapping resolution
- * - V8 coverage provider with explicit include patterns
- * - Sensible exclusions for generated files, mocks, and test files
- * - LCOV reporter for CI integration
+ * Use this in your root vitest.config.ts to define:
+ * - Projects array (replaces vitest.workspace.ts)
+ * - Coverage settings for the entire workspace
+ *
+ * @example
+ * ```ts
+ * // vitest.config.ts (root)
+ * import config from '@fuf-stack/vitest-config/workspace';
+ * export default config;
+ * ```
  */
 export default defineConfig({
-  plugins: [
-    // Automatically resolve TypeScript path mappings from tsconfig.json
-    tsconfigPaths(),
-  ],
   test: {
     // Define projects array (replaces vitest.workspace.ts in Vitest 4.0)
     // This tells Vitest to look for test files in packages and apps directories
@@ -35,18 +33,12 @@ export default defineConfig({
 
       // Exclude files that shouldn't be included in coverage reports
       exclude: [
-        // Auto-generated code
-        '**/__generated__/**',
-        // Mock implementations
-        '**/__mocks__/**',
-        // Test files
-        '**/*.spec.{js,ts,tsx}',
-        // Storybook stories
-        '**/*.stories.{js,ts,tsx}',
-        // Test files
-        '**/*.test.{js,ts,tsx}',
-        // Configuration packages
-        'packages/config/**',
+        '**/__generated__/**', // Auto-generated code
+        '**/__mocks__/**', // Mock implementations
+        '**/*.spec.{js,ts,tsx}', // Test files
+        '**/*.stories.{js,ts,tsx}', // Storybook stories
+        '**/*.test.{js,ts,tsx}', // Test files
+        'packages/config/**', // Configuration packages
       ],
 
       // Use V8 coverage provider (fast and accurate)

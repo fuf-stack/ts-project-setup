@@ -1,64 +1,67 @@
 ## @fuf-stack/vitest-config
 
-Default Vitest configuration for Fröhlich ∧ Frei monorepos. Ships an opinionated `defineConfig` with coverage setup suitable for apps and packages.
+Default Vitest configurations for Fröhlich ∧ Frei monorepos. Provides separate configs for workspace-level (root) and project-level (package) setups.
 
 **Compatible with Vitest 4.0+**
 
-### What you get
+### Configs Available
 
-- Sensible `test.coverage` defaults using the V8 provider
-- Explicit coverage includes from `apps/*/src/**/*.{js,jsx,ts,tsx}` and `packages/*/src/**/*.{js,jsx,ts,tsx}`
-- Excludes generated, mocks, story files, and test files from coverage
-- `lcov` coverage reporter for CI tools
+**Workspace Config** (`/workspace`) - For monorepo root:
+
+- Projects array defining workspace structure
+- V8 coverage with explicit includes/excludes
+- LCOV reporter for CI tools
+
+**Project Config** (`/project`) - For individual packages:
+
+- TypeScript path mapping resolution
+- Node environment by default
+- Clear mocks between tests
 
 ### Install
 
 ```bash
 # pnpm
-pnpm add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8
+pnpm add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-paths
 
 # npm
-npm i -D @fuf-stack/vitest-config vitest @vitest/coverage-v8
+npm i -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-paths
 
 # yarn
-yarn add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8
+yarn add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-paths
 ```
 
 ### Usage
 
-#### Monorepo Root Config
+#### Workspace Root Config
 
-For Vitest 4.0, simply import and use the shared config in your root `vitest.config.ts`:
+Use the workspace config in your monorepo root `vitest.config.ts`:
 
 ```ts
 // vitest.config.ts (root)
-import config from '@fuf-stack/vitest-config';
+import config from '@fuf-stack/vitest-config/workspace';
 
 export default config;
 ```
 
-This gives you:
+This provides:
 
 - Projects array: `['apps/*', 'packages/*', 'packages/config/*']`
-- Automatic TypeScript path mapping resolution (`vite-tsconfig-paths`)
-- V8 coverage with sensible includes/excludes
+- Coverage configuration with sensible defaults
 - LCOV reporter
 
-**Need to customize?** Use `mergeConfig`:
+**Customize if needed:**
 
 ```ts
-// vitest.config.ts (root)
 import { defineConfig, mergeConfig } from 'vitest/config';
 
-import baseConfig from '@fuf-stack/vitest-config';
+import workspaceConfig from '@fuf-stack/vitest-config/workspace';
 
 export default mergeConfig(
-  baseConfig,
+  workspaceConfig,
   defineConfig({
     test: {
-      // Override projects if needed
-      projects: ['packages/my-package'],
-      // Add additional coverage excludes, etc.
+      projects: ['packages/my-specific-package'],
     },
   }),
 );
@@ -66,31 +69,43 @@ export default mergeConfig(
 
 #### Package-Level Configs
 
-Each package should use `defineProject()` and specify its own test environment:
+Use the project config in individual package `vitest.config.ts`:
 
 ```ts
-// packages/your-package/vitest.config.ts
-import { defineProject } from 'vitest/config';
+// packages/my-package/vitest.config.ts
+import config from '@fuf-stack/vitest-config/project';
 
-export default defineProject({
+export default config;
+```
+
+This provides:
+
+- TypeScript path mapping resolution (`vite-tsconfig-paths`)
+- Node environment (good for libraries, utilities)
+- Clear mocks between tests
+
+**For React components (need jsdom):**
+
+```ts
+// packages/ui-components/vitest.config.ts
+import { mergeConfig } from 'vitest/config';
+
+import projectConfig from '@fuf-stack/vitest-config/project';
+
+export default mergeConfig(projectConfig, {
   test: {
-    clearMocks: true,
-    environment: 'node', // or 'jsdom' for React components
-    // Add package-specific settings here
+    environment: 'jsdom',
+    setupFiles: ['./vitest.setup.ts'],
   },
 });
 ```
 
-**Note:** In Vitest 4.0, each package must define its own `test.environment`. The root config should not override package-level settings.
-
 #### Migration from Vitest 3.x
 
-If you're upgrading from Vitest 3.x:
-
-1. Remove `vitest.workspace.ts` - replaced by `projects` array in root config
-2. Update package configs to use `defineProject()` instead of `defineConfig()`
-3. Ensure each package sets its own `test.environment`
-4. Coverage patterns are now explicitly defined (no automatic includes)
+1. **Root config**: Use `/workspace` import
+2. **Package configs**: Use `/project` import (or customize with `mergeConfig`)
+3. Remove `vitest.workspace.ts` file
+4. Ensure each package uses `defineProject()` (handled by `/project` config)
 
 ### Scripts
 
