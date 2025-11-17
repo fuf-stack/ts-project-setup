@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v2.0.3...vitest-config-v3.0.0) (2025-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Vitest 4.0 migration
+
+### Features
+
+* migrate to Vitest 4.0 with complete shared config ([05b48aa](https://github.com/fuf-stack/ts-project-setup/commit/05b48aaceff45fb7f51deba2508f3bdaddf21e3d))
+
+
+### Bug Fixes
+
+* **vitest-config:** update vitest monorepo to v4.0.9 ([#917](https://github.com/fuf-stack/ts-project-setup/issues/917)) ([a2bb29b](https://github.com/fuf-stack/ts-project-setup/commit/a2bb29baaebf23b8fa591d892e49bc668136569c))
+
 ## [2.0.3](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v2.0.2...vitest-config-v2.0.3) (2025-11-15)
 
 
