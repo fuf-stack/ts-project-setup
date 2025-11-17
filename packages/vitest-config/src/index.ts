@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitest/config';
 
+import tsconfigPaths from 'vite-tsconfig-paths';
+
 /**
  * Default Vitest configuration for Fröhlich ∧ Frei monorepos
  *
@@ -7,11 +9,16 @@ import { defineConfig } from 'vitest/config';
  *
  * Features:
  * - Projects array for monorepo structure (replaces vitest.workspace.ts)
+ * - Automatic TypeScript path mapping resolution
  * - V8 coverage provider with explicit include patterns
  * - Sensible exclusions for generated files, mocks, and test files
  * - LCOV reporter for CI integration
  */
 export default defineConfig({
+  plugins: [
+    // Automatically resolve TypeScript path mappings from tsconfig.json
+    tsconfigPaths(),
+  ],
   test: {
     // Define projects array (replaces vitest.workspace.ts in Vitest 4.0)
     // This tells Vitest to look for test files in packages and apps directories
@@ -32,7 +39,7 @@ export default defineConfig({
         '**/__generated__/**',
         // Mock implementations
         '**/__mocks__/**',
-         // Test files
+        // Test files
         '**/*.spec.{js,ts,tsx}',
         // Storybook stories
         '**/*.stories.{js,ts,tsx}',

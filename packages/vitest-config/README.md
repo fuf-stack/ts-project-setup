@@ -40,6 +40,7 @@ export default config;
 This gives you:
 
 - Projects array: `['apps/*', 'packages/*', 'packages/config/*']`
+- Automatic TypeScript path mapping resolution (`vite-tsconfig-paths`)
 - V8 coverage with sensible includes/excludes
 - LCOV reporter
 
