@@ -33,12 +33,14 @@ yarn add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-pa
 
 ### Usage
 
+> **Important:** Use `.mts` extension for config files when importing this ESM-only package. Using `.ts` may cause bundler errors as tooling might attempt to use `require()` instead of `import`.
+
 #### Workspace Root Config
 
-Use the workspace config in your monorepo root `vitest.config.ts`:
+Use the workspace config in your monorepo root `vitest.config.mts`:
 
 ```ts
-// vitest.config.ts (root)
+// vitest.config.mts (root)
 import config from '@fuf-stack/vitest-config/workspace';
 
 export default config;
@@ -53,6 +55,7 @@ This provides:
 **Customize if needed:**
 
 ```ts
+// vitest.config.mts
 import { defineConfig, mergeConfig } from 'vitest/config';
 
 import workspaceConfig from '@fuf-stack/vitest-config/workspace';
@@ -69,10 +72,10 @@ export default mergeConfig(
 
 #### Package-Level Configs
 
-Use the project config in individual package `vitest.config.ts`:
+Use the project config in individual package `vitest.config.mts`:
 
 ```ts
-// packages/my-package/vitest.config.ts
+// packages/my-package/vitest.config.mts
 import config from '@fuf-stack/vitest-config/project';
 
 export default config;
@@ -87,7 +90,7 @@ This provides:
 **For React components (need jsdom):**
 
 ```ts
-// packages/ui-components/vitest.config.ts
+// packages/ui-components/vitest.config.mts
 import { mergeConfig } from 'vitest/config';
 
 import projectConfig from '@fuf-stack/vitest-config/project';
@@ -104,8 +107,24 @@ export default mergeConfig(projectConfig, {
 
 1. **Root config**: Use `/workspace` import
 2. **Package configs**: Use `/project` import (or customize with `mergeConfig`)
-3. Remove `vitest.workspace.ts` file
-4. Ensure each package uses `defineProject()` (handled by `/project` config)
+3. **Rename config files**: Change `.ts` → `.mts` (required for ESM-only packages)
+4. Remove `vitest.workspace.ts` file
+5. Ensure each package uses `defineProject()` (handled by `/project` config)
+
+### Why `.mts` Extension?
+
+This package is ESM-only (`"type": "module"`). When Vitest bundles config files:
+
+- `.ts` files are ambiguous - bundlers may try `require()` ❌
+- `.mts` explicitly declares ES Module - uses `import` ✅
+
+Using `.ts` may result in errors like:
+
+```
+Error: Cannot use import statement outside a module
+```
+
+The `.mts` extension tells tooling to treat the file as an ES Module, allowing proper imports of ESM-only dependencies.
 
 ### Scripts
 
