@@ -1,0 +1,20 @@
+/* eslint-disable import-x/prefer-default-export */
+/* eslint-disable import-x/no-unresolved */
+/* eslint-disable n/no-sync */
+
+import type { Config } from '@fuf-stack/config';
+
+import fs from 'node:fs';
+
+import lodash from 'lodash';
+
+import { config } from '@fuf-stack/config';
+import { utils } from '@fuf-stack/utils';
+
+export const test = () => {
+  const data = lodash.cloneDeep({ foo: 'bar' });
+  const result = utils.process(data);
+  const appConfig: Config = config.load();
+  const exists = fs.existsSync('./file.txt');
+  return { result, appConfig, exists };
+};

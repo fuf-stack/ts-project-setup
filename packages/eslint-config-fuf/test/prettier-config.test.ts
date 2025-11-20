@@ -79,6 +79,123 @@ describe('createPrettierConfig', () => {
     const plugins = config.plugins as string[];
     expect(plugins[plugins.length - 1]).toBe('prettier-plugin-tailwindcss');
   });
+
+  describe('projectImportOrderGroups', () => {
+    it('should add project import order groups', () => {
+      const config = createPrettierConfig({
+        projectImportOrderGroups: ['^@acme/(.*)$', '^~/(.*)$'],
+      });
+      const importOrder = config.importOrder as string[];
+      
+      // Find the index of THIRD_PARTY_MODULES
+      const thirdPartyIndex = importOrder.indexOf('<THIRD_PARTY_MODULES>');
+      
+      // Project groups should appear after third party modules
+      expect(importOrder[thirdPartyIndex + 2]).toBe('^@acme/(.*)$');
+      expect(importOrder[thirdPartyIndex + 3]).toBe('');
+      expect(importOrder[thirdPartyIndex + 4]).toBe('^~/(.*)$');
+      expect(importOrder[thirdPartyIndex + 5]).toBe('');
+    });
+
+    it('should support single project import order group', () => {
+      const config = createPrettierConfig({
+        projectImportOrderGroups: ['^@company/(.*)$'],
+      });
+      const importOrder = config.importOrder as string[];
+      expect(importOrder).toContain('^@company/(.*)$');
+    });
+
+    it('should support multiple project import order groups', () => {
+      const config = createPrettierConfig({
+        projectImportOrderGroups: [
+          '^@org1/(.*)$',
+          '^@org2/(.*)$',
+          '^@org3/(.*)$',
+        ],
+      });
+      const importOrder = config.importOrder as string[];
+      expect(importOrder).toContain('^@org1/(.*)$');
+      expect(importOrder).toContain('^@org2/(.*)$');
+      expect(importOrder).toContain('^@org3/(.*)$');
+    });
+
+    it('should place project groups before src imports', () => {
+      const config = createPrettierConfig({
+        projectImportOrderGroups: ['^@custom/(.*)$'],
+      });
+      const importOrder = config.importOrder as string[];
+      
+      const customIndex = importOrder.indexOf('^@custom/(.*)$');
+      const srcIndex = importOrder.indexOf(
+        '^(?!.*[.](css|jpg|jpeg|json|png|svg)$)src/(.*)$',
+      );
+      
+      expect(customIndex).toBeLessThan(srcIndex);
+    });
+  });
+
+  describe('workspacePackagePrefix (deprecated)', () => {
+    it('should support workspacePackagePrefix for backward compatibility', () => {
+      const config = createPrettierConfig({
+        workspacePackagePrefix: '@fuf-stack',
+      });
+      const importOrder = config.importOrder as string[];
+      expect(importOrder).toContain('^@fuf-stack(.*)$');
+    });
+
+    it('should prioritize projectImportOrderGroups over workspacePackagePrefix', () => {
+      const config = createPrettierConfig({
+        projectImportOrderGroups: ['^@new/(.*)$'],
+        workspacePackagePrefix: '@old',
+      });
+      const importOrder = config.importOrder as string[];
+      
+      // Should contain the new pattern
+      expect(importOrder).toContain('^@new/(.*)$');
+      // Should NOT contain the old pattern
+      expect(importOrder).not.toContain('^@old(.*)$');
+    });
+
+    it('should place workspacePackagePrefix imports after third party', () => {
+      const config = createPrettierConfig({
+        workspacePackagePrefix: '@workspace',
+      });
+      const importOrder = config.importOrder as string[];
+      
+      const thirdPartyIndex = importOrder.indexOf('<THIRD_PARTY_MODULES>');
+      const workspaceIndex = importOrder.indexOf('^@workspace(.*)$');
+      
+      expect(workspaceIndex).toBeGreaterThan(thirdPartyIndex);
+    });
+  });
+
+  describe('import order structure', () => {
+    it('should maintain correct import order structure', () => {
+      const config = createPrettierConfig({
+        projectImportOrderGroups: ['^@custom/(.*)$'],
+      });
+      const importOrder = config.importOrder as string[];
+      
+      // Basic structure check
+      expect(importOrder).toContain('<TYPES>');
+      expect(importOrder).toContain('<BUILTIN_MODULES>');
+      expect(importOrder).toContain('^react');
+      expect(importOrder).toContain('<THIRD_PARTY_MODULES>');
+      expect(importOrder).toContain('^@custom/(.*)$');
+      
+      // Order check
+      const typesIndex = importOrder.indexOf('<TYPES>');
+      const builtinIndex = importOrder.indexOf('<BUILTIN_MODULES>');
+      const reactIndex = importOrder.indexOf('^react');
+      const thirdPartyIndex = importOrder.indexOf('<THIRD_PARTY_MODULES>');
+      const customIndex = importOrder.indexOf('^@custom/(.*)$');
+      
+      expect(typesIndex).toBeLessThan(builtinIndex);
+      expect(builtinIndex).toBeLessThan(reactIndex);
+      expect(reactIndex).toBeLessThan(thirdPartyIndex);
+      expect(thirdPartyIndex).toBeLessThan(customIndex);
+    });
+  });
 });
 
 

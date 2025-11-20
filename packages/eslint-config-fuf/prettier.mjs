@@ -12,7 +12,11 @@
  *     enablePhp: false,
  *     tailwindConfig: './tailwind.config.ts',
  *     tailwindAdditionalFunctions: ['cn', 'classNames'],
- *     workspacePackagePrefix: '@your-org',
+ *     projectImportOrderGroups: [
+ *       '^@your-org/(.*)$',        // Your monorepo packages
+ *       '^@acme/(.*)$',            // Another package scope
+ *       '^~/(.*)$',                // Path alias imports
+ *     ],
  *   });
  *
  *   // prettier.config.mjs (Tailwind CSS v4+)
@@ -22,7 +26,13 @@
  *     enablePhp: false,
  *     tailwindStylesheet: './src/app.css',
  *     tailwindAdditionalFunctions: ['cn', 'classNames'],
- *     workspacePackagePrefix: '@your-org',
+ *     projectImportOrderGroups: ['^@your-org/(.*)$'],
+ *   });
+ *
+ *   // prettier.config.mjs (deprecated: backward compatibility with workspacePackagePrefix)
+ *   import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
+ *   export default createConfig({
+ *     workspacePackagePrefix: '@your-org', // DEPRECATED: use projectImportOrderGroups
  *   });
  *
  * Parameters:
@@ -34,8 +44,12 @@
  *   stylesheet entry point (Tailwind CSS v4+)
  * - options.tailwindAdditionalFunctions: string[] — additional function names that contain
  *   Tailwind class strings
- * - options.workspacePackagePrefix: string | undefined — monorepo scope to group internal
- *   packages in import order
+ * - options.projectImportOrderGroups: string[] | undefined — array of import patterns to create
+ *   custom import order groups. Each pattern is inserted as a separate group in the import order,
+ *   placed after third-party modules and before src/ imports. Use regex patterns like
+ *   '^@your-org/(.*)$' or path aliases like '^~/(.*)$'
+ * - options.workspacePackagePrefix: string | undefined — DEPRECATED: use projectImportOrderGroups
+ *   instead. Monorepo scope to group internal packages in import order (e.g., '@your-org')
  *
  * Returns:
  * - Prettier Config object (consumable by CLI and editor integrations)
@@ -47,8 +61,19 @@ const createPrettierConfig = (options) => {
     tailwindConfig,
     tailwindStylesheet,
     tailwindAdditionalFunctions,
+    projectImportOrderGroups,
     workspacePackagePrefix,
   } = options || {};
+
+  // Build project import groups from either new or deprecated option
+  let projectImportGroups = [];
+  if (projectImportOrderGroups) {
+    projectImportGroups = projectImportOrderGroups.flatMap((pattern) => {
+      return [pattern, ''];
+    });
+  } else if (workspacePackagePrefix) {
+    projectImportGroups = [`^${workspacePackagePrefix}(.*)$`, ''];
+  }
 
   /** @type {import('prettier').Config} */
   return {
@@ -88,10 +113,8 @@ const createPrettierConfig = (options) => {
       '<THIRD_PARTY_MODULES>',
       '',
 
-      // septate workspace packages block when workspacePackagePrefix defined
-      ...(workspacePackagePrefix
-        ? [`^${workspacePackagePrefix}(.*)$`, '']
-        : []),
+      // project import order groups (workspace packages, path aliases, etc.)
+      ...projectImportGroups,
 
       // absolute imports from src imports
       '^(?!.*[.](css|jpg|jpeg|json|png|svg)$)src/__generated__/(.*)$',

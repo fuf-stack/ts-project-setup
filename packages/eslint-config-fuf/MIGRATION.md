@@ -134,7 +134,7 @@ import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
 
 export default createConfig({
   tailwindConfig: './tailwind.config.js',
-  workspacePackagePrefix: '@your-org',
+  projectImportOrderGroups: ['^@your-org/(.*)$'],
 });
 ```
 
@@ -143,6 +143,48 @@ Rename your Prettier config if it was CommonJS or plain `.js`:
 ```diff
 - prettier.config.js
 + prettier.config.mjs
+```
+
+### Migration from `workspacePackagePrefix` to `projectImportOrderGroups`
+
+The `workspacePackagePrefix` option is now **deprecated** in favor of the more flexible `projectImportOrderGroups` option. This allows you to define multiple custom import order groups instead of just a single workspace package prefix.
+
+**Before (deprecated):**
+
+```js
+export default createConfig({
+  workspacePackagePrefix: '@your-org',
+});
+```
+
+**After (recommended):**
+
+```js
+export default createConfig({
+  projectImportOrderGroups: [
+    '^@your-org/(.*)$', // Your monorepo packages
+    '^@acme/(.*)$', // Another package scope
+    '^~/(.*)$', // Path alias imports
+  ],
+});
+```
+
+The old `workspacePackagePrefix` option still works for backward compatibility but will be removed in a future version. Please migrate to `projectImportOrderGroups`.
+
+### Tailwind CSS v4 Support
+
+For Tailwind CSS v4+ projects, use `tailwindStylesheet` instead of `tailwindConfig`:
+
+```js
+// Tailwind CSS v3
+export default createConfig({
+  tailwindConfig: './tailwind.config.ts',
+});
+
+// Tailwind CSS v4+
+export default createConfig({
+  tailwindStylesheet: './src/app.css',
+});
 ```
 
 ## 6) React specifics
