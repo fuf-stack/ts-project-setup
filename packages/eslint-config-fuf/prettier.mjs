@@ -5,7 +5,7 @@
  * It enables opinionated defaults, import sorting, and optional Astro/PHP/Tailwind support.
  *
  * Usage (ESM):
- *   // prettier.config.mjs
+ *   // prettier.config.mjs (Tailwind CSS v3)
  *   import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
  *   export default createConfig({
  *     enableAstro: false,
@@ -15,11 +15,23 @@
  *     workspacePackagePrefix: '@your-org',
  *   });
  *
+ *   // prettier.config.mjs (Tailwind CSS v4+)
+ *   import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
+ *   export default createConfig({
+ *     enableAstro: false,
+ *     enablePhp: false,
+ *     tailwindStylesheet: './src/app.css',
+ *     tailwindAdditionalFunctions: ['cn', 'classNames'],
+ *     workspacePackagePrefix: '@your-org',
+ *   });
+ *
  * Parameters:
  * - options.enableAstro: boolean — include prettier-plugin-astro and configure parser for *.astro
  * - options.enablePhp: boolean — include @prettier/plugin-php and configure parser for *.php
  * - options.tailwindConfig: string | undefined — absolute/relative path to Tailwind config
- *   to enable class sorting
+ *   to enable class sorting (Tailwind CSS v3)
+ * - options.tailwindStylesheet: string | undefined — absolute/relative path to Tailwind CSS
+ *   stylesheet entry point (Tailwind CSS v4+)
  * - options.tailwindAdditionalFunctions: string[] — additional function names that contain
  *   Tailwind class strings
  * - options.workspacePackagePrefix: string | undefined — monorepo scope to group internal
@@ -33,6 +45,7 @@ const createPrettierConfig = (options) => {
     enableAstro,
     enablePhp,
     tailwindConfig,
+    tailwindStylesheet,
     tailwindAdditionalFunctions,
     workspacePackagePrefix,
   } = options || {};
@@ -50,7 +63,9 @@ const createPrettierConfig = (options) => {
       ...(enableAstro ? ['prettier-plugin-astro'] : []),
       ...(enablePhp ? ['@prettier/plugin-php'] : []),
       // tailwind MUST come last
-      ...(tailwindConfig ? ['prettier-plugin-tailwindcss'] : []),
+      ...(tailwindConfig || tailwindStylesheet
+        ? ['prettier-plugin-tailwindcss']
+        : []),
     ],
     pluginSearchDirs: false,
 
@@ -133,10 +148,12 @@ const createPrettierConfig = (options) => {
     ],
 
     // tailwind configuration
-    ...(tailwindConfig
+    ...(tailwindConfig || tailwindStylesheet
       ? {
           // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
-          tailwindConfig,
+          ...(tailwindConfig ? { tailwindConfig } : {}),
+          // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss#specifying-your-tailwind-stylesheet-path-tailwind-css-v4
+          ...(tailwindStylesheet ? { tailwindStylesheet } : {}),
           // see: https://github.com/tailwindlabs/prettier-plugin-tailwindcss#sorting-classes-in-function-calls
           tailwindFunctions: [
             'classNames',

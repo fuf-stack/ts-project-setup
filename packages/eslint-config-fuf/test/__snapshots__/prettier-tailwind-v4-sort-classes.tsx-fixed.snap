@@ -1,0 +1,23 @@
+/* eslint-disable import-x/no-extraneous-dependencies */
+/* eslint-disable import-x/no-unresolved */
+
+import React from 'react';
+
+import { cn, tv } from '@fuf-stack/pixel-utils';
+
+// tailwind variants with v4
+const _variants = tv({
+  base: 'rounded bg-blue-500 px-4 py-2 text-base text-white',
+});
+
+const MyV4Component = () => {
+  const _outsideCn = cn('rounded bg-blue-500 px-4 py-2 text-base text-white');
+
+  return (
+    <div className="rounded text-white">
+      <div className={cn('rounded text-white')}>with cn</div>
+    </div>
+  );
+};
+
+export default MyV4Component;

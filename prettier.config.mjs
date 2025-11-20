@@ -3,11 +3,11 @@
 import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
 
 export default createConfig({
-  // INFO: just for testing
+  workspacePackagePrefix: '@fuf-stack',
+  // INFO: just for astro and php testing
   enableAstro: true,
   enablePhp: true,
-  tailwindConfig: 'packages/eslint-config-fuf/test/tailwind.config.ts',
-  // INFO: just for testing
+  // INFO: just for tailwind testing
   tailwindAdditionalFunctions: ['additionalTailwindFunction'],
-  workspacePackagePrefix: '@fuf-stack',
+  tailwindStylesheet: 'packages/eslint-config-fuf/test/tailwind-v4.css',
 });

@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+/* Tailwind CSS v4 stylesheet */
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+}
+
+@layer utilities {
+  .custom-utility {
+    @apply rounded bg-primary px-4 py-2;
+  }
+}
