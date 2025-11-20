@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.13...eslint-config-fuf-v1.2.0) (2025-11-20)
+
+
+### Features
+
+* **eslint-config-fuf:** add support for tailwind v4 with tailwindStylesheet config ([0fa2cac](https://github.com/fuf-stack/ts-project-setup/commit/0fa2cac2151e7c52288f3de305fd59856272aa3b))
+
 ## [1.1.13](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.1.12...eslint-config-fuf-v1.1.13) (2025-11-17)
 
 
