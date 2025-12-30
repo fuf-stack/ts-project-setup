@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@vitest/coverage-v8": "4.0.16",
-    "vite-tsconfig-paths": "5.1.4",
+    "vite-tsconfig-paths": "6.0.3",
     "vitest": "4.0.16"
   },
   "devDependencies": {
