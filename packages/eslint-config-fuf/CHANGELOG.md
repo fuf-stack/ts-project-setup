@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.3.2...eslint-config-fuf-v1.4.0) (2026-01-20)
+
+
+### Features
+
+* **eslint-config-fuf:** upgrade eslint-config-airbnb-extended to v3 ([26d3b07](https://github.com/fuf-stack/ts-project-setup/commit/26d3b07db380eb8ddc61428a0d577c5e563a07a4))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @eslint/compat to v2.0.1 ([#1026](https://github.com/fuf-stack/ts-project-setup/issues/1026)) ([f8709b9](https://github.com/fuf-stack/ts-project-setup/commit/f8709b9ad4aeaf740d635e1352ca5b6eb591e873))
+* **eslint-config-fuf:** update dependency @stylistic/eslint-plugin to v5.7.0 ([#1025](https://github.com/fuf-stack/ts-project-setup/issues/1025)) ([881ceca](https://github.com/fuf-stack/ts-project-setup/commit/881ceca42ca92cf567be11d9e797fb152107481b))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.5.4 ([#999](https://github.com/fuf-stack/ts-project-setup/issues/999)) ([c205abe](https://github.com/fuf-stack/ts-project-setup/commit/c205abe57100f9c4e3963831621ae81d39c8ba0a))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.6.1 ([#1003](https://github.com/fuf-stack/ts-project-setup/issues/1003)) ([c86df32](https://github.com/fuf-stack/ts-project-setup/commit/c86df324d045b7224938cb9415c5dcc3cfbd19e9))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.6.3 ([#1005](https://github.com/fuf-stack/ts-project-setup/issues/1005)) ([17d2730](https://github.com/fuf-stack/ts-project-setup/commit/17d2730c9252b13a6cb8dbcbb3388013503b5566))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.6.4 ([#1008](https://github.com/fuf-stack/ts-project-setup/issues/1008)) ([9f5d881](https://github.com/fuf-stack/ts-project-setup/commit/9f5d8816997aa1a0b929a364123ee8d629115efc))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.6.5 ([#1016](https://github.com/fuf-stack/ts-project-setup/issues/1016)) ([93f008b](https://github.com/fuf-stack/ts-project-setup/commit/93f008b262aac0bda84824789372434fd0542d61))
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.6.6 ([#1022](https://github.com/fuf-stack/ts-project-setup/issues/1022)) ([1e3eb55](https://github.com/fuf-stack/ts-project-setup/commit/1e3eb55f07427ac0d86ccc67a6893498c50938af))
+* **eslint-config-fuf:** update dependency eslint-plugin-n to v17.23.2 ([#1039](https://github.com/fuf-stack/ts-project-setup/issues/1039)) ([8544b27](https://github.com/fuf-stack/ts-project-setup/commit/8544b2784f06b0954347def21a9ff214e6b5ca71))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.1.10 ([#997](https://github.com/fuf-stack/ts-project-setup/issues/997)) ([1082abb](https://github.com/fuf-stack/ts-project-setup/commit/1082abb2f65968f3d92bc7f849ac0dca0185b212))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.1.11 ([#1011](https://github.com/fuf-stack/ts-project-setup/issues/1011)) ([b61d4ae](https://github.com/fuf-stack/ts-project-setup/commit/b61d4aef5697aef487bc6b4b29ad5fce172ff5de))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.1.5 ([#977](https://github.com/fuf-stack/ts-project-setup/issues/977)) ([05eb81d](https://github.com/fuf-stack/ts-project-setup/commit/05eb81d5dc6d709a945ff0ef787d62fe6535260f))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.1.7 ([#979](https://github.com/fuf-stack/ts-project-setup/issues/979)) ([3385be2](https://github.com/fuf-stack/ts-project-setup/commit/3385be22119b737b028a5012cae073cfb1e7890c))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.1.8 ([#986](https://github.com/fuf-stack/ts-project-setup/issues/986)) ([b46d05f](https://github.com/fuf-stack/ts-project-setup/commit/b46d05f85785d1664b6dfec3aaf1a1b4932918f1))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.1.9 ([#992](https://github.com/fuf-stack/ts-project-setup/issues/992)) ([39432a9](https://github.com/fuf-stack/ts-project-setup/commit/39432a9d92cb0acd21b768f3fa29120330903a8e))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.49.0 ([#974](https://github.com/fuf-stack/ts-project-setup/issues/974)) ([bdb7a17](https://github.com/fuf-stack/ts-project-setup/commit/bdb7a17d5db154de6ded92e83c741bd71f5d8e79))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.50.0 ([#994](https://github.com/fuf-stack/ts-project-setup/issues/994)) ([b7ef03f](https://github.com/fuf-stack/ts-project-setup/commit/b7ef03fba4e6701183451e89f8be884703486cf6))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.50.1 ([#1004](https://github.com/fuf-stack/ts-project-setup/issues/1004)) ([d2f6ccc](https://github.com/fuf-stack/ts-project-setup/commit/d2f6ccc0b6abb1f8a9da022e7fa8399886365871))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.51.0 ([#1012](https://github.com/fuf-stack/ts-project-setup/issues/1012)) ([df6cbd2](https://github.com/fuf-stack/ts-project-setup/commit/df6cbd21f5d2d9207f815815f49b22dc9ec0104c))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.52.0 ([#1018](https://github.com/fuf-stack/ts-project-setup/issues/1018)) ([86c06d6](https://github.com/fuf-stack/ts-project-setup/commit/86c06d67498af737c55b80f8baf3404ad8e16b8c))
+* **eslint-config-fuf:** update dependency typescript-eslint to v8.53.0 ([#1037](https://github.com/fuf-stack/ts-project-setup/issues/1037)) ([7955279](https://github.com/fuf-stack/ts-project-setup/commit/7955279abfe14cdc7814aed639f9914142319759))
+* **eslint-config-fuf:** update eslint monorepo to v9.39.2 ([#987](https://github.com/fuf-stack/ts-project-setup/issues/987)) ([c3c9fd5](https://github.com/fuf-stack/ts-project-setup/commit/c3c9fd5777eaec5b606a7f81ac8f7422ceb6a83c))
+
 ## [1.3.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.3.1...eslint-config-fuf-v1.3.2) (2025-12-15)
 
 
