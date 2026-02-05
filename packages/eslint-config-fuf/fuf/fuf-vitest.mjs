@@ -14,5 +14,8 @@ export default {
     // Do not enforce production dependencies in tests
     'import/no-extraneous-dependencies': 'off',
     'import-x/no-extraneous-dependencies': 'off',
+
+    // Allow namespace imports in tests
+    'import-x/no-namespace': 'off',
   },
 };

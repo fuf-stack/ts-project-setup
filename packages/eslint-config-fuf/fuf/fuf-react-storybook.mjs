@@ -7,6 +7,9 @@ export default {
     // do not enforce production dependencies in stories
     'import-x/no-extraneous-dependencies': 'off',
 
+    // allow namespace imports in stories
+    'import-x/no-namespace': 'off',
+
     // allow prop spreading in stories
     'react/jsx-props-no-spreading': 'off',
   },

@@ -1,0 +1,31 @@
+/* eslint-disable import-x/no-unresolved */
+
+// Namespace imports should be allowed in stories (no warnings)
+
+import type { Meta, StoryObj } from '@storybook/react';
+
+import * as vt from '@fuf-stack/veto';
+
+import Button from './support/Button';
+
+const schema = vt.object({
+  label: vt.string(),
+  primary: vt.boolean().optional(),
+});
+
+const meta: Meta<typeof Button> = {
+  title: 'Button with namespace import',
+  component: Button,
+};
+
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const WithNamespaceImport: Story = {
+  args: {
+    label: 'Button',
+  },
+};
+
+// Using schema from namespace import
+export const validated = schema.parse({ label: 'Validated Button' });
