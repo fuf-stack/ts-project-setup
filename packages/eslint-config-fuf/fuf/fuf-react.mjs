@@ -27,6 +27,11 @@ export default {
     // see: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
     'react/jsx-fragments': ['warn', 'syntax'],
 
+    // allow alphabetical prop sorting but don't require shorthand props first
+    // reserved props (key, ref) should come first
+    // see: test/fixtures/react-jsx-sort-props.tsx
+    'react/jsx-sort-props': ['warn', { shorthandFirst: false, reservedFirst: true }],
+
     // modern JSX transform doesn't require React to be in scope
     'react/react-in-jsx-scope': 'off',
 

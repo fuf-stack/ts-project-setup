@@ -1,0 +1,32 @@
+import Button from './support/Button';
+
+// Props should be alphabetically sorted
+// Reserved props (key, ref) should come first
+// But other shorthand props don't need to be listed first
+const Example = () => {
+  const items = [
+    { id: 1, label: 'First' },
+    { id: 2, label: 'Second' },
+  ];
+
+  return (
+    <div>
+      {items.map((item) => {
+        return (
+          <Button
+            key={item.id}
+            aria-label="Primary button"
+            disabled
+            label={item.label}
+            onClick={() => {
+              console.log('clicked');
+            }}
+            primary
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export default Example;

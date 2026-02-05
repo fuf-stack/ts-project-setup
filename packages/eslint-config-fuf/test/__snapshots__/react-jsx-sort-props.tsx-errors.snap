@@ -1,0 +1,17 @@
+[
+  {
+    "line": 18,
+    "message": "Reserved props must be listed before all other props",
+    "ruleId": "react/jsx-sort-props",
+  },
+  {
+    "line": 21,
+    "message": "Props should be sorted alphabetically",
+    "ruleId": "react/jsx-sort-props",
+  },
+  {
+    "line": 24,
+    "message": "Props should be sorted alphabetically",
+    "ruleId": "react/jsx-sort-props",
+  },
+]
