@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.4.0...eslint-config-fuf-v1.5.0) (2026-02-05)
+
+
+### Features
+
+* **eslint-config-fuf:** configure jsx-sort-props with reservedFirst ([4943577](https://github.com/fuf-stack/ts-project-setup/commit/49435775dd0fdad51423d636e705d8c833fbbf24))
+* **eslint-config-fuf:** disable import-x/no-namespace in tests and stories ([5a50268](https://github.com/fuf-stack/ts-project-setup/commit/5a502680064915d7b02259f0dbfa40e606b605c8))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint-config-airbnb-extended to v3.0.1 ([#1052](https://github.com/fuf-stack/ts-project-setup/issues/1052)) ([d57e2be](https://github.com/fuf-stack/ts-project-setup/commit/d57e2becbc626be02c7ff759a26b0b969fd29f27))
+* **eslint-config-fuf:** update dependency eslint-plugin-prettier to v5.5.5 ([#1041](https://github.com/fuf-stack/ts-project-setup/issues/1041)) ([5488003](https://github.com/fuf-stack/ts-project-setup/commit/54880031d0fae4baae821d0b457173b5fefb13fe))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.2.0 ([#1053](https://github.com/fuf-stack/ts-project-setup/issues/1053)) ([bfe7adf](https://github.com/fuf-stack/ts-project-setup/commit/bfe7adf5eafd544713314e17f18997bc2b5cc5d6))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.2.1 ([#1063](https://github.com/fuf-stack/ts-project-setup/issues/1063)) ([1a8fada](https://github.com/fuf-stack/ts-project-setup/commit/1a8fadab10816e8eeb6a6a91ca41c4e0a313795f))
+* **eslint-config-fuf:** update dependency prettier to v3.8.0 ([#1043](https://github.com/fuf-stack/ts-project-setup/issues/1043)) ([480f1cd](https://github.com/fuf-stack/ts-project-setup/commit/480f1cd05bed227c94556b9e04245bcfffbd5b66))
+* **eslint-config-fuf:** update dependency prettier to v3.8.1 ([#1054](https://github.com/fuf-stack/ts-project-setup/issues/1054)) ([ae9966e](https://github.com/fuf-stack/ts-project-setup/commit/ae9966e169dee3a9879769ca5dfa35f7ee5d7f3c))
+
 ## [1.4.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.3.2...eslint-config-fuf-v1.4.0) (2026-01-20)
 
 
