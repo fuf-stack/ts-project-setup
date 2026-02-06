@@ -97,14 +97,14 @@ importers:
   packages/project-cli-tools:
     dependencies:
       '@commitlint/cli':
-        specifier: 20.3.1
-        version: 20.3.1(@types/node@24.10.9)(typescript@5.9.3)
+        specifier: 20.4.0
+        version: 20.4.0(@types/node@24.10.9)(typescript@5.9.3)
       '@commitlint/config-conventional':
-        specifier: 20.3.1
-        version: 20.3.1
+        specifier: 20.4.0
+        version: 20.4.0
       '@commitlint/config-pnpm-scopes':
-        specifier: 20.1.0
-        version: 20.1.0
+        specifier: 20.4.0
+        version: 20.4.0
       '@lerna-lite/cli':
         specifier: 4.11.0
         version: 4.11.0(@lerna-lite/list@4.11.0)(@lerna-lite/publish@4.11.1)(@lerna-lite/version@4.11.1)(@types/node@24.10.9)
@@ -237,17 +237,17 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@commitlint/cli@20.3.1':
-    resolution: {integrity: sha512-NtInjSlyev/+SLPvx/ulz8hRE25Wf5S9dLNDcIwazq0JyB4/w1ROF/5nV0ObPTX8YpRaKYeKtXDYWqumBNHWsw==}
+  '@commitlint/cli@20.4.0':
+    resolution: {integrity: sha512-2lqrFrYNxjKxgMqeYiO3zNM14XN9v72/5xIJyvdLw7sHEGlfg6sweW01PGNWiqZa6/AuZwsb0uzkgWJy6F4N2w==}
     engines: {node: '>=v18'}
     hasBin: true
 
-  '@commitlint/config-conventional@20.3.1':
-    resolution: {integrity: sha512-NCzwvxepstBZbmVXsvg49s+shCxlJDJPWxXqONVcAtJH9wWrOlkMQw/zyl+dJmt8lyVopt5mwQ3mR5M2N2rUWg==}
+  '@commitlint/config-conventional@20.4.0':
+    resolution: {integrity: sha512-nolhFe2YKIix0D4+tPXAWnnIc9WB5fOCgmm4h2EcRyEShC64oH/DpM9n++85NRdItvIhKb+Szsaeuug7KcEeIA==}
     engines: {node: '>=v18'}
 
-  '@commitlint/config-pnpm-scopes@20.1.0':
-    resolution: {integrity: sha512-GA3RRcX0YJNW3WxMTMvpiIFPe0O/rfTGyfst5H6RyFExy2ayJSJi8YzEyYnjkjz/L1upiiu1v1MHdRNdQTZlaA==}
+  '@commitlint/config-pnpm-scopes@20.4.0':
+    resolution: {integrity: sha512-YRAJ2zUvhE8COVxbvQIs9k6A2MDYAPO4wdos2fucDzjCumgdU7VK4KyMBQdYZdGpOUrFw3jNMQ5QpWCwDhmUXQ==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@20.4.0':
@@ -1776,9 +1776,9 @@ packages:
     resolution: {integrity: sha512-GGf2Nipn1RUCAktxuVauVr1e3r8QrLP/B0lEUsFktmGqc3ddbQkhoJZHJctVU829U1c6mTSWftrVOCHaL85Q3w==}
     engines: {node: '>=18'}
 
-  conventional-changelog-conventionalcommits@7.0.2:
-    resolution: {integrity: sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==}
-    engines: {node: '>=16'}
+  conventional-changelog-conventionalcommits@9.1.0:
+    resolution: {integrity: sha512-MnbEysR8wWa8dAEvbj5xcBgJKQlX/m0lhS8DsyAAWDHdfs2faDJxTgzRYlRYpXSe7UiKrIIlB4TrBKU9q9DgkA==}
+    engines: {node: '>=18'}
 
   conventional-changelog-preset-loader@5.0.0:
     resolution: {integrity: sha512-SetDSntXLk8Jh1NOAl1Gu5uLiCNSYenB5tm0YVeZKePRIgDW9lQImromTwLa3c/Gae298tsgOM+/CYT9XAl0NA==}
@@ -4613,7 +4613,7 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@commitlint/cli@20.3.1(@types/node@24.10.9)(typescript@5.9.3)':
+  '@commitlint/cli@20.4.0(@types/node@24.10.9)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.4.0
       '@commitlint/lint': 20.4.0
@@ -4626,12 +4626,12 @@ snapshots:
       - '@types/node'
       - typescript
 
-  '@commitlint/config-conventional@20.3.1':
+  '@commitlint/config-conventional@20.4.0':
     dependencies:
       '@commitlint/types': 20.4.0
-      conventional-changelog-conventionalcommits: 7.0.2
+      conventional-changelog-conventionalcommits: 9.1.0
 
-  '@commitlint/config-pnpm-scopes@20.1.0':
+  '@commitlint/config-pnpm-scopes@20.4.0':
     dependencies:
       '@pnpm/read-project-manifest': 5.0.11
       fast-glob: 3.3.3
@@ -6310,7 +6310,7 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-conventionalcommits@7.0.2:
+  conventional-changelog-conventionalcommits@9.1.0:
     dependencies:
       compare-func: 2.0.0
 
