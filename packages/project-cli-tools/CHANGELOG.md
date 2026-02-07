@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.18](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.17...project-cli-tools-v1.0.18) (2026-02-07)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v20.4.0 ([#1068](https://github.com/fuf-stack/ts-project-setup/issues/1068)) ([9a3d9a3](https://github.com/fuf-stack/ts-project-setup/commit/9a3d9a3956ec368c90861708b8850d6711229346))
+* **project-cli-tools:** update dependency turbo to v2.7.5 ([#1047](https://github.com/fuf-stack/ts-project-setup/issues/1047)) ([b2306d5](https://github.com/fuf-stack/ts-project-setup/commit/b2306d5e0e0888e262b3b669d41f9d29e3704908))
+* **project-cli-tools:** update dependency turbo to v2.7.6 ([#1058](https://github.com/fuf-stack/ts-project-setup/issues/1058)) ([4852268](https://github.com/fuf-stack/ts-project-setup/commit/4852268c750921899396eaabaa7711ba88c539d9))
+* **project-cli-tools:** update dependency turbo to v2.8.0 ([#1064](https://github.com/fuf-stack/ts-project-setup/issues/1064)) ([ee95ef4](https://github.com/fuf-stack/ts-project-setup/commit/ee95ef4983b1c07a190262edf3162150f63d3e05))
+* **project-cli-tools:** update dependency turbo to v2.8.1 ([#1070](https://github.com/fuf-stack/ts-project-setup/issues/1070)) ([a98d14c](https://github.com/fuf-stack/ts-project-setup/commit/a98d14c31b809cd77bca6edf941bbf654402f42a))
+* **project-cli-tools:** update lerna-lite monorepo to v4.11.0 ([#1045](https://github.com/fuf-stack/ts-project-setup/issues/1045)) ([c48fbee](https://github.com/fuf-stack/ts-project-setup/commit/c48fbee13692ca30b750969a51112162338462c9))
+* **project-cli-tools:** update lerna-lite monorepo to v4.11.1 ([#1048](https://github.com/fuf-stack/ts-project-setup/issues/1048)) ([8d00556](https://github.com/fuf-stack/ts-project-setup/commit/8d00556dd1f13aa866d7868fb865a63c9f6774df))
+
 ## [1.0.17](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.16...project-cli-tools-v1.0.17) (2026-01-20)
 
 
