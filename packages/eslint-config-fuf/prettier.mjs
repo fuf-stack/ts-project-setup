@@ -38,6 +38,7 @@
  * Parameters:
  * - options.enableAstro: boolean — include prettier-plugin-astro and configure parser for *.astro
  * - options.enablePhp: boolean — include @prettier/plugin-php and configure parser for *.php
+ * - options.phpVersion: string | undefined — PHP version to use for formatting (e.g., '8.2')
  * - options.tailwindConfig: string | undefined — absolute/relative path to Tailwind config
  *   to enable class sorting (Tailwind CSS v3)
  * - options.tailwindStylesheet: string | undefined — absolute/relative path to Tailwind CSS
@@ -58,6 +59,7 @@ const createPrettierConfig = (options) => {
   const {
     enableAstro,
     enablePhp,
+    phpVersion,
     tailwindConfig,
     tailwindStylesheet,
     tailwindAdditionalFunctions,
@@ -157,6 +159,9 @@ const createPrettierConfig = (options) => {
               files: '*.php',
               options: {
                 parser: 'php',
+                // set phpVersion from options
+                // https://github.com/prettier/plugin-php?tab=readme-ov-file#configuration
+                phpVersion: phpVersion || 'auto',
               },
             },
           ]
