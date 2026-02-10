@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.5.0...eslint-config-fuf-v1.6.0) (2026-02-10)
+
+
+### Features
+
+* **eslint-config-fuf:** add option to set phpVersion in prettier.config.mjs ([55f92fd](https://github.com/fuf-stack/ts-project-setup/commit/55f92fd972b48c3af0a15c366f0c288a1d324dae))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @eslint/compat to v2.0.2 ([#1069](https://github.com/fuf-stack/ts-project-setup/issues/1069)) ([bd4a19a](https://github.com/fuf-stack/ts-project-setup/commit/bd4a19a70efe41b332a17abfd2e84239bc3834e4))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.2.2 ([#1065](https://github.com/fuf-stack/ts-project-setup/issues/1065)) ([27811cd](https://github.com/fuf-stack/ts-project-setup/commit/27811cdc463a787e3e4d0781aea716e3364cc06b))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.2.3 ([#1067](https://github.com/fuf-stack/ts-project-setup/issues/1067)) ([0f5c23e](https://github.com/fuf-stack/ts-project-setup/commit/0f5c23e0e8ce3e5fe407adf86b7105399f205a72))
+
 ## [1.5.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.4.0...eslint-config-fuf-v1.5.0) (2026-02-05)
 
 
