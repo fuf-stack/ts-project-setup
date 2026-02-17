@@ -29,7 +29,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "nodemon": "3.1.11",
-    "turbo": "2.8.3",
+    "turbo": "2.8.4",
     "wait-on": "9.0.3"
   }
 }
