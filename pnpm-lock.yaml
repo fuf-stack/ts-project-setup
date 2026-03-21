@@ -106,17 +106,17 @@ importers:
         specifier: 20.4.3
         version: 20.4.3
       '@lerna-lite/cli':
-        specifier: 4.11.4
-        version: 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)
+        specifier: 4.11.5
+        version: 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)
       '@lerna-lite/list':
-        specifier: 4.11.4
-        version: 4.11.4(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)
+        specifier: 4.11.5
+        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)
       '@lerna-lite/publish':
-        specifier: 4.11.4
-        version: 4.11.4(@lerna-lite/list@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
+        specifier: 4.11.5
+        version: 4.11.5(@lerna-lite/list@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
       '@lerna-lite/version':
-        specifier: 4.11.4
-        version: 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
+        specifier: 4.11.5
+        version: 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
       commitizen:
         specifier: 4.3.1
         version: 4.3.1(@types/node@24.12.0)(typescript@5.9.3)
@@ -683,8 +683,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@lerna-lite/cli@4.11.4':
-    resolution: {integrity: sha512-yqyXDE4ED5MH0FFI3s0eksziz0r3STsgNuTT9oWHYNSZVcsxZM71JXFiapv5ynZAGl8i8YQ55QvZeWmvvxpwmg==}
+  '@lerna-lite/cli@4.11.5':
+    resolution: {integrity: sha512-PvXjxXXTYPhTiz9Dwfo4HzL6Mjbb/5Z0Vr9Or38eG9bl8DiH8vKb/XgXQy3MGUc2fiwYXJAnsOz2P355HAMgLg==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     peerDependencies:
@@ -708,32 +708,32 @@ packages:
       '@lerna-lite/watch':
         optional: true
 
-  '@lerna-lite/core@4.11.4':
-    resolution: {integrity: sha512-5fHoslPtzclHR7hUu/6RnzB1zq/sEol1dwckOKeb4dx97rW7w+f7vZxOcOTz4Tx7gr+IR5l1FY/h3yBA85P2ZQ==}
+  '@lerna-lite/core@4.11.5':
+    resolution: {integrity: sha512-Eo3xpR8siyLdt0e6+8ANemM65GwuIUOe8QtYTsS7SDDnHVWoVtqxA+J2Vx3CEab3idy4J2iZC/sgrkUH+KTeFw==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/init@4.11.4':
-    resolution: {integrity: sha512-7J1vec+IJI0QtJc1wjZvMbPznXVXcSmGLdaSNaJOYO78JN7EwWZZdrrKDSbSxESAK5485NybXAbkszzriwr2SQ==}
+  '@lerna-lite/init@4.11.5':
+    resolution: {integrity: sha512-j2mELpcvOt7rGUEOVmMN0nLbe3u3nxEZMjSVmpcWkVHGqnT2mVBSpSm9nCnP4WM+5Va1yWKPkzMueuwoXc3a1g==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/list@4.11.4':
-    resolution: {integrity: sha512-N/Y3NYUQxR0qxxALBhjZ2H/cSR10HOJlK5KZMFz097FKyTPR0FFLXTq+BGkQXuUSc+EFOE20P7SrKjphc8kFdQ==}
+  '@lerna-lite/list@4.11.5':
+    resolution: {integrity: sha512-iA0fSj2W9zWZKRL1jvJrHVXJZ1eHaNme9IMSIn+Eq2x46vUy0EUIiaj9msykAo+wl7p/6zvTh/DsLXZ8HPb5Ig==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/listable@4.11.4':
-    resolution: {integrity: sha512-TWwlIGA9pJWedTIYNeRV61i+VKQASZSLTU5o9Bk8vVA9Uf/hFNJPIBmX7NZBDEbEmsiK0qDxZ4jGDn4QRNjb7g==}
+  '@lerna-lite/listable@4.11.5':
+    resolution: {integrity: sha512-HPI4Ql5OQebVX04Mwj8Uq+UmnFzW2+DloKq0YdDJp2cXBb/lvUixstZctChhlf5zq5GWdEB+4SJZpZJqdb9AeA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/npmlog@4.11.3':
-    resolution: {integrity: sha512-iHSB+by3a8fj6lD2+dzEgnV4pwHaEWlaowg4/F9S85VBXyepaqMnrl299slnCCVATxfHCdKSiYFr99Bp+dLIhg==}
+  '@lerna-lite/npmlog@4.11.5':
+    resolution: {integrity: sha512-f03zVtCx3JWD2uEh8hMERa5SaaFSFwzez0GhoYzq84FGB0OkZom776rcP9qAqziCaZm4v7BrUKsphiwQL0q2CA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/publish@4.11.4':
-    resolution: {integrity: sha512-2D2/Mpy5YN/TwvAOyxYYH3PdN2c5+yHXBPWd5v/kd0Ij4w5BFeI4gKpwZ/m16vGYN0N7cTAlecgivwO6gBfKDg==}
+  '@lerna-lite/publish@4.11.5':
+    resolution: {integrity: sha512-vEJoz0YnB3pQyUOU7d5yxoRhqwH0aFLlLZ1yIC2/G0nJ9ufYENU/0O4m7wQb1CRANSe46f51VBRu04ERI9CD2g==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@lerna-lite/version@4.11.4':
-    resolution: {integrity: sha512-gAR5XdBVkrQT79GEB2n0PqFPIwxefqa6Rqm1n0EA7ZIeHxzSFK5a2Ivjg9vtb527J9D2FnhnmBm3HYKwCaiX8Q==}
+  '@lerna-lite/version@4.11.5':
+    resolution: {integrity: sha512-HlPDQ2cluAKYbIzJGIPaFmQKEEdARr+sW64lShVgJqBUQgVegEiRtrNsR8dql4LBj0l78fKi4cFFknNHcyXMPQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   '@napi-rs/wasm-runtime@0.2.12':
@@ -1909,10 +1909,6 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  deepmerge-ts@7.1.5:
-    resolution: {integrity: sha512-HOJkrhaYsweh+W+e74Yn7YStZOilkoPb6fycpwNLKzSPtruFs48nYis0zy5yJz1+ktUhHxoRDJ27RQAWLIJVJw==}
-    engines: {node: '>=16.0.0'}
-
   default-browser-id@5.0.1:
     resolution: {integrity: sha512-x1VCxdX4t+8wVfd1so/9w+vQ4vx7lKd2Qp5tDRutErwmR85OgmfX7RlLRMWafRMY7hbEiXIbudNrjOAPa/hL8Q==}
     engines: {node: '>=18'}
@@ -2567,10 +2563,6 @@ packages:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
 
-  hosted-git-info@7.0.2:
-    resolution: {integrity: sha512-puUZAUKT5m8Zzvs72XWy3HtvVbTWljRE66cP60bxJzAqf2DgICo7lYTY2IHUmLnNpjYvw5bvmoHvPc0QO2a62w==}
-    engines: {node: ^16.14.0 || >=18.0.0}
-
   hosted-git-info@8.1.0:
     resolution: {integrity: sha512-Rw/B2DNQaPBICNXEm8balFz9a6WpZrkCGpcWFpy7nCj+NyhSdqXipmfvtmWt9xGfp0wZnBxB+iVpLmQMYt47Tw==}
     engines: {node: ^18.17.0 || >=20.5.0}
@@ -2647,10 +2639,6 @@ packages:
   indent-string@4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
     engines: {node: '>=8'}
-
-  index-to-position@1.2.0:
-    resolution: {integrity: sha512-Yg7+ztRkqslMAS2iFaU+Oa4KTSidr63OsFGlOrJoW981kIYO3CGCS3wA95P1mUi/IVSJkn0D479KTJpVpvFNuw==}
-    engines: {node: '>=18'}
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
@@ -3228,10 +3216,6 @@ packages:
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
-  normalize-package-data@6.0.2:
-    resolution: {integrity: sha512-V6gygoYb/5EmNI+MEGrWkC+e6+Rr7mTmfHrxDbLzxQogBkgzo76rkok0Am6thgSF7Mv2nLOajAJj5vDJZEFn7g==}
-    engines: {node: ^16.14.0 || >=18.0.0}
-
   normalize-package-data@7.0.1:
     resolution: {integrity: sha512-linxNAT6M0ebEYZOx2tO6vBEFsVgnPpv+AVjk0wJHfaUIbq31Jm3T6vvZaarnOeWDh8ShnwXuaAyM7WT3RzErA==}
     engines: {node: ^18.17.0 || >=20.5.0}
@@ -3362,17 +3346,9 @@ packages:
     resolution: {integrity: sha512-tkAQEw8ysMzmkhgw8k+1U/iPhWNhykKnSk4Rd5zLoPJCuJaGRPo6YposrZgaxHKzDHdDWWZvE/Sk7hsL2X/CpQ==}
     engines: {node: '>=18'}
 
-  p-pipe@4.0.0:
-    resolution: {integrity: sha512-HkPfFklpZQPUKBFXzKFB6ihLriIHxnmuQdK9WmLDwe4hf2PdhhfWT/FJa+pc3bA1ywvKXtedxIRmd4Y7BTXE4w==}
-    engines: {node: '>=12'}
-
   p-queue@9.1.0:
     resolution: {integrity: sha512-O/ZPaXuQV29uSLbxWBGGZO1mCQXV2BLIwUr59JUU9SoH76mnYvtms7aafH/isNSNGwuEfP6W/4xD0/TJXxrizw==}
     engines: {node: '>=20'}
-
-  p-reduce@3.0.0:
-    resolution: {integrity: sha512-xsrIUgI0Kn6iyDYm9StOpOeK29XM1aboGji26+QEortiFST1hGZaUQOLhtEbqHErPpGW/aSz6allwK2qcptp0Q==}
-    engines: {node: '>=12'}
 
   p-timeout@7.0.1:
     resolution: {integrity: sha512-AxTM2wDGORHGEkPCt8yqxOTMgpfbEHqF51f/5fJCmwFC3C/zNcGT63SymH2ttOAaiIws2zVg4+izQCjrakcwHg==}
@@ -3398,10 +3374,6 @@ packages:
   parse-json@5.2.0:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
-
-  parse-json@8.3.0:
-    resolution: {integrity: sha512-ybiGyvspI+fAoRQbIPRddCcSTV9/LsJbf0e/S85VLowVGzRmokfneg2kwVW/KU5rOXrPSbF1qAKPMgNTqqROQQ==}
-    engines: {node: '>=18'}
 
   parse-ms@4.0.0:
     resolution: {integrity: sha512-TXfryirbmq34y8QBwgqCVLi+8oA3oWx2eAnSn62ITyEhEYaWRlVZ2DvMM9eZbMs/RfxPu/PK/aBLyGj4IrqMHw==}
@@ -3461,10 +3433,6 @@ packages:
   picomatch@4.0.3:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
-
-  pify@6.1.0:
-    resolution: {integrity: sha512-KocF8ve28eFjjuBKKGvzOBGzG8ew2OqOOSxTTZhirkzH7h3BI1vyzqlR0qbfcDBve1Yzo3FVlWUAtCRrbVN8Fw==}
-    engines: {node: '>=14.16'}
 
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
@@ -3618,10 +3586,6 @@ packages:
     resolution: {integrity: sha512-1zM5HuOfagXCBWMN83fuFI/x+T/UhZ7k+KIzhrHXcQoeX5+7gmaDYjELQHmmzIodumBHeByBJT4QYS7ufAgs7A==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  read-pkg@9.0.1:
-    resolution: {integrity: sha512-9viLL4/n1BJUCT1NXVTdS1jtm80yDEgR5T4yCelII49Mbj0v1rZdKqj7zCiYdbB0CuCgdrvHcNogAKTFPBocFA==}
-    engines: {node: '>=18'}
-
   read-yaml-file@2.1.0:
     resolution: {integrity: sha512-UkRNRIwnhG+y7hpqnycCL/xbTk7+ia9VuVTC0S+zVbwd65DI9eUpRMfsWIGrCWxTU/mi+JW8cHQCrv+zfCbEPQ==}
     engines: {node: '>=10.13'}
@@ -3765,9 +3729,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  set-blocking@2.0.0:
-    resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
-
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
@@ -3822,10 +3783,6 @@ packages:
     resolution: {integrity: sha512-a2B9Y0KlNXl9u/vsW6sTIu9vGEpfKu2wRV6l1H3XEas/0gUIzGzBoP/IouTcUQbm9JWZLH3COxyn03TYlFax6w==}
     engines: {node: '>=10'}
 
-  slash@5.1.0:
-    resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==}
-    engines: {node: '>=14.16'}
-
   slice-ansi@7.1.2:
     resolution: {integrity: sha512-iOBWFgUX7caIZiuutICxVgX1SdxwAVFFKwt1EvMYYec/NWO5meOJ6K5uQxhrYBdQJne4KxiqZc+KptFOWFSI9w==}
     engines: {node: '>=18'}
@@ -3849,10 +3806,6 @@ packages:
   sort-keys@4.2.0:
     resolution: {integrity: sha512-aUYIEU/UviqPgc8mHR6IW1EGxkAXpeRETYcrzg8cLAvUPZcpAlleSXHV2mY7G12GphSH6Gzv+4MMVSSkbdteHg==}
     engines: {node: '>=8'}
-
-  sort-keys@5.1.0:
-    resolution: {integrity: sha512-aSbHV0DaBcr7u0PVHXzM6NbZNAtrr9sF6+Qfs9UUVG7Ll3jQ6hHi8F/xqIIcn2rvIVbr0v/2zyjSdwSV47AgLQ==}
-    engines: {node: '>=12'}
 
   sort-keys@6.0.0:
     resolution: {integrity: sha512-ueSlHJMwpIw42CJ4B11Uxzh/S0p0AlOyiNktlv2KOu5e1JpUE6DlC4AAUjXqesHdBRv/g0wC9Q4vwq0NP2pA9w==}
@@ -4147,10 +4100,6 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  type-fest@4.41.0:
-    resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
-    engines: {node: '>=16'}
-
   typed-array-buffer@1.0.3:
     resolution: {integrity: sha512-nAYYwfY3qnzX30IkA6AQZjVbtK6duGontcQm1WSG1MD94YLqK0515GNApXkoxKOWMusVssAHWLh9SeaoefYFGw==}
     engines: {node: '>= 0.4'}
@@ -4194,10 +4143,6 @@ packages:
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
-  unicorn-magic@0.1.0:
-    resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
-    engines: {node: '>=18'}
-
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
@@ -4236,10 +4181,6 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
-
-  uuid@13.0.0:
-    resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
-    hasBin: true
 
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
@@ -4415,17 +4356,9 @@ packages:
     resolution: {integrity: sha512-OTIk8iR8/aCRWBqvxrzxR0hgxWpnYBblY1S5hDWBQfk/VFmJwzmJgQFN3WsoUKHISv2eAwe+PpbUzyL1CKTLXg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  write-json-file@6.0.0:
-    resolution: {integrity: sha512-MNHcU3f9WxnNyR6MxsYSj64Jz0+dwIpisWKWq9gqLj/GwmA9INg3BZ3vt70/HB3GEwrnDQWr4RPrywnhNzmUFA==}
-    engines: {node: '>=18'}
-
   write-json-file@7.0.0:
     resolution: {integrity: sha512-rj8As6LkachKauGxvZkFzCEd6hIRTi9FKtCNKOa4SaH5vPOiACbGcmPUEJXgkhTHwzNsYmcSbD3C9a6whBfyOg==}
     engines: {node: '>=20'}
-
-  write-package@7.2.0:
-    resolution: {integrity: sha512-uMQTubF/vcu+Wd0b5BGtDmiXePd/+44hUWQz2nZPbs92/BnxRo74tqs+hqDo12RLiEd+CXFKUwxvvIZvtt34Jw==}
-    engines: {node: '>=18'}
 
   write-yaml-file@5.0.0:
     resolution: {integrity: sha512-FdNA4RyH1L43TlvGG8qOMIfcEczwA5ij+zLXUy3Z83CjxhLvcV7/Q/8pk22wnCgYw7PJhtK+7lhO+qqyT4NdvQ==}
@@ -5027,31 +4960,31 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@lerna-lite/cli@4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)':
+  '@lerna-lite/cli@4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)':
     dependencies:
-      '@lerna-lite/core': 4.11.4(@types/node@24.12.0)
-      '@lerna-lite/init': 4.11.4(@types/node@24.12.0)
-      '@lerna-lite/npmlog': 4.11.3
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.0)
+      '@lerna-lite/init': 4.11.5(@types/node@24.12.0)
+      '@lerna-lite/npmlog': 4.11.5
       dedent: 1.7.2
       dotenv: 17.3.1
       import-local: 3.2.0
       load-json-file: 7.0.1
       yargs: 18.0.0
     optionalDependencies:
-      '@lerna-lite/list': 4.11.4(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)
-      '@lerna-lite/publish': 4.11.4(@lerna-lite/list@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
-      '@lerna-lite/version': 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/list': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)
+      '@lerna-lite/publish': 4.11.5(@lerna-lite/list@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/version': 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/core@4.11.4(@types/node@24.12.0)':
+  '@lerna-lite/core@4.11.5(@types/node@24.12.0)':
     dependencies:
       '@inquirer/expand': 4.0.23(@types/node@24.12.0)
       '@inquirer/input': 4.3.1(@types/node@24.12.0)
       '@inquirer/select': 4.4.2(@types/node@24.12.0)
-      '@lerna-lite/npmlog': 4.11.3
+      '@lerna-lite/npmlog': 4.11.5
       '@npmcli/run-script': 10.0.4
       ci-info: 4.4.0
       dedent: 1.7.2
@@ -5065,12 +4998,10 @@ snapshots:
       p-map: 7.0.4
       p-queue: 9.1.0
       semver: 7.7.4
-      slash: 5.1.0
       tinyglobby: 0.2.15
       tinyrainbow: 3.1.0
       write-file-atomic: 7.0.1
       write-json-file: 7.0.0
-      write-package: 7.2.0
       yaml: 2.8.2
       zeptomatch: 2.1.0
     transitivePeerDependencies:
@@ -5078,9 +5009,9 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/init@4.11.4(@types/node@24.12.0)':
+  '@lerna-lite/init@4.11.5(@types/node@24.12.0)':
     dependencies:
-      '@lerna-lite/core': 4.11.4(@types/node@24.12.0)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.0)
       fs-extra: 11.3.4
       p-map: 7.0.4
       write-json-file: 7.0.0
@@ -5089,11 +5020,11 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/list@4.11.4(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)':
+  '@lerna-lite/list@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)':
     dependencies:
-      '@lerna-lite/cli': 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)
-      '@lerna-lite/core': 4.11.4(@types/node@24.12.0)
-      '@lerna-lite/listable': 4.11.4(@types/node@24.12.0)
+      '@lerna-lite/cli': 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.0)
+      '@lerna-lite/listable': 4.11.5(@types/node@24.12.0)
     transitivePeerDependencies:
       - '@lerna-lite/exec'
       - '@lerna-lite/publish'
@@ -5104,9 +5035,9 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/listable@4.11.4(@types/node@24.12.0)':
+  '@lerna-lite/listable@4.11.5(@types/node@24.12.0)':
     dependencies:
-      '@lerna-lite/core': 4.11.4(@types/node@24.12.0)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.0)
       columnify: 1.6.0
       tinyrainbow: 3.1.0
     transitivePeerDependencies:
@@ -5114,22 +5045,21 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/npmlog@4.11.3':
+  '@lerna-lite/npmlog@4.11.5':
     dependencies:
       aproba: 2.1.0
       fast-string-width: 3.0.2
       has-unicode: 2.0.1
-      set-blocking: 2.0.0
       signal-exit: 4.1.0
       tinyrainbow: 3.1.0
       wide-align: 1.1.5
 
-  '@lerna-lite/publish@4.11.4(@lerna-lite/list@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/publish@4.11.5(@lerna-lite/list@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)':
     dependencies:
-      '@lerna-lite/cli': 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)
-      '@lerna-lite/core': 4.11.4(@types/node@24.12.0)
-      '@lerna-lite/npmlog': 4.11.3
-      '@lerna-lite/version': 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/cli': 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.0)
+      '@lerna-lite/npmlog': 4.11.5
+      '@lerna-lite/version': 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)
       '@npmcli/arborist': 9.4.1
       '@npmcli/package-json': 7.0.5
       byte-size: 9.0.1
@@ -5144,7 +5074,6 @@ snapshots:
       npm-packlist: 10.0.4
       npm-registry-fetch: 19.1.1
       p-map: 7.0.4
-      p-pipe: 4.0.0
       pacote: 21.5.0
       semver: 7.7.4
       ssri: 13.0.1
@@ -5162,12 +5091,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/version@4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/version@4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@types/node@24.12.0)(conventional-commits-filter@5.0.0)':
     dependencies:
       '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
-      '@lerna-lite/cli': 4.11.4(@lerna-lite/list@4.11.4)(@lerna-lite/publish@4.11.4)(@lerna-lite/version@4.11.4)(@types/node@24.12.0)
-      '@lerna-lite/core': 4.11.4(@types/node@24.12.0)
-      '@lerna-lite/npmlog': 4.11.3
+      '@lerna-lite/cli': 4.11.5(@lerna-lite/list@4.11.5)(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.0)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.0)
+      '@lerna-lite/npmlog': 4.11.5
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
       conventional-changelog: 7.2.0(conventional-commits-filter@5.0.0)
@@ -5178,19 +5107,13 @@ snapshots:
       dedent: 1.7.2
       fs-extra: 11.3.4
       git-url-parse: 16.1.0
-      is-stream: 4.0.1
       load-json-file: 7.0.1
       new-github-release-url: 2.0.0
       npm-package-arg: 13.0.2
       p-limit: 7.3.0
       p-map: 7.0.4
-      p-pipe: 4.0.0
-      p-reduce: 3.0.0
-      pify: 6.1.0
       semver: 7.7.4
-      slash: 5.1.0
       tinyrainbow: 3.1.0
-      uuid: 13.0.0
       write-json-file: 7.0.0
       zeptomatch: 2.1.0
     transitivePeerDependencies:
@@ -6459,8 +6382,6 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  deepmerge-ts@7.1.5: {}
-
   default-browser-id@5.0.1: {}
 
   default-browser@5.5.0:
@@ -7309,10 +7230,6 @@ snapshots:
     dependencies:
       parse-passwd: 1.0.0
 
-  hosted-git-info@7.0.2:
-    dependencies:
-      lru-cache: 10.4.3
-
   hosted-git-info@8.1.0:
     dependencies:
       lru-cache: 10.4.3
@@ -7379,8 +7296,6 @@ snapshots:
   imurmurhash@0.1.4: {}
 
   indent-string@4.0.0: {}
-
-  index-to-position@1.2.0: {}
 
   inflight@1.0.6:
     dependencies:
@@ -7954,12 +7869,6 @@ snapshots:
     dependencies:
       abbrev: 4.0.0
 
-  normalize-package-data@6.0.2:
-    dependencies:
-      hosted-git-info: 7.0.2
-      semver: 7.7.4
-      validate-npm-package-license: 3.0.4
-
   normalize-package-data@7.0.1:
     dependencies:
       hosted-git-info: 8.1.0
@@ -8129,14 +8038,10 @@ snapshots:
 
   p-map@7.0.4: {}
 
-  p-pipe@4.0.0: {}
-
   p-queue@9.1.0:
     dependencies:
       eventemitter3: 5.0.4
       p-timeout: 7.0.1
-
-  p-reduce@3.0.0: {}
 
   p-timeout@7.0.1: {}
 
@@ -8181,12 +8086,6 @@ snapshots:
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
 
-  parse-json@8.3.0:
-    dependencies:
-      '@babel/code-frame': 7.29.0
-      index-to-position: 1.2.0
-      type-fest: 4.41.0
-
   parse-ms@4.0.0: {}
 
   parse-passwd@1.0.0: {}
@@ -8226,8 +8125,6 @@ snapshots:
   picomatch@2.3.1: {}
 
   picomatch@4.0.3: {}
-
-  pify@6.1.0: {}
 
   pkg-dir@4.2.0:
     dependencies:
@@ -8318,14 +8215,6 @@ snapshots:
   react@19.2.4: {}
 
   read-cmd-shim@6.0.0: {}
-
-  read-pkg@9.0.1:
-    dependencies:
-      '@types/normalize-package-data': 2.4.4
-      normalize-package-data: 6.0.2
-      parse-json: 8.3.0
-      type-fest: 4.41.0
-      unicorn-magic: 0.1.0
 
   read-yaml-file@2.1.0:
     dependencies:
@@ -8505,8 +8394,6 @@ snapshots:
 
   semver@7.7.4: {}
 
-  set-blocking@2.0.0: {}
-
   set-function-length@1.2.2:
     dependencies:
       define-data-property: 1.1.4
@@ -8584,8 +8471,6 @@ snapshots:
     dependencies:
       semver: 7.7.4
 
-  slash@5.1.0: {}
-
   slice-ansi@7.1.2:
     dependencies:
       ansi-styles: 6.2.3
@@ -8614,10 +8499,6 @@ snapshots:
   sort-keys@4.2.0:
     dependencies:
       is-plain-obj: 2.1.0
-
-  sort-keys@5.1.0:
-    dependencies:
-      is-plain-obj: 4.1.0
 
   sort-keys@6.0.0:
     dependencies:
@@ -8923,8 +8804,6 @@ snapshots:
 
   type-fest@2.19.0: {}
 
-  type-fest@4.41.0: {}
-
   typed-array-buffer@1.0.3:
     dependencies:
       call-bound: 1.0.4
@@ -8985,8 +8864,6 @@ snapshots:
 
   undici-types@7.16.0: {}
 
-  unicorn-magic@0.1.0: {}
-
   unicorn-magic@0.3.0: {}
 
   unique-filename@5.0.0:
@@ -9040,8 +8917,6 @@ snapshots:
       react: 19.2.4
 
   util-deprecate@1.0.2: {}
-
-  uuid@13.0.0: {}
 
   v8-compile-cache-lib@3.0.1: {}
 
@@ -9219,27 +9094,12 @@ snapshots:
     dependencies:
       signal-exit: 4.1.0
 
-  write-json-file@6.0.0:
-    dependencies:
-      detect-indent: 7.0.2
-      is-plain-obj: 4.1.0
-      sort-keys: 5.1.0
-      write-file-atomic: 5.0.1
-
   write-json-file@7.0.0:
     dependencies:
       detect-indent: 7.0.2
       is-plain-obj: 4.1.0
       sort-keys: 6.0.0
       write-file-atomic: 6.0.0
-
-  write-package@7.2.0:
-    dependencies:
-      deepmerge-ts: 7.1.5
-      read-pkg: 9.0.1
-      sort-keys: 5.1.0
-      type-fest: 4.41.0
-      write-json-file: 6.0.0
 
   write-yaml-file@5.0.0:
     dependencies:
