@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.1.4](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v4.1.3...vitest-config-v4.1.4) (2026-03-26)
+
+
+### Bug Fixes
+
+* **vitest-config:** update dependency vite-tsconfig-paths to v6.1.0 ([#1087](https://github.com/fuf-stack/ts-project-setup/issues/1087)) ([896dc4c](https://github.com/fuf-stack/ts-project-setup/commit/896dc4ccf00aa5901882959504f081528cbaedf3))
+* **vitest-config:** update dependency vite-tsconfig-paths to v6.1.1 ([#1104](https://github.com/fuf-stack/ts-project-setup/issues/1104)) ([60b9b58](https://github.com/fuf-stack/ts-project-setup/commit/60b9b58e6f27105167b51b11017ebadbda464dfb))
+* **vitest-config:** update vitest monorepo to v4.1.0 ([#1153](https://github.com/fuf-stack/ts-project-setup/issues/1153)) ([4351c58](https://github.com/fuf-stack/ts-project-setup/commit/4351c584a1211ef0691f937e95ec3ceb3d844b94))
+
 ## [4.1.3](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v4.1.2...vitest-config-v4.1.3) (2026-02-05)
 
 
