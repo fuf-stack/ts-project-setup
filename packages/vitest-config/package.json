@@ -39,9 +39,9 @@
     "prepack": "pnpm build"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "4.1.1",
+    "@vitest/coverage-v8": "4.1.2",
     "vite-tsconfig-paths": "6.1.1",
-    "vitest": "4.1.1"
+    "vitest": "4.1.2"
   },
   "devDependencies": {
     "@fuf-stack/typescript-config": "workspace:*"
