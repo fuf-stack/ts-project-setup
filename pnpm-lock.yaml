@@ -97,14 +97,14 @@ importers:
   packages/project-cli-tools:
     dependencies:
       '@commitlint/cli':
-        specifier: 20.5.0
-        version: 20.5.0(@types/node@24.12.2)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
+        specifier: 20.5.2
+        version: 20.5.2(@types/node@24.12.2)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
       '@commitlint/config-conventional':
         specifier: 20.5.0
         version: 20.5.0
       '@commitlint/config-pnpm-scopes':
-        specifier: 20.4.3
-        version: 20.4.3
+        specifier: 20.5.2
+        version: 20.5.2
       '@lerna-lite/cli':
         specifier: 5.2.0
         version: 5.2.0(@lerna-lite/list@5.2.0)(@lerna-lite/publish@5.2.0)(@lerna-lite/version@5.2.0)(@types/node@24.12.2)
@@ -237,8 +237,8 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@commitlint/cli@20.5.0':
-    resolution: {integrity: sha512-yNkyN/tuKTJS3wdVfsZ2tXDM4G4Gi7z+jW54Cki8N8tZqwKBltbIvUUrSbT4hz1bhW/h0CdR+5sCSpXD+wMKaQ==}
+  '@commitlint/cli@20.5.2':
+    resolution: {integrity: sha512-IXr5xd3IX8SEG936P8gcpozRplkDeDSwJlt8UvoY1winwIy2udTbQ/cOCgbaaxcjdDqVoS29VUcz/wkwnSozbA==}
     engines: {node: '>=v18'}
     hasBin: true
 
@@ -246,8 +246,8 @@ packages:
     resolution: {integrity: sha512-t3Ni88rFw1XMa4nZHgOKJ8fIAT9M2j5TnKyTqJzsxea7FUetlNdYFus9dz+MhIRZmc16P0PPyEfh6X2d/qw8SA==}
     engines: {node: '>=v18'}
 
-  '@commitlint/config-pnpm-scopes@20.4.3':
-    resolution: {integrity: sha512-rDDhFdZrK1iHlqCrmbVrdU+jan7zh0v2Ki145hviKIjHI24sglw2AwSJyctjLR4OhBp+YFqcu4n4O2TbuTPThQ==}
+  '@commitlint/config-pnpm-scopes@20.5.2':
+    resolution: {integrity: sha512-PupZhPg0ppFIfZ5zDKgk97KIKMDHMqGiq4CeSAl/3vPuELBNI8CLgjXhOXtPHuaTGvlGueLSVi3MI36VUnRURg==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@20.5.0':
@@ -4514,7 +4514,7 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@commitlint/cli@20.5.0(@types/node@24.12.2)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)':
+  '@commitlint/cli@20.5.2(@types/node@24.12.2)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)':
     dependencies:
       '@commitlint/format': 20.5.0
       '@commitlint/lint': 20.5.0
@@ -4534,7 +4534,7 @@ snapshots:
       '@commitlint/types': 20.5.0
       conventional-changelog-conventionalcommits: 9.3.1
 
-  '@commitlint/config-pnpm-scopes@20.4.3':
+  '@commitlint/config-pnpm-scopes@20.5.2':
     dependencies:
       '@pnpm/read-project-manifest': 5.0.11
       fast-glob: 3.3.3
