@@ -140,5 +140,3 @@ The `.mts` extension tells tooling to treat the file as an ES Module, allowing p
 ### License
 
 MIT
-
-bump
