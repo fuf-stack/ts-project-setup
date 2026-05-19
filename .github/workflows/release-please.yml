@@ -105,3 +105,5 @@ jobs:
     if: needs.check-conflicting-prs.outputs.need_rebase == 'true'
     steps:
       - uses: googleapis/release-please-action@v5
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
