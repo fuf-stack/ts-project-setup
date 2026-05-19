@@ -1,4 +1,2 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
+# run lint-staged on staged files
 node_modules/.bin/lint-staged
