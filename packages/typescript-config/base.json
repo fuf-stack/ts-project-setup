@@ -29,6 +29,8 @@
     "module": "ESNext",
     // Use modern bundler-style module resolution
     "moduleResolution": "Bundler",
+    // Keep side-effect import checking compatible with pre-TS6 defaults
+    "noUncheckedSideEffectImports": false,
     // Enable better CommonJS/ES Module interop
     "esModuleInterop": true,
     // Ensure files can be transpiled in isolation

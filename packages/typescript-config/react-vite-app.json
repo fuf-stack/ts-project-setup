@@ -16,8 +16,9 @@
 
     /* Runtime Environment */
 
-    // Include standard libraries for ES2020, DOM, and DOM Iterables
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // Include standard libraries for ES2020 and DOM
+    // (DOM.Iterable is bundled into DOM in TS6+)
+    "lib": ["ES2020", "DOM"],
 
     // Allow imports of TypeScript files without extension
     "allowImportingTsExtensions": true,

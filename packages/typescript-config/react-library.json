@@ -8,8 +8,9 @@
   "compilerOptions": {
     /* Runtime Environment */
 
-    // Include latest ECMAScript features, DOM, and DOM Iterables
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    // Include latest ECMAScript features and DOM types
+    // (DOM.Iterable is bundled into DOM in TS6+)
+    "lib": ["ESNext", "DOM"],
     // Target ES6 for library compatibility
     "target": "ES6",
     // Transform JSX syntax directly to React.createElement calls
