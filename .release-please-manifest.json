@@ -1,6 +1,6 @@
 {
   "packages/eslint-config-fuf": "2.0.0",
   "packages/project-cli-tools": "1.0.20",
-  "packages/typescript-config": "0.4.0",
+  "packages/typescript-config": "5.0.1",
   "packages/vitest-config": "5.0.0"
 }
