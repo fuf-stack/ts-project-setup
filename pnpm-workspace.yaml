@@ -1,2 +1,26 @@
+# see: https://pnpm.io/next/npmrc#auto-install-peers
+autoInstallPeers: true
+
 packages:
   - 'packages/*'
+
+publicHoistPattern:
+  # @fuf-stack/project-cli-tools
+  - '@commitlint*'
+  - '@lerna-lite*'
+  - commitizen
+  - cz-conventional-changelog
+  - husky
+  - lint-staged
+  - nodemon
+  - turbo
+  - wait-on
+
+  # @fuf-stack/eslint-config-fuf
+  - '*eslint*'
+  - '*prettier*'
+
+  # @fuf-stack/vitest-config
+  - '@vitest/coverage-v8'
+  - vite-tsconfig-paths
+  - vitest*
