@@ -16,7 +16,12 @@ runs:
 
     - name: Install node_modules
       shell: bash
-      run: pnpm install --frozen-lockfile --prefer-offline
+      # `--ignore-scripts` skips lifecycle scripts for this install step.
+      run: pnpm install --frozen-lockfile --prefer-offline --ignore-scripts
+      env:
+        # Redundant with `--ignore-scripts` (kept for explicitness if flags change later).
+        # See: https://pnpm.io/cli/config#strict-dep-builds
+        PNPM_CONFIG_STRICT_DEP_BUILDS: false
 
     - name: Build packages
       shell: bash
