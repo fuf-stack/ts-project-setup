@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v4.1.5...vitest-config-v5.0.0) (2026-05-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vitest-config:** `@fuf-stack/vitest-config/project` no longer uses `vite-tsconfig-paths`. Path alias resolution now relies on Vite's native `resolve.tsconfigPaths` behavior.
+
+### Features
+
+* **vitest-config:** switch to Vite native tsconfig path resolution ([6ee0046](https://github.com/fuf-stack/ts-project-setup/commit/6ee004653a840521a223b0854f98fc5af95165fd))
+
 ## [4.1.5](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v4.1.4...vitest-config-v4.1.5) (2026-05-19)
 
 
