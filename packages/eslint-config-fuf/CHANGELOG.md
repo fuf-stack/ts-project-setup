@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.0...eslint-config-fuf-v5.0.1) (2026-05-19)
+
+
+### Miscellaneous Chores
+
+* **vitest-config:** bump version to 5.0.1 ([58cadae](https://github.com/fuf-stack/ts-project-setup/commit/58cadaea0bf1bb214030922c81541ac46f7185e2))
+* **vitest-config:** bump version to 5.0.1 ([db92204](https://github.com/fuf-stack/ts-project-setup/commit/db92204da87e7fa8f154a2d957e9e8d411b0289f))
+
 ## [2.0.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.6.1...eslint-config-fuf-v2.0.0) (2026-05-19)
 
 
