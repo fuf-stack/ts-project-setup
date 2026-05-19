@@ -22,5 +22,4 @@ publicHoistPattern:
 
   # @fuf-stack/vitest-config
   - '@vitest/coverage-v8'
-  - vite-tsconfig-paths
   - vitest*

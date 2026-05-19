@@ -22,13 +22,13 @@ Default Vitest configurations for Fröhlich ∧ Frei monorepos. Provides separat
 
 ```bash
 # pnpm
-pnpm add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-paths
+pnpm add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8
 
 # npm
-npm i -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-paths
+npm i -D @fuf-stack/vitest-config vitest @vitest/coverage-v8
 
 # yarn
-yarn add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8 vite-tsconfig-paths
+yarn add -D @fuf-stack/vitest-config vitest @vitest/coverage-v8
 ```
 
 ### Usage
@@ -83,7 +83,7 @@ export default config;
 
 This provides:
 
-- TypeScript path mapping resolution (`vite-tsconfig-paths`)
+- TypeScript path mapping resolution (Vite native `resolve.tsconfigPaths`)
 - Node environment (good for libraries, utilities)
 - Clear mocks between tests
 

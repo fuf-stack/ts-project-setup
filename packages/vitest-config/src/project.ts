@@ -1,14 +1,12 @@
 import { defineProject } from 'vitest/config';
 
-import tsconfigPaths from 'vite-tsconfig-paths';
-
 /**
  * Project-level Vitest configuration for individual packages
  *
  * Compatible with Vitest 4.0+
  *
  * Provides sensible defaults for individual packages including:
- * - Automatic TypeScript path mapping resolution
+ * - Automatic TypeScript path mapping resolution (Vite native support)
  * - Node environment (override with mergeConfig if you need jsdom)
  * - Clear mocks between tests
  *
@@ -34,10 +32,10 @@ import tsconfigPaths from 'vite-tsconfig-paths';
  * ```
  */
 export default defineProject({
-  plugins: [
-    // Automatically resolve TypeScript path mappings from tsconfig.json
-    tsconfigPaths(),
-  ],
+  // Automatically resolve TypeScript path mappings from tsconfig.json
+  resolve: {
+    tsconfigPaths: true,
+  },
   test: {
     // Default to Node environment (override for React/browser packages)
     environment: 'node',
