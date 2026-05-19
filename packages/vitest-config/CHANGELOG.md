@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.1](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v5.0.0...vitest-config-v5.0.1) (2026-05-19)
+
+
+### Bug Fixes
+
+* **vitest-config:** bump version ([986c642](https://github.com/fuf-stack/ts-project-setup/commit/986c6425f56c56f8f526a1266edfe6132fabffd8))
+
 ## [5.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v4.1.5...vitest-config-v5.0.0) (2026-05-19)
 
 
