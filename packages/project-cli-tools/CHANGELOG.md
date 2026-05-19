@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.20](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.19...project-cli-tools-v1.0.20) (2026-05-19)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v21 ([6cab5de](https://github.com/fuf-stack/ts-project-setup/commit/6cab5de65afbfbb6657037cf6700bccd69dbf132))
+* **project-cli-tools:** update commitlint monorepo to v21.0.1 ([#1252](https://github.com/fuf-stack/ts-project-setup/issues/1252)) ([0f32683](https://github.com/fuf-stack/ts-project-setup/commit/0f32683c3f6e8ceed2f0ae0d35cc53eb61f0aaa9))
+* **project-cli-tools:** update dependency lint-staged to v17 ([f7effd6](https://github.com/fuf-stack/ts-project-setup/commit/f7effd6387b351213e4ce0104f5e1eb20c1dbad2))
+
 ## [1.0.19](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.18...project-cli-tools-v1.0.19) (2026-05-19)
 
 
