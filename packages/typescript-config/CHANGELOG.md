@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.4.0...typescript-config-v0.5.0) (2026-05-19)
+
+
+### Features
+
+* **typescript-config:** align preset libs with TypeScript 6 DOM defaults ([fe96536](https://github.com/fuf-stack/ts-project-setup/commit/fe965364137b914cf623709e628c690729e5f555))
+
 ## [0.4.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.3.0...typescript-config-v0.4.0) (2025-11-17)
 
 
