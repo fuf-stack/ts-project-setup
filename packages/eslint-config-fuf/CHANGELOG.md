@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.0...eslint-config-fuf-v2.0.1) (2026-05-19)
+
+
+### Bug Fixes
+
+* **vitest-config:** fix test after cleanup lockfile ([2151c4a](https://github.com/fuf-stack/ts-project-setup/commit/2151c4aa5448f15777a45c8b3a31d6d57af74fa9))
+
 ## [2.0.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v1.6.1...eslint-config-fuf-v2.0.0) (2026-05-19)
 
 
