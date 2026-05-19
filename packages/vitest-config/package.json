@@ -36,7 +36,7 @@
   },
   "scripts": {
     "build": "tsc --build --pretty",
-    "prepack": "pnpm build"
+    "prepack": "tsc --build --pretty"
   },
   "dependencies": {
     "@vitest/coverage-v8": "4.1.6",
