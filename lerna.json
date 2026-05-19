@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
+  "command": {
+    "version": {
+      "allowBranch": ["main"],
+      "message": "chore: release packages"
+    }
+  },
+  "npmClient": "pnpm",
+  "packages": ["packages/*", "packages/config/*"],
+  "useWorkspaces": true,
+  "version": "independent"
+}
