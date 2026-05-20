@@ -20,6 +20,9 @@ importers:
       '@fuf-stack/vitest-config':
         specifier: workspace:*
         version: link:packages/vitest-config
+      '@lerna-lite/cli':
+        specifier: 5.2.1
+        version: 5.2.1(@lerna-lite/list@5.2.1)(@lerna-lite/publish@5.2.1)(@lerna-lite/version@5.2.1)(@types/node@24.12.4)
       '@types/node':
         specifier: 24.12.4
         version: 24.12.4

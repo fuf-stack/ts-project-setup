@@ -15,6 +15,7 @@
     "@fuf-stack/project-cli-tools": "workspace:*",
     "@fuf-stack/typescript-config": "workspace:*",
     "@fuf-stack/vitest-config": "workspace:*",
+    "@lerna-lite/cli": "5.2.1",
     "ts-node": "10.9.2",
     "typescript": "6.0.3"
   },
