@@ -37,8 +37,6 @@ jobs:
 
       - name: Publish to npm
         run: |
-          # Ensure npm 11.5.1 or later for trusted publishing (OIDC)
-          npm install -g npm@latest
           # Use npm publish via Lerna for trusted publishing support
           # pnpm doesn't support npm's trusted publishing (OIDC) yet, so we use npm directly
           # Lerna detects changed packages and publishes them using npm
