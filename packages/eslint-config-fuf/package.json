@@ -33,6 +33,12 @@
     "./react": "./react.mjs",
     "./vitest": "./vitest.mjs"
   },
+  "files": [
+    "*.mjs",
+    "fuf/*.mjs",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@eslint/compat": "2.1.0",
     "@eslint/js": "10.0.1",
