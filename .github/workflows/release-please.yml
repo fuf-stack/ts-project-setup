@@ -40,9 +40,21 @@ jobs:
           # Use npm publish via Lerna for trusted publishing support
           # pnpm doesn't support npm's trusted publishing (OIDC) yet, so we use npm directly
           # Lerna detects changed packages and publishes them using npm.
+          # During publish, Lerna rewrites workspace dependency specifiers in
+          # package manifests (workspace:* -> release versions). That can make
+          # the lockfile temporarily out of sync while prepack scripts run, so
+          # frozen-lockfile must be disabled for this step.
           # We run the installed workspace binary directly to avoid runtime installs.
           ./node_modules/.bin/lerna publish from-package --yes --no-verify-access
         if: steps.release.outputs.releases_created  == 'true'
+        env:
+          # pnpm reads either form depending on invocation context.
+          PNPM_CONFIG_FROZEN_LOCKFILE: 'false'
+          NPM_CONFIG_FROZEN_LOCKFILE: 'false'
+          # Build already ran in setup-project. Disable publish-time lifecycle
+          # scripts (`prepack`) to avoid package-local installs resolving newly
+          # bumped internal versions before they are published.
+          NPM_CONFIG_IGNORE_SCRIPTS: 'true'
         # Note: If you have private npm dependencies, you may need NODE_AUTH_TOKEN
         # for installing dependencies only (not for publishing)
         # env:
