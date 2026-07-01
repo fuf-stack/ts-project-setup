@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.21](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.20...project-cli-tools-v1.0.21) (2026-07-01)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update commitlint monorepo to v21.0.2 ([#1286](https://github.com/fuf-stack/ts-project-setup/issues/1286)) ([fb7952c](https://github.com/fuf-stack/ts-project-setup/commit/fb7952c946b256144c3e754f2dad449b485815c9))
+* **project-cli-tools:** update commitlint monorepo to v21.1.0 ([#1326](https://github.com/fuf-stack/ts-project-setup/issues/1326)) ([72a723d](https://github.com/fuf-stack/ts-project-setup/commit/72a723dcece9e3074c068b4cbfc6c9cec1be805f))
+* **project-cli-tools:** update dependency commitizen to v4.3.2 ([#1312](https://github.com/fuf-stack/ts-project-setup/issues/1312)) ([ddbee4e](https://github.com/fuf-stack/ts-project-setup/commit/ddbee4e5423d81737acf519de8ca3b4d61afeaf6))
+* **project-cli-tools:** update dependency lint-staged to v17.0.5 ([#1269](https://github.com/fuf-stack/ts-project-setup/issues/1269)) ([48f8780](https://github.com/fuf-stack/ts-project-setup/commit/48f878027407cc271f1105ea4aabb7490fa85f48))
+* **project-cli-tools:** update dependency lint-staged to v17.0.6 ([#1287](https://github.com/fuf-stack/ts-project-setup/issues/1287)) ([e13c9f8](https://github.com/fuf-stack/ts-project-setup/commit/e13c9f80f7200fa132e5f63da008279908991f23))
+* **project-cli-tools:** update dependency lint-staged to v17.0.7 ([#1290](https://github.com/fuf-stack/ts-project-setup/issues/1290)) ([cd6b291](https://github.com/fuf-stack/ts-project-setup/commit/cd6b29185bcbb2060c2df808fc5060c69fed2db9))
+* **project-cli-tools:** update dependency lint-staged to v17.0.8 ([#1323](https://github.com/fuf-stack/ts-project-setup/issues/1323)) ([96c1ce5](https://github.com/fuf-stack/ts-project-setup/commit/96c1ce59c09d788dd01f3760c453b3b4f89aa682))
+* **project-cli-tools:** update dependency turbo to v2.10.0 ([#1328](https://github.com/fuf-stack/ts-project-setup/issues/1328)) ([7014235](https://github.com/fuf-stack/ts-project-setup/commit/70142352e6314950f7fc38fb8643f0d0c7b6708f))
+* **project-cli-tools:** update dependency turbo to v2.9.14 ([#1265](https://github.com/fuf-stack/ts-project-setup/issues/1265)) ([aacf77a](https://github.com/fuf-stack/ts-project-setup/commit/aacf77ad729d6062d6ab9c9cb6298e1c921ba271))
+* **project-cli-tools:** update lerna-lite monorepo to v5.2.2 ([#1281](https://github.com/fuf-stack/ts-project-setup/issues/1281)) ([6782302](https://github.com/fuf-stack/ts-project-setup/commit/6782302af830ec0548e30aee1c9137c65d863588))
+* **project-cli-tools:** update lerna-lite monorepo to v5.3.0 ([#1297](https://github.com/fuf-stack/ts-project-setup/issues/1297)) ([33f9646](https://github.com/fuf-stack/ts-project-setup/commit/33f964669f0b06274e8a97e67660f34fa112d5ab))
+* **project-cli-tools:** update turbo monorepo to v2.9.15 ([#1282](https://github.com/fuf-stack/ts-project-setup/issues/1282)) ([6ec14bf](https://github.com/fuf-stack/ts-project-setup/commit/6ec14bfd8f47e31251185c30b23ad862949d329f))
+* **project-cli-tools:** update turbo monorepo to v2.9.16 ([#1288](https://github.com/fuf-stack/ts-project-setup/issues/1288)) ([2e1e9d3](https://github.com/fuf-stack/ts-project-setup/commit/2e1e9d3e8f8ea408493f9af705302f83424c8498))
+* **project-cli-tools:** update turbo monorepo to v2.9.17 ([#1305](https://github.com/fuf-stack/ts-project-setup/issues/1305)) ([768bec7](https://github.com/fuf-stack/ts-project-setup/commit/768bec778e6de3bb6d4b8b8f5250114b69964e7f))
+* **project-cli-tools:** update turbo monorepo to v2.9.18 ([#1309](https://github.com/fuf-stack/ts-project-setup/issues/1309)) ([d9d3d41](https://github.com/fuf-stack/ts-project-setup/commit/d9d3d41b42d537ac9581af995ad64b1f40482ad5))
+
 ## [1.0.20](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.19...project-cli-tools-v1.0.20) (2026-05-19)
 
 
