@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@11.11.0",
+  "packageManager": "pnpm@11.13.0",
   "scripts": {
     "build": "pnpm --filter=\"@fuf-stack/*\" build",
     "commit": "lint-staged && git-cz",
@@ -23,7 +23,10 @@
     "extends": [
       "@commitlint/config-conventional",
       "@commitlint/config-pnpm-scopes"
-    ]
+    ],
+    "rules": {
+      "body-max-line-length": [0]
+    }
   },
   "config": {
     "commitizen": {

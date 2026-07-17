@@ -1,2 +1,2 @@
 # run commitlint on commit message
-node_modules/.bin/commitlint --edit
+node_modules/.bin/commitlint --edit "$1"

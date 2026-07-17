@@ -1,6 +1,11 @@
 # see: https://pnpm.io/next/npmrc#auto-install-peers
 autoInstallPeers: true
 
+# Allow freshly published internal @fuf-stack packages even when a global
+# minimumReleaseAge is enforced (e.g. in CI/user pnpm config).
+minimumReleaseAgeExclude:
+  - '@fuf-stack/*'
+
 packages:
   - 'packages/*'
 
