@@ -1,6 +1,7 @@
 import { readdirSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
-import { join as pathJoin } from 'node:path';
+import { dirname as pathDirname, join as pathJoin } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { ESLint } from 'eslint';
 import {
@@ -9,16 +10,16 @@ import {
 } from 'prettier';
 
 type EslintConfig =
-  | 'base.config.mjs'
-  | 'react.config.mjs'
-  | 'vitest.config.mjs';
+  'base.config.mjs' | 'react.config.mjs' | 'vitest.config.mjs';
+
+const currentDir = pathDirname(fileURLToPath(import.meta.url));
 
 /** list all fixture filenames starting with a given prefix (sync; safe for non-JS like .astro) */
-export const getFixtureList = (prefix: string) => {
-  const dir = pathJoin(__dirname, 'fixtures');
+export const getFixtureList = (prefix: string): string[] => {
+  const dir = pathJoin(currentDir, 'fixtures');
   // eslint-disable-next-line n/no-sync
-  const entries = readdirSync(dir);
-  return entries.filter((name) => {
+  const entries: string[] = readdirSync(dir, { encoding: 'utf-8' });
+  return entries.filter((name: string) => {
     return (
       name.startsWith(prefix) &&
       !name.endsWith('.snap') &&
@@ -32,21 +33,30 @@ export const lintFixture = async (
   fixtureName: string,
   config: EslintConfig = 'base.config.mjs',
 ) => {
+  const testLinterOverride = {
+    linterOptions: {
+      // Keep fixture disable comments stable in snapshots across environments.
+      reportUnusedDisableDirectives: false,
+    },
+  };
+
   // First, lint WITHOUT fixes to capture error and warning messages
   const eslintCheck = new ESLint({
     fix: false,
     ignore: false,
     // override config file
-    overrideConfigFile: pathJoin(__dirname, 'configs', config),
+    overrideConfigFile: pathJoin(currentDir, 'configs', config),
+    overrideConfig: testLinterOverride,
   });
   // Then, lint WITH fixes to obtain the fixed output for snapshotting
   const eslintFix = new ESLint({
     fix: true,
     ignore: false,
     // override config file
-    overrideConfigFile: pathJoin(__dirname, 'configs', config),
+    overrideConfigFile: pathJoin(currentDir, 'configs', config),
+    overrideConfig: testLinterOverride,
   });
-  const filePath = pathJoin(__dirname, 'fixtures', fixtureName);
+  const filePath = pathJoin(currentDir, 'fixtures', fixtureName);
   const rawContent = await readFile(filePath, 'utf-8');
   // Normalize by removing BOM and then trimming initial eslint-disable banner and following blank lines
   const contentNoBom = rawContent.replace(/^\uFEFF/, '');
@@ -59,8 +69,7 @@ export const lintFixture = async (
   // Remove leading eslint-disable banner even if preceded by blanks
   if (
     startIndex < lines.length &&
-    lines[startIndex] &&
-    lines[startIndex].trim() === '/* eslint-disable */'
+    lines[startIndex]?.trim() === '/* eslint-disable */'
   ) {
     startIndex += 1;
     // And subsequent blank lines after the banner
@@ -107,7 +116,7 @@ export const errorMessages = (
 
 /** lints a fixture by file name and return eslint results and fixed content */
 export const prettierFixFixture = async (fixtureName: string) => {
-  const filePath = pathJoin(__dirname, 'fixtures', fixtureName);
+  const filePath = pathJoin(currentDir, 'fixtures', fixtureName);
   const fileContent = (await readFile(filePath, 'utf-8'))
     // remove prettier disable comment
     .replace('/* prettier-ignore */', '')

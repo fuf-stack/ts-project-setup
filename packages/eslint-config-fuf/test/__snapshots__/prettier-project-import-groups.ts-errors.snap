@@ -1,16 +1,16 @@
 [
   {
-    "line": 5,
+    "line": 6,
     "message": "Replace `lodash·from·'lodash';` with `type·{·Config·}·from·'@fuf-stack/config';⏎⏎import·fs·from·'node:fs';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
-    "line": 6,
+    "line": 7,
     "message": "Replace `{·utils·}·from·'@fuf-stack/utils';` with `lodash·from·'lodash';⏎`",
     "ruleId": "prettier/prettier",
   },
   {
-    "line": 8,
+    "line": 9,
     "message": "Replace `fs·from·'node:fs';⏎import·type·{·Config·}·from·'@fuf-stack/config` with `{·utils·}·from·'@fuf-stack/utils`",
     "ruleId": "prettier/prettier",
   },

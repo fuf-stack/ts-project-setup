@@ -3,7 +3,8 @@
   "extends": "@fuf-stack/typescript-config/base.json",
   "compilerOptions": {
     "composite": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["node"]
   },
   "include": ["./**/*.ts", "./**/*.tsx"]
 }
