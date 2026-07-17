@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.4](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v5.0.3...vitest-config-v5.0.4) (2026-07-17)
+
+
+### Bug Fixes
+
+* fix eslint config ([9f1495d](https://github.com/fuf-stack/ts-project-setup/commit/9f1495db996c6a099813cb974c61c10aba62548c))
+* **vitest-config:** update vitest monorepo to v4.1.10 ([#1344](https://github.com/fuf-stack/ts-project-setup/issues/1344)) ([b4a1137](https://github.com/fuf-stack/ts-project-setup/commit/b4a11373460a2c561ea6fee04a1ff0af9c7bb02f))
+* **vitest-config:** update vitest monorepo to v4.1.7 ([#1272](https://github.com/fuf-stack/ts-project-setup/issues/1272)) ([80f440f](https://github.com/fuf-stack/ts-project-setup/commit/80f440f0da923e7988e02e8ac205557b6fbec8a6))
+* **vitest-config:** update vitest monorepo to v4.1.8 ([#1293](https://github.com/fuf-stack/ts-project-setup/issues/1293)) ([0d65294](https://github.com/fuf-stack/ts-project-setup/commit/0d6529495f0b8aec26664cbfc608ad2d1c5bdc6b))
+* **vitest-config:** update vitest monorepo to v4.1.9 ([#1317](https://github.com/fuf-stack/ts-project-setup/issues/1317)) ([ab14f07](https://github.com/fuf-stack/ts-project-setup/commit/ab14f07315fca65e2e5e51da045ec623fe6fe4a9))
+
 ## [5.0.3](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v5.0.2...vitest-config-v5.0.3) (2026-05-19)
 
 
