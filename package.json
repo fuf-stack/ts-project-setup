@@ -25,7 +25,9 @@
       "@commitlint/config-pnpm-scopes"
     ],
     "rules": {
-      "body-max-line-length": [0]
+      "body-max-line-length": [
+        0
+      ]
     }
   },
   "config": {
