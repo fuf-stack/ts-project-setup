@@ -2,7 +2,6 @@
 
 /* eslint-disable import-x/prefer-default-export */
 /* eslint-disable import-x/no-unresolved */
-/* eslint-disable import-x/no-extraneous-dependencies */
 /* eslint-disable n/no-sync */
 
 import lodash from 'lodash';

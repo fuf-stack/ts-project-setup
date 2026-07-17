@@ -133,6 +133,7 @@ Highlights:
 - Import sorting powered by `@ianvs/prettier-plugin-sort-imports` with opinionated groups (types, vitest, builtins, react, third-party, monorepo packages, `src/**`, relative, assets)
 - Optional Tailwind class sorting via `prettier-plugin-tailwindcss` (plugin must be last)
 - Optional `prettier-plugin-astro` and `@prettier/plugin-php`
+- Markdown note: with Prettier `3.9+`, valid Setext headings (`Title` + `===`) are preserved instead of auto-converted to ATX (`# Title`)
 
 ## Scripts
 

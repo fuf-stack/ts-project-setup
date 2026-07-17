@@ -2,6 +2,11 @@
 Header
 ======
 
+## Existing ATX heading stays ATX
+
+Not a header
+    ===
+
 _Look,_ code blocks are formatted *too!*
 
 ``` js
