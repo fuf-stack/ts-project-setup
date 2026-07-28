@@ -30,6 +30,6 @@
     "lint-staged": "17.1.0",
     "nodemon": "3.1.14",
     "turbo": "2.10.5",
-    "wait-on": "9.0.10"
+    "wait-on": "9.1.0"
   }
 }
