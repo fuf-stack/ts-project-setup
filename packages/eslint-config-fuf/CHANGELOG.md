@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.5](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.4...eslint-config-fuf-v2.0.5) (2026-07-28)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency @vitest/eslint-plugin to v1.6.23 ([#1355](https://github.com/fuf-stack/ts-project-setup/issues/1355)) ([89f2cd9](https://github.com/fuf-stack/ts-project-setup/commit/89f2cd99bea0797a8c9c563f276a099b79471719))
+* **eslint-config-fuf:** update dependency eslint to v10.7.0 ([#1353](https://github.com/fuf-stack/ts-project-setup/issues/1353)) ([1e1b6d4](https://github.com/fuf-stack/ts-project-setup/commit/1e1b6d46c6d06314aaaf22a2678bcfa3e0c5851a))
+* **eslint-config-fuf:** update dependency eslint-config-airbnb-extended to v3.1.1 ([#1356](https://github.com/fuf-stack/ts-project-setup/issues/1356)) ([deddf44](https://github.com/fuf-stack/ts-project-setup/commit/deddf4458668e4685206f27c0011f0a4d00fbd93))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.5.2 ([#1359](https://github.com/fuf-stack/ts-project-setup/issues/1359)) ([697d563](https://github.com/fuf-stack/ts-project-setup/commit/697d56300bb5c43b5a273349f7d757fb2f81ae39))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.5.3 ([#1369](https://github.com/fuf-stack/ts-project-setup/issues/1369)) ([a8f8d32](https://github.com/fuf-stack/ts-project-setup/commit/a8f8d32db87dc9187d59077d46d5474e897780fb))
+* **eslint-config-fuf:** update dependency prettier to v3.9.6 ([#1370](https://github.com/fuf-stack/ts-project-setup/issues/1370)) ([445e871](https://github.com/fuf-stack/ts-project-setup/commit/445e871f3c5a99e68979cbda514adfed9dec92f3))
+* **eslint-config-fuf:** update dependency prettier-plugin-tailwindcss to v0.8.1 ([#1360](https://github.com/fuf-stack/ts-project-setup/issues/1360)) ([dfac91d](https://github.com/fuf-stack/ts-project-setup/commit/dfac91d896e8fa3eb0d6fc53d16c462445bcb9d6))
+
 ## [2.0.4](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.3...eslint-config-fuf-v2.0.4) (2026-07-17)
 
 
