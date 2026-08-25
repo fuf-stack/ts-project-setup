@@ -63,8 +63,8 @@ importers:
         specifier: 5.5.6
         version: 5.5.6(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0)))(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0))(prettier@3.9.6)
       eslint-plugin-storybook:
-        specifier: 10.5.8
-        version: 10.5.8(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0))(storybook@10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))(supports-color@7.2.0)(typescript@6.0.3)
+        specifier: 10.5.9
+        version: 10.5.9(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0))(storybook@10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))(supports-color@7.2.0)(typescript@6.0.3)
       prettier:
         specifier: 3.9.6
         version: 3.9.6
@@ -2461,11 +2461,11 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-storybook@10.5.8:
-    resolution: {integrity: sha512-bf9W5nZyWdIaCUZf4aEZnEeD1mn+csNYX8dYUQjAo6L7/DkSLtr65R4zFZ1xeS4m6dOXO6UtUySesCSw4e8w1g==}
+  eslint-plugin-storybook@10.5.9:
+    resolution: {integrity: sha512-4Hrqccy/zttV0S/32TSUbqtizzj4sbkgYvv7UzHveH58v96PhrO+fSpOFAqYvzNDzdOU6smKwObFtzX+RZqj4w==}
     peerDependencies:
       eslint: '>=8'
-      storybook: ^10.5.8
+      storybook: ^10.5.9
 
   eslint-scope@9.1.2:
     resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
@@ -6574,7 +6574,7 @@ snapshots:
 
   conventional-changelog@8.1.0(conventional-commits-filter@6.0.1):
     dependencies:
-      '@conventional-changelog/git-client': 3.1.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)
+      '@conventional-changelog/git-client': 3.1.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)
       '@simple-libs/hosted-git-info': 2.0.0
       '@simple-libs/normalize-package-data': 1.0.0
       argue-cli: 3.1.0
@@ -6596,7 +6596,7 @@ snapshots:
 
   conventional-recommended-bump@12.1.0:
     dependencies:
-      '@conventional-changelog/git-client': 3.1.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)
+      '@conventional-changelog/git-client': 3.1.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)
       argue-cli: 3.1.0
       conventional-changelog-preset-loader: 6.0.1
       conventional-commits-filter: 6.0.1
@@ -7122,7 +7122,7 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-storybook@10.5.8(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0))(storybook@10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))(supports-color@7.2.0)(typescript@6.0.3):
+  eslint-plugin-storybook@10.5.9(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0))(storybook@10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))(supports-color@7.2.0)(typescript@6.0.3):
     dependencies:
       '@typescript-eslint/types': 8.67.0
       '@typescript-eslint/utils': 8.67.0(eslint@10.8.1(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
