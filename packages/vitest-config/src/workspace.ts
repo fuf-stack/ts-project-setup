@@ -19,8 +19,8 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   test: {
     // Define projects array (replaces vitest.workspace.ts in Vitest 4.0)
-    // This tells Vitest to look for test files in packages and apps directories
-    projects: ['apps/*', 'packages/*', 'packages/config/*'],
+    // packages/config only groups packages; treating it as a project runs their tests twice.
+    projects: ['apps/*', 'packages/!(config)', 'packages/config/*'],
 
     // Coverage configuration
     coverage: {

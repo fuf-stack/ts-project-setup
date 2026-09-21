@@ -48,27 +48,50 @@ export default config;
 
 This provides:
 
-- Projects array: `['apps/*', 'packages/*', 'packages/config/*']`
+- Projects array: `['apps/*', 'packages/!(config)', 'packages/config/*']`
 - Coverage configuration with sensible defaults
 - LCOV reporter
 
+`packages/config` is a container, not a test project. Its child packages are
+included individually so their tests run once under their own package names.
+
 **Customize if needed:**
+
+Use `mergeConfig` to adjust settings while retaining the default project discovery:
 
 ```ts
 // vitest.config.mts
-import { defineConfig, mergeConfig } from 'vitest/config';
+import { mergeConfig } from 'vitest/config';
 
 import workspaceConfig from '@fuf-stack/vitest-config/workspace';
 
-export default mergeConfig(
-  workspaceConfig,
-  defineConfig({
-    test: {
-      projects: ['packages/my-specific-package'],
-    },
-  }),
-);
+export default mergeConfig(workspaceConfig, {
+  test: {
+    testTimeout: 10_000,
+  },
+});
 ```
+
+**Add a project outside the default paths:**
+
+For an existing test project in `tools/integration-tests`, add its directory
+relative to the workspace root. `mergeConfig` concatenates arrays, so this extends
+`projects` while keeping the default app and package projects:
+
+```ts
+// vitest.config.mts
+import { mergeConfig } from 'vitest/config';
+
+import workspaceConfig from '@fuf-stack/vitest-config/workspace';
+
+export default mergeConfig(workspaceConfig, {
+  test: {
+    projects: ['tools/integration-tests'],
+  },
+});
+```
+
+The directory can provide its own `vitest.config.mts` for project-specific settings.
 
 #### Package-Level Configs
 
