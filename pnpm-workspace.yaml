@@ -1,8 +1,11 @@
 # see: https://pnpm.io/next/npmrc#auto-install-peers
 autoInstallPeers: true
 
-# Allow freshly published internal @fuf-stack packages even when a global
-# minimumReleaseAge is enforced (e.g. in CI/user pnpm config).
+# Wait 14 days (in minutes) before installing public dependencies.
+# Keep this aligned with minimumReleaseAge in renovate.json5.
+minimumReleaseAge: 20160
+
+# Allow freshly published internal @fuf-stack packages.
 minimumReleaseAgeExclude:
   - '@fuf-stack/*'
 
