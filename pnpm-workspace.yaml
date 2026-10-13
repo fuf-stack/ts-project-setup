@@ -1,6 +1,15 @@
 # see: https://pnpm.io/next/npmrc#auto-install-peers
 autoInstallPeers: true
 
+# Never execute project or dependency install lifecycle scripts.
+# Keep installs from introducing build approvals for workspace packages.
+# Skipped dependency builds are intentional; do not fail with ERR_PNPM_IGNORED_BUILDS.
+# Disabling strict checks does not approve or enable scripts.
+# see: https://pnpm.io/settings/build#ignorescripts
+# see: https://pnpm.io/settings/build#strictdepbuilds
+ignoreScripts: true
+strictDepBuilds: false
+
 # Wait 14 days (in minutes) before installing public dependencies.
 # Keep this aligned with minimumReleaseAge in renovate.json5.
 minimumReleaseAge: 20160
