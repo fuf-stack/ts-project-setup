@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.9](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.8...eslint-config-fuf-v2.0.9) (2026-10-17)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint to v10.12.0 ([#1490](https://github.com/fuf-stack/ts-project-setup/issues/1490)) ([04f2357](https://github.com/fuf-stack/ts-project-setup/commit/04f2357ba116d9820645cc57397c85e0f4b005a4))
+* **eslint-config-fuf:** update dependency eslint-config-airbnb-extended to v3.3.0 ([#1491](https://github.com/fuf-stack/ts-project-setup/issues/1491)) ([f036f8a](https://github.com/fuf-stack/ts-project-setup/commit/f036f8a9cb86df6dcb8120e896a15b65cd7196de))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.6.1 ([#1481](https://github.com/fuf-stack/ts-project-setup/issues/1481)) ([731aac5](https://github.com/fuf-stack/ts-project-setup/commit/731aac59748e1ff54dc66f6fd8d34dc4436b18c4))
+
 ## [2.0.8](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.7...eslint-config-fuf-v2.0.8) (2026-10-12)
 
 
