@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.8...eslint-config-fuf-v2.1.0) (2026-10-22)
+
+
+### Features
+
+* **eslint-config-fuf:** add interface sorting and opt-in strict JSDoc preset ([62c8c1d](https://github.com/fuf-stack/ts-project-setup/commit/62c8c1dff63448a97da949c7e238cc179b42a485))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint to v10.12.0 ([#1490](https://github.com/fuf-stack/ts-project-setup/issues/1490)) ([04f2357](https://github.com/fuf-stack/ts-project-setup/commit/04f2357ba116d9820645cc57397c85e0f4b005a4))
+* **eslint-config-fuf:** update dependency eslint-config-airbnb-extended to v3.3.0 ([#1491](https://github.com/fuf-stack/ts-project-setup/issues/1491)) ([f036f8a](https://github.com/fuf-stack/ts-project-setup/commit/f036f8a9cb86df6dcb8120e896a15b65cd7196de))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.2.0 ([#1497](https://github.com/fuf-stack/ts-project-setup/issues/1497)) ([e269f03](https://github.com/fuf-stack/ts-project-setup/commit/e269f034bb8db79ed0e3503dd3b89213701229ae))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.6.1 ([#1481](https://github.com/fuf-stack/ts-project-setup/issues/1481)) ([731aac5](https://github.com/fuf-stack/ts-project-setup/commit/731aac59748e1ff54dc66f6fd8d34dc4436b18c4))
+
 ## [2.0.8](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.7...eslint-config-fuf-v2.0.8) (2026-10-12)
 
 
