@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.5.0...typescript-config-v0.6.0) (2026-10-22)
+
+
+### Features
+
+* **typescript-config:** standardize presets on ES2022 ([7c61a88](https://github.com/fuf-stack/ts-project-setup/commit/7c61a880e0595ce1a0a5a8ef2c1d84165ccd109d))
+
 ## [0.5.0](https://github.com/fuf-stack/ts-project-setup/compare/typescript-config-v0.4.0...typescript-config-v0.5.0) (2026-05-19)
 
 
