@@ -1,0 +1,9 @@
+/* eslint-disable @typescript-eslint/method-signature-style */
+export interface Operations {
+  /** Text input. */
+  run(value: string): string;
+  /** Numeric input. */
+  run(value: number): number;
+  /** Stops the operation. */
+  stop(): void;
+}

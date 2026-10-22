@@ -5,6 +5,7 @@ Opinionated Fröhlich ∧ Frei ESLint + Prettier configuration for JavaScript/Ty
 - **Base**: Airbnb Extended (recommended, flat) + ESLint recommended + Prettier + Fröhlich ∧ Frei defaults
 - **TypeScript**: `@typescript-eslint` with sensible rules and type-aware parsing via root `tsconfig.json`
 - **React**: Airbnb React + Hooks, JSX runtime, Storybook overrides
+- **JSDoc Strict**: Opt-in descriptions for TypeScript interface members
 - **Vitest**: `plugin:vitest/recommended` for test files
 - **Prettier**: Import sorting, optional Tailwind class sorting, and optional Astro/PHP support
 
@@ -101,7 +102,63 @@ Example root `tsconfig.json` additions:
   - Allow leading underscore for intentionally unused vars
   - Enforce arrow-function components; default props via function default args
   - Consistent type-only imports; import extensions off for ts/tsx/js/jsx (`import-x`)
+  - Interface members sort alphabetically within blank-line groups
   - Prettier formatting as the single source of truth
+
+## TypeScript interface members
+
+Both `base` and `react` use `perfectionist/sort-interfaces` to sort members
+alphabetically, ignoring case. Optional and required members sort together.
+Blank lines separate groups: members sort within each group and never move across
+those boundaries. Comments stay attached to their members; comments alone do not
+create a new group. `eslint --fix` applies ordering changes and preserves group
+spacing. Documentation is optional.
+
+```ts
+interface RequestOptions {
+  retry?: boolean;
+  timeout: number;
+
+  onError?: (error: Error) => void;
+  onSuccess?: () => void;
+}
+```
+
+Existing overload adjacency checks remain enabled for interfaces, functions and
+classes. Projects can customize sorting by overriding `perfectionist/sort-interfaces`
+after the shared config.
+
+### Opt-in JSDoc Strict
+
+Add `jsdoc-strict` after `base` or `react` to require descriptions on every
+TypeScript interface property, method and index signature in `.ts` and `.tsx` files:
+
+```js
+// eslint.config.mjs
+import base from '@fuf-stack/eslint-config-fuf/base';
+import jsdocStrict from '@fuf-stack/eslint-config-fuf/jsdoc-strict';
+
+export default [...base, ...jsdocStrict];
+```
+
+This additive preset uses the TypeScript parser provided by `base` or `react`.
+`jsdoc/require-jsdoc` requires a `/** ... */` comment, and
+`jsdoc/require-description` requires description text. Ordinary `//` comments,
+empty docblocks and tags without descriptions (for example, `/** @deprecated */`)
+do not satisfy these rules. Autofix does not insert empty documentation placeholders.
+
+```ts
+interface RequestOptions {
+  /** Whether failed requests should be retried automatically. */
+  retry?: boolean;
+  /** Maximum time in milliseconds before cancellation. */
+  timeout: number;
+}
+```
+
+This preset covers interface members only; it does not require documentation on
+functions, object type aliases, call signatures or construct signatures. It adds
+no sorting or spacing rules of its own.
 
 ## Prettier configuration helper
 

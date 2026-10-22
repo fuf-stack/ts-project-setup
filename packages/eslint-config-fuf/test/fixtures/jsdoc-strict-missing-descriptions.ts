@@ -1,0 +1,14 @@
+/* eslint-disable */
+
+/* eslint-disable @typescript-eslint/method-signature-style */
+export interface Options {
+  [key: string]: unknown;
+  /** */
+  empty?: boolean;
+  missing: string;
+  // This is not JSDoc.
+  plain: number;
+  run(): void;
+  /** @deprecated */
+  tagged?: string;
+}

@@ -1,0 +1,5 @@
+/* eslint-disable */
+
+export declare function parse(value: string): string;
+export declare function unrelated(): void;
+export declare function parse(value: number): number;

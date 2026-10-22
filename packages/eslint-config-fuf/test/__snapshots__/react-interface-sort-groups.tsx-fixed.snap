@@ -1,0 +1,13 @@
+export interface Options {
+  /** First in the first group. */
+  alpha: string;
+  /** Middle in the first group. */
+  Beta?: string;
+  // Details about the last value.
+  /** Last in the first group. */
+  zebra: string;
+
+  charlie: number;
+  // A separate group can start earlier in the alphabet.
+  delta?: number;
+}

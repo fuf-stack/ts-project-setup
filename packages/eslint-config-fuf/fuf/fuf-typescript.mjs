@@ -1,7 +1,24 @@
+import perfectionist from 'eslint-plugin-perfectionist';
+
 export default {
   name: 'fuf/typescript',
   files: ['**/*.ts', '**/*.tsx'],
+  plugins: { perfectionist },
   rules: {
+    // Sort within blank-line groups, keeping comments attached to their members.
+    'perfectionist/sort-interfaces': [
+      'error',
+      {
+        type: 'alphabetical',
+        order: 'asc',
+        groups: [],
+        partitionByComment: false,
+        partitionByNewLine: true,
+        newlinesBetween: 'ignore',
+        newlinesInside: 'ignore',
+      },
+    ],
+
     // ts rules
 
     // removed deprecated rules

@@ -1,0 +1,32 @@
+[
+  {
+    "line": 3,
+    "message": "Missing JSDoc comment.",
+    "ruleId": "jsdoc/require-jsdoc",
+  },
+  {
+    "line": 4,
+    "message": "Missing JSDoc block description.",
+    "ruleId": "jsdoc/require-description",
+  },
+  {
+    "line": 6,
+    "message": "Missing JSDoc comment.",
+    "ruleId": "jsdoc/require-jsdoc",
+  },
+  {
+    "line": 8,
+    "message": "Missing JSDoc comment.",
+    "ruleId": "jsdoc/require-jsdoc",
+  },
+  {
+    "line": 9,
+    "message": "Missing JSDoc comment.",
+    "ruleId": "jsdoc/require-jsdoc",
+  },
+  {
+    "line": 10,
+    "message": "Missing JSDoc block description.",
+    "ruleId": "jsdoc/require-description",
+  },
+]

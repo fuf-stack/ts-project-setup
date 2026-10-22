@@ -1,0 +1,7 @@
+[
+  {
+    "line": 3,
+    "message": "All parse signatures should be adjacent.",
+    "ruleId": "@typescript-eslint/adjacent-overload-signatures",
+  },
+]

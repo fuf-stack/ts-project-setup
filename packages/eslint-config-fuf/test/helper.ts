@@ -10,7 +10,11 @@ import {
 } from 'prettier';
 
 type EslintConfig =
-  'base.config.mjs' | 'react.config.mjs' | 'vitest.config.mjs';
+  | 'base.config.mjs'
+  | 'react.config.mjs'
+  | 'vitest.config.mjs'
+  | 'jsdoc-strict.config.mjs'
+  | 'jsdoc-strict-react.config.mjs';
 
 const currentDir = pathDirname(fileURLToPath(import.meta.url));
 

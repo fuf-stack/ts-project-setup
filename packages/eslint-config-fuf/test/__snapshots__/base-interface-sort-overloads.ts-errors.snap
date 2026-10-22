@@ -1,0 +1,12 @@
+[
+  {
+    "line": 8,
+    "message": "All run signatures should be adjacent.",
+    "ruleId": "@typescript-eslint/adjacent-overload-signatures",
+  },
+  {
+    "line": 8,
+    "message": "Expected "run" to come before "stop".",
+    "ruleId": "perfectionist/sort-interfaces",
+  },
+]

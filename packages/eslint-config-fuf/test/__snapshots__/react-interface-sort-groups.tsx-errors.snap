@@ -1,0 +1,17 @@
+[
+  {
+    "line": 6,
+    "message": "Expected "Beta" to come before "zebra".",
+    "ruleId": "perfectionist/sort-interfaces",
+  },
+  {
+    "line": 8,
+    "message": "Expected "alpha" to come before "Beta".",
+    "ruleId": "perfectionist/sort-interfaces",
+  },
+  {
+    "line": 12,
+    "message": "Expected "charlie" to come before "delta".",
+    "ruleId": "perfectionist/sort-interfaces",
+  },
+]
