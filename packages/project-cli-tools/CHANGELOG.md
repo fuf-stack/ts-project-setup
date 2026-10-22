@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.24](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.23...project-cli-tools-v1.0.24) (2026-10-22)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** update dependency turbo to v2.11.6 ([#1486](https://github.com/fuf-stack/ts-project-setup/issues/1486)) ([e0d2194](https://github.com/fuf-stack/ts-project-setup/commit/e0d219415873466822b74410c6b519851f173d37))
+* **project-cli-tools:** update dependency turbo to v2.11.7 ([#1488](https://github.com/fuf-stack/ts-project-setup/issues/1488)) ([2e0a962](https://github.com/fuf-stack/ts-project-setup/commit/2e0a962d8f382102d1aa8b9f3acbc40688677b10))
+* **project-cli-tools:** update dependency wait-on to v9.4.0 ([#1476](https://github.com/fuf-stack/ts-project-setup/issues/1476)) ([cfdef2c](https://github.com/fuf-stack/ts-project-setup/commit/cfdef2c01b567ab1ac6e728620c977dbd6dfb6d8))
+* **project-cli-tools:** update dependency wait-on to v9.5.0 ([#1479](https://github.com/fuf-stack/ts-project-setup/issues/1479)) ([a216348](https://github.com/fuf-stack/ts-project-setup/commit/a21634873989f450bb27883509e8e18988142ad8))
+* **project-cli-tools:** update dependency wait-on to v9.5.1 ([#1480](https://github.com/fuf-stack/ts-project-setup/issues/1480)) ([b53ad2a](https://github.com/fuf-stack/ts-project-setup/commit/b53ad2aaed6907bc5e078c84770700459012bb87))
+
 ## [1.0.23](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.22...project-cli-tools-v1.0.23) (2026-10-12)
 
 
