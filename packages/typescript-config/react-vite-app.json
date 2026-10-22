@@ -9,16 +9,14 @@
   "compilerOptions": {
     /* Build Configuration */
 
-    // Target ES2020 for modern browser compatibility
-    "target": "ES2020",
     // Use 'define' property for class fields
     "useDefineForClassFields": true,
 
     /* Runtime Environment */
 
-    // Include standard libraries for ES2020 and DOM
+    // Include ES2022 standard APIs and DOM types
     // (DOM.Iterable is bundled into DOM in TS6+)
-    "lib": ["ES2020", "DOM"],
+    "lib": ["ES2022", "DOM"],
 
     // Allow imports of TypeScript files without extension
     "allowImportingTsExtensions": true,

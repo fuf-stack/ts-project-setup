@@ -4,10 +4,10 @@ TypeScript config presets for Fröhlich ∧ Frei projects. These JSON configs he
 
 ### Presets
 
-- **base.json**: Strict defaults for libraries and packages (ESNext modules, Bundler resolution, declarations, strict type checking)
-- **eslint.json**: Variant for ESLint parsing (`noEmit`, `allowJs`)
-- **react-library.json**: Library-focused React settings (ESNext libs, target ES6, `jsx: react-jsx`)
-- **react-vite-app.json**: App-focused React + Vite settings (ES2020 target, DOM libs, `jsx: react-jsx`, `noUnused*` enabled)
+- **base.json**: Strict defaults for libraries and packages (ES2022 target and standard APIs, ESNext modules, Bundler resolution, declarations, strict type checking)
+- **eslint.json**: Variant for ESLint parsing (inherits the ES2022 baseline, `noEmit`, `allowJs`)
+- **react-library.json**: Library-focused React settings (inherits the ES2022 target, ES2022 and DOM libs, `jsx: react-jsx`)
+- **react-vite-app.json**: App-focused React + Vite settings (inherits the ES2022 target, ES2022 and DOM libs, `jsx: react-jsx`, `noUnused*` enabled)
 
 ### Install
 
@@ -76,6 +76,9 @@ Reference a preset from your `tsconfig.json` files.
 
 ### Notes
 
+- All four presets target ES2022. The base and ESLint presets include ES2022 standard API types; the React presets also include DOM types. TypeScript 6 includes DOM iterable types in `DOM`.
+- Runtimes must support the APIs you use; `lib` provides types, not polyfills. React libraries now emit ES2022 syntax instead of ES6, so consumers must support ES2022 or transpile the output.
+- For Vite apps, configure Vite's `build.target` separately to match your supported browsers.
 - Presets use modern options like `module: ESNext` and `moduleResolution: Bundler` by default.
 - Adjust `include`, `exclude`, and `paths` as needed per project.
 

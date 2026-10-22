@@ -7,6 +7,12 @@
   "display": "fuf-base",
 
   "compilerOptions": {
+    /* Runtime Environment */
+
+    // Use ES2022 syntax and standard APIs across all presets
+    "target": "ES2022",
+    "lib": ["ES2022"],
+
     /* Build Configuration */
 
     // Disable composite project features
