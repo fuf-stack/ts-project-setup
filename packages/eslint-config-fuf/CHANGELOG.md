@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.1.0...eslint-config-fuf-v2.1.1) (2026-10-24)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.2.1 ([#1498](https://github.com/fuf-stack/ts-project-setup/issues/1498)) ([45c6636](https://github.com/fuf-stack/ts-project-setup/commit/45c6636e9bb00dd6bf1278f218eefd5053083529))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.2.2 ([#1504](https://github.com/fuf-stack/ts-project-setup/issues/1504)) ([b6f529a](https://github.com/fuf-stack/ts-project-setup/commit/b6f529adc540a901b059a87b46a096cd27990aa9))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.2.4 ([#1505](https://github.com/fuf-stack/ts-project-setup/issues/1505)) ([6624e0c](https://github.com/fuf-stack/ts-project-setup/commit/6624e0c7e672fde9fdc28676a961838fb5940446))
+* **eslint-config-fuf:** update dependency prettier to v3.9.10 ([#1506](https://github.com/fuf-stack/ts-project-setup/issues/1506)) ([9bcfd90](https://github.com/fuf-stack/ts-project-setup/commit/9bcfd902b2ba85283f22c2c38e6f8e6bf4ccb244))
+
 ## [2.1.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.0.8...eslint-config-fuf-v2.1.0) (2026-10-22)
 
 
