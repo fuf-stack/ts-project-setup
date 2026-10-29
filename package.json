@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@12.13.0",
+  "packageManager": "pnpm@12.14.0",
   "scripts": {
     "build": "pnpm --filter=\"@fuf-stack/*\" build",
     "commit": "lint-staged && git-cz",
