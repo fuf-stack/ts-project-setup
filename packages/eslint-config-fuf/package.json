@@ -49,7 +49,7 @@
     "eslint": "10.12.0",
     "eslint-config-airbnb-extended": "3.3.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-jsdoc": "65.3.4",
+    "eslint-plugin-jsdoc": "65.3.6",
     "eslint-plugin-perfectionist": "5.12.1",
     "eslint-plugin-prettier": "5.5.7",
     "eslint-plugin-storybook": "10.6.2",
