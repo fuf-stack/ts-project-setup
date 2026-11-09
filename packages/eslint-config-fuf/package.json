@@ -52,7 +52,7 @@
     "eslint-plugin-jsdoc": "65.4.2",
     "eslint-plugin-perfectionist": "5.13.0",
     "eslint-plugin-prettier": "5.5.7",
-    "eslint-plugin-storybook": "10.6.3",
+    "eslint-plugin-storybook": "10.6.4",
     "prettier": "3.9.10",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1"
