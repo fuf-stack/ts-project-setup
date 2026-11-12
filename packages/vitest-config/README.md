@@ -93,6 +93,39 @@ export default mergeConfig(workspaceConfig, {
 
 The directory can provide its own `vitest.config.mts` for project-specific settings.
 
+**Add inline projects and extra coverage paths:**
+
+The same applies to inline projects and to `coverage.include` / `coverage.exclude`:
+your entries are appended to the defaults. Don't spread the base config manually.
+
+```ts
+// vitest.config.mts
+import { mergeConfig } from 'vitest/config';
+
+import workspaceConfig from '@fuf-stack/vitest-config/workspace';
+
+export default mergeConfig(workspaceConfig, {
+  test: {
+    projects: [
+      {
+        test: {
+          name: 'scripts',
+          include: ['scripts/**/*.test.mjs'],
+          environment: 'node',
+        },
+      },
+    ],
+    coverage: {
+      include: ['scripts/**/*.mjs'],
+    },
+  },
+});
+```
+
+The default coverage excludes already match `*.test.*` / `*.spec.*` files of every
+JS/TS extension anywhere in the workspace, so extra includes don't need matching
+test excludes.
+
 #### Package-Level Configs
 
 Use the project config in individual package `vitest.config.mts`:

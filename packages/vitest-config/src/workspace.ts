@@ -15,6 +15,21 @@ import { defineConfig } from 'vitest/config';
  * import config from '@fuf-stack/vitest-config/workspace';
  * export default config;
  * ```
+ *
+ * @example
+ * ```ts
+ * // Extend with mergeConfig: arrays (projects, coverage include/exclude)
+ * // are appended to the defaults, never replaced.
+ * import { mergeConfig } from 'vitest/config';
+ * import config from '@fuf-stack/vitest-config/workspace';
+ *
+ * export default mergeConfig(config, {
+ *   test: {
+ *     projects: [{ test: { name: 'scripts', include: ['scripts/**\/*.test.mjs'] } }],
+ *     coverage: { include: ['scripts/**\/*.mjs'] },
+ *   },
+ * });
+ * ```
  */
 export default defineConfig({
   test: {
@@ -27,17 +42,19 @@ export default defineConfig({
       // Explicitly include source files for coverage analysis
       // (required in Vitest 4.0 - no longer automatic)
       include: [
-        'apps/*/src/**/*.{js,jsx,ts,tsx}',
-        'packages/*/src/**/*.{js,jsx,ts,tsx}',
+        'apps/*/src/**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}',
+        'packages/*/src/**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}',
       ],
 
-      // Exclude files that shouldn't be included in coverage reports
+      // Exclude files that shouldn't be included in coverage reports.
+      // Patterns are workspace-wide, so extra includes (e.g. `scripts/**`)
+      // added via `mergeConfig` don't need their own test excludes.
       exclude: [
         '**/__generated__/**', // Auto-generated code
         '**/__mocks__/**', // Mock implementations
-        '**/*.spec.{js,ts,tsx}', // Test files
-        '**/*.stories.{js,ts,tsx}', // Storybook stories
-        '**/*.test.{js,ts,tsx}', // Test files
+        '**/*.spec.{js,mjs,cjs,jsx,ts,mts,cts,tsx}', // Test files
+        '**/*.stories.{js,mjs,jsx,ts,mts,tsx}', // Storybook stories
+        '**/*.test.{js,mjs,cjs,jsx,ts,mts,cts,tsx}', // Test files
         'packages/config/**', // Configuration packages
       ],
 

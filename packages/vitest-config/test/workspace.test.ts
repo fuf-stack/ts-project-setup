@@ -1,4 +1,5 @@
 import { expect, it } from 'vitest';
+import { mergeConfig } from 'vitest/config';
 
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -74,3 +75,30 @@ it.each([
     }),
   30_000,
 );
+
+it('appends inline projects and coverage paths with mergeConfig', async () => {
+  const { default: config } = await import('../src/workspace.js');
+  const inlineProject = {
+    test: { name: 'scripts', include: ['scripts/**/*.test.mjs'] },
+  };
+  const merged = mergeConfig(config, {
+    test: {
+      projects: [inlineProject],
+      coverage: { include: ['scripts/**/*.mjs'] },
+    },
+  });
+
+  expect(merged.test?.projects).toEqual([
+    ...(config.test?.projects ?? []),
+    inlineProject,
+  ]);
+  expect(merged.test?.coverage).toMatchObject({
+    include: [...(config.test?.coverage?.include ?? []), 'scripts/**/*.mjs'],
+    exclude: config.test?.coverage?.exclude,
+    provider: 'v8',
+  });
+  // Test files of extra include paths are excluded by the defaults.
+  expect(merged.test?.coverage?.exclude).toContain(
+    '**/*.test.{js,mjs,cjs,jsx,ts,mts,cts,tsx}',
+  );
+});
