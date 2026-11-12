@@ -6,6 +6,10 @@
   "homepage": "https://github.com/fuf-stack/ts-project-setup#readme",
   "license": "MIT",
   "main": "index.js",
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
   "publishConfig": {
     "access": "public"
   },
