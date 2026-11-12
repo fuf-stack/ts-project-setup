@@ -1,8 +1,12 @@
 {
+  // validate with (see: https://docs.renovatebot.com/config-validation/):
+  // npx --yes --package renovate -- renovate-config-validator renovate.json5 --strict
+
   dependencyDashboardLabels: ['effort | ongoing', 'scope | dependencies'],
   dependencyDashboardOSVVulnerabilitySummary: 'all',
   extends: [
-    'config:recommended',
+    // Includes recommended defaults and GitHub Action SHA pinning.
+    'config:best-practices',
     'default:automergeDigest',
     'default:automergeMinor',
     'default:combinePatchMinorReleases',
@@ -13,9 +17,13 @@
     'default:prHourlyLimit4',
   ],
   ignorePaths: ['/node_modules/'],
-  // wait 14 days before creating mrs (supply chain attacks)
+  // Wait 14 days before creating PRs (supply chain attacks), matching pnpm.
   // see: https://docs.renovatebot.com/configuration-options/#minimumreleaseage
   minimumReleaseAge: '14 days',
+  // Exclude releases until the age requirement passes, then create PRs
+  // immediately rather than waiting for branch checks.
+  internalChecksFilter: 'strict',
+  prCreation: 'immediate',
   // only rebase merge requests when they become conflicted
   // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
   rebaseWhen: 'conflicted',
@@ -28,6 +36,14 @@
   // https://docs.renovatebot.com/configuration-options/#stopupdatinglabel
   stopUpdatingLabel: 'renovate | stop update',
   packageRules: [
+    // Preserve our 14-day npm delay and immediate PR creation over the
+    // shorter release age and branch-check defaults in best-practices.
+    {
+      matchManagers: ['npm'],
+      minimumReleaseAge: '14 days',
+      prCreation: 'immediate',
+    },
+
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
      * renovate config packages
      ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
