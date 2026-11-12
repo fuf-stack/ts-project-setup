@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.26](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.25...project-cli-tools-v1.0.26) (2026-11-12)
+
+
+### Bug Fixes
+
+* **project-cli-tools:** only publish README and LICENSE ([a14a596](https://github.com/fuf-stack/ts-project-setup/commit/a14a59600189c199109ae88d7378a97ecea42730))
+
 ## [1.0.25](https://github.com/fuf-stack/ts-project-setup/compare/project-cli-tools-v1.0.24...project-cli-tools-v1.0.25) (2026-11-09)
 
 
