@@ -11,54 +11,79 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
+permissions: {}
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-      id-token: write # Required for OIDC trusted publishing with npm
     outputs:
       releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
-      - uses: googleapis/release-please-action@v5
+      - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5
         id: release
         with:
           token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
 
-      - uses: actions/checkout@v7
+  build-test:
+    runs-on: ubuntu-latest
+    needs: release-please
+    if: needs.release-please.outputs.releases_created == 'true'
+    permissions:
+      contents: read
+    outputs:
+      artifact_id: ${{ steps.build-artifact.outputs.artifact-id }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: ./.github/actions/setup-project
+      - name: Test release commit
+        run: pnpm test --test-timeout=30000
+      - name: Retain tested build
+        id: build-artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: release-build-${{ github.sha }}
+          path: packages/vitest-config/dist/
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: [release-please, build-test]
+    if: needs.release-please.outputs.releases_created == 'true'
+    permissions:
+      contents: read
+      id-token: write # npm trusted publishing; no repository write authority
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.sha }}
           fetch-depth: 0
-        if: steps.release.outputs.releases_created  == 'true'
-
-      - name: Setup project
+          persist-credentials: false
+      - name: Install publishing tools
         uses: ./.github/actions/setup-project
-        if: steps.release.outputs.releases_created  == 'true'
-
+        with:
+          build: 'false'
+      - name: Restore tested build
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          artifact-ids: ${{ needs.build-test.outputs.artifact_id }}
+          path: packages/vitest-config/dist/
+          # Downloads by ID otherwise land in dist/<artifact-name>/.
+          merge-multiple: true
       - name: Publish to npm
-        run: |
-          # Use npm publish via Lerna for trusted publishing support
-          # pnpm doesn't support npm's trusted publishing (OIDC) yet, so we use npm directly
-          # Lerna detects changed packages and publishes them using npm.
-          # During publish, Lerna rewrites workspace dependency specifiers in
-          # package manifests (workspace:* -> release versions). That can make
-          # the lockfile temporarily out of sync while prepack scripts run, so
-          # frozen-lockfile must be disabled for this step.
-          # We run the installed workspace binary directly to avoid runtime installs.
-          ./node_modules/.bin/lerna publish from-package --yes --no-verify-access
-        if: steps.release.outputs.releases_created  == 'true'
+        # Use the installed, lock-selected binary and the tested build from this run.
+        run: ./node_modules/.bin/lerna publish from-package --yes --no-verify-access
         env:
-          # pnpm reads either form depending on invocation context.
+          # Lerna rewrites workspace specifiers; never reinstall or rebuild here.
           PNPM_CONFIG_FROZEN_LOCKFILE: 'false'
           NPM_CONFIG_FROZEN_LOCKFILE: 'false'
-          # Build already ran in setup-project. Disable publish-time lifecycle
-          # scripts (`prepack`) to avoid package-local installs resolving newly
-          # bumped internal versions before they are published.
           NPM_CONFIG_IGNORE_SCRIPTS: 'true'
-        # Note: If you have private npm dependencies, you may need NODE_AUTH_TOKEN
-        # for installing dependencies only (not for publishing)
-        # env:
-        #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   # update other conflicting prs after package merge
   # see: https://github.com/googleapis/release-please/issues/1870#issuecomment-1748390833
@@ -115,6 +140,6 @@ jobs:
     needs: check-conflicting-prs
     if: needs.check-conflicting-prs.outputs.need_rebase == 'true'
     steps:
-      - uses: googleapis/release-please-action@v5
+      - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5
         with:
           token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
