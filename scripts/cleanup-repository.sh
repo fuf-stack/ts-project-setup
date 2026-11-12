@@ -4,8 +4,8 @@ set -o errexit # Exit on error
 
 echo "$(date) - Cleaning up repository..."
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
-cd $DIR/../
+DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd -- "$DIR/.."
 
 echo "$(date) - Removing build artifacts in packages..."
 rm -rf ./dist

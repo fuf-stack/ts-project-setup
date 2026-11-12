@@ -22,6 +22,12 @@ Each package is published under the `@fuf-stack/*` scope. Refer to the package-s
 - packages/vitest-config/README.md
 - packages/project-cli-tools/README.md
 
+## Local setup
+
+Install pnpm from a trusted source before running `make install`. The Makefile
+requires an existing pnpm installation, selects the version in `package.json`,
+and stops immediately if runtime setup, installation or the build fails.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
