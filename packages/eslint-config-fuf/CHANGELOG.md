@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.1.1...eslint-config-fuf-v2.1.2) (2026-11-13)
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** apply vitest rules to all JS/TS test files ([1d1c2ff](https://github.com/fuf-stack/ts-project-setup/commit/1d1c2ff41a2f1f4bbccbb6dde205f974522a7dd8))
+* **eslint-config-fuf:** drop obsolete prettier options ([26b6aaa](https://github.com/fuf-stack/ts-project-setup/commit/26b6aaa678408ad4e288ea59c1fa2189d2e843a0))
+
 ## [2.1.1](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.1.0...eslint-config-fuf-v2.1.1) (2026-11-12)
 
 
