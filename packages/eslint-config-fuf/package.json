@@ -46,7 +46,7 @@
     "@ianvs/prettier-plugin-sort-imports": "4.7.1",
     "@prettier/plugin-php": "0.26.0",
     "@vitest/eslint-plugin": "1.6.28",
-    "eslint": "10.13.0",
+    "eslint": "10.14.0",
     "eslint-config-airbnb-extended": "3.3.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jsdoc": "65.4.2",
