@@ -97,7 +97,7 @@ Example root `tsconfig.json` additions:
 
 - `base` composes: Airbnb base via `eslint-config-airbnb-extended` + Fröhlich ∧ Frei base/ts rules ([docs](https://github.com/NishargShah/eslint-config-airbnb-extended))
 - `react` composes: Airbnb react + hooks via `eslint-config-airbnb-extended` + jsx-runtime + Fröhlich ∧ Frei base/react/ts rules; Storybook overrides for `*.stories.ts(x)`
-- `vitest` extends: `plugin:vitest/recommended` for `*.spec|test.ts(x)` and relaxes `import/no-extraneous-dependencies` in tests
+- `vitest` extends: `plugin:vitest/recommended` for `*.spec.*` / `*.test.*` files of every JS/TS extension (`js`, `mjs`, `cjs`, `jsx`, `ts`, `mts`, `cts`, `tsx`) and relaxes `import/no-extraneous-dependencies` in tests and in `vitest.config.*` / `vitest.workspace.*`
 - Fröhlich ∧ Frei rules include:
   - Allow leading underscore for intentionally unused vars
   - Enforce arrow-function components; default props via function default args

@@ -1,6 +1,16 @@
+// Test files of every JS/TS module extension, e.g. `scripts/dev.test.mjs`.
+export const testFiles = ['**/*.{spec,test}.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'];
+
+// Vitest config files import `vitest/config`, which usually comes in through
+// a shared config package instead of a direct dependency.
+export const configFiles = [
+  '**/vitest.config.{js,mjs,cjs,ts,mts,cts}',
+  '**/vitest.workspace.{js,mjs,cjs,ts,mts,cts}',
+];
+
 export default {
   name: 'fuf/vitest',
-  files: ['**/*.spec.ts', '**/*.spec.tsx', '**/*.test.ts', '**/*.test.tsx'],
+  files: testFiles,
   rules: {
     // Enforce body style for arrow functions as needed in tests
     // see: test/fixtures/vitest-arrow-body-style-as-needed.test.ts
