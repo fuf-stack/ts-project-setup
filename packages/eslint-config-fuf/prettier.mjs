@@ -94,7 +94,6 @@ const createPrettierConfig = (options) => {
         ? ['prettier-plugin-tailwindcss']
         : []),
     ],
-    pluginSearchDirs: false,
 
     // see: https://github.com/ianvs/prettier-plugin-sort-imports
     importOrder: [
@@ -136,7 +135,6 @@ const createPrettierConfig = (options) => {
       '.css$',
       '',
     ],
-    importOrderSortSpecifiers: true,
 
     overrides: [
       // prettier-plugin-astro
