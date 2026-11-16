@@ -1,75 +1,45 @@
 {
-  // validate with (see: https://docs.renovatebot.com/config-validation/):
-  // npx --yes --package renovate -- renovate-config-validator renovate.json5 --strict
-
-  dependencyDashboardLabels: ['effort | ongoing', 'scope | dependencies'],
-  dependencyDashboardOSVVulnerabilitySummary: 'all',
+  dependencyDashboard: {
+    labels: ["effort | ongoing", "scope | dependencies"],
+    osvVulnerabilitySummary: "all",
+  },
   extends: [
-    // Includes recommended defaults and GitHub Action SHA pinning.
-    'config:best-practices',
-    'default:automergeDigest',
-    'default:automergeMinor',
-    'default:combinePatchMinorReleases',
-    'default:dependencyDashboard',
-    'default:docker',
-    'default:enableVulnerabilityAlerts',
-    'default:maintainLockFilesWeekly',
-    'default:prHourlyLimit4',
+    "config:best-practices",
+    "default:automergeDigest",
+    "default:automergeMinor",
+    "default:combinePatchMinorReleases",
+    "default:dependencyDashboard",
+    "default:docker",
+    "default:enableVulnerabilityAlerts",
+    "default:maintainLockFilesWeekly",
+    "default:prHourlyLimit4",
   ],
-  ignorePaths: ['/node_modules/'],
-  // Wait 14 days before creating PRs (supply chain attacks), matching pnpm.
-  // see: https://docs.renovatebot.com/configuration-options/#minimumreleaseage
-  minimumReleaseAge: '14 days',
-  // Exclude releases until the age requirement passes, then create PRs
-  // immediately rather than waiting for branch checks.
-  internalChecksFilter: 'strict',
-  prCreation: 'immediate',
-  // only rebase merge requests when they become conflicted
-  // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
-  rebaseWhen: 'conflicted',
-  // schedule: [
-  //   'after 10pm every weekday',
-  //   'before 8am every weekday',
-  //   // 'every weekend',
-  // ],
-  // stop updating pull requests with this label
-  // https://docs.renovatebot.com/configuration-options/#stopupdatinglabel
-  stopUpdatingLabel: 'renovate | stop update',
+  ignorePaths: ["/node_modules/"],
+  minimumReleaseAge: "14 days",
+  internalChecksFilter: "strict",
+  prCreation: "immediate",
+  rebaseWhen: "conflicted",
+  stopUpdatingLabel: "renovate | stop update",
   packageRules: [
-    // Preserve our 14-day npm delay and immediate PR creation over the
-    // shorter release age and branch-check defaults in best-practices.
     {
-      matchManagers: ['npm'],
-      minimumReleaseAge: '14 days',
-      prCreation: 'immediate',
+      matchManagers: ["npm"],
+      minimumReleaseAge: "14 days",
+      prCreation: "immediate",
     },
-
-    /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-     * renovate config packages
-     ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-    // @fuf-stack/eslint-config-fuf
     {
-      extends: [':semanticCommitScope(eslint-config-fuf)'],
-      matchFileNames: ['packages/eslint-config-fuf/package.json'],
-      // prevent multiple 'Lock file maintenance' being created
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      extends: [":semanticCommitScope(eslint-config-fuf)"],
+      matchFileNames: ["packages/eslint-config-fuf/package.json"],
+      matchUpdateTypes: ["major", "minor", "patch"],
     },
-
-    // @fuf-stack/project-cli-tools
     {
-      extends: [':semanticCommitScope(project-cli-tools)'],
-      matchFileNames: ['packages/project-cli-tools/package.json'],
-      // prevent multiple 'Lock file maintenance' being created
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      extends: [":semanticCommitScope(project-cli-tools)"],
+      matchFileNames: ["packages/project-cli-tools/package.json"],
+      matchUpdateTypes: ["major", "minor", "patch"],
     },
-
-    // @fuf-stack/vitest-config
     {
-      extends: [':semanticCommitScope(vitest-config)'],
-      matchFileNames: ['packages/vitest-config/package.json'],
-      // prevent multiple 'Lock file maintenance' being created
-      matchUpdateTypes: ['major', 'minor', 'patch'],
+      extends: [":semanticCommitScope(vitest-config)"],
+      matchFileNames: ["packages/vitest-config/package.json"],
+      matchUpdateTypes: ["major", "minor", "patch"],
     },
   ],
 }
