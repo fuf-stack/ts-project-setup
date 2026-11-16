@@ -39,8 +39,8 @@
     "prepack": "tsc --build --pretty"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "5.0.5",
-    "vitest": "5.0.5"
+    "@vitest/coverage-v8": "5.1.0",
+    "vitest": "5.1.0"
   },
   "devDependencies": {
     "@fuf-stack/typescript-config": "workspace:*"
