@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v6.0.0...vitest-config-v6.1.0) (2026-11-19)
+
+
+### Features
+
+* **vitest-config:** select CI coverage reporters automatically ([023b1ad](https://github.com/fuf-stack/ts-project-setup/commit/023b1ad61b943ec40f40870768fa03e9a9e98416))
+
 ## [6.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v5.1.0...vitest-config-v6.0.0) (2026-11-19)
 
 
