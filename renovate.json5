@@ -2,8 +2,10 @@
   // validate with (see: https://docs.renovatebot.com/config-validation/):
   // npx --yes --package renovate -- renovate-config-validator renovate.json5 --strict
 
-  dependencyDashboardLabels: ['effort | ongoing', 'scope | dependencies'],
-  dependencyDashboardOSVVulnerabilitySummary: 'all',
+  dependencyDashboard: {
+    labels: ['effort | ongoing', 'scope | dependencies'],
+    osvVulnerabilitySummary: 'all',
+  },
   extends: [
     // Includes recommended defaults and GitHub Action SHA pinning.
     'config:best-practices',
@@ -24,6 +26,11 @@
   // immediately rather than waiting for branch checks.
   internalChecksFilter: 'strict',
   prCreation: 'immediate',
+  // Also create security PRs from osv.dev data, independent of whether
+  // GitHub Dependabot alerts are enabled and readable by the Renovate app.
+  // Vulnerability fixes skip minimumReleaseAge and the schedule.
+  // see: https://docs.renovatebot.com/configuration-options/#osvvulnerabilityalerts
+  osvVulnerabilityAlerts: true,
   // only rebase merge requests when they become conflicted
   // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
   rebaseWhen: 'conflicted',
@@ -42,6 +49,13 @@
       matchManagers: ['npm'],
       minimumReleaseAge: '14 days',
       prCreation: 'immediate',
+    },
+
+    // Lock file maintenance has no release age; pnpm still enforces its own
+    // minimumReleaseAge when it rewrites the lockfile. Keep after the npm rule.
+    {
+      matchUpdateTypes: ['lockFileMaintenance'],
+      minimumReleaseAge: null,
     },
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
