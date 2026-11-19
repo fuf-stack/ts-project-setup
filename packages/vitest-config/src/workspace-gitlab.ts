@@ -1,9 +1,9 @@
 import { mergeConfig } from 'vitest/config';
 
-import workspace from './workspace.js';
+import workspace from './workspace-base.js';
 
 /** Workspace coverage reports for GitLab and downstream SonarQube analysis. */
-export default mergeConfig(workspace, {
+const gitlab = mergeConfig(workspace, {
   test: {
     coverage: {
       reportsDirectory: 'coverage',
@@ -12,3 +12,5 @@ export default mergeConfig(workspace, {
     },
   },
 });
+
+export default gitlab;

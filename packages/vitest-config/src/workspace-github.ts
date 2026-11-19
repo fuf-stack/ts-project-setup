@@ -1,9 +1,9 @@
 import { mergeConfig } from 'vitest/config';
 
-import workspace from './workspace.js';
+import workspace from './workspace-base.js';
 
 /** Workspace coverage files for GitHub Actions summaries and SonarQube analysis. */
-export default mergeConfig(workspace, {
+const github = mergeConfig(workspace, {
   test: {
     coverage: {
       reportsDirectory: 'coverage',
@@ -12,3 +12,5 @@ export default mergeConfig(workspace, {
     },
   },
 });
+
+export default github;
