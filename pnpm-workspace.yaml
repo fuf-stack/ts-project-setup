@@ -13,6 +13,11 @@ strictDepBuilds: false
 # Wait 14 days (in minutes) before installing public dependencies.
 # Keep this aligned with minimumReleaseAge in renovate.json5.
 minimumReleaseAge: 20160
+# Remove exact name@version exclusions (added by Renovate security updates)
+# once the lockfile no longer resolves them; name patterns are kept.
+# Only read from this file, not from the CLI flag.
+# https://pnpm.io/settings#minimumreleaseageexcludeprune
+minimumReleaseAgeExcludePrune: true
 
 # Allow freshly published internal @fuf-stack packages.
 minimumReleaseAgeExclude:
