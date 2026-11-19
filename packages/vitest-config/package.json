@@ -11,6 +11,14 @@
       "types": "./dist/workspace.d.ts",
       "import": "./dist/workspace.js"
     },
+    "./workspace/gitlab": {
+      "types": "./dist/workspace-gitlab.d.ts",
+      "import": "./dist/workspace-gitlab.js"
+    },
+    "./workspace/github": {
+      "types": "./dist/workspace-github.d.ts",
+      "import": "./dist/workspace-github.js"
+    },
     "./project": {
       "types": "./dist/project.d.ts",
       "import": "./dist/project.js"

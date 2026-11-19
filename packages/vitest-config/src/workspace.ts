@@ -61,8 +61,8 @@ export default defineConfig({
       // Use V8 coverage provider (fast and accurate)
       provider: 'v8',
 
-      // Generate LCOV report for CI tools and coverage services
-      reporter: ['lcov'],
+      // Keep local runs lightweight; use /workspace/gitlab or /workspace/github in CI.
+      reporter: ['text-summary'],
     },
   },
 });

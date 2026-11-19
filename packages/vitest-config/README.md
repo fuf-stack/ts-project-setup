@@ -10,7 +10,19 @@ Default Vitest configurations for Fröhlich ∧ Frei monorepos. Provides separat
 
 - Projects array defining workspace structure
 - V8 coverage with explicit includes/excludes
-- LCOV reporter for CI tools
+- Text summary reporter for local coverage runs
+
+**GitLab Workspace Config** (`/workspace/gitlab`) - Extends the workspace config:
+
+- Text summary for GitLab's job coverage percentage
+- LCOV file for SonarQube, without generating HTML
+- Cobertura XML for GitLab merge request diff annotations
+
+**GitHub Workspace Config** (`/workspace/github`) - Extends the workspace config:
+
+- Text summary in the job log
+- LCOV file for SonarQube, without generating HTML
+- JSON summary for GitHub Actions job summaries or other report consumers
 
 **Project Config** (`/project`) - For individual packages:
 
@@ -50,7 +62,7 @@ This provides:
 
 - Projects array: `['apps/*', 'packages/!(config)', 'packages/config/*']`
 - Coverage configuration with sensible defaults
-- LCOV reporter
+- Text summary reporter
 
 `packages/config` is a container, not a test project. Its child packages are
 included individually so their tests run once under their own package names.
@@ -125,6 +137,94 @@ export default mergeConfig(workspaceConfig, {
 The default coverage excludes already match `*.test.*` / `*.spec.*` files of every
 JS/TS extension anywhere in the workspace, so extra includes don't need matching
 test excludes.
+
+#### GitLab Coverage Reports
+
+Select the GitLab preset in the root config when running in GitLab CI:
+
+```ts
+// vitest.config.mts (root)
+import local from '@fuf-stack/vitest-config/workspace';
+import gitlab from '@fuf-stack/vitest-config/workspace/gitlab';
+
+export default process.env.GITLAB_CI === 'true' ? gitlab : local;
+```
+
+For custom projects, source paths, or exclusions, pass the selected config to
+`mergeConfig` as in the examples above. Package-level `/project` imports stay
+unchanged. To generate the same files locally, use the GitLab preset directly.
+
+Neither preset enables coverage collection. Run `vitest run --coverage` to collect
+coverage. The local preset prints totals; the GitLab preset additionally writes:
+
+- `coverage/lcov.info` for SonarQube
+- `coverage/cobertura-coverage.xml` for GitLab diff annotations
+
+The GitLab preset uses `mergeConfig` to append `lcovonly` and `cobertura` to the
+inherited `text-summary` reporter. It does not rerun the tests for each report.
+
+Configure the GitLab test job to consume those outputs (or inherit equivalent
+settings from a shared CI template):
+
+```yaml
+test:
+  extends: .test-pnpm
+  coverage: '/Statements\s*:\s*([\d.]+)%/'
+  artifacts:
+    when: always
+    expire_in: 1 week
+    paths:
+      - coverage/lcov.info
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
+```
+
+Preserve existing artifacts when adding these settings. SonarQube jobs using
+explicit `needs` or `dependencies` must download artifacts from the test job.
+`when: always` uploads existing files on failure; Vitest needs
+`coverage.reportOnFailure: true` to generate coverage reports for failing tests.
+
+**Migration:** `/workspace` now prints a summary instead of generating LCOV and
+HTML. Existing consumers of `coverage/lcov.info` must select `/workspace/gitlab`
+or `/workspace/github`, or explicitly add `lcovonly` to their own reporter
+configuration. Consumers that need a browsable HTML report can add `html` explicitly.
+
+#### GitHub Actions Coverage Reports
+
+Select the GitHub preset in the root config when running in GitHub Actions:
+
+```ts
+// vitest.config.mts (root)
+import local from '@fuf-stack/vitest-config/workspace';
+import github from '@fuf-stack/vitest-config/workspace/github';
+
+export default process.env.GITHUB_ACTIONS === 'true' ? github : local;
+```
+
+Extend the selected config with `mergeConfig` to preserve repo-specific projects,
+source paths and exclusions. For example, Pixels can retain its `ci-scripts`
+project and CI test-selection flags while using this preset after upgrading to a
+release that exports `/workspace/github`. Its existing SonarQube artifact
+transfer can continue reading `coverage/lcov.info` unchanged.
+
+With `vitest run --coverage`, this preset inherits `text-summary` and adds
+`lcovonly` and `json-summary`, producing:
+
+- `coverage/lcov.info` for SonarQube and other LCOV consumers
+- `coverage/coverage-summary.json` with totals and per-file coverage metrics
+
+It does not produce HTML or Cobertura, enable coverage collection, or post PR
+comments. GitHub Actions does not automatically display the JSON file: a workflow
+step must read it and append Markdown to `GITHUB_STEP_SUMMARY`. See this
+repository's `.github/workflows/ci.yml` for a working summary and artifact example.
+Neither writing a job summary nor uploading a coverage artifact requires PR write
+permissions or an additional coverage service.
+
+Use the preset directly to reproduce its report files locally. Other runs using
+`/workspace` remain summary-only. Both CI presets share source discovery,
+exclusions and provider settings; their added report formats differ.
 
 #### Package-Level Configs
 
