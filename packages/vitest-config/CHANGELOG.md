@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.0.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v5.1.0...vitest-config-v6.0.0) (2026-11-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vitest-config:** The workspace preset now prints a text summary instead of generating LCOV and HTML. Select workspace/gitlab or workspace/github for CI report files, or configure reporters explicitly.
+
+### Features
+
+* **vitest-config:** add GitLab and GitHub coverage presets ([907b8b9](https://github.com/fuf-stack/ts-project-setup/commit/907b8b94a96c3cb5adb58d8eca99f122709f90a5))
+
+
+### Bug Fixes
+
+* **vitest-config:** update vitest monorepo to v5.1.0 ([#1557](https://github.com/fuf-stack/ts-project-setup/issues/1557)) ([d7dfc3f](https://github.com/fuf-stack/ts-project-setup/commit/d7dfc3f5d9e637081ba1465f6a0e5800f9542afe))
+
 ## [5.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v5.0.8...vitest-config-v5.1.0) (2026-11-12)
 
 
