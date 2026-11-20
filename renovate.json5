@@ -31,6 +31,13 @@
   // Vulnerability fixes skip minimumReleaseAge and the schedule.
   // see: https://docs.renovatebot.com/configuration-options/#osvvulnerabilityalerts
   osvVulnerabilityAlerts: true,
+  // Commit security updates as fix, also for dev dependencies (otherwise
+  // chore), so release-please lists them in the changelog. Applies to OSV and
+  // GitHub alert PRs and merges with the label from the preset above.
+  // see: https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts
+  vulnerabilityAlerts: {
+    semanticCommitType: 'fix',
+  },
   // only rebase merge requests when they become conflicted
   // see: https://docs.renovatebot.com/configuration-options/#rebasewhen
   rebaseWhen: 'conflicted',
