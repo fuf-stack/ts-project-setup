@@ -1,0 +1,57 @@
+[
+  {
+    "line": 13,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-before-all-blocks",
+  },
+  {
+    "line": 16,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-after-all-blocks",
+  },
+  {
+    "line": 16,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-before-all-blocks",
+  },
+  {
+    "line": 19,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-after-all-blocks",
+  },
+  {
+    "line": 19,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-describe-blocks",
+  },
+  {
+    "line": 23,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-after-each-blocks",
+  },
+  {
+    "line": 23,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-before-each-blocks",
+  },
+  {
+    "line": 26,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-after-each-blocks",
+  },
+  {
+    "line": 26,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-test-blocks",
+  },
+  {
+    "line": 29,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-test-blocks",
+  },
+  {
+    "line": 33,
+    "message": "expect blank line before this statement",
+    "ruleId": "vitest/padding-around-describe-blocks",
+  },
+]

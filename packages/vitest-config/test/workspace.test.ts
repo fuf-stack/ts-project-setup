@@ -10,6 +10,7 @@ import { runVitest, withTestProject } from './test-utils.js';
 const workspaceConfig = fileURLToPath(
   new URL('../src/workspace.ts', import.meta.url),
 );
+
 it.each([
   {
     name: 'runs app, package and nested config tests once without a config container project',

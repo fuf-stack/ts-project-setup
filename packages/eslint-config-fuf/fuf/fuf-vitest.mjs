@@ -27,5 +27,15 @@ export default {
 
     // Allow namespace imports in tests
     'import-x/no-namespace': 'off',
+
+    // Require blank lines around test, describe and hook blocks
+    // see: test/fixtures/vitest-padding-around-blocks.test.ts
+    // see: https://github.com/vitest-dev/eslint-plugin-vitest/tree/main/docs/rules
+    'vitest/padding-around-after-all-blocks': 'warn',
+    'vitest/padding-around-after-each-blocks': 'warn',
+    'vitest/padding-around-before-all-blocks': 'warn',
+    'vitest/padding-around-before-each-blocks': 'warn',
+    'vitest/padding-around-describe-blocks': 'warn',
+    'vitest/padding-around-test-blocks': 'warn',
   },
 };
