@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.2.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v6.1.0...vitest-config-v6.2.0) (2026-11-21)
+
+
+### Features
+
+* **eslint-config-fuf:** require blank lines around vitest test, describe and hook blocks ([7a45371](https://github.com/fuf-stack/ts-project-setup/commit/7a453713eae5f5a3944023beb7b2ab23ac49081e))
+
 ## [6.1.0](https://github.com/fuf-stack/ts-project-setup/compare/vitest-config-v6.0.0...vitest-config-v6.1.0) (2026-11-19)
 
 
