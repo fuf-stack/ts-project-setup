@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.1.2...eslint-config-fuf-v2.2.0) (2026-11-21)
+
+
+### Features
+
+* **eslint-config-fuf:** require blank lines around vitest test, describe and hook blocks ([7a45371](https://github.com/fuf-stack/ts-project-setup/commit/7a453713eae5f5a3944023beb7b2ab23ac49081e))
+
+
+### Bug Fixes
+
+* **eslint-config-fuf:** update dependency eslint to v10.14.0 ([#1554](https://github.com/fuf-stack/ts-project-setup/issues/1554)) ([0f6d683](https://github.com/fuf-stack/ts-project-setup/commit/0f6d683821c779661a3e39c4a20ed42ee34f82d6))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.4.3 ([#1562](https://github.com/fuf-stack/ts-project-setup/issues/1562)) ([c2e3568](https://github.com/fuf-stack/ts-project-setup/commit/c2e356847bc4734b24dbc41a3ae1c612912ef238))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.4.4 ([#1567](https://github.com/fuf-stack/ts-project-setup/issues/1567)) ([66eb349](https://github.com/fuf-stack/ts-project-setup/commit/66eb34907ed140e7ed4fdb3321c38b1212242334))
+* **eslint-config-fuf:** update dependency eslint-plugin-jsdoc to v65.4.5 ([#1571](https://github.com/fuf-stack/ts-project-setup/issues/1571)) ([4d934e9](https://github.com/fuf-stack/ts-project-setup/commit/4d934e90d16d174ede0e230efc65c2f4e9ba77ae))
+* **eslint-config-fuf:** update dependency eslint-plugin-storybook to v10.6.6 ([#1568](https://github.com/fuf-stack/ts-project-setup/issues/1568)) ([747fd62](https://github.com/fuf-stack/ts-project-setup/commit/747fd62c2415b5171472abd230254a44abccad05))
+
 ## [2.1.2](https://github.com/fuf-stack/ts-project-setup/compare/eslint-config-fuf-v2.1.1...eslint-config-fuf-v2.1.2) (2026-11-13)
 
 
