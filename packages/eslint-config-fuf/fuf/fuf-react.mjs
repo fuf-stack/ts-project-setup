@@ -30,7 +30,10 @@ export default {
     // allow alphabetical prop sorting but don't require shorthand props first
     // reserved props (key, ref) should come first
     // see: test/fixtures/react-jsx-sort-props.tsx
-    'react/jsx-sort-props': ['warn', { shorthandFirst: false, reservedFirst: true }],
+    'react/jsx-sort-props': [
+      'warn',
+      { shorthandFirst: false, reservedFirst: true },
+    ],
 
     // modern JSX transform doesn't require React to be in scope
     'react/react-in-jsx-scope': 'off',

@@ -86,10 +86,10 @@ describe('createPrettierConfig', () => {
         projectImportOrderGroups: ['^@acme/(.*)$', '^~/(.*)$'],
       });
       const importOrder = config.importOrder as string[];
-      
+
       // Find the index of THIRD_PARTY_MODULES
       const thirdPartyIndex = importOrder.indexOf('<THIRD_PARTY_MODULES>');
-      
+
       // Project groups should appear after third party modules
       expect(importOrder[thirdPartyIndex + 2]).toBe('^@acme/(.*)$');
       expect(importOrder[thirdPartyIndex + 3]).toBe('');
@@ -124,12 +124,12 @@ describe('createPrettierConfig', () => {
         projectImportOrderGroups: ['^@custom/(.*)$'],
       });
       const importOrder = config.importOrder as string[];
-      
+
       const customIndex = importOrder.indexOf('^@custom/(.*)$');
       const srcIndex = importOrder.indexOf(
         '^(?!.*[.](css|jpg|jpeg|json|png|svg)$)src/(.*)$',
       );
-      
+
       expect(customIndex).toBeLessThan(srcIndex);
     });
   });
@@ -149,7 +149,7 @@ describe('createPrettierConfig', () => {
         workspacePackagePrefix: '@old',
       });
       const importOrder = config.importOrder as string[];
-      
+
       // Should contain the new pattern
       expect(importOrder).toContain('^@new/(.*)$');
       // Should NOT contain the old pattern
@@ -161,10 +161,10 @@ describe('createPrettierConfig', () => {
         workspacePackagePrefix: '@workspace',
       });
       const importOrder = config.importOrder as string[];
-      
+
       const thirdPartyIndex = importOrder.indexOf('<THIRD_PARTY_MODULES>');
       const workspaceIndex = importOrder.indexOf('^@workspace(.*)$');
-      
+
       expect(workspaceIndex).toBeGreaterThan(thirdPartyIndex);
     });
   });
@@ -175,21 +175,21 @@ describe('createPrettierConfig', () => {
         projectImportOrderGroups: ['^@custom/(.*)$'],
       });
       const importOrder = config.importOrder as string[];
-      
+
       // Basic structure check
       expect(importOrder).toContain('<TYPES>');
       expect(importOrder).toContain('<BUILTIN_MODULES>');
       expect(importOrder).toContain('^react');
       expect(importOrder).toContain('<THIRD_PARTY_MODULES>');
       expect(importOrder).toContain('^@custom/(.*)$');
-      
+
       // Order check
       const typesIndex = importOrder.indexOf('<TYPES>');
       const builtinIndex = importOrder.indexOf('<BUILTIN_MODULES>');
       const reactIndex = importOrder.indexOf('^react');
       const thirdPartyIndex = importOrder.indexOf('<THIRD_PARTY_MODULES>');
       const customIndex = importOrder.indexOf('^@custom/(.*)$');
-      
+
       expect(typesIndex).toBeLessThan(builtinIndex);
       expect(builtinIndex).toBeLessThan(reactIndex);
       expect(reactIndex).toBeLessThan(thirdPartyIndex);
@@ -197,5 +197,3 @@ describe('createPrettierConfig', () => {
     });
   });
 });
-
-

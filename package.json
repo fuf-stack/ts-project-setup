@@ -6,7 +6,7 @@
     "commit": "lint-staged && git-cz",
     "dev": "lerna run --parallel dev",
     "fix": "eslint --debug --fix --ext .js packages || true && prettier --write \"packages/**/*\"",
-    "lint": "eslint --debug ./packages",
+    "lint": "eslint --max-warnings=0 .",
     "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" FORCE_COLOR=1 vitest run --coverage $VITEST_EXTRA_OPTS"
   },
   "devDependencies": {

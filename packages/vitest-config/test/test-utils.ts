@@ -1,4 +1,4 @@
-import type { JsonTestResults } from 'vitest/reporters';
+import type { JsonTestResults } from 'vitest/node';
 
 import { execFile } from 'node:child_process';
 import { mkdtemp, readFile, realpath, rm, symlink } from 'node:fs/promises';

@@ -40,7 +40,9 @@ export default [
     // with ESLint v10 without this shim. Then remove `fixupPluginRules(...)` and confirm tests pass.
     plugins: {
       react: fixupPluginRules(plugins.react.plugins.react),
-      'react-hooks': fixupPluginRules(plugins.reactHooks.plugins['react-hooks']),
+      'react-hooks': fixupPluginRules(
+        plugins.reactHooks.plugins['react-hooks'],
+      ),
       'jsx-a11y': fixupPluginRules(plugins.reactA11y.plugins['jsx-a11y']),
     },
   },

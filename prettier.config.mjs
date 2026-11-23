@@ -1,6 +1,6 @@
-import createConfig from '@fuf-stack/eslint-config-fuf/prettier';
+import createPrettierConfig from '@fuf-stack/eslint-config-fuf/prettier';
 
-export default createConfig({
+export default createPrettierConfig({
   projectImportOrderGroups: ['^@fuf-stack/(.*)$'],
   // INFO: just for astro testing
   enableAstro: true,

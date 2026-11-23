@@ -1,13 +1,20 @@
 /* eslint-disable import-x/no-extraneous-dependencies */
 
+import { createRequire } from 'node:module';
 import path from 'node:path';
 
 import { includeIgnoreFile } from '@eslint/compat';
 
+import jsdocStrict from '@fuf-stack/eslint-config-fuf/jsdoc-strict';
 import react from '@fuf-stack/eslint-config-fuf/react';
 import vitest from '@fuf-stack/eslint-config-fuf/vitest';
 
 const gitignorePath = path.resolve('.', '.gitignore');
+
+// Installed react version of eslint-config-fuf (see react settings below)
+const { version: reactVersion } = createRequire(
+  path.resolve('packages/eslint-config-fuf/package.json'),
+)('react/package.json');
 
 export default [
   // Ignore .gitignore files/folder in eslint
@@ -15,7 +22,12 @@ export default [
 
   // Project configs
   ...react,
+  ...jsdocStrict,
   ...vitest,
+
+  // React version: 'detect' can not find react from the repo root because it is
+  // only a devDependency of eslint-config-fuf, so set it explicitly
+  { settings: { react: { version: reactVersion } } },
 
   // Fixtures in eslint-config-fuf: do not remove unused eslint-disable comments
   {

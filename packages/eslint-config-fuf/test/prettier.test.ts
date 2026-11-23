@@ -10,17 +10,25 @@ import {
 } from './helper';
 
 const fixtures = getFixtureList('prettier-');
+const isTsFixture = (fixture: string) =>
+  fixture.endsWith('.ts') || fixture.endsWith('.tsx');
 
-it.for(fixtures)('%s', async (fixture) => {
-  const useEslint = fixture.endsWith('.ts') || fixture.endsWith('.tsx');
-  const result = useEslint
-    ? await lintFixture(fixture, 'base.config.mjs')
-    : await prettierFixFixture(fixture);
+// TypeScript fixtures are formatted via eslint-plugin-prettier
+it.for(fixtures.filter(isTsFixture))('%s', async (fixture) => {
+  const result = await lintFixture(fixture, 'base.config.mjs');
   await expect(result.fixedContent).toMatchFileSnapshot(snapshotPath(fixture));
-  if (useEslint) {
-    // @ts-expect-error result.results is present when useEslint is true
-    await expect(errorMessages(result.results)).toMatchFileSnapshot(
-      errorSnapshotPath(fixture),
-    );
-  }
+  await expect(errorMessages(result.results)).toMatchFileSnapshot(
+    errorSnapshotPath(fixture),
+  );
 });
+
+// All other fixtures are formatted with prettier directly
+it.for(fixtures.filter((fixture) => !isTsFixture(fixture)))(
+  '%s',
+  async (fixture) => {
+    const result = await prettierFixFixture(fixture);
+    await expect(result.fixedContent).toMatchFileSnapshot(
+      snapshotPath(fixture),
+    );
+  },
+);
