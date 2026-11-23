@@ -9,10 +9,7 @@
   extends: [
     // Includes recommended defaults and GitHub Action SHA pinning.
     'config:best-practices',
-    // Pin action digests with exact versions (# v6.1.1, not # v6). Tag-only
-    // pins make every update a digest update without a release timestamp, so
-    // the minimumReleaseAge status never passes and automerge never runs.
-    // see: https://docs.renovatebot.com/presets-helpers/#helperspingithubactiondigeststosemver
+    // Exact action versions (# v6.1.1) so minimumReleaseAge can pass
     'helpers:pinGitHubActionDigestsToSemver',
     'default:automergeDigest',
     'default:automergeMinor',
