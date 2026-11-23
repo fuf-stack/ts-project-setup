@@ -7,17 +7,25 @@
     osvVulnerabilitySummary: 'all',
   },
   extends: [
-    // Includes recommended defaults and GitHub Action SHA pinning.
+    // Recommended defaults and action SHA pinning
     'config:best-practices',
     // Exact action versions (# v6.1.1) so minimumReleaseAge can pass
     'helpers:pinGitHubActionDigestsToSemver',
+    // Automerge digest updates
     'default:automergeDigest',
+    // Automerge minor and patch updates
     'default:automergeMinor',
+    // One PR for patch and minor updates
     'default:combinePatchMinorReleases',
+    // Dependency dashboard issue
     'default:dependencyDashboard',
+    // Update Docker images
     'default:docker',
+    // PRs for GitHub vulnerability alerts
     'default:enableVulnerabilityAlerts',
+    // Refresh lockfiles weekly
     'default:maintainLockFilesWeekly',
+    // At most 4 PRs per hour
     'default:prHourlyLimit4',
   ],
   ignorePaths: ['/node_modules/'],
